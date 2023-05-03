@@ -1,0 +1,8 @@
+﻿#nullable enable
+Petrolink.WitsmlConverter.WitsmlConversionType
+Petrolink.WitsmlConverter.WitsmlConversionType.Witsml14To20 = 0 -> Petrolink.WitsmlConverter.WitsmlConversionType
+Petrolink.WitsmlConverter.WitsmlConversionType.Witsml20To14 = 1 -> Petrolink.WitsmlConverter.WitsmlConversionType
+Petrolink.WitsmlConverter.WitsmlConversionType.Witsml20To21 = 2 -> Petrolink.WitsmlConverter.WitsmlConversionType
+Petrolink.WitsmlConverter.WitsmlConversionType.Witsml21To20 = 3 -> Petrolink.WitsmlConverter.WitsmlConversionType
+Petrolink.WitsmlConverter.WitsmlTransformer
+static Petrolink.WitsmlConverter.WitsmlTransformer.Transform(string! input, Petrolink.WitsmlConverter.WitsmlConversionType version, string! typeName) -> string!

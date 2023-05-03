@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petrolink.WitsmlConverter", "Src\WitsmlConverter\Petrolink.WitsmlConverter.csproj", "{B7856085-2877-4771-90BD-3C01EFACEA81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petrolink.WitsmlConverter.Mappings", "Src\WitsmlConverter.Mappings\Petrolink.WitsmlConverter.Mappings.csproj", "{11B2A709-4841-44D5-B8A0-6990586642C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E367AE8B-A729-4B7F-A555-CE060BB969D8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petrolink.WitsmlConverter.Tests", "Src\WitsmlConverter.Tests\Petrolink.WitsmlConverter.Tests.csproj", "{3AD1EED3-AE4C-4686-B7AC-56ADF8636775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petrolink.WitsmlConverter.Tool", "Src\WitsmlConverter.Tool\Petrolink.WitsmlConverter.Tool.csproj", "{FD2BC006-77F3-471A-9FA4-5DC94F283A47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7856085-2877-4771-90BD-3C01EFACEA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7856085-2877-4771-90BD-3C01EFACEA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7856085-2877-4771-90BD-3C01EFACEA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7856085-2877-4771-90BD-3C01EFACEA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B2A709-4841-44D5-B8A0-6990586642C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B2A709-4841-44D5-B8A0-6990586642C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B2A709-4841-44D5-B8A0-6990586642C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B2A709-4841-44D5-B8A0-6990586642C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD1EED3-AE4C-4686-B7AC-56ADF8636775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD1EED3-AE4C-4686-B7AC-56ADF8636775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD1EED3-AE4C-4686-B7AC-56ADF8636775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD1EED3-AE4C-4686-B7AC-56ADF8636775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2BC006-77F3-471A-9FA4-5DC94F283A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2BC006-77F3-471A-9FA4-5DC94F283A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2BC006-77F3-471A-9FA4-5DC94F283A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2BC006-77F3-471A-9FA4-5DC94F283A47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5658CAA0-2760-4ADA-8A7D-98AEC998A65E}
+	EndGlobalSection
+EndGlobal
