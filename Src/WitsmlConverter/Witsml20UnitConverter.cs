@@ -31,7 +31,7 @@ internal static class Witsml20UnitConverter
     }
 
     // Mapping taken from posc22_to_energistics1.xslt
-    private static readonly Dictionary<string, string> s_14to20 = new Dictionary<string, string>
+    private static readonly Dictionary<string, string> s_14to20 = new()
     {
         ["1/K"] = "1/deltaK",
         ["1/degC"] = "1/deltaC",
