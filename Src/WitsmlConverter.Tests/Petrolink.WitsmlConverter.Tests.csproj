@@ -6,6 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
+    <!-- This is needed only because the WitsmlConverter library exposes internals to this assembly -->
+    <PolySharpExcludeGeneratedTypes>System.Runtime.CompilerServices.IsExternalInit</PolySharpExcludeGeneratedTypes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +29,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WitsmlConverter\Petrolink.WitsmlConverter.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData\**\*.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
