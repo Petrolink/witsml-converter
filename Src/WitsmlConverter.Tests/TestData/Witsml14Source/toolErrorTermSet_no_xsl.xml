@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolErrorTermSets 
+	xmlns="http://www.witsml.org/schemas/1series"
+	xmlns:witsml="http://www.witsml.org/schemas/1series" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.witsml.org/schemas/1series ../xsd_schemas/obj_toolErrorTermSet.xsd"
+	version="1.4.1.1">
+	<toolErrorTermSet uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1">
+		<name>SPE67616</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 6716</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+		</authorization>
+		<nomenclature>
+			<parameter uid="1">
+				<name>D</name>
+				<description>Along hole depth.</description>
+			</parameter>
+			<parameter uid="2">
+				<name>I</name>
+				<description>Wellbore inclination</description>
+			</parameter>
+			<parameter uid="3">
+				<name>Am</name>
+				<description>Wellbore azimuth referenced to magnetic north</description>
+			</parameter>
+			<parameter uid="4">
+				<name>At</name>
+				<description>Wellbore azimuth referenced to true north</description>
+			</parameter>
+			<parameter uid="5">
+				<name>Tf</name>
+				<description>Toolface angle</description>
+			</parameter>
+			<parameter uid="6">
+				<name>B</name>
+				<description>Magnetic field strength</description>
+			</parameter>
+			<parameter uid="7">
+				<name>Dip</name>
+				<description>Magnetic dip angle</description>
+			</parameter>
+			<parameter uid="8">
+				<name>Decl</name>
+				<description>Magnetic field dip azimuth</description>
+			</parameter>
+			<parameter uid="9">
+				<name>Z</name>
+				<description>Vertical depth</description>
+			</parameter>
+			<function uid="a">
+				<name>cos</name>
+				<description>Cosine of angle</description>
+			</function>
+			<function uid="b">
+				<name>sin</name>
+				<description>Cosine of angle</description>
+			</function>
+			<function uid="c">
+				<name>tan</name>
+				<description>Tangent of angle</description>
+			</function>
+			<function uid="d">
+				<name>arctan</name>
+				<description>Inverse tangent</description>
+			</function>
+			<function uid="e">
+				<name>cot</name>
+				<description>Cotangent</description>
+			</function>
+		</nomenclature>
+		<errorTerm uid="MDI">
+			<name>MDI</name>
+			<type>magnetic</type>
+			<measureClass>plane angle</measureClass>
+			<label>Magnetic Dip</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-sin(I) * sin(Am) * (cos(I) - tan(Dip) * sin(I) * cos(Am)) /
+					(1 - sin(I)**2 * sin(Am)**2)</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MFI">
+			<name>MFI</name>
+			<type>magnetic</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>Magnetic Field</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-sin(I) * sin(Am) * (tan(Dip) * cos(I) + sin(I) * cos(Am)) /
+					(B * (1 - sin(I)**2 * sin(Am)**2))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DBH">
+			<name>DBH</name>
+			<type>magnetic</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>Declination DBH</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>1 / (B * cos(Dip))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DECL">
+			<name>DECL</name>
+			<type>magnetic</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>Declination AZ</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>1</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ABX">
+			<name>ABX</name>
+			<type>sensor</type>
+			<measureClass>acceleration linear</measureClass>
+			<label>X Accelerometer Bias</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(cos(I) * sin(Am) * sin(Tf) - cos(Am) * cos(Tf)) * tan(Dip) +
+					cot(I) * cos(Tf)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-cos(I) * sin(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ABY">
+			<name>ABY</name>
+			<type>sensor</type>
+			<measureClass>acceleration linear</measureClass>
+			<label>Y Accelerometer Bias</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(cos(I) * sin(Am) * cos(Tf) + cos(Am) * sin(Tf)) * tan(Dip) -
+					cot(I) * sin(Tf)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-cos(I) * cos(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ABZ">
+			<name>ABZ</name>
+			<type>sensor</type>
+			<measureClass>acceleration linear</measureClass>
+			<label>Z Accelerometer Bias</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>tan(Dip) * sin(I) * sin(Am) / G</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-sin(I) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ASX">
+			<name>ASX</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>X Accelerometer Scale</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(tan(Dip) * sin(I) * (cos(I) * sin(Am) * sin(Tf) - cos(Am) *
+					cos(Tf)) + cos(I) * cos(Tf)) * sin(Tf)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>cos(I) * sin(I) * sin(Tf) ** 2</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ASY">
+			<name>ASY</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Y Accelerometer Scale</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(tan(Dip) * sin(I) * (cos(I) * sin(Am) * cos(Tf) + cos(Am) *
+					sin(Tf)) - cos(I) * sin(Tf)) * cos(Tf)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>cos(I) * sin(I) * cos(Tf) * cos(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ASZ">
+			<name>ASZ</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Z Accelerometer Scale</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>tan(Dip) * sin(I) * cos(I) * sin(Am)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-sin(I) * cos(I)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ABIX">
+			<name>ABIX</name>
+			<type>sensor</type>
+			<measureClass>acceleration linear</measureClass>
+			<label>X Accelerometer Bias - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(sin(I) * cos(I) ** 2 * sin(Am) * sin(Tf) * (tan(Dip) * cos(I)
+					+ sin(I) * cos(Am)) - cos(Tf) * (tan(Dip) * cos(Am) - cot(I)) ) /
+					(G * (1 - sin(I)**2 * sin(Am)**2))</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-cos(I) * sin(Tf) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ABIY">
+			<name>ABIY</name>
+			<type>sensor</type>
+			<measureClass>acceleration linear</measureClass>
+			<label>Y Accelerometer Bias - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(sin(I) * cos(I) * cos(I) * sin(Am) * cos(Tf) * (tan(Dip) *
+					cos(I) + sin(I) * cos(Am)) + sin(Tf) * (tan(Dip) * cos(Am) -
+					cot(I)) ) / (G * (1 - sin(I)**2 * sin(Am)**2)) </azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-cos(I) * cos(Tf) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ABIZ">
+			<name>ABIZ</name>
+			<type>sensor</type>
+			<measureClass>acceleration linear</measureClass>
+			<label>Z Accelerometer Bias - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(sin(I) * cos(I) * sin(Am) * (tan(Dip) * cos(I) + sin(I) *
+					cos(Am))) / (G * (1 - sin(I)**2 * sin(Am)**2))</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-sin(I) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ASIX">
+			<name>ASIX</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>X Accelerometer Scale - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-sin(Tf) * (sin(I) * cos(I) * cos(I) * sin(Am) * sin(Tf) *
+					(tan(Dip) * cos(I) + sin(I) * cos(Am)) - cos(Tf) * (tan(Dip) *
+					sin(I) * cos(Am) - cos(I))) / (1 - sin(I)**2 * sin(Am)**2)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>sin(I) * cos(I) * sin(Tf) * sin(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ASIY">
+			<name>ASIY</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Y Accelerometer Scale - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-sin(Tf) * (sin(I) * cos(I) * cos(I) * sin(Am) * sin(Tf) *
+					(tan(Dip) * cos(I) + sin(I) * cos(Am)) - cos(Tf) * (tan(Dip) *
+					sin(I) * cos(Am) - cos(I)) / (1 - sin(I)**2 * sin(Am)**2)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>sin(I) * cos(I) * cos(Tf) * cos(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="ASIZ">
+			<name>ASIZ</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Z Accelerometer Scale - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>cos(I) * (sin(I) * cos(I) * sin(Am) * (tan(Dip) * cos(I) +
+					sin(I) * cos(Am))) / (1 - sin(I)**2 * sin(Am)**2)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>-sin(I) * cos(I)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MBX">
+			<name>MBX</name>
+			<type>sensor</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>X Magnetometer Bias</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(cos(Am) * cos(Tf) - cos(I) * sin(Am) * sin(Tf)) / (B *
+					cos(Dip))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MBY">
+			<name>MBY</name>
+			<type>sensor</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>Y Magnetometer Bias</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(Am) * sin(Tf) + cos(I) * sin(Am) * cos(Tf)) / (B *
+					cos(Dip))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MBZ">
+			<name>MBZ</name>
+			<type>sensor</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>Z Magnetometer Bias</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-sin(I) * sin(Am) / (B * cos(Dip))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MSX">
+			<name>MSX</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>X Magnetometer Scale</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>(cos(I) * cos(Am) * sin(Tf) - tan(Dip) * sin(I) * sin(Tf) +
+					sin(Am) * cos(Tf)) * (cos(Am) * cos(Tf) - cos(I) * sin(Am) *
+					sin(Tf))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MSY">
+			<name>MSY</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Y Magnetometer Scale</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(I) * cos(Am) * cos(Tf) - tan(Dip) * sin(I) * cos(Tf) -
+					sin(Am) * sin(Tf)) * (cos(Am) * sin(Tf) + cos(I) * sin(Am) *
+					cos(Tf))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MSZ">
+			<name>MSZ</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Z Magnetometer Scale</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(I) * cos(Am) * cos(Tf) - tan(Dip) * sin(I) * cos(Tf) -
+					sin(Am) * sin(Tf)) * (cos(Am) * sin(Tf) + cos(I) * sin(Am) *
+					cos(Tf))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MBIX">
+			<name>MBIX</name>
+			<type>sensor</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>X Magnetometer Bias - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(I) * sin(Am) * sin(Tf) - cos(Am) * cos(Tf)) / (B *
+					cos(Dip) * (1 - sin(I)**2 * sin(Am)**2))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MBIY">
+			<name>MBIY</name>
+			<type>sensor</type>
+			<measureClass>magnetic field strength</measureClass>
+			<label>Y Magnetometer Bias - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(I) * sin(Am) * cos(Tf) + cos(Am) * sin(Tf)) / (B *
+					cos(Dip) * (1 - sin(I)**2 * sin(Am)**2))</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MSIX">
+			<name>MSIX</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>X Magnetometer Scale - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(I) * cos(Am) * sin(Tf) - tan(Dip) * sin(I) * sin(Tf) +
+					sin(Am) * cos(Tf)) * (cos(I) * sin(Am) * sin(Tf) - cos(Am) *
+					cos(Tf)) / (1 - sin(I)**2 * sin(Am)**2)</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MSIY">
+			<name>MSIY</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>Y Magnetometer Scale - Axial Interference Corrected</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>-(cos(I) * cos(Am) * cos(Tf) - tan(Dip) * sin(I) * cos(Tf) -
+					sin(Am) * sin(Tf)) * (cos(I) * sin(Am) * cos(Tf) + cos(Am) *
+					sin(Tf)) / (1 - sin(I)**2 * sin(Am)**2)</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="SAG">
+			<name>SAG</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>BHA Sag</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<inc>sin(I)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MX">
+			<name>MX</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>Misalignment (Lateral error)</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="azi">
+				<azi>-cos(Tf) / sin(I)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="1">
+				<inc> sin(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="MY">
+			<name>MY</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>Misalignment (Highside effect)</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="azi">
+				<azi>sin(Tf) / sin(I)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="1">
+				<inc>cos(Tf)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="AXINT">
+			<name>AXINT</name>
+			<type>magnetic</type>
+			<measureClass>plane angle</measureClass>
+			<label>Axial Magnetic Interferenc (AZ)</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>1</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="AMID">
+			<name>AMID</name>
+			<type>magnetic</type>
+			<measureClass>plane angle</measureClass>
+			<label>Axial Magnetic Interferenc (AMID)</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<azi>sin(I) * sin(Am)</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DREF">
+			<name>DREF</name>
+			<type>depth</type>
+			<measureClass>length</measureClass>
+			<label>Depth Reference</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<depth>1</depth>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DSF">
+			<name>DSF</name>
+			<type>depth</type>
+			<!-- no measureClass = unitless -->
+			<label>Depth Scale Factor</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<depth>D</depth>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DST">
+			<name>DST</name>
+			<type>depth</type>
+			<measureClass>length</measureClass>
+			<label>Depth Stretch</label>
+			<description>Some more words here</description>
+			<errorCoefficient uid="1">
+				<depth>D * Z</depth>
+			</errorCoefficient>
+		</errorTerm>
+	</toolErrorTermSet>
+	<toolErrorTermSet uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx2">
+		<name>SPE90408</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 90408</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+			<comment>Part of the nomenclature was copied from SPE 67616.</comment>
+		</authorization>
+		<nomenclature>
+			<parameter uid="1">
+				<name>D</name>
+				<description>Along hole depth.</description>
+			</parameter>
+			<parameter uid="2">
+				<name>I</name>
+				<description>Wellbore inclination</description>
+			</parameter>
+			<parameter uid="3">
+				<name>Am</name>
+				<description>Wellbore azimuth referenced to magnetic north</description>
+			</parameter>
+			<parameter uid="4">
+				<name>At</name>
+				<description>Wellbore azimuth referenced to true north</description>
+			</parameter>
+			<parameter uid="5">
+				<name>Tf</name>
+				<description>Toolface angle</description>
+			</parameter>
+			<parameter uid="6">
+				<name>B</name>
+				<description>Magnetic field strength</description>
+			</parameter>
+			<parameter uid="7">
+				<name>Dip</name>
+				<description>Magnetic dip angle</description>
+			</parameter>
+			<parameter uid="8">
+				<name>Decl</name>
+				<description>Magnetic field dip azimuth</description>
+			</parameter>
+			<parameter uid="9">
+				<name>Z</name>
+				<description>Vertical depth</description>
+			</parameter>
+			<parameter uid="10">
+				<name>K</name>
+				<description>Switching factor for some tools. Then K = 1 when I
+				greater-than-or-equal-to 90, K = -1 when I greater-than 90
+				This behaviour is determined from the errorModel "switching" value.
+				</description>
+			</parameter>
+			<parameter uid="12">
+				<name>NRF</name>
+				<description>Noise reduction factor at initialization.
+				This is the errorModel "noiseReductionFactor" value</description>
+			</parameter>
+			<parameter uid="13">
+				<name>Cant</name>
+				<description>Cant angle of tool. This is the errorModel "cantAngle" value</description>
+			</parameter>
+			<parameter uid="14">
+				<name>Lat</name>
+				<description>Latitude</description>
+			</parameter>
+			<parameter uid="15">
+				<name>W12</name>
+				<description>Misalignment weight for XYMIS1 and XYMIS2
+				Derived from errorModel "misalignmentMode" W12 = 1 when mode = 1, W12 = 0
+				when mode = 2 and W12 = sin(I) when mode = 3 </description>
+			</parameter>
+			<parameter uid="16">
+				<name>W34</name>
+				<description>Misalignment weight for XYMIS3 and XYMIS4
+				Derived from errorModel "misalignmentMode" W34 = 0 when mode = 1, W34 = 1
+				when mode = 2 and W34 = cos(I) when mode = 3.</description>
+			</parameter>
+			<parameter uid="17">
+				<name>L</name>
+				<description>Interval length</description>
+			</parameter>
+			<parameter uid="18">
+				<name>Ip</name>
+				<description>Inclination at previous station</description>
+			</parameter>
+			<parameter uid="19">
+				<name>Tp</name>
+				<description>Computed value of error coefficient at previous station</description>
+			</parameter>
+			<parameter uid="20">
+				<name>C</name>
+				<description>Running speed of continuous survey</description>
+			</parameter>
+			<function uid="a">
+				<name>cos</name>
+				<description>Cosine of angle</description>
+			</function>
+			<function uid="b">
+				<name>sin</name>
+				<description>Cosine of angle</description>
+			</function>
+			<function uid="c">
+				<name>tan</name>
+				<description>Tangent of angle</description>
+			</function>
+			<function uid="d">
+				<name>arctan</name>
+				<description>Inverse tangent</description>
+			</function>
+			<function uid="e">
+				<name>cot</name>
+				<description>Cotangent</description>
+			</function>
+			<constant uid="1">
+				<name>Erot</name>
+				<value>0.000072921158156</value>
+				<unit>rad/s</unit>
+				<description>Earth rotation rate</description>
+			</constant>
+		</nomenclature>
+		<errorTerm uid="XYZACCBIASXY">
+			<name>XYZACCBIASXY</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XYZ Accelerometers XY Bias</label>
+			<errorCoefficient uid="1">
+				<inc>cos(I) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYZACCBIASZ">
+			<name>XYZACCBIASZ</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XYZ Accelerometer Z Bias</label>
+			<errorCoefficient uid="1">
+				<inc>sin(I) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYZACCSF">
+			<name>XYZACCSF</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XYZ Accelerometer Scale Factor</label>
+			<errorCoefficient uid="1">
+				<inc>1.3 * sin(I) * cos(I)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYZACCMIS">
+			<name>XYZACCMIS</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XYZ Accelerometer Misalignment</label>
+			<errorCoefficient uid="1">
+				<inc>1.3 * sin(I) * cos(I)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYACCBIAS">
+			<name>XYACCBIAS</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Accelerometer Bias</label>
+			<errorCoefficient uid="1">
+				<inc>1 / (G * cos(1 - K * Cant))</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYACCSF">
+			<name>XYACCSF</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>XY Accelerometer Scale</label>
+			<errorCoefficient uid="1">
+				<inc>1</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYACCMIS">
+			<name>XYACCMIS</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Accelerometer Gravity Bias</label>
+			<errorCoefficient uid="1">
+				<inc>tan(1 - K * Cant)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYACCGBIAS">
+			<name>XYACCGBIAS</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Accelerometer Gravity Bias</label>
+			<errorCoefficient uid="1">
+				<inc>tan(1 - K * Cant) / G</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYACCBIAS">
+			<name>XYACCBIAS</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Accelerometer Bias</label>
+			<errorCoefficient uid="1">
+				<inc>1 / (G * tan(1 - K * Cant)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYACCSF">
+			<name>XYACCSF</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Accelerometer Scale Factor</label>
+			<errorCoefficient uid="1">
+				<inc>tan(1 - k * Cant)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYGYROBIAS1">
+			<name>XYGYROBIAS1</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro Bias 1</label>
+			<errorCoefficient uid="1">
+				<azi>sin(At) / (Erot * cos(Lat) * cos(I))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROBIAS2">
+			<name>XYGYROBIAS2</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro Bias 2</label>
+			<errorCoefficient uid="1">
+				<azi>cos(At) / (Erot * cos(Lat))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYRONOISE">
+			<name>XYGYRONOISE</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro Random Noise</label>
+			<errorCoefficient uid="1">
+				<azi>f * (sqrt(1 - cos(At)**2 * sin(I) ** 2) / (Erot * cos(Lat) *
+					cos(I)))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROGDEP1">
+			<name>XYGYROGDEP1</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro g-dept error 1</label>
+			<errorCoefficient uid="1">
+				<azi>(cos(At) * sin(I)) / (Erot * cos(Lat)))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROGDEP2">
+			<name>XYGYROGDEP2</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro g-dept error 2</label>
+			<errorCoefficient uid="1">
+				<azi>(cos(At) * cos(I)) / (Erot * cos(Lat)))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROGDEP3">
+			<name>XYGYROGDEP3</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro g-dept error 3</label>
+			<errorCoefficient uid="1">
+				<azi>sin(At) / (Erot * cos(Lat)))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROGDEP4">
+			<name>XYGYROGDEP4</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro g-dept error 4</label>
+			<errorCoefficient uid="1">
+				<azi>(sin(At) * tan(I)) / (Erot * cos(Lat)))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROSF">
+			<name>XYGYROSF</name>
+			<type>sensor</type>
+			<!-- no measureClass = unitless -->
+			<label>XY Gyro Scale Factor</label>
+			<errorCoefficient uid="1">
+				<azi>tan(Lat) * sin(At) * tan(I)</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYROMIS">
+			<name>XYGYROMIS</name>
+			<type>sensor</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Gyro Scale Factor</label>
+			<errorCoefficient uid="1">
+				<azi>1 / (cos(Lat) * cos(I))</azi>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+		</errorTerm>
+		<errorTerm uid="XYGYRODRIFT">
+			<name>XYGYRODRIFT</name>
+			<type>sensor</type>
+			<measureClass>angle per time</measureClass>
+			<label>XY Gyro Drift</label>
+			<errorCoefficient uid="1">
+				<azi>Tp + (1 / sin((Ip + I) / 2)) * (L / C)</azi>
+			</errorCoefficient>
+			<operatingMode>continuous XY</operatingMode>
+		</errorTerm>
+		<errorTerm uid="EXTREF">
+			<name>EXTREF</name>
+			<type>reference</type>
+			<measureClass>plane angle</measureClass>
+			<label>External reference error</label>
+			<description>Azimuth reference by fore-sighting or tie-on to an existing survey.
+			For the latter case, the external reference error has to be propagated
+			systematically across the existing and new surveys.</description>
+			<errorCoefficient uid="1">
+				<azi>1</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="RDMTIE">
+			<name>RDMTIE</name>
+			<type>reference</type>
+			<measureClass>plane angle</measureClass>
+			<label>Unmodelled random azimuth in tie-on tool</label>
+			<errorCoefficient uid="1">
+				<azi>1</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="TIEMIS">
+			<name>TIEMIS</name>
+			<type>reference</type>
+			<measureClass>plane angle</measureClass>
+			<label>Misalignment effect at tie-on</label>
+			<errorCoefficient uid="1">
+				<azi>1 / sin(I)</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DRAND">
+			<name>DRAND</name>
+			<type>depth</type>
+			<measureClass>length</measureClass>
+			<label>Depth Random Error</label>
+			<errorCoefficient uid="1">
+				<depth>1</depth>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DSYST">
+			<name>DSYST</name>
+			<type>depth</type>
+			<measureClass>length</measureClass>
+			<label>Depth Systematic Reference</label>
+			<errorCoefficient uid="1">
+				<tvd>1</tvd>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DSCALE">
+			<name>DSCALE</name>
+			<type>depth</type>
+			<measureClass>length</measureClass>
+			<label>Depth Scale</label>
+			<errorCoefficient uid="1">
+				<depth>L</depth>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="DSTRETCH">
+			<name>DSTRETCH</name>
+			<type>depth</type>
+			<measureClass>length</measureClass>
+			<label>Depth Scale</label>
+			<errorCoefficient uid="1">
+				<depth>(Z + D * cos(I)) * L</depth>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYMIS1">
+			<name>XYMIS1</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Misalignment 1</label>
+			<errorCoefficient uid="1">
+				<inc>W12</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYMIS2">
+			<name>XYMIS2</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Misalignment 2</label>
+			<errorCoefficient uid="1">
+				<azi>-W12 / sin(I)</azi>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYMIS3">
+			<name>XYMIS3</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Misalignment 3</label>
+			<errorCoefficient uid="1">
+				<azi>-W34 * sin(At) / sin(I)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>W34 * cos(At)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="XYMIS4">
+			<name>XYMIS4</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Misalignment 4</label>
+			<errorCoefficient uid="1">
+				<azi>W34 * cos(At) / sin(I)</azi>
+			</errorCoefficient>
+			<errorCoefficient uid="2">
+				<inc>W34 * sin(At)</inc>
+			</errorCoefficient>
+		</errorTerm>
+		<errorTerm uid="VSAG">
+			<name>VSAG</name>
+			<type>misalignment</type>
+			<measureClass>plane angle</measureClass>
+			<label>XY Misalignment 4</label>
+			<errorCoefficient uid="1">
+				<inc>sin(I)</inc>
+			</errorCoefficient>
+		</errorTerm>
+	</toolErrorTermSet>
+	<toolErrorTermSet uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx3">
+		<name>Large Oil Co Rev 1</name>
+		<authorization>
+			<author>Dr Ed O'Research</author>
+			<source>Large Oil Co Internal</source>
+			<authority>ISCWSA</authority>
+			<status>authorized</status>
+			<version>1.1</version>
+		</authorization>
+		<nomenclature>
+			<parameter uid="1">
+				<name>Am</name>
+				<description>Wellbore azimuth referenced to magnetic north</description>
+			</parameter>
+			<function uid="1">
+				<name>cos</name>
+				<description>Cosine of angle</description>
+			</function>
+		</nomenclature>
+		<errorTerm uid="FUD">
+			<name>FUD</name>
+			<type>magnetic</type>
+			<measureClass>plane angle</measureClass>
+			<label>Fear, Uncertainty and Doubt</label>
+			<description>Some additional peril arising from a sense of generalparanoia</description>
+			<errorCoefficient uid="1">
+				<inc>cos(Am)</inc>
+			</errorCoefficient>
+			<operatingMode>stationary</operatingMode>
+			<operatingMode>continuous Z</operatingMode>
+		</errorTerm>
+	</toolErrorTermSet>
+</toolErrorTermSets>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--   		Example of CRS data 		-->
+<coordinateReferenceSystems 
+	xmlns="http://www.witsml.org/schemas/1series" 	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/1series  ../xsd_schemas/obj_coordinateReferenceSystem.xsd" 
+	version="1.4.1.1">
+
+<!-- 
+These examples are only intended to demonstrate the type of data that can be exchanged.
+They totally artificial and are not intended to demonstrate best practices. 
+-->
+	<documentInfo>
+		<documentName>Coordinate Reference System example</documentName>
+		<fileCreationInformation>
+			<fileCreationDate>2001-10-31T08:15:00.000Z</fileCreationDate> 
+			<fileCreator>John Smith</fileCreator>
+		</fileCreationInformation>
+	</documentInfo>
+	<coordinateReferenceSystem uid="crs4230">
+		<name>ED50</name>
+		<geodeticCRS>
+			<nameCRS namingSystem="EPSG68" code="4230">European Datum 1950</nameCRS>
+		</geodeticCRS>
+	</coordinateReferenceSystem>
+	<coordinateReferenceSystem uid="crs23031">
+		<name>ED50 / UTM Zone 31N</name>
+		<projectedCRS>
+			<nameCRS namingSystem="EPSG68" code="23031">ED50 / UTM Zone 31N</nameCRS>
+		</projectedCRS>
+	</coordinateReferenceSystem>
+	<coordinateReferenceSystem uid="crs5701">
+		<name>Newlyn</name>
+		<verticalCRS>
+			<nameCRS namingSystem="EPSG68" code="5701">Newlyn</nameCRS>
+		</verticalCRS>
+	</coordinateReferenceSystem>
+	<coordinateReferenceSystem uid="crs4230-alternate">
+		<name>ED50</name>
+		<geodeticCRS>
+			<gml:GeodeticCRS gml:id="EPSG4230" 
+				xmlns:gml="http://www.opengis.net/gml/3.2" 
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://www.opengis.net/gml/3.2	
+					http://schemas.opengis.net/gml/3.2.1/coordinateReferenceSystems.xsd">
+				<gml:identifier codeSpace="urn:ogc:def:crs:EPSG::4230">4230</gml:identifier>
+				<gml:name codeSpace="EPSG name">ED50</gml:name>
+				<gml:scope>Geodetic survey.</gml:scope>
+				<gml:ellipsoidalCS>
+					<gml:EllipsoidalCS gml:id="EPSG6422">
+						<gml:identifier codeSpace="urn:ogc:def:cs:EPSG::6422">6422</gml:identifier>
+						<gml:name codeSpace="EPSG name">Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east.  UoM: deg</gml:name>
+						<gml:name>Latitude, Longitude in degrees</gml:name>
+						<gml:usesAxis>
+							<gml:CoordinateSystemAxis gml:id="EPSG99016422N" uom="dega">
+								<gml:identifier codeSpace="urn:ogc:def:axis:EPSG::9901">9901</gml:identifier>
+								<gml:name>Geodetic latitude</gml:name>
+								<gml:axisAbbrev>Lat</gml:axisAbbrev>
+								<gml:axisDirection codeSpace="ogc">north</gml:axisDirection>
+							</gml:CoordinateSystemAxis>
+						</gml:usesAxis>
+						<gml:usesAxis>
+							<gml:CoordinateSystemAxis gml:id="EPSG99026422E" uom="dega">
+								<gml:identifier codeSpace="urn:ogc:def:axis:EPSG::9902">9902</gml:identifier>
+								<gml:name>Geodetic longitude</gml:name>
+								<gml:axisAbbrev>Lon</gml:axisAbbrev>
+								<gml:axisDirection codeSpace="ogc">east</gml:axisDirection>
+							</gml:CoordinateSystemAxis>
+						</gml:usesAxis>
+					</gml:EllipsoidalCS>
+				</gml:ellipsoidalCS>
+				<gml:usesGeodeticDatum>
+					<gml:GeodeticDatum gml:id="EPSG6230">
+						<gml:identifier codeSpace="urn:ogc:def:datum:EPSG::6230">6230</gml:identifier>
+						<gml:name codeSpace="EPSG name">European Datum 1950</gml:name>
+						<gml:name codeSpace="EPSG abbreviation">ED50</gml:name>
+						<gml:scope>Topographic mapping, geodetic survey.</gml:scope>
+						<gml:anchorPoint>Fundamental Point: Potsdam (Helmert Tower). Latitude: 52 deg 22 min 51.4456 sec N; Longitude: 13 deg  3 min 58.9283 sec E (of Greenwich).</gml:anchorPoint>
+						<gml:usesPrimeMeridian>
+							<gml:PrimeMeridian gml:id="EPSG8901">
+								<gml:identifier codeSpace="urn:ogc:def:meridian:EPSG:6.2:8901">8901</gml:identifier>
+								<gml:name codeSpace="EPSG name">Greenwich</gml:name>
+								<gml:greenwichLongitude uom="dega">0.000000</gml:greenwichLongitude>
+							</gml:PrimeMeridian>
+						</gml:usesPrimeMeridian>
+						<gml:usesEllipsoid>
+							<gml:Ellipsoid gml:id="EPSG7022">
+								<gml:description>Remarks: Adopted by IUGG 1924 in Madrid. Based on Hayford 1909/1910 figures. </gml:description>
+								<gml:identifier codeSpace="urn:ogc:def:ellipsoid:EPSG::">7022</gml:identifier>
+								<gml:name codeSpace="EPSG name">International 1924</gml:name>
+								<gml:name codeSpace="EPSG alias">Hayford 1909</gml:name>
+								<gml:semiMajorAxis uom="m">6378388</gml:semiMajorAxis>
+								<gml:secondDefiningParameter>
+									<gml:SecondDefiningParameter>
+										<gml:inverseFlattening uom="Euc">297</gml:inverseFlattening>
+									</gml:SecondDefiningParameter>
+								</gml:secondDefiningParameter>
+							</gml:Ellipsoid>
+						</gml:usesEllipsoid>
+					</gml:GeodeticDatum>
+				</gml:usesGeodeticDatum>
+			</gml:GeodeticCRS>
+		</geodeticCRS>
+	</coordinateReferenceSystem>
+	<coordinateReferenceSystem uid="crs23031">
+		<name>ED50 / UTM Zone 31N</name>
+		<projectedCRS>
+			<gml:ProjectedCRS  gml:id="EPSG23031" 
+				xmlns:gml="http://www.opengis.net/gml/3.2" 
+				xsi:schemaLocation="http://www.opengis.net/gml/3.2	
+					http://schemas.opengis.net/gml/3.2.1/coordinateReferenceSystems.xsd">
+				<gml:identifier codeSpace="urn:ogc:def:crs:EPSG::23031">23031</gml:identifier>
+				<gml:name codeSpace="EPSG name">ED50 / UTM zone 31N</gml:name>
+				<gml:scope>Large and medium scale topographic mapping and engineering survey.</gml:scope>
+				<gml:definedByConversion>
+					<gml:Conversion gml:id="EPSG16031">
+						<gml:identifier codeSpace="urn:ogc:def:coordinateOperation:EPSG::16031">16031</gml:identifier>
+						<gml:name codeSpace="EPSG name">UTM zone 31N</gml:name>
+						<gml:scope>Large and medium scale topographic mapping and engineering survey.</gml:scope>
+						<gml:usesMethod>
+							<gml:OperationMethod gml:id="EPSG9807">
+								<gml:identifier codeSpace="urn:ogc:def:method:EPSG::9807">9807</gml:identifier>
+								<gml:name codeSpace="EPSG name">Transverse Mercator</gml:name>
+								<gml:methodFormula>See EPSG guidance note 7</gml:methodFormula>
+								<gml:sourceDimensions>2</gml:sourceDimensions>
+								<gml:targetDimensions>2</gml:targetDimensions>
+								<gml:usesParameter>
+									<gml:OperationParameter gml:id="EPSG8801">
+										<gml:description>The latitude of the point from which the values of both the geographical coordinates on the ellipsoid and the grid coordinates on the projection are deemed to increment or decrement for computational purposes. Alternatively it may be considered as the latitude of the point which in the absence of application of false coordinates has grid coordinates of (0,0).</gml:description>
+										<gml:identifier codeSpace="urn:ogc:def:parameter:EPSG:6.2:9807">9807</gml:identifier>
+										<gml:name codeSpace="EPSG name">Latitude of natural origin</gml:name>
+			  
+									</gml:OperationParameter>
+								</gml:usesParameter>
+								<gml:usesParameter>
+									<gml:OperationParameter gml:id="EPSG8802">
+										<gml:description>The longitude of the point from which the values of both the geographical coordinates on the ellipsoid and the grid coordinates on the projection are deemed to increment or decrement for computational purposes. Alternatively it may be considered as the longitude of the point which in the absence of application of false coordinates has grid coordinates of (0,0). Sometimes known as central meridian (CM).</gml:description>
+										<gml:identifier codeSpace="urn:ogc:def:parameter:EPSG:6.2:8802">8802</gml:identifier>
+										<gml:name codeSpace="EPSG name">Longitude of natural origin</gml:name>
+			  
+									</gml:OperationParameter>
+								</gml:usesParameter>
+								<gml:usesParameter>
+									<gml:OperationParameter gml:id="EPSG8805">
+										<gml:description>The factor by which the map grid is reduced or enlarged during the projection process, defined by its value at the natural origin.</gml:description>
+										<gml:identifier codeSpace="urn:ogc:def:parameter:EPSG:6.2:8805">8805</gml:identifier>
+										<gml:name codeSpace="EPSG name">Scale factor at natural origin</gml:name>
+									</gml:OperationParameter>
+								</gml:usesParameter>
+								<gml:usesParameter>
+									<gml:OperationParameter gml:id="EPSG8806">
+										<gml:description>Since the natural origin may be at or near the centre of the projection and under normal coordinate circumstances would thus give rise to negative coordinates over parts of the mapped area, this origin is usually given false coordinates which are large en</gml:description>
+										<gml:identifier codeSpace="urn:ogc:def:parameter:EPSG:6.2:8806">8806</gml:identifier>
+										<gml:name codeSpace="EPSG name">False easting</gml:name>
+			  
+									</gml:OperationParameter>
+								</gml:usesParameter>
+								<gml:usesParameter>
+									<gml:OperationParameter gml:id="EPSG8807">
+										<gml:description>Since the natural origin may be at or near the centre of the projection and under normal coordinate circumstances would thus give rise to negative coordinates over parts of the mapped area, this origin is usually given false coordinates which are large en</gml:description>
+										<gml:identifier codeSpace="urn:ogc:def:parameter:EPSG:6.2:8807">8807</gml:identifier>
+										<gml:name codeSpace="EPSG name">False northing</gml:name>
+			  
+									</gml:OperationParameter>
+								</gml:usesParameter>
+							</gml:OperationMethod>
+						</gml:usesMethod>
+						<gml:usesValue>
+							<gml:ParameterValue>
+								<gml:value uom="dega">0</gml:value>
+								<gml:valueOfParameter xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Latitude of natural origin" xlink:href="urn:ogc:def:parameter:EPSG::8801"/>
+					
+							</gml:ParameterValue>
+						</gml:usesValue>
+						<gml:usesValue>
+							<gml:ParameterValue>
+								<gml:value uom="dega">3</gml:value>
+								<gml:valueOfParameter xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Longitude of natural origin" xlink:href="urn:ogc:def:parameter:EPSG::8802"/>
+							</gml:ParameterValue>
+						</gml:usesValue>
+						<gml:usesValue>
+							<gml:ParameterValue>
+								<gml:value uom="Euc">0.9996</gml:value>
+								<gml:valueOfParameter xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Scale factor at natural origin" xlink:href="urn:ogc:def:parameter:EPSG::8805"/>
+							</gml:ParameterValue>
+						</gml:usesValue>
+						<gml:usesValue>
+							<gml:ParameterValue>
+								<gml:value uom="m">500000</gml:value>
+								<gml:valueOfParameter xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="False easting" xlink:href="urn:ogc:def:parameter:EPSG::8806"/>
+							</gml:ParameterValue>
+						</gml:usesValue>
+						<gml:usesValue>
+							<gml:ParameterValue>
+								<gml:value uom="m">0</gml:value>
+								<gml:valueOfParameter xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="False northing" xlink:href="urn:ogc:def:parameter:EPSG::8807"/>
+							</gml:ParameterValue>
+						</gml:usesValue>
+					</gml:Conversion>
+				</gml:definedByConversion>
+				<gml:baseGeographicCRS>
+					<gml:GeographicCRS gml:id="EPSG4230-2">
+						<gml:identifier codeSpace="urn:ogc:def:crs:EPSG::4230">4230</gml:identifier>
+						<gml:name codeSpace="EPSG name">ED50</gml:name>
+						<gml:scope>Geodetic survey.</gml:scope>
+						<gml:usesEllipsoidalCS>
+							<gml:EllipsoidalCS gml:id="EPSG6422-2">
+								<gml:identifier codeSpace="urn:ogc:def:cs:EPSG::6422">6422</gml:identifier>
+								<gml:name codeSpace="EPSG name">Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east.  UoM: deg</gml:name>
+								<gml:name>Latitude, Longitude in degrees</gml:name>
+								<gml:usesAxis>
+									<gml:CoordinateSystemAxis gml:id="EPSG99016422N-2" uom="dega">
+										<gml:identifier codeSpace="urn:ogc:def:axis:EPSG::9901">9901</gml:identifier>
+										<gml:name>Geodetic latitude</gml:name>
+										<gml:axisAbbrev>Lat</gml:axisAbbrev>
+										<gml:axisDirection codeSpace="ogc">north</gml:axisDirection>
+									</gml:CoordinateSystemAxis>
+								</gml:usesAxis>
+								<gml:usesAxis>
+									<gml:CoordinateSystemAxis gml:id="EPSG99026422E-2" uom="dega">
+										<gml:identifier codeSpace="urn:ogc:def:axis:EPSG::9902">9902</gml:identifier>
+										<gml:name>Geodetic longitude</gml:name>
+										<gml:axisAbbrev>Lon</gml:axisAbbrev>
+										<gml:axisDirection codeSpace="ogc">east</gml:axisDirection>
+									</gml:CoordinateSystemAxis>
+								</gml:usesAxis>
+							</gml:EllipsoidalCS>
+						</gml:usesEllipsoidalCS>
+						<gml:usesGeodeticDatum>
+							<gml:GeodeticDatum gml:id="EPSG6230-2">
+								<gml:identifier codeSpace="urn:ogc:def:datum:EPSG::6230">6230</gml:identifier>
+								<gml:name codeSpace="EPSG name">European Datum 1950</gml:name>
+								<gml:name codeSpace="EPSG abbreviation">ED50</gml:name>
+								<gml:scope>Topographic mapping, geodetic survey.</gml:scope>
+								<gml:anchorPoint>Fundamental Point: Potsdam (Helmert Tower). Latitude: 52 deg 22 min 51.4456 sec N; Longitude: 13 deg  3 min 58.9283 sec E (of Greenwich).</gml:anchorPoint>
+								<gml:usesPrimeMeridian>
+									<gml:PrimeMeridian gml:id="EPSG8901-2">
+										<gml:identifier codeSpace="urn:ogc:def:meridian:EPSG:6.2:8901">8901</gml:identifier>
+										<gml:name codeSpace="EPSG name">Greenwich</gml:name>
+										<gml:greenwichLongitude uom="dega">0.000000</gml:greenwichLongitude>
+									</gml:PrimeMeridian>
+								</gml:usesPrimeMeridian>
+								<gml:usesEllipsoid>
+									<gml:Ellipsoid gml:id="EPSG7022-2">
+										<gml:description>Remarks: Adopted by IUGG 1924 in Madrid. Based on Hayford 1909/1910 figures. </gml:description>
+										<gml:identifier codeSpace="urn:ogc:def:ellipsoid:EPSG::">7022</gml:identifier>
+										<gml:name codeSpace="EPSG name">International 1924</gml:name>
+										<gml:name codeSpace="EPSG alias">Hayford 1909</gml:name>
+										<gml:semiMajorAxis uom="m">6378388</gml:semiMajorAxis>
+										<gml:secondDefiningParameter>
+											<gml:SecondDefiningParameter>
+												<gml:inverseFlattening uom="Euc">297</gml:inverseFlattening>
+											</gml:SecondDefiningParameter>
+										</gml:secondDefiningParameter>
+									</gml:Ellipsoid>
+								</gml:usesEllipsoid>
+							</gml:GeodeticDatum>
+						</gml:usesGeodeticDatum>
+					</gml:GeographicCRS>
+				</gml:baseGeographicCRS>
+				<gml:usesCartesianCS>
+					<gml:CartesianCS gml:id="EPSG4400">
+						<gml:identifier codeSpace="urn:ogc:def:cs:EPSG::4400">4400</gml:identifier>
+						<gml:name codeSpace="EPSG name">"Cartesian 2D CS.  Axes: easting, northing (E,N). Orientations: east, north.  UoM: m."</gml:name>
+						<gml:usesAxis>
+							<gml:CoordinateSystemAxis gml:id="EPSG4400Em" uom="m">
+								<gml:identifier codeSpace="urn:ogc:def:axis:EPSG::9906">9906</gml:identifier>
+								<gml:name>easting</gml:name>
+								<gml:axisAbbrev>E</gml:axisAbbrev>
+								<gml:axisDirection codeSpace="EPSG">east</gml:axisDirection>
+							</gml:CoordinateSystemAxis>
+						</gml:usesAxis>
+						<gml:usesAxis>
+							<gml:CoordinateSystemAxis gml:id="EPSG4400Nm" uom="m">
+								<gml:identifier codeSpace="urn:ogc:def:axis:EPSG::9907">9907</gml:identifier>
+								<gml:name>northing</gml:name>
+								<gml:axisAbbrev>N</gml:axisAbbrev>
+								<gml:axisDirection codeSpace="EPSG">north</gml:axisDirection>
+							</gml:CoordinateSystemAxis>
+						</gml:usesAxis>
+					</gml:CartesianCS>
+				</gml:usesCartesianCS>
+			</gml:ProjectedCRS>
+		</projectedCRS>
+	</coordinateReferenceSystem>
+</coordinateReferenceSystems>
+			

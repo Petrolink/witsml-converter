@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolErrorModels 
+	xmlns="http://www.witsml.org/schemas/1series"
+	xmlns:witsml="http://www.witsml.org/schemas/1series" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.witsml.org/schemas/1series ../xsd_schemas/obj_toolErrorModel.xsd"
+	version="1.4.1.1">
+	<toolErrorModel uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx10">
+		<name>ISCWSA Basic MWD</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 67616</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+		</authorization>
+		<operatingCondition uid="1">
+			<parameter>axialMagneticCorrection</parameter>
+			<value>false</value>
+		</operatingCondition>
+		<useErrorTermSet uidRef="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1">SPE67616</useErrorTermSet>
+		<errorTermValue uid="ABX">
+			<term uidRef="ABX">ABX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABZ">
+			<term uidRef="ABZ">ABZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="ASX">
+			<term uidRef="ASX">ASX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASY">
+			<term uidRef="ASY">ASY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASZ">
+			<term uidRef="ASZ">ASZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MBX">
+			<term uidRef="MBX">MBX</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+		<errorTermValue uid="MBY">
+			<term uidRef="MBY">MBY</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+		<errorTermValue uid="MBZ">
+			<term uidRef="MBZ">MBZ</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MSX">
+			<term uidRef="MSX">MSX</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+		<errorTermValue uid="MSY">
+			<term uidRef="MSY">MSY</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+		<errorTermValue uid="MSZ">
+			<term uidRef="MSZ">MSZ</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+
+		<errorTermValue uid="SAG">
+			<term uidRef="SAG">SAG</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MX">
+			<term uidRef="MX">MX</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MY">
+			<term uidRef="MY">MY</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="AXI">
+			<term uidRef="AXI">AXI</term>
+			<prop>S</prop>
+			<value uom="dega">0.25</value>
+		</errorTermValue>
+		<errorTermValue uid="AMID">
+			<term uidRef="AMID">AMID</term>
+			<prop>S</prop>
+			<value uom="dega">0.6</value>
+		</errorTermValue>
+		<errorTermValue uid="DECL">
+			<term uidRef="DECL">DECL</term>
+			<prop>S</prop>
+			<value uom="dega">0.25</value>
+		</errorTermValue>
+
+
+		<errorTermValue uid="DBH">
+			<term uidRef="DBH">DBH</term>
+			<prop>S</prop>
+			<value uom="nT">5000</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DREF">
+			<term uidRef="DREF">DREF</term>
+			<prop>S</prop>
+			<value uom="m">0.35</value>
+		</errorTermValue>
+		<errorTermValue uid="DSF">
+			<term uidRef="DSF">DSF</term>
+			<prop>S</prop>
+			<value>2.4E-4</value>
+		</errorTermValue>
+		<errorTermValue uid="DST">
+			<term uidRef="DST">DST</term>
+			<prop>S</prop>
+			<value uom="m">2.2E-7</value>
+		</errorTermValue>
+	</toolErrorModel>
+	<toolErrorModel uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx11">
+		<name>ISCWSA Basic MWD / Bias Modelling</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 67616</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+		</authorization>
+		<operatingCondition uid="1">
+			<parameter>axialMagneticCorrection</parameter>
+			<value>false</value>
+		</operatingCondition>
+
+		<useErrorTermSet uidRef="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1">SPE67616</useErrorTermSet>
+
+		<errorTermValue uid="ABX">
+			<term uidRef="ABX">ABX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABY">
+			<term uidRef="ABY">ABY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABZ">
+			<term uidRef="ABZ">ABZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="ASX">
+			<term uidRef="ASX">ASX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASY">
+			<term uidRef="ASY">ASY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="MBZ">
+			<term uidRef="MBZ">MBZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MBX">
+			<term uidRef="MBX">MBX</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+		<errorTermValue uid="MBY">
+			<term uidRef="MBY">MBY</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+		<errorTermValue uid="MBZ">
+			<term uidRef="MBZ">MBZ</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MSX">
+			<term uidRef="MSX">MSX</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+		<errorTermValue uid="MSY">
+			<term uidRef="MSY">MSY</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+		<errorTermValue uid="MSZ">
+			<term uidRef="MSZ">MSZ</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+
+		<errorTermValue uid="SAG">
+			<term uidRef="SAG">SAG</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MX">
+			<term uidRef="MX">MX</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MY">
+			<term uidRef="MY">MY</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="AXI">
+			<term uidRef="AXI">AXI</term>
+			<prop>S</prop>
+			<value uom="dega">0.25</value>
+		</errorTermValue>
+		<errorTermValue uid="AMID">
+			<term uidRef="AMID">AMID</term>
+			<prop>S</prop>
+			<bias>0.33</bias>
+			<value uom="dega">0.5</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DECL">
+			<term uidRef="DECL">DECL</term>
+			<prop>S</prop>
+			<value uom="dega">0.25</value>
+		</errorTermValue>
+		<errorTermValue uid="DBH">
+			<term uidRef="DBH">DBH</term>
+			<prop>S</prop>
+			<value uom="nT">5000</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DREF">
+			<term uidRef="DREF">DREF</term>
+			<prop>S</prop>
+			<value uom="m">0.35</value>
+		</errorTermValue>
+		<errorTermValue uid="DSF">
+			<term uidRef="DSF">DSF</term>
+			<prop>S</prop>
+			<value>2.4E-4</value>
+		</errorTermValue>
+		<errorTermValue uid="DST">
+			<term uidRef="DST">DST</term>
+			<prop>S</prop>
+			<bias>4.4E-7</bias>
+			<value uom="m">9</value>
+		</errorTermValue>
+	</toolErrorModel>
+	<toolErrorModel uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx12">
+		<name>ISCWSA Basic MWD / Axial Correction</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 67616</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+		</authorization>
+		<operatingCondition uid="1x">
+			<parameter>axialMagneticCorrection</parameter>
+			<value>true</value>
+		</operatingCondition>
+
+		<useErrorTermSet uidRef="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1">SPE67616</useErrorTermSet>
+
+		<errorTermValue uid="ABIX">
+			<term uidRef="ABIX">ABIX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABIY">
+			<term uidRef="ABIY">ABIY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABIZ">
+			<term uidRef="ABIZ">ABIZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="ASIX">
+			<term uidRef="ASIX">ASIX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASIY">
+			<term uidRef="ASIY">ASIY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASIZ">
+			<term uidRef="ASIZ">ASIZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MBIX">
+			<term uidRef="MBIX">MBIX</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+		<errorTermValue uid="MBIY">
+			<term uidRef="MBIY">MBIY</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MSIX">
+			<term uidRef="MSIX">MSIX</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+		<errorTermValue uid="MSIY">
+			<term uidRef="MSIY">MSIY</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MDI">
+			<term uidRef="MDI">MDI</term>
+			<prop>S</prop>
+			<value uom="dega">0.2</value>
+		</errorTermValue>
+		<errorTermValue uid="DFI">
+			<term uidRef="DFI">DFI</term>
+			<prop>S</prop>
+			<value uom="nT">130</value>
+		</errorTermValue>
+
+		<errorTermValue uid="SAG">
+			<term uidRef="SAG">SAG</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MX">
+			<term uidRef="MX">MX</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MY">
+			<term uidRef="MY">MY</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DECL">
+			<term uidRef="DECL">DECL</term>
+			<prop>S</prop>
+			<value uom="dega">0.25</value>
+		</errorTermValue>
+		<errorTermValue uid="DBH">
+			<term uidRef="DBH">DBH</term>
+			<prop>S</prop>
+			<value uom="nT">5000</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DREF">
+			<term uidRef="DREF">DREF</term>
+			<prop>S</prop>
+			<value uom="m">0.35</value>
+		</errorTermValue>
+		<errorTermValue uid="DSF">
+			<term uidRef="DSF">DSF</term>
+			<prop>S</prop>
+			<value>2.4E-4</value>
+		</errorTermValue>
+		<errorTermValue uid="DST">
+			<term uidRef="DST">DST</term>
+			<prop>S</prop>
+			<value uom="m">2.2E-7</value>
+		</errorTermValue>
+	</toolErrorModel>
+	<toolErrorModel uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx13">
+		<name>ISCWSA Basic MWD (Ax. Int. Corrected, Bias Model)</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 67616</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+		</authorization>
+		<operatingCondition uid="1">
+			<parameter>axialMagneticCorrection</parameter>
+			<value>true</value>
+		</operatingCondition>
+
+		<useErrorTermSet uidRef="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1">SPE67616</useErrorTermSet>
+
+		<errorTermValue uid="ABIX">
+			<term uidRef="ABIX">ABIX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABIY">
+			<term uidRef="ABIY">ABIY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="ABIZ">
+			<term uidRef="ABIZ">ABIZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="ASIX">
+			<term uidRef="ASIX">ASIX</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASIY">
+			<term uidRef="ASIY">ASIY</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="ASIZ">
+			<term uidRef="ASIZ">ASIZ</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.0005</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MBIX">
+			<term uidRef="MBIX">MBIX</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+		<errorTermValue uid="MBIY">
+			<term uidRef="MBIY">MBIY</term>
+			<prop>S</prop>
+			<value uom="nT">70</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MSIX">
+			<term uidRef="MSIX">MSIX</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+		<errorTermValue uid="MSIY">
+			<term uidRef="MSIY">MSIY</term>
+			<prop>S</prop>
+			<value>0.0016</value>
+		</errorTermValue>
+
+		<errorTermValue uid="MDI">
+			<term uidRef="MDI">MDI</term>
+			<prop>S</prop>
+			<value uom="dega">0.2</value>
+		</errorTermValue>
+		<errorTermValue uid="DFI">
+			<term uidRef="DFI">DFI</term>
+			<prop>S</prop>
+			<value uom="nT">130</value>
+		</errorTermValue>
+
+		<errorTermValue uid="SAG">
+			<term uidRef="SAG">SAG</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MX">
+			<term uidRef="MX">MX</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+		<errorTermValue uid="MY">
+			<term uidRef="MY">MY</term>
+			<prop>S</prop>
+			<value uom="dega">0.004</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DECL">
+			<term uidRef="DECL">DECL</term>
+			<prop>S</prop>
+			<value uom="dega">0.25</value>
+		</errorTermValue>
+		<errorTermValue uid="DBH">
+			<term uidRef="DBH">DBH</term>
+			<prop>S</prop>
+			<value uom="nT">5000</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DREF">
+			<term uidRef="DREF">DREF</term>
+			<prop>S</prop>
+			<value uom="m">0.35</value>
+		</errorTermValue>
+		<errorTermValue uid="DSF">
+			<term uidRef="DSF">DSF</term>
+			<prop>S</prop>
+			<value>2.4E-4</value>
+		</errorTermValue>
+		<errorTermValue uid="DST">
+			<term uidRef="DST">DST</term>
+			<prop>S</prop>
+			<value uom="m">2.2E-7</value>
+		</errorTermValue>
+	</toolErrorModel>
+	<toolErrorModel uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx14">
+		<name>Example Model 3</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 67616</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+			<comment>Derived from ?????????.</comment>
+		</authorization>
+
+		<operatingInterval uid="1">
+			<mode>stationary</mode>
+			<start uom="dega">0</start>
+			<end uom="dega">17</end>
+		</operatingInterval>
+		<operatingInterval uid="2">
+			<mode>continuous XY</mode>
+			<start uom="dega">17</start>
+			<end uom="dega">150</end>
+			<speed uom="m/s">0.6</speed>
+		</operatingInterval>
+
+		<modelParameters>
+			<misalignmentMode>3</misalignmentMode>
+			<gyroInitialization uom="dega">17</gyroInitialization>
+			<gyroReinitializationDistance uom="m">2500</gyroReinitializationDistance>
+			<noiseReductionFactor>0.5</noiseReductionFactor>
+		</modelParameters>
+
+		<useErrorTermSet uidRef="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx2">SPE90408</useErrorTermSet>
+
+		<errorTermValue uid="XYZACCXYBIAS">
+			<term uidRef="XYZACCXYBIAS">XYZACCXYBIAS</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.005</value>
+		</errorTermValue>
+		<errorTermValue uid="XYZACCZBIAS">
+			<term uidRef="XYZACCZBIAS">XYZACCZBIAS</term>
+			<prop>S</prop>
+			<value uom="m/s2">0.005</value>
+		</errorTermValue>
+		<errorTermValue uid="XYZACCSF">
+			<term uidRef="XYZACCSF">XYZACCSF</term>
+			<prop>S</prop>
+			<value>0.0005</value>
+		</errorTermValue>
+		<errorTermValue uid="XYZACCMIS">
+			<term uidRef="XYZACCMIS">XYZACCMIS</term>
+			<prop>S</prop>
+			<value uom="dega">0.05</value>
+		</errorTermValue>
+
+		<errorTermValue uid="XYGYROBIAS1">
+			<term uidRef="XYGYROBIAS1">XYGYROBIAS1</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.1</value>
+		</errorTermValue>
+		<errorTermValue uid="XYGYROBIAS2">
+			<term uidRef="XYGYROBIAS2">XYGYROBIAS2</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.1</value>
+		</errorTermValue>
+		<errorTermValue uid="XYGYRONOISE">
+			<term uidRef="XYGYRONOISE">XYGYRONOISE</term>
+			<prop>R</prop>
+			<value uom="dega/h">0.1</value>
+		</errorTermValue>
+
+		<errorTermValue uid="XYGYROGDEP1">
+			<term uidRef="XYGYROGDEP1">XYGYROGDEP1</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.5</value>
+		</errorTermValue>
+		<errorTermValue uid="XYGYROGDEP2">
+			<term uidRef="XYGYROGDEP2">XYGYROGDEP2</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.5</value>
+		</errorTermValue>
+		<errorTermValue uid="XYGYROGDEP3">
+			<term uidRef="XYGYROGDEP3">XYGYROGDEP3</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.5</value>
+		</errorTermValue>
+		<errorTermValue uid="XYGYROGDEP4">
+			<term uidRef="XYGYROGDEP4">XYGYROGDEP4</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.5</value>
+		</errorTermValue>
+
+		<errorTermValue uid="XYGYROSF">
+			<term uidRef="XYGYROSF">XYGYROSF</term>
+			<prop>S</prop>
+			<value>0.001</value>
+		</errorTermValue>
+		<errorTermValue uid="XYGYROMIS">
+			<term uidRef="XYGYROMIS">XYGYROMIS</term>
+			<prop>S</prop>
+			<value uom="dega">0.05</value>
+		</errorTermValue>
+
+		<errorTermValue uid="XYGYRODRIFT">
+			<term uidRef="XYGYRODRIFT">XYGYRODRIFT</term>
+			<prop>S</prop>
+			<value uom="dega/h">0.5</value>
+		</errorTermValue>
+
+		<errorTermValue uid="XYMIS1">
+			<term uidRef="XYMIS1">XYMIS1</term>
+			<prop>S</prop>
+			<value uom="dega">0.1</value>
+		</errorTermValue>
+		<errorTermValue uid="XYMIS2">
+			<term uidRef="XYMIS2">XYMIS2</term>
+			<prop>S</prop>
+			<value uom="dega">0.1</value>
+		</errorTermValue>
+		<errorTermValue uid="XYMIS3">
+			<term uidRef="XYMIS3">XYMIS3</term>
+			<prop>S</prop>
+			<value uom="dega">0.2</value>
+		</errorTermValue>
+		<errorTermValue uid="XYMIS4">
+			<term uidRef="XYMIS4">XYMIS4</term>
+			<prop>S</prop>
+			<value uom="dega">0.2</value>
+		</errorTermValue>
+		<errorTermValue uid="VSAG">
+			<term uidRef="VSAG">VSAG</term>
+			<prop>S</prop>
+			<value uom="dega">0.1</value>
+		</errorTermValue>
+
+		<errorTermValue uid="DRAND">
+			<term uidRef="DRAND">DRAND</term>
+			<prop>R</prop>
+			<value uom="m">0.5</value>
+		</errorTermValue>
+		<errorTermValue uid="DSYST">
+			<term uidRef="DSYST">DSYST</term>
+			<prop>S</prop>
+			<value uom="m">0.5</value>
+		</errorTermValue>
+		<errorTermValue uid="RDMDEP">
+			<term uidRef="RDMDEP">RDMDEP</term>
+			<prop>R</prop>
+			<value uom="m">0.5</value>
+		</errorTermValue>
+		<errorTermValue uid="DEPSF">
+			<term uidRef="DEPSF">DEPSF</term>
+			<prop>W</prop>
+			<value>0.001</value>
+		</errorTermValue>
+		<errorTermValue uid="DEPSTR">
+			<term uidRef="DEPSTR">DEPSTR</term>
+			<prop>G</prop>
+			<value uom="1/m">5E-7</value>
+		</errorTermValue>
+		<commonData>
+			<dTimLastChange>2010-02-19T12:15:00Z</dTimLastChange>
+		</commonData>
+	</toolErrorModel>
+	<toolErrorModel uid="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx15">
+		<name>My First Error Model</name>
+		<authorization>
+			<author>Phil.Dickson@PDGM.com</author>
+			<source>SPE 67616</source>
+			<authority>ISCWSA</authority>
+			<status>draft</status>
+			<version>1.0</version>
+			<comment>Some commentary on this model, version, etc.</comment>
+		</authorization>
+		<operatingCondition uid="1">
+			<parameter>latitude</parameter>
+			<min uom="dega">-70</min>
+			<max uom="dega">70</max>
+		</operatingCondition>
+		<operatingCondition uid="2">
+			<parameter>runningMode</parameter>
+			<value>wireline</value>
+		</operatingCondition>
+		<operatingCondition uid="3">
+			<parameter>axialMagneticCorrection</parameter>
+			<value>true</value>
+		</operatingCondition>
+		<operatingCondition uid="4">
+			<parameter>declinationCorrection</parameter>
+			<value>IFR</value>
+		</operatingCondition>
+		<operatingInterval uid="5">
+			<mode>stationary</mode>
+			<start uom="dega">0.0</start>
+			<end uom="dega">17.0</end>
+		</operatingInterval>
+		<operatingInterval uid="6">
+			<mode>continuous XY</mode>
+			<start uom="dega">17.0</start>
+			<end uom="dega">65.0</end>
+		</operatingInterval>
+		<modelParameters>
+			<misalignmentMode>3</misalignmentMode>
+			<gyroInitialization uom="dega">30.0</gyroInitialization>
+			<switching>false</switching>
+			<noiseReductionFactor>1.0</noiseReductionFactor>
+		</modelParameters>
+		<useErrorTermSet uidRef="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1">SPE67616</useErrorTermSet>
+		<errorTermValue uid="ABX">
+			<term uidRef="ABX">ABX</term>
+			<prop>S</prop>
+			<value uom="m/s2">1.1</value>
+			<comment>Some commentary on this value</comment>
+		</errorTermValue>
+		<errorTermValue uid="FUD">
+			<term uidRef="FUD">FUD</term>
+			<prop>R</prop>
+			<value uom="angstrom">2.2</value>
+			<comment>Some commentary on this value</comment>
+		</errorTermValue>
+		<commonData>
+			<dTimLastChange>2009-10-16T13:32:42Z</dTimLastChange>
+		</commonData>
+	</toolErrorModel>
+</toolErrorModels>
