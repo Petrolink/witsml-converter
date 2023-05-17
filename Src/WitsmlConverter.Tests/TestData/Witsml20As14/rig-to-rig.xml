@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-16"?>
+<rigs xmlns:abs="http://www.energistics.org/schemas/abstract" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.witsml.org/schemas/1series http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_rig.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
+  <rig uid="xr31">
+    <name>Deep Drill #5</name>
+    <owner>Deep Drilling Co.</owner>
+    <typeRig>floater</typeRig>
+    <manufacturer>Fitsui Engineering</manufacturer>
+    <classRig>ABS Class A1 M CSDU AMS ACCU</classRig>
+    <approvals>DNV</approvals>
+    <registration>Panama</registration>
+    <telNumber>281 222-2221</telNumber>
+    <faxNumber>281 222-2222</faxNumber>
+    <emailAddress>John.Doe@his-ISP.com</emailAddress>
+    <nameContact>John Doe</nameContact>
+    <ratingDrillDepth uom="ft">30000</ratingDrillDepth>
+    <ratingWaterDepth uom="ft">500</ratingWaterDepth>
+    <isOffshore>true</isOffshore>
+    <typeDerrick>triple</typeDerrick>
+    <ratingDerrick uom="lbf">1475000</ratingDerrick>
+    <htDerrick uom="ft">180</htDerrick>
+    <capWindDerrick uom="mi/h">200</capWindDerrick>
+    <numCranes>3</numCranes>
+  </rig>
+</rigs>

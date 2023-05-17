@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-16"?>
+<RigUtilization xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///C:/Projects/Energistics/Repo/energyml/data/witsml/v2.1/xsd_schemas/Rig.xsd" uuid="00000000-0000-0000-0000-000000000000" schemaVersion="2.1" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Citation>
+    <eml:Title>Deep Drill #5</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+  </eml:Citation>
+  <AirGap uom="ft">55</AirGap>
+  <WtBlock uom="klbf">45</WtBlock>
+  <RatingBlock uom="klbf">760</RatingBlock>
+  <NumBlockLines>8</NumBlockLines>
+  <TypeHook>National 435-G-175</TypeHook>
+  <RatingHkld uom="lbf">1700000</RatingHkld>
+  <SizeDrillLine uom="in">1.75</SizeDrillLine>
+  <TypeDrawWorks>standard electric</TypeDrawWorks>
+  <PowerDrawWorks uom="nW">2500</PowerDrawWorks>
+  <RatingDrawWorks uom="lbf">1775000</RatingDrawWorks>
+  <MotorDrawWorks>GE 752</MotorDrawWorks>
+  <DescBrake>Parnac V-80</DescBrake>
+  <TypeSwivel>National P800</TypeSwivel>
+  <RatingSwivel uom="lbf">1000000</RatingSwivel>
+  <RotSystem>rotary kelly drive</RotSystem>
+  <DescRotSystem>National C-495 49 1/2"</DescRotSystem>
+  <RatingTqRotSys uom="lbf.ft">650</RatingTqRotSys>
+  <RotSizeOpening uom="in">49.5</RotSizeOpening>
+  <RatingRotSystem uom="tonf[US]">350</RatingRotSystem>
+  <ScrSystem>SCR Description</ScrSystem>
+  <PipeHandlingSystem>Iron Roughneck - Varco AR-3200</PipeHandlingSystem>
+  <CapBulkMud uom="ft3">500</CapBulkMud>
+  <CapLiquidMud uom="ft3">1200</CapLiquidMud>
+  <CapDrillWater uom="ft3">2500</CapDrillWater>
+  <CapPotableWater uom="ft3">100</CapPotableWater>
+  <CapFuel uom="ft3">1000</CapFuel>
+  <CapBulkCement uom="ft3">2000</CapBulkCement>
+  <MainEngine>4 Bergen KVGB-12 diesel</MainEngine>
+  <Generator>GE AT1, 1,805 KWAC, 600 VAC</Generator>
+  <CementUnit>Halliburton - advantage 150</CementUnit>
+  <NumBunks>30</NumBunks>
+  <BunksPerRoom>4</BunksPerRoom>
+  <NumAnch>6</NumAnch>
+  <MoorType>Type of mooring system</MoorType>
+  <NumGuideTens>3</NumGuideTens>
+  <NumRiserTens>6</NumRiserTens>
+  <VarDeckLdMx uom="klbf">550</VarDeckLdMx>
+  <VdlStorm uom="klbf">250</VdlStorm>
+  <NumThrusters>12</NumThrusters>
+  <Azimuthing>true</Azimuthing>
+  <MotionCompensationMn uom="klbf">500</MotionCompensationMn>
+  <MotionCompensationMx uom="klbf">600</MotionCompensationMx>
+  <StrokeMotionCompensation uom="ft">3</StrokeMotionCompensation>
+  <RiserAngleLimit uom="dega">15</RiserAngleLimit>
+  <HeaveMx uom="ft">45</HeaveMx>
+  <Gantry>Description of gantry</Gantry>
+  <Flares>Description of flare</Flares>
+  <Bop>
+    <Manufacturer>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Cameron</eml:Title>
+    </Manufacturer>
+    <Model>Type "U" Single Ram</Model>
+    <DTimInstall>2001-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2002-05-15T13:20:00Z</DTimRemove>
+    <TypeConnectionBop>Vetco HD-H4 18-3/4"</TypeConnectionBop>
+    <SizeConnectionBop uom="in">18.625</SizeConnectionBop>
+    <PresBopRating uom="psi">5000</PresBopRating>
+    <SizeBopSys uom="in">12</SizeBopSys>
+    <RotBop>false</RotBop>
+    <IdBoosterLine uom="in">3.7</IdBoosterLine>
+    <OdBoosterLine uom="in">4.35</OdBoosterLine>
+    <LenBoosterLine uom="ft">102</LenBoosterLine>
+    <IdSurfLine uom="in">3.5</IdSurfLine>
+    <OdSurfLine uom="in">4.25</OdSurfLine>
+    <LenSurfLine uom="ft">100</LenSurfLine>
+    <IdChkLine uom="in">3.6</IdChkLine>
+    <OdChkLine uom="in">4.30</OdChkLine>
+    <LenChkLine uom="ft">150</LenChkLine>
+    <IdKillLine uom="in">3.7</IdKillLine>
+    <OdKillLine uom="in">4.35</OdKillLine>
+    <LenKillLine uom="ft">150</LenKillLine>
+    <TypeDiverter>Diverter Spool</TypeDiverter>
+    <DiaDiverter uom="in">10</DiaDiverter>
+    <PresWorkDiverter uom="psi">250</PresWorkDiverter>
+    <Accumulator>Type of accumulator</Accumulator>
+    <CapAccFluid uom="gal[US]">11</CapAccFluid>
+    <PresAccPreCharge uom="psi">1000</PresAccPreCharge>
+    <VolAccPreCharge uom="gal[US]">5</VolAccPreCharge>
+    <PresAccOpRating uom="psi">3000</PresAccOpRating>
+    <TypeControlManifold>Koomey GU2KB53</TypeControlManifold>
+    <DescControlManifold>5 station w/ remote readout</DescControlManifold>
+    <TypeChokeManifold>WKM 3 in.</TypeChokeManifold>
+    <PresChokeManifold uom="psi">2200</PresChokeManifold>
+    <BopComponent uid="001">
+      <TypeBopComp>annular preventer</TypeBopComp>
+      <DescComp>WP w/ stainless</DescComp>
+      <IdPassThru uom="in">4</IdPassThru>
+      <PresWork uom="psi">20000</PresWork>
+      <DiaCloseMn uom="in">4</DiaCloseMn>
+      <DiaCloseMx uom="in">12</DiaCloseMx>
+      <Nomenclature>S</Nomenclature>
+      <IsVariable>true</IsVariable>
+    </BopComponent>
+    <BopComponent uid="002">
+      <TypeBopComp>annular preventer</TypeBopComp>
+      <DescComp>Second WP w/ stainless</DescComp>
+      <IdPassThru uom="in">4</IdPassThru>
+      <PresWork uom="psi">22000</PresWork>
+      <DiaCloseMn uom="in">4</DiaCloseMn>
+      <DiaCloseMx uom="in">12</DiaCloseMx>
+      <Nomenclature>S</Nomenclature>
+      <IsVariable>true</IsVariable>
+    </BopComponent>
+  </Bop>
+  <Pit uid="Active-1">
+    <Index>1</Index>
+    <DTimInstall>1983-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2001-05-15T13:20:00Z</DTimRemove>
+    <CapMx uom="ft3">1000</CapMx>
+    <Owner>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Rig</eml:Title>
+    </Owner>
+    <TypePit>drilling</TypePit>
+    <IsActive>true</IsActive>
+  </Pit>
+  <Pump uid="Pump-1">
+    <Index>1</Index>
+    <Manufacturer>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Oilwell</eml:Title>
+    </Manufacturer>
+    <Model>A 1700 PT</Model>
+    <DTimInstall>2001-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2002-05-15T13:20:00Z</DTimRemove>
+    <Owner>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Rig</eml:Title>
+    </Owner>
+    <TypePump>triplex</TypePump>
+    <NumCyl>1</NumCyl>
+    <OdRod uom="in">2</OdRod>
+    <IdLiner uom="in">7</IdLiner>
+    <PumpAction>2</PumpAction>
+    <Eff uom="%">97</Eff>
+    <LenStroke uom="in">12</LenStroke>
+    <PresMx uom="psi">5000</PresMx>
+    <PowHydMx uom="hp[hyd]">1600</PowHydMx>
+    <SpmMx uom="rpm">120</SpmMx>
+    <Displacement uom="m3">20</Displacement>
+    <PresDamp uom="psi">350</PresDamp>
+    <VolDamp uom="ft3">10</VolDamp>
+    <PowMechMx uom="hp">1600</PowMechMx>
+  </Pump>
+  <Centrifuge uid="Centrifuge-Id.">
+    <Manufacturer>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Make</eml:Title>
+    </Manufacturer>
+    <Model>Model</Model>
+    <DTimInstall>2001-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2002-05-15T13:20:00Z</DTimRemove>
+    <Type>Type</Type>
+    <CapFlow uom="gal[US]/min">50</CapFlow>
+    <Owner>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Owner</eml:Title>
+    </Owner>
+  </Centrifuge>
+  <Hydrocyclone uid="Hydrocyclone-Id.">
+    <Manufacturer>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Demco</eml:Title>
+    </Manufacturer>
+    <Model>DM-100</Model>
+    <DTimInstall>2001-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2002-05-15T13:20:00Z</DTimRemove>
+    <Type>Type</Type>
+    <DescCone>2x12 in.</DescCone>
+    <Owner>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>RigTech</eml:Title>
+    </Owner>
+  </Hydrocyclone>
+  <Degasser uid="Degasser-Id.">
+    <Manufacturer>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Swaco</eml:Title>
+    </Manufacturer>
+    <Model>D-Gasser</Model>
+    <DTimInstall>2001-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2002-05-15T13:20:00Z</DTimRemove>
+    <Type>Gas</Type>
+    <Owner>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Rigtech</eml:Title>
+    </Owner>
+    <Height uom="ft">200</Height>
+    <Len uom="ft">150</Len>
+    <Id uom="in">4</Id>
+    <CapFlow uom="gal[US]/min">1200</CapFlow>
+    <AreaSeparatorFlow uom="cm2">35</AreaSeparatorFlow>
+    <HtMudSeal uom="ft">2</HtMudSeal>
+    <IdInlet uom="in">3</IdInlet>
+    <IdVentLine uom="in">1</IdVentLine>
+    <LenVentLine uom="ft">12</LenVentLine>
+    <CapGasSep uom="gal[US]/min">28</CapGasSep>
+    <CapBlowdown uom="gal[US]/min">45</CapBlowdown>
+    <PresRating uom="psi">450</PresRating>
+    <TempRating uom="degC">150</TempRating>
+  </Degasser>
+  <SurfaceEquipment>
+    <Description>Surf Equip. Desc.</Description>
+    <PresRating uom="psi">5000</PresRating>
+    <TypeSurfEquip>IADC</TypeSurfEquip>
+    <UsePumpDischarge>true</UsePumpDischarge>
+    <UseStandpipe>false</UseStandpipe>
+    <UseHose>true</UseHose>
+    <UseSwivel>false</UseSwivel>
+    <UseKelly>true</UseKelly>
+    <UseTopStack>false</UseTopStack>
+    <UseInjStack>true</UseInjStack>
+    <UseSurfaceIron>false</UseSurfaceIron>
+    <IdStandpipe uom="in">4</IdStandpipe>
+    <LenStandpipe uom="ft">99</LenStandpipe>
+    <IdHose uom="in">3</IdHose>
+    <LenHose uom="ft">500</LenHose>
+    <IdSwivel uom="in">4</IdSwivel>
+    <LenSwivel uom="ft">25</LenSwivel>
+    <IdKelly uom="in">2.8125</IdKelly>
+    <LenKelly uom="ft">40</LenKelly>
+    <IdDischargeLine uom="in">5</IdDischargeLine>
+    <LenDischargeLine uom="ft">100</LenDischargeLine>
+    <CtWrapType>CT Wrap Type</CtWrapType>
+    <OdReel uom="in">18</OdReel>
+    <OdCore uom="in">7</OdCore>
+    <WidReelWrap uom="ft">50</WidReelWrap>
+    <LenReel uom="ft">3</LenReel>
+    <InjStkUp>true</InjStkUp>
+    <HtInjStk uom="ft">10</HtInjStk>
+    <UmbInside>false</UmbInside>
+    <OdUmbilical uom="in">2</OdUmbilical>
+    <LenUmbilical uom="ft">150</LenUmbilical>
+    <IdTopStk uom="in">4</IdTopStk>
+    <HtTopStk uom="ft">12</HtTopStk>
+    <HtFlange uom="ft">20</HtFlange>
+  </SurfaceEquipment>
+  <Shaker uid="1">
+    <Name>Shale Shaker</Name>
+    <Manufacturer>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Brandt</eml:Title>
+    </Manufacturer>
+    <Model>ATL-100</Model>
+    <DTimInstall>2001-05-15T13:20:00Z</DTimInstall>
+    <DTimRemove>2002-05-15T13:20:00Z</DTimRemove>
+    <Type>Single tandem</Type>
+    <LocationShaker>Mud room</LocationShaker>
+    <NumDecks>3</NumDecks>
+    <NumCascLevel>2</NumCascLevel>
+    <MudCleaner>false</MudCleaner>
+    <CapFlow uom="gal[US]/min">25</CapFlow>
+    <Owner>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>eml23.BusinessAssociate</eml:QualifiedType>
+      <eml:Title>Rig</eml:Title>
+    </Owner>
+    <SizeMeshMn uom="um">.125</SizeMeshMn>
+  </Shaker>
+  <Wellbore>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+    <eml:QualifiedType>witsml21.Wellbore</eml:QualifiedType>
+    <eml:Title>obj_wellbore</eml:Title>
+  </Wellbore>
+  <Rig>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+    <eml:QualifiedType>witsml21.Rig</eml:QualifiedType>
+    <eml:Title>xr31</eml:Title>
+  </Rig>
+</RigUtilization>

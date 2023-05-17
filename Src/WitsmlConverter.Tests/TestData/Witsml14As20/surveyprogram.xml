@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-16"?>
+<SurveyProgram xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/SurveyProgram.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Citation>
+    <eml:Title>final</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+  </eml:Citation>
+  <SurveyVer>1</SurveyVer>
+  <Engineer>J. Belaskie</Engineer>
+  <Final>no</Final>
+  <SurveySection uid="ss-1">
+    <Sequence>1</Sequence>
+    <Name>NS Gyro single shots</Name>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">567.8</eml:MdTop>
+      <eml:MdBase uom="ft">2132.5</eml:MdBase>
+    </MdInterval>
+    <NameSurveyCompany>ABC Company</NameSurveyCompany>
+    <NameTool>Survey tool name</NameTool>
+    <TypeTool>NS-GYRO-SS</TypeTool>
+    <ModelError>good gyro</ModelError>
+    <Overwrite>true</Overwrite>
+    <FrequencyMx uom="ft">100</FrequencyMx>
+    <ItemState>actual</ItemState>
+    <Comments>These are the comments associated with the survey section 1.</Comments>
+  </SurveySection>
+  <SurveySection uid="ss-2">
+    <Sequence>2</Sequence>
+    <Name>MWD - Standard</Name>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">2132.5</eml:MdTop>
+      <eml:MdBase uom="ft">7657.5</eml:MdBase>
+    </MdInterval>
+    <NameSurveyCompany>ABC Company</NameSurveyCompany>
+    <NameTool>Survey tool name</NameTool>
+    <TypeTool>MWD</TypeTool>
+    <ModelError>good mag</ModelError>
+    <Overwrite>true</Overwrite>
+    <FrequencyMx uom="ft">30</FrequencyMx>
+    <ItemState>actual</ItemState>
+    <Comments>These are the comments associated with the survey section 2.</Comments>
+  </SurveySection>
+  <SurveySection uid="ss-3">
+    <Sequence>3</Sequence>
+    <Name>EMS - Standard</Name>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">2624.7</eml:MdTop>
+      <eml:MdBase uom="ft">7657.5</eml:MdBase>
+    </MdInterval>
+    <NameSurveyCompany>ABC Company</NameSurveyCompany>
+    <NameTool>Survey tool name</NameTool>
+    <TypeTool>EMS</TypeTool>
+    <ModelError>good gyro</ModelError>
+    <Overwrite>true</Overwrite>
+    <FrequencyMx uom="ft">50</FrequencyMx>
+    <ItemState>actual</ItemState>
+    <Comments>These are the comments associated with the survey section 3.</Comments>
+  </SurveySection>
+  <SurveySection uid="ss-4">
+    <Sequence>4</Sequence>
+    <Name>MWD + SAG correction</Name>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">7657.5</eml:MdTop>
+      <eml:MdBase uom="ft">13123.4</eml:MdBase>
+    </MdInterval>
+    <NameSurveyCompany>ABC Company</NameSurveyCompany>
+    <NameTool>Survey tool name</NameTool>
+    <TypeTool>MWD + SAG</TypeTool>
+    <ModelError>good mag</ModelError>
+    <Overwrite>true</Overwrite>
+    <FrequencyMx uom="ft">30</FrequencyMx>
+    <ItemState>actual</ItemState>
+    <Comments>These are the comments associated with the survey section 4.</Comments>
+  </SurveySection>
+  <SurveySection uid="ss-5">
+    <Sequence>5</Sequence>
+    <Name>Continuous Casing M/S</Name>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">567.8</eml:MdTop>
+      <eml:MdBase uom="ft">13123.4</eml:MdBase>
+    </MdInterval>
+    <NameSurveyCompany>gyrodata</NameSurveyCompany>
+    <NameTool>Survey tool name</NameTool>
+    <TypeTool>MS</TypeTool>
+    <ModelError>good gyro</ModelError>
+    <Overwrite>true</Overwrite>
+    <FrequencyMx uom="ft">50</FrequencyMx>
+    <ItemState>actual</ItemState>
+    <Comments>These are the comments associated with the survey section 5.</Comments>
+  </SurveySection>
+  <Wellbore>
+    <eml:ContentType>wellbore</eml:ContentType>
+    <eml:Title>A-42</eml:Title>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+  </Wellbore>
+</SurveyProgram>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-16"?>
+<WellboreGeology xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/WellboreGeology.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1411_input">
+    <eml:Identifier>h45a</eml:Identifier>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>m1001</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+    <eml:LastUpdate>2011-09-15T16:15:33.591Z</eml:LastUpdate>
+  </eml:Citation>
+  <MdInterval datum="unknown">
+    <eml:MdTop uom="ft">8920.19</eml:MdTop>
+    <eml:MdBase uom="ft">9420</eml:MdBase>
+  </MdInterval>
+  <ShowIntervalSet schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000">
+    <eml:Aliases authority="1411_input">
+      <eml:Identifier>h45a</eml:Identifier>
+    </eml:Aliases>
+    <eml:Citation>
+      <eml:Title>m1001</eml:Title>
+      <eml:Originator>1411_input</eml:Originator>
+      <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+      <eml:Format>Mapforce</eml:Format>
+      <eml:LastUpdate>2011-09-15T16:15:33.591Z</eml:LastUpdate>
+      <eml:Description>Show Desc</eml:Description>
+    </eml:Citation>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">8990</eml:MdTop>
+      <eml:MdBase uom="ft">9420</eml:MdBase>
+    </MdInterval>
+    <GrowingStatus>active</GrowingStatus>
+    <EvaluatedIntervalShow schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" uid="h45a">
+      <eml:Aliases authority="1411_input">
+        <eml:Identifier>h45a</eml:Identifier>
+      </eml:Aliases>
+      <eml:Citation>
+        <eml:Title>MudLog-</eml:Title>
+        <eml:Originator>.xml</eml:Originator>
+        <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+        <eml:Format>Mapforce</eml:Format>
+      </eml:Citation>
+      <MdInterval datum="unknown">
+        <eml:MdTop uom="ft">8990</eml:MdTop>
+        <eml:MdBase uom="ft">9420</eml:MdBase>
+      </MdInterval>
+      <Citation>
+        <eml:Title>m1001</eml:Title>
+        <eml:Originator>1411_input</eml:Originator>
+        <eml:Format>Mapforce</eml:Format>
+        <eml:LastUpdate>2011-09-15T16:15:33.591Z</eml:LastUpdate>
+      </Citation>
+      <ShowFluid>oil</ShowFluid>
+      <ShowRating>good</ShowRating>
+    </EvaluatedIntervalShow>
+    <Wellbore>
+      <eml:ContentType>obj_wellbore</eml:ContentType>
+      <eml:Title>A-42</eml:Title>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+    </Wellbore>
+  </ShowIntervalSet>
+  <Wellbore>
+    <eml:ContentType>obj_wellbore</eml:ContentType>
+    <eml:Title>A-42</eml:Title>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+    <eml:UuidAuthority>B-01</eml:UuidAuthority>
+  </Wellbore>
+  <CuttingsIntervalSet schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000">
+    <eml:Aliases authority="1411_input">
+      <eml:Identifier>h45a</eml:Identifier>
+    </eml:Aliases>
+    <eml:Citation>
+      <eml:Title>m1001</eml:Title>
+      <eml:Originator>1411_input</eml:Originator>
+      <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+      <eml:Format>Mapforce</eml:Format>
+      <eml:LastUpdate>2011-09-15T16:15:33.591Z</eml:LastUpdate>
+    </eml:Citation>
+    <MdInterval datum="unknown">
+      <eml:MdTop uom="ft">8920.19</eml:MdTop>
+      <eml:MdBase uom="ft">9420</eml:MdBase>
+    </MdInterval>
+    <GrowingStatus>active</GrowingStatus>
+    <CuttingsInterval schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" uid="00001">
+      <eml:Aliases authority="1411_input">
+        <eml:Identifier>h45a</eml:Identifier>
+      </eml:Aliases>
+      <eml:Citation>
+        <eml:Title>MudLog-</eml:Title>
+        <eml:Originator>1411_input</eml:Originator>
+        <eml:Creation>2023-05-01T01:00:00Z</eml:Creation>
+        <eml:Format>Mapforce</eml:Format>
+      </eml:Citation>
+      <MdInterval datum="unknown">
+        <eml:MdTop uom="ft">8990</eml:MdTop>
+        <eml:MdBase uom="ft">9420</eml:MdBase>
+      </MdInterval>
+      <Citation>
+        <eml:Title>MudLog-</eml:Title>
+        <eml:Originator>1411_input</eml:Originator>
+        <eml:Format>Mapforce</eml:Format>
+      </Citation>
+      <DensBulk uom="lbm/ft3">1.56</DensBulk>
+      <DensShale uom="lbm/ft3">1.65</DensShale>
+      <Calcite uom="%">6</Calcite>
+      <CalcStab uom="%">.099</CalcStab>
+      <Cec>0.099</Cec>
+      <Dolomite uom="%">1</Dolomite>
+      <SizeMin uom="in">.099</SizeMin>
+      <SizeMax uom="in">.099</SizeMax>
+      <CleaningMethod>Agitene</CleaningMethod>
+      <DryingMethod>Spin Dryer</DryingMethod>
+      <CuttingsIntervalLithology uid="00001">
+        <Kind>andesite</Kind>
+        <LithPc uom="%">100</LithPc>
+        <Citation>
+          <eml:Title>MudLog-</eml:Title>
+          <eml:Originator>.xml</eml:Originator>
+          <eml:Format>Mapforce</eml:Format>
+          <eml:LastUpdate>2011-09-15T16:15:33.591Z</eml:LastUpdate>
+          <eml:Description>Sandstone: vf-f, clr-frost, mod srt, gd vis por</eml:Description>
+        </Citation>
+        <Color>frosted</Color>
+        <Texture>friable</Texture>
+        <Hardness>moderately hard</Hardness>
+        <SizeGrain>fine sand</SizeGrain>
+        <Roundness>well rounded</Roundness>
+        <Sorting>well sorted</Sorting>
+        <MatrixCement>calcite</MatrixCement>
+        <PorosityVisible>moderate</PorosityVisible>
+        <Permeability>fairly permeable</Permeability>
+        <Shows uid="show_id">
+          <Citation>
+            <eml:Title>m1001</eml:Title>
+            <eml:Originator>1411_input</eml:Originator>
+            <eml:Format>Mapforce</eml:Format>
+            <eml:Description>Show Desc</eml:Description>
+          </Citation>
+          <ShowRating>good</ShowRating>
+          <StainColor>brown</StainColor>
+          <StainDistr>even</StainDistr>
+          <StainPc uom="%">50</StainPc>
+          <CutSpeed>fast</CutSpeed>
+          <CutColor>white</CutColor>
+          <CutStrength>strong</CutStrength>
+          <CutForm>streaming</CutForm>
+          <CutLevel>bright</CutLevel>
+          <CutFlorForm>blooming</CutFlorForm>
+          <CutFlorColor>bright white</CutFlorColor>
+          <CutFlorStrength>strong</CutFlorStrength>
+          <CutFlorSpeed>instantaneous</CutFlorSpeed>
+          <CutFlorLevel>bright</CutFlorLevel>
+          <NatFlorColor>White</NatFlorColor>
+          <NatFlorPc uom="%">25</NatFlorPc>
+          <NatFlorLevel>faint</NatFlorLevel>
+          <NatFlorDesc>Nat Flor Desc</NatFlorDesc>
+          <ResidueColor>brown</ResidueColor>
+          <ImpregnatedLitho>Impregnated Litho</ImpregnatedLitho>
+          <Odor>petrol</Odor>
+        </Shows>
+        <Qualifier uid="00001">
+          <Kind>pyrite</Kind>
+          <Abundance uom="%">10</Abundance>
+          <Description>lg crystals</Description>
+        </Qualifier>
+      </CuttingsIntervalLithology>
+    </CuttingsInterval>
+    <Wellbore>
+      <eml:ContentType>obj_wellbore</eml:ContentType>
+      <eml:Title>A-42</eml:Title>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+    </Wellbore>
+  </CuttingsIntervalSet>
+</WellboreGeology>

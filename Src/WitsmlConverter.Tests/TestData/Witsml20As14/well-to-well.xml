@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-16"?>
+<wells xmlns:abs="http://www.energistics.org/schemas/abstract" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.witsml.org/schemas/1series http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_well.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
+  <well uid="w-12">
+    <name>6507/7-A-42</name>
+    <nameLegal>Company Legal Name</nameLegal>
+    <numLicense>Company License Number</numLicense>
+    <numGovt>Govt-Number</numGovt>
+    <dTimLicense>2001-05-15T13:20:00Z</dTimLicense>
+    <field>Big Field</field>
+    <country>US</country>
+    <state>TX</state>
+    <county>Montgomery</county>
+    <region>Region Name</region>
+    <district>District Name</district>
+    <block>Block Name</block>
+    <timeZone>-06:00</timeZone>
+    <operator>Operating Company</operator>
+    <operatorDiv>Division Name</operatorDiv>
+    <pcInterest uom="%">65</pcInterest>
+    <numAPI>123-543-987AZ</numAPI>
+    <statusWell>drilling</statusWell>
+    <purposeWell>exploration</purposeWell>
+    <dTimSpud>2001-05-31T08:15:00Z</dTimSpud>
+    <dTimPa>2001-07-15T15:30:00Z</dTimPa>
+    <wellheadElevation uom="ft">500</wellheadElevation>
+    <wellDatum uid="KB">
+      <name>Kelly Bushing</name>
+      <code>KB</code>
+      <elevation uom="ft" datum="SL">78.5</elevation>
+    </wellDatum>
+    <wellDatum uid="SL">
+      <name>Sea Level</name>
+      <code>SL</code>
+    </wellDatum>
+    <groundElevation uom="ft">250</groundElevation>
+    <waterDepth uom="ft">520</waterDepth>
+    <wellLocation uid="loc-1">
+      <wellCRS uidRef="proj1">fake_wellCRS</wellCRS>
+      <latitude uom="dega">0</latitude>
+      <longitude uom="dega">0</longitude>
+    </wellLocation>
+    <referencePoint uid="SRP1">
+      <name>Slot Bay Centre</name>
+      <type>Site Reference Point</type>
+      <location uid="d29f2a87ce1646658bfdfa33ff2b61ad">
+        <latitude uom="dega">0</latitude>
+        <longitude uom="dega">0</longitude>
+      </location>
+    </referencePoint>
+    <referencePoint uid="WRP2">
+      <name>Sea Bed</name>
+      <type>Well Reference Point</type>
+      <elevation uom="ft" datum="SL">-118.40</elevation>
+      <measuredDepth uom="ft" datum="KB">173.09</measuredDepth>
+      <location uid="loc-2">
+        <latitude uom="dega">59.743844</latitude>
+        <longitude uom="dega">1.67198083</longitude>
+      </location>
+    </referencePoint>
+    <wellCRS uid="79e59ad52abf487296a54dcbb8dfe248">
+      <geodeticCRS uidRef="4230">4230</geodeticCRS>
+    </wellCRS>
+    <wellCRS uid="aabf7cb6500b47ac833f524b8989fdb8">
+      <mapProjectionCRS uidRef="23031">ED50 / UTM Zone 31N</mapProjectionCRS>
+    </wellCRS>
+    <wellCRS uid="2a93bb04ffb64d0c97e0a51d769498e3">
+      <mapProjectionCRS uidRef="23031">ED50 / UTM Zone 31N</mapProjectionCRS>
+    </wellCRS>
+    <commonData>
+      <dTimLastChange>2001-05-31T08:15:00Z</dTimLastChange>
+    </commonData>
+  </well>
+</wells>

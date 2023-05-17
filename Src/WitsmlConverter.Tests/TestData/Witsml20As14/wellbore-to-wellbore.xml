@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-16"?>
+<wellbores xmlns:abs="http://www.energistics.org/schemas/abstract" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.witsml.org/schemas/1series http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_wellbore.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
+  <wellbore uidWell="W-12" uid="B-01">
+    <nameWell>6507/7-A-42</nameWell>
+    <name>A-42</name>
+    <number>1234-0987</number>
+    <suffixAPI>02</suffixAPI>
+    <numGovt>Govt001</numGovt>
+    <statusWellbore>active</statusWellbore>
+    <purposeWellbore>exploration</purposeWellbore>
+    <typeWellbore>initial</typeWellbore>
+    <shape>horizontal</shape>
+    <dTimKickoff>2001-03-15T13:20:00Z</dTimKickoff>
+    <md uom="ft">0</md>
+    <tvd uom="ft">0</tvd>
+    <mdKickoff uom="ft">0</mdKickoff>
+    <tvdKickoff uom="ft">0</tvdKickoff>
+    <mdPlanned uom="ft">15800</mdPlanned>
+    <tvdPlanned uom="ft">12567</tvdPlanned>
+    <mdSubSeaPlanned uom="ft">12800</mdSubSeaPlanned>
+    <tvdSubSeaPlanned uom="ft">9567</tvdSubSeaPlanned>
+    <dayTarget uom="d">128</dayTarget>
+    <commonData>
+      <dTimLastChange>2001-05-31T08:15:00Z</dTimLastChange>
+    </commonData>
+  </wellbore>
+</wellbores>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-16"?>
+<StimJob xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/StimJob.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1.4.1.1">
+    <eml:Identifier>UIDFracJob</eml:Identifier>
+    <eml:Description>Identifier is created from the uid of the input scheme</eml:Description>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>FRAC JOB #1</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+  </eml:Citation>
+  <AvgJobPres uom="psi">2517.13</AvgJobPres>
+  <BottomholeStaticTemperature uom="degF">166</BottomholeStaticTemperature>
+  <CustomerName>The Customers Name</CustomerName>
+  <DTimArrival>2010-02-03T15:35:22Z</DTimArrival>
+  <DTimStart>2010-02-03T22:33:22Z</DTimStart>
+  <FlowBackPres uom="psi">125</FlowBackPres>
+  <FlowBackRate uom="bbl/min">2.5</FlowBackRate>
+  <FlowBackVolume uom="bbl">217</FlowBackVolume>
+  <FluidEfficiency uom="%">75</FluidEfficiency>
+  <HhpOrdered uom="hp">650</HhpOrdered>
+  <HhpUsed uom="hp">667</HhpUsed>
+  <JobPerforationClusters>
+    <StimPerforationCluster schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000">
+      <eml:Citation>
+        <eml:Title>perforationinterval</eml:Title>
+        <eml:Originator>1411_input</eml:Originator>
+        <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+        <eml:Format>Mapforce</eml:Format>
+      </eml:Citation>
+    </StimPerforationCluster>
+  </JobPerforationClusters>
+  <Kind>frac</Kind>
+  <MaxFluidRate uom="bbl/min">29</MaxFluidRate>
+  <MaxJobPres uom="psi">7254</MaxJobPres>
+  <ServiceCompany>Service Company Name</ServiceCompany>
+  <Supervisor>Mr. I. M. Supervisor</Supervisor>
+  <TotalJobVolume uom="gal[US]">131068</TotalJobVolume>
+  <TotalPumpTime uom="min">1509</TotalPumpTime>
+  <TreatingBottomholeTemperature uom="degF">178</TreatingBottomholeTemperature>
+  <JobStage schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" uid="YC0CSXNJRL3GLAAA">
+    <eml:Citation>
+      <eml:Title>jobstage</eml:Title>
+      <eml:Originator>1411_input</eml:Originator>
+      <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+      <eml:Format>Mapforce</eml:Format>
+    </eml:Citation>
+    <Number>1</Number>
+    <StagePerforationClusters>
+      <StimPerforationCluster schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000">
+        <eml:Citation>
+          <eml:Title>perforationinterval</eml:Title>
+          <eml:Originator>1411_input</eml:Originator>
+          <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+          <eml:Format>Mapforce</eml:Format>
+        </eml:Citation>
+        <MdPerforatedInterval datum="unknown">
+          <eml:MdTop>9950</eml:MdTop>
+          <eml:MdBase>9954</eml:MdBase>
+        </MdPerforatedInterval>
+        <TvdPerforatedInterval datum="unknown">
+          <eml:TvdTop>9950</eml:TvdTop>
+          <eml:TvdBase>9954</eml:TvdBase>
+        </TvdPerforatedInterval>
+        <Type>Chem Jet</Type>
+        <PerforationCount>8</PerforationCount>
+        <Size>0.875</Size>
+        <DensityPerforation uom="1/ft">1.5</DensityPerforation>
+        <PhasingPerforation uom="dega">180</PhasingPerforation>
+        <FrictionFactor>0.687</FrictionFactor>
+        <FrictionPres uom="psi">1000</FrictionPres>
+        <DischargeCoefficient>0.054</DischargeCoefficient>
+      </StimPerforationCluster>
+    </StagePerforationClusters>
+    <AvgConductivity uom="ft/s">22.5</AvgConductivity>
+    <AvgFractureWidth>18.4</AvgFractureWidth>
+    <AvgPresCasing uom="psi">3575</AvgPresCasing>
+    <AvgPresTubing uom="psi">2719</AvgPresTubing>
+    <AvgProppantConcBottomhole>1.18</AvgProppantConcBottomhole>
+    <AvgProppantConcSurface>3.98</AvgProppantConcSurface>
+    <BreakDownPres uom="psi">3654</BreakDownPres>
+    <ClosureDuration uom="min">1.6</ClosureDuration>
+    <ClosurePres uom="psi">2285</ClosurePres>
+    <DTimStart>2010-03-04T22:45:15Z</DTimStart>
+    <FormationName>Formation lower</FormationName>
+    <FormationProppantMass uom="lbm">125532</FormationProppantMass>
+    <HhpOrderedCO2>725</HhpOrderedCO2>
+    <HhpOrderedFluid>750</HhpOrderedFluid>
+    <HhpUsedCO2>650</HhpUsedCO2>
+    <HhpUsedFluid>725</HhpUsedFluid>
+    <InitialShutinPres uom="W">1154</InitialShutinPres>
+    <MaxPresAnnulus uom="psi">1956</MaxPresAnnulus>
+    <MaxPresTubing uom="psi">332</MaxPresTubing>
+    <MaxProppantConcBottomhole>14.2</MaxProppantConcBottomhole>
+    <MaxProppantConcSurface>4.6</MaxProppantConcSurface>
+    <MdFormationBottom uom="ft" datum="unknown">9500</MdFormationBottom>
+    <MdFormationTop datum="unknown">9300</MdFormationTop>
+    <MdOpenHoleBottom uom="ft" datum="unknown">10000</MdOpenHoleBottom>
+    <MdOpenHoleTop datum="unknown">9000</MdOpenHoleTop>
+    <NetPres uom="psi">342</NetPres>
+    <OpenHoleDiameter>12.25</OpenHoleDiameter>
+    <OpenHoleName>Main Wellbore</OpenHoleName>
+    <PercentProppantPumped uom="%">58</PercentProppantPumped>
+    <PerfBallCount>13</PerfBallCount>
+    <PerfBallSize>0.75</PerfBallSize>
+    <PerfProppantConc>6.5</PerfProppantConc>
+    <ScreenedOut>true</ScreenedOut>
+    <ScreenOutPres uom="psi">654</ScreenOutPres>
+    <TotalPumpTime uom="min">380</TotalPumpTime>
+    <TotalVolume>189000</TotalVolume>
+    <TvdFormationBottom uom="ft" datum="unknown">9500</TvdFormationBottom>
+    <TvdFormationTop uom="ft" datum="unknown">9000</TvdFormationTop>
+    <TvdOpenHoleBottom uom="ft" datum="unknown">10000</TvdOpenHoleBottom>
+    <TvdOpenHoleTop uom="ft" datum="unknown">9000</TvdOpenHoleTop>
+    <WellboreProppantMass uom="lbm">27657</WellboreProppantMass>
+    <PdatSession uid="ABCOID123456">
+      <Name>Pump Diagnostics Test #1</Name>
+      <Number>1</Number>
+      <Description>PDat step down and leak off</Description>
+      <DTimPumpOn>2010-02-04T15:06:55Z</DTimPumpOn>
+      <DTimPumpOff>2010-02-04T15:20:44Z</DTimPumpOff>
+      <PumpDuration uom="min">16.7</PumpDuration>
+      <DTimWellShutin>2010-02-04T15:18:17Z</DTimWellShutin>
+      <DTimFractureClose>2010-02-04T15:21:55Z</DTimFractureClose>
+      <AvgBottomholeTreatmentPres uom="psi">4556</AvgBottomholeTreatmentPres>
+      <AvgBottomholeTreatmentRate uom="bbl/min">1.5</AvgBottomholeTreatmentRate>
+      <BaseFluidVol>1080</BaseFluidVol>
+      <BottomholeHydrostaticPres uom="psi">4335</BottomholeHydrostaticPres>
+      <BubblePointPres uom="psi">2000</BubblePointPres>
+      <FluidDensity>8.22</FluidDensity>
+      <FractureClosePres uom="psi">4811</FractureClosePres>
+      <FrictionPres uom="psi">1428</FrictionPres>
+      <InitialShutinPres uom="psi">5552</InitialShutinPres>
+      <PorePres uom="psi">857</PorePres>
+      <WellboreVolume>1083</WellboreVolume>
+      <MdSurface datum="unknown">0</MdSurface>
+      <MdBottomhole>9955</MdBottomhole>
+      <MdMidPerforation datum="unknown">9952.5</MdMidPerforation>
+      <TvdMidPerforation datum="unknown">9952</TvdMidPerforation>
+      <SurfaceTemperature uom="degF">65</SurfaceTemperature>
+      <BottomholeTemperature uom="degF">212</BottomholeTemperature>
+      <SurfaceFluidTemperature uom="degF">65</SurfaceFluidTemperature>
+      <FluidCompressibility uom="m3/J">3E-06</FluidCompressibility>
+      <ReservoirTotalCompressibility uom="m3/J">0.000255</ReservoirTotalCompressibility>
+      <FluidNprimeFactor uom="%">1</FluidNprimeFactor>
+      <FluidKprimeFactor uom="%">6E-06</FluidKprimeFactor>
+      <FluidSpecificHeat>0.971</FluidSpecificHeat>
+      <FluidThermalConductivity>0.402</FluidThermalConductivity>
+      <FluidThermalExpansionCoefficient>0.001204</FluidThermalExpansionCoefficient>
+      <FluidEfficiency uom="%">37.7</FluidEfficiency>
+      <FoamQuality uom="%">10</FoamQuality>
+      <PercentPad uom="%">43.81</PercentPad>
+      <TemperatureCorrectionApplied>false</TemperatureCorrectionApplied>
+      <FluidEfficiencyTest uid="ACCK5679994">
+        <DTimStart>2010-02-04T23:10:00Z</DTimStart>
+        <DTimEnd>2010-02-04T23:15:52Z</DTimEnd>
+        <EndPdlDuration uom="min">1.94</EndPdlDuration>
+        <FluidEfficiency uom="%">10.2</FluidEfficiency>
+        <FractureCloseDuration uom="min">1.05</FractureCloseDuration>
+        <FractureClosePres uom="psi">4596</FractureClosePres>
+        <FractureExtensionPres uom="psi">5523</FractureExtensionPres>
+        <FractureLength>88.2</FractureLength>
+        <FractureWidth>92.12</FractureWidth>
+        <NetPres uom="psi">15</NetPres>
+        <PdlCoef uom="%">0.004</PdlCoef>
+        <PorePres uom="psi">3644</PorePres>
+        <PseudoRadialPres uom="psi">4530</PseudoRadialPres>
+        <ResidualPermeability uom="mD">0.03</ResidualPermeability>
+      </FluidEfficiencyTest>
+      <StepDownTest uid="LLIEV9993">
+        <InitialShutinPres uom="psi">5642</InitialShutinPres>
+        <BottomholeFluidDensity>9.8</BottomholeFluidDensity>
+        <DiameterEntryHole>0.875</DiameterEntryHole>
+        <PerforationCount>15</PerforationCount>
+        <DischargeCoefficient uom="%">0.775</DischargeCoefficient>
+        <EffectivePerfs>0</EffectivePerfs>
+        <Step uid="9876543">
+          <Number>1</Number>
+          <BottomholeRate uom="bbl/min">2</BottomholeRate>
+          <Pres uom="psi">3200</Pres>
+          <PipeFriction uom="psi">974</PipeFriction>
+          <EntryFriction uom="psi">35.6</EntryFriction>
+          <PerfFriction uom="psi">1428</PerfFriction>
+          <NearWellboreFriction uom="psi">44.2</NearWellboreFriction>
+        </Step>
+        <Step uid="345678910">
+          <Number>2</Number>
+          <BottomholeRate uom="bbl/min">1.5</BottomholeRate>
+          <Pres uom="psi">2500</Pres>
+          <PipeFriction uom="psi">750</PipeFriction>
+          <EntryFriction uom="psi">20</EntryFriction>
+          <PerfFriction uom="psi">1200</PerfFriction>
+          <NearWellboreFriction uom="psi">30</NearWellboreFriction>
+        </Step>
+      </StepDownTest>
+      <StepRateTest uid="YKC1235XXXXE">
+        <FractureExtensionPres uom="psi">1271</FractureExtensionPres>
+        <PresMeasurement uid="uid">
+          <BottomholeRate uom="bbl/min">3.3</BottomholeRate>
+        </PresMeasurement>
+        <PresMeasurement uid="uid">
+          <BottomholeRate uom="bbl/min">3</BottomholeRate>
+        </PresMeasurement>
+        <PresMeasurement uid="uid">
+          <BottomholeRate uom="bbl/min">2</BottomholeRate>
+        </PresMeasurement>
+      </StepRateTest>
+      <PumpFlowBackTest uid="ABCDEFG12345">
+        <FractureCloseDuration uom="min">1.92</FractureCloseDuration>
+        <FractureClosePres uom="psi">4591</FractureClosePres>
+      </PumpFlowBackTest>
+    </PdatSession>
+    <ShutInPres uid="AYKKKES4458XV">
+      <Pressure uom="psi">1000</Pressure>
+      <TimeAfterShutin uom="min">5</TimeAfterShutin>
+    </ShutInPres>
+    <ShutInPres uid="AYKKKES4458XW">
+      <Pressure uom="psi">750</Pressure>
+      <TimeAfterShutin uom="min">10</TimeAfterShutin>
+    </ShutInPres>
+    <ShutInPres uid="AYKKKES4458XX">
+      <Pressure uom="psi">500</Pressure>
+      <TimeAfterShutin uom="min">15</TimeAfterShutin>
+    </ShutInPres>
+    <ReservoirInterval uid="ADDE489903CCB">
+      <LithFormationPermeability uom="mD">0.13</LithFormationPermeability>
+      <LithYoungsModulus uom="psi">6000000</LithYoungsModulus>
+      <LithPorePres uom="psi">954</LithPorePres>
+      <LithNetPayThickness>4.8</LithNetPayThickness>
+      <LithName>Lith Sand Top</LithName>
+      <GrossPayThickness>5</GrossPayThickness>
+      <NetPayThickness>5</NetPayThickness>
+      <NetPayPorePres uom="psi">800</NetPayPorePres>
+      <NetPayFluidCompressibility uom="m3/J">0.000255</NetPayFluidCompressibility>
+      <NetPayFluidViscosity uom="cP">0.01</NetPayFluidViscosity>
+      <NetPayName>Net Pay Name</NetPayName>
+      <NetPayFormationPermeability uom="mD">0.09</NetPayFormationPermeability>
+      <LithPoissonsRatio uom="Euc">0.21</LithPoissonsRatio>
+      <NetPayFormationPorosity uom="%">0.13</NetPayFormationPorosity>
+      <FormationPermeability uom="mD">0.01</FormationPermeability>
+      <FormationPorosity uom="%">0.15</FormationPorosity>
+      <NameFormation>Formation Nice Sand</NameFormation>
+    </ReservoirInterval>
+  </JobStage>
+  <Wellbore>
+    <eml:ContentType>wellbore</eml:ContentType>
+    <eml:Title>UIDWellbore</eml:Title>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+  </Wellbore>
+  <MaterialCatalog>
+    <Additives uid="AdditivesId">
+      <Type>AdditiveType</Type>
+      <SupplierCode>SupplierCode</SupplierCode>
+    </Additives>
+  </MaterialCatalog>
+</StimJob>

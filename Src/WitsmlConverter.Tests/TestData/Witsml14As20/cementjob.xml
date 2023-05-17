@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-16"?>
+<CementJob xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/CementJob.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1.4.1.1">
+    <eml:Identifier>B-01su78c6507/7-A-42</eml:Identifier>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>Squeeze Int Csg 1</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+  </eml:Citation>
+  <JobType>squeeze</JobType>
+  <JobConfig>Job configuration desc.</JobConfig>
+  <NameCementedString>Intermediate Casing 1</NameCementedString>
+  <NameWorkString>workString ID</NameWorkString>
+  <OffshoreJob>false</OffshoreJob>
+  <MdWater uom="ft">0</MdWater>
+  <ReturnsToSeabed>false</ReturnsToSeabed>
+  <MdPrevShoe uom="ft" datum="unknown">10240</MdPrevShoe>
+  <MdHole uom="ft" datum="unknown">0</MdHole>
+  <TvdPrevShoe uom="ft" datum="unknown">10240</TvdPrevShoe>
+  <MdStringSet uom="ft" datum="unknown">10240</MdStringSet>
+  <TvdStringSet uom="ft" datum="unknown">10240</TvdStringSet>
+  <TypePlug>Type of plug desc.</TypePlug>
+  <NameCementString>None</NameCementString>
+  <TypeSqueeze>Squeeze type desc.</TypeSqueeze>
+  <MdSqueeze uom="ft" datum="unknown">10240</MdSqueeze>
+  <ToolCompany>Halliburton</ToolCompany>
+  <TypeTool>Tool desc.</TypeTool>
+  <CoilTubing>false</CoilTubing>
+  <JobReport>
+    <CementEngr>Halliburton</CementEngr>
+    <PlugInterval datum="unknown">
+      <eml:MdTop uom="ft">0</eml:MdTop>
+      <eml:MdBase uom="ft">0</eml:MdBase>
+    </PlugInterval>
+    <MdHole uom="ft" datum="unknown">0</MdHole>
+    <Contractor>Halliburton</Contractor>
+    <RpmPipe uom="rpm">5</RpmPipe>
+    <TqInitPipeRot uom="lbf.ft">400</TqInitPipeRot>
+    <TqPipeAv uom="lbf.ft">350</TqPipeAv>
+    <TqPipeMx uom="lbf.ft">500</TqPipeMx>
+    <OverPull uom="klbf">0</OverPull>
+    <SlackOff uom="klbf">0</SlackOff>
+    <RpmPipeRecip uom="rpm">0</RpmPipeRecip>
+    <LenPipeRecipStroke uom="ft">0</LenPipeRecipStroke>
+    <Reciprocating>false</Reciprocating>
+    <DTimPlugSet>2001-10-29T10:30:00Z</DTimPlugSet>
+    <CementDrillOut>true</CementDrillOut>
+    <DTimCementDrillOut>2001-10-29T09:30:00Z</DTimCementDrillOut>
+    <DTimPipeRotStart>2001-10-29T09:35:00Z</DTimPipeRotStart>
+    <DTimPipeRotEnd>2001-10-29T16:30:00Z</DTimPipeRotEnd>
+    <CementReportStage uid="00000000-0000-0000-0000-000000000000">
+      <BotPlug>true</BotPlug>
+      <BotPlugNumber>1</BotPlugNumber>
+      <DiaTailPipe uom="in">3.73</DiaTailPipe>
+      <ETimPresHeld uom="min">0</ETimPresHeld>
+      <FlowrateMudCirc uom="bbl/min">130</FlowrateMudCirc>
+      <Gel10Min uom="0.01 lbf/ft2">11</Gel10Min>
+      <Gel10Sec uom="0.01 lbf/ft2">4</Gel10Sec>
+      <MdCircOut uom="ft" datum="unknown">10300</MdCircOut>
+      <MdCoilTbg uom="ft" datum="unknown">0</MdCoilTbg>
+      <MdString uom="ft" datum="unknown">10500</MdString>
+      <MdTool uom="ft" datum="unknown">10500</MdTool>
+      <MixMethod>Recirc</MixMethod>
+      <NumStage>1</NumStage>
+      <PillBelowPlug>true</PillBelowPlug>
+      <PresBackPressure uom="psi">0</PresBackPressure>
+      <PresBump uom="psi">0</PresBump>
+      <PresCoilTbgEnd uom="psi">0</PresCoilTbgEnd>
+      <PresCoilTbgStart uom="psi">0</PresCoilTbgStart>
+      <PresCsgEnd uom="psi">0</PresCsgEnd>
+      <PresCsgStart uom="psi">0</PresCsgStart>
+      <PresDisplace uom="psi">400</PresDisplace>
+      <PresHeld uom="psi">0</PresHeld>
+      <PresMudCirc uom="psi">700</PresMudCirc>
+      <PresTbgEnd uom="psi">0</PresTbgEnd>
+      <PresTbgStart uom="psi">0</PresTbgStart>
+      <PvMud uom="cP">19</PvMud>
+      <StageMdInterval datum="unknown">
+        <eml:MdTop uom="ft">10320</eml:MdTop>
+        <eml:MdBase uom="ft">10500</eml:MdBase>
+      </StageMdInterval>
+      <TailPipePerf>false</TailPipePerf>
+      <TailPipeUsed>true</TailPipeUsed>
+      <TempBHCT uom="degC">45</TempBHCT>
+      <TempBHST uom="degC">46</TempBHST>
+      <TopPlug>true</TopPlug>
+      <TypeOriginalMud>LSND/WBM</TypeOriginalMud>
+      <TypeStage>Secondary cement</TypeStage>
+      <VolCircPrior uom="bbl">0</VolCircPrior>
+      <VolCsgIn uom="bbl">0</VolCsgIn>
+      <VolCsgOut uom="bbl">0</VolCsgOut>
+      <VolDisplaceFluid uom="bbl">239.1</VolDisplaceFluid>
+      <VolExcess uom="bbl">0</VolExcess>
+      <VolExcessMethod>None</VolExcessMethod>
+      <VolMudLost uom="bbl">0</VolMudLost>
+      <VolReturns uom="bbl">0</VolReturns>
+      <WtMud uom="lbm/gal[US]">13.5</WtMud>
+      <YpMud uom="0.01 lbf/ft2">10</YpMud>
+      <DTimMixStart>2001-10-29T18:50:00Z</DTimMixStart>
+      <DTimPumpStart>2001-10-29T19:17:00Z</DTimPumpStart>
+      <DTimPumpEnd>2001-10-29T21:00:00Z</DTimPumpEnd>
+      <DTimDisplaceStart>2001-10-29T19:00:00Z</DTimDisplaceStart>
+      <PresBreakDown uom="psi">0</PresBreakDown>
+      <FlowrateBreakDown uom="bbl/min">0</FlowrateBreakDown>
+      <FlowrateDisplaceAv uom="bbl/min">2.50</FlowrateDisplaceAv>
+      <FlowrateDisplaceMx uom="bbl/min">3.00</FlowrateDisplaceMx>
+      <PresSqueezeAv uom="psi">0</PresSqueezeAv>
+      <PresSqueezeEnd uom="psi">0</PresSqueezeEnd>
+      <PresSqueezeHeld>false</PresSqueezeHeld>
+      <ETimMudCirculation uom="h">1</ETimMudCirculation>
+      <PresSqueeze uom="psi">0</PresSqueeze>
+      <FlowrateSqueezeAv uom="gal[US]/min">0</FlowrateSqueezeAv>
+      <FlowrateSqueezeMx uom="gal[US]/min">0</FlowrateSqueezeMx>
+      <FlowrateEnd uom="bbl/min">130</FlowrateEnd>
+      <FlowratePumpStart uom="gal[US]/min">0</FlowratePumpStart>
+      <FlowratePumpEnd uom="gal[US]/min">0</FlowratePumpEnd>
+      <VisFunnelMud uom="s">40</VisFunnelMud>
+      <PlugBumped>false</PlugBumped>
+      <SqueezeObtained>true</SqueezeObtained>
+      <PresPriorBump uom="psi">0</PresPriorBump>
+      <FloatHeld>false</FloatHeld>
+    </CementReportStage>
+  </JobReport>
+  <Wellbore>
+    <eml:ContentType>obj_wellbore</eml:ContentType>
+    <eml:Title>B-01</eml:Title>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+  </Wellbore>
+  <Design>
+    <CementEngr>Halliburton</CementEngr>
+    <PlugInterval datum="unknown">
+      <eml:MdTop uom="ft">0</eml:MdTop>
+      <eml:MdBase uom="ft">0</eml:MdBase>
+    </PlugInterval>
+    <MdHole uom="ft" datum="unknown">0</MdHole>
+    <RpmPipe uom="rpm">5</RpmPipe>
+    <TqInitPipeRot uom="lbf.ft">400</TqInitPipeRot>
+    <TqPipeAv uom="lbf.ft">350</TqPipeAv>
+    <TqPipeMx uom="lbf.ft">500</TqPipeMx>
+    <OverPull uom="klbf">0</OverPull>
+    <SlackOff uom="klbf">0</SlackOff>
+    <RpmPipeRecip uom="rpm">0</RpmPipeRecip>
+    <LenPipeRecipStroke uom="ft">0</LenPipeRecipStroke>
+    <Reciprocating>false</Reciprocating>
+    <CementDesignStage>
+      <BotPlug>true</BotPlug>
+      <BotPlugNumber>1</BotPlugNumber>
+      <DiaTailPipe uom="in">3.73</DiaTailPipe>
+      <ETimPresHeld uom="min">0</ETimPresHeld>
+      <FlowrateMudCirc uom="bbl/min">130</FlowrateMudCirc>
+      <Gel10Min uom="0.01 lbf/ft2">11</Gel10Min>
+      <Gel10Sec uom="0.01 lbf/ft2">4</Gel10Sec>
+      <MdCircOut uom="ft" datum="unknown">10300</MdCircOut>
+      <MdCoilTbg uom="ft" datum="unknown">0</MdCoilTbg>
+      <MdString uom="ft" datum="unknown">10500</MdString>
+      <MdTool uom="ft" datum="unknown">10500</MdTool>
+      <MixMethod>Recirc</MixMethod>
+      <NumStage>1</NumStage>
+      <PillBelowPlug>true</PillBelowPlug>
+      <PlugCatcher>false</PlugCatcher>
+      <PresBackPressure uom="psi">0</PresBackPressure>
+      <PresBump uom="psi">0</PresBump>
+      <PresCoilTbgEnd uom="psi">0</PresCoilTbgEnd>
+      <PresCoilTbgStart uom="psi">0</PresCoilTbgStart>
+      <PresCsgEnd uom="psi">0</PresCsgEnd>
+      <PresCsgStart uom="psi">0</PresCsgStart>
+      <PresDisplace uom="psi">400</PresDisplace>
+      <PresHeld uom="psi">0</PresHeld>
+      <PresMudCirc uom="psi">700</PresMudCirc>
+      <PresTbgEnd uom="psi">0</PresTbgEnd>
+      <PresTbgStart uom="psi">0</PresTbgStart>
+      <PvMud uom="cP">19</PvMud>
+      <StageMdInterval datum="unknown">
+        <eml:MdTop uom="ft">10320</eml:MdTop>
+        <eml:MdBase uom="ft">10500</eml:MdBase>
+      </StageMdInterval>
+      <TailPipePerf>false</TailPipePerf>
+      <TailPipeUsed>true</TailPipeUsed>
+      <TempBHCT uom="degC">45</TempBHCT>
+      <TempBHST uom="degC">46</TempBHST>
+      <TopPlug>true</TopPlug>
+      <TypeOriginalMud>LSND/WBM</TypeOriginalMud>
+      <TypeStage>Secondary cement</TypeStage>
+      <VolCircPrior uom="bbl">0</VolCircPrior>
+      <VolCsgIn uom="bbl">0</VolCsgIn>
+      <VolCsgOut uom="bbl">0</VolCsgOut>
+      <VolDisplaceFluid uom="bbl">239.1</VolDisplaceFluid>
+      <VolExcess uom="bbl">0</VolExcess>
+      <VolExcessMethod>None</VolExcessMethod>
+      <VolMudLost uom="bbl">0</VolMudLost>
+      <VolReturns uom="bbl">0</VolReturns>
+      <WtMud uom="lbm/gal[US]">13.5</WtMud>
+      <YpMud uom="0.01 lbf/ft2">10</YpMud>
+    </CementDesignStage>
+  </Design>
+  <CementingFluid uid="11111111-1111-1111-1111-111111111111">
+    <TypeFluid>Cement</TypeFluid>
+    <FluidIndex>1</FluidIndex>
+    <DescFluid>Squeeze Slurry</DescFluid>
+    <Purpose>Squeeze Slurry</Purpose>
+    <ClassSlurryDryBlend>G</ClassSlurryDryBlend>
+    <SourceWater>Drill water</SourceWater>
+    <VolWater uom="bbl">26.9</VolWater>
+    <VolCement uom="gal[US]">200</VolCement>
+    <RatioMixWater uom="bbl/ton[US]">5</RatioMixWater>
+    <VolFluid uom="bbl">51.3</VolFluid>
+    <ExcessPc uom="%">1.0</ExcessPc>
+    <VolYield uom="bbl/ton[US]">1.44</VolYield>
+    <Density uom="lbm/gal[US]">16.5</Density>
+    <SolidVolumeFraction uom="%">0</SolidVolumeFraction>
+    <VolPumped uom="bbl">52.2</VolPumped>
+    <VolOther uom="bbl">0</VolOther>
+    <FluidRheologicalModel>Bingham</FluidRheologicalModel>
+    <Yp uom="0.01 lbf/ft2">33</Yp>
+    <N uom="%">0</N>
+    <K uom="%">0</K>
+    <Gel10SecReading uom="dega">0</Gel10SecReading>
+    <Gel10SecStrength uom="0.01 lbf/ft2">0</Gel10SecStrength>
+    <Gel1MinReading uom="dega">0</Gel1MinReading>
+    <Gel1MinStrength uom="0.01 lbf/ft2">0</Gel1MinStrength>
+    <Gel10MinReading uom="dega">0</Gel10MinReading>
+    <Gel10MinStrength uom="0.01 lbf/ft2">0</Gel10MinStrength>
+    <TypeBaseFluid>Fresh water</TypeBaseFluid>
+    <DensBaseFluid uom="lbm/gal[US]">0</DensBaseFluid>
+    <DryBlendName>No blend name</DryBlendName>
+    <DryBlendDescription>No blend description</DryBlendDescription>
+    <MassDryBlend uom="lbm">0</MassDryBlend>
+    <DensDryBlend uom="lbm/gal[US]">0</DensDryBlend>
+    <MassSackDryBlend uom="lbm">0</MassSackDryBlend>
+    <FoamUsed>false</FoamUsed>
+    <TypeGasFoam>None</TypeGasFoam>
+    <VolGasFoam uom="bbl">0</VolGasFoam>
+    <RatioConstGasMethodAv uom="%">0</RatioConstGasMethodAv>
+    <DensConstGasMethod uom="lbm/gal[US]">0</DensConstGasMethod>
+    <RatioConstGasMethodStart uom="%">0</RatioConstGasMethodStart>
+    <RatioConstGasMethodEnd uom="%">0</RatioConstGasMethodEnd>
+    <DensConstGasFoam uom="lbm/gal[US]">0</DensConstGasFoam>
+    <ETimThickening uom="h">5.07</ETimThickening>
+    <TempThickening uom="degC">235</TempThickening>
+    <PresTestThickening uom="psi">0</PresTestThickening>
+    <ConsTestThickening uom="Euc">33</ConsTestThickening>
+    <PcFreeWater uom="mL/mL">235</PcFreeWater>
+    <TempFreeWater uom="degC">52</TempFreeWater>
+    <VolTestFluidLoss uom="cm3">0</VolTestFluidLoss>
+    <TempFluidLoss uom="degC">58</TempFluidLoss>
+    <PresTestFluidLoss uom="psi">250</PresTestFluidLoss>
+    <TimeFluidLoss uom="min">30</TimeFluidLoss>
+    <VolAPIFluidLoss uom="cm3">0</VolAPIFluidLoss>
+    <ETimComprStren1 uom="h">12</ETimComprStren1>
+    <ETimComprStren2 uom="h">24</ETimComprStren2>
+    <PresComprStren1 uom="psi">1500</PresComprStren1>
+    <PresComprStren2 uom="psi">2400</PresComprStren2>
+    <TempComprStren1 uom="degC">235</TempComprStren1>
+    <TempComprStren2 uom="degC">235</TempComprStren2>
+    <DensAtPres uom="lbm/gal[US]">0</DensAtPres>
+    <VolReserved uom="bbl">0</VolReserved>
+    <VolTotSlurry uom="bbl">0</VolTotSlurry>
+    <CementAdditive uid="ca1">
+      <NameAdd>Silica Flour</NameAdd>
+      <TypeAdd>Strengthener</TypeAdd>
+      <FormAdd>Wet</FormAdd>
+      <DensAdd uom="g/cm3">0</DensAdd>
+      <Additive uom="lbm">23.5</Additive>
+    </CementAdditive>
+  </CementingFluid>
+</CementJob>

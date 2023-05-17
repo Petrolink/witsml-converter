@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ToolErrorTermSet xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/ToolErrorTermSet.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1.4.1.1">
+    <eml:Identifier>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx1</eml:Identifier>
+    <eml:Description>Identifier is created from the uid of the input scheme</eml:Description>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>SPE67616</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+  </eml:Citation>
+  <Authorization>
+    <Author>Phil.Dickson@PDGM.com</Author>
+    <Source>SPE 6716</Source>
+    <Authority>ISCWSA</Authority>
+    <Status>draft</Status>
+  </Authorization>
+  <Nomenclature>
+    <Parameter uid="1">
+      <Name>D</Name>
+      <Description>Along hole depth.</Description>
+    </Parameter>
+    <Parameter uid="2">
+      <Name>I</Name>
+      <Description>Wellbore inclination</Description>
+    </Parameter>
+    <Parameter uid="3">
+      <Name>Am</Name>
+      <Description>Wellbore azimuth referenced to magnetic north</Description>
+    </Parameter>
+    <Parameter uid="4">
+      <Name>At</Name>
+      <Description>Wellbore azimuth referenced to true north</Description>
+    </Parameter>
+    <Parameter uid="5">
+      <Name>Tf</Name>
+      <Description>Toolface angle</Description>
+    </Parameter>
+    <Parameter uid="6">
+      <Name>B</Name>
+      <Description>Magnetic field strength</Description>
+    </Parameter>
+    <Parameter uid="7">
+      <Name>Dip</Name>
+      <Description>Magnetic dip angle</Description>
+    </Parameter>
+    <Parameter uid="8">
+      <Name>Decl</Name>
+      <Description>Magnetic field dip azimuth</Description>
+    </Parameter>
+    <Parameter uid="9">
+      <Name>Z</Name>
+      <Description>Vertical depth</Description>
+    </Parameter>
+    <Function uid="a">
+      <Name>cos</Name>
+      <Description>Cosine of angle</Description>
+    </Function>
+    <Function uid="b">
+      <Name>sin</Name>
+      <Description>Cosine of angle</Description>
+    </Function>
+    <Function uid="c">
+      <Name>tan</Name>
+      <Description>Tangent of angle</Description>
+    </Function>
+    <Function uid="d">
+      <Name>arctan</Name>
+      <Description>Inverse tangent</Description>
+    </Function>
+    <Function uid="e">
+      <Name>cot</Name>
+      <Description>Cotangent</Description>
+    </Function>
+  </Nomenclature>
+  <ErrorTerm uid="MDI">
+    <Name>MDI</Name>
+    <Type>magnetic</Type>
+    <Label>Magnetic Dip</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MFI">
+    <Name>MFI</Name>
+    <Type>magnetic</Type>
+    <Label>Magnetic Field</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="DBH">
+    <Name>DBH</Name>
+    <Type>magnetic</Type>
+    <Label>Declination DBH</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="DECL">
+    <Name>DECL</Name>
+    <Type>magnetic</Type>
+    <Label>Declination AZ</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ABX">
+    <Name>ABX</Name>
+    <Type>sensor</Type>
+    <MeasureClass>linear acceleration</MeasureClass>
+    <Label>X Accelerometer Bias</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ABY">
+    <Name>ABY</Name>
+    <Type>sensor</Type>
+    <MeasureClass>linear acceleration</MeasureClass>
+    <Label>Y Accelerometer Bias</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ABZ">
+    <Name>ABZ</Name>
+    <Type>sensor</Type>
+    <MeasureClass>linear acceleration</MeasureClass>
+    <Label>Z Accelerometer Bias</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ASX">
+    <Name>ASX</Name>
+    <Type>sensor</Type>
+    <Label>X Accelerometer Scale</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ASY">
+    <Name>ASY</Name>
+    <Type>sensor</Type>
+    <Label>Y Accelerometer Scale</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ASZ">
+    <Name>ASZ</Name>
+    <Type>sensor</Type>
+    <Label>Z Accelerometer Scale</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ABIX">
+    <Name>ABIX</Name>
+    <Type>sensor</Type>
+    <MeasureClass>linear acceleration</MeasureClass>
+    <Label>X Accelerometer Bias - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ABIY">
+    <Name>ABIY</Name>
+    <Type>sensor</Type>
+    <MeasureClass>linear acceleration</MeasureClass>
+    <Label>Y Accelerometer Bias - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ABIZ">
+    <Name>ABIZ</Name>
+    <Type>sensor</Type>
+    <MeasureClass>linear acceleration</MeasureClass>
+    <Label>Z Accelerometer Bias - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ASIX">
+    <Name>ASIX</Name>
+    <Type>sensor</Type>
+    <Label>X Accelerometer Scale - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ASIY">
+    <Name>ASIY</Name>
+    <Type>sensor</Type>
+    <Label>Y Accelerometer Scale - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="ASIZ">
+    <Name>ASIZ</Name>
+    <Type>sensor</Type>
+    <Label>Z Accelerometer Scale - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="2">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MBX">
+    <Name>MBX</Name>
+    <Type>sensor</Type>
+    <Label>X Magnetometer Bias</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MBY">
+    <Name>MBY</Name>
+    <Type>sensor</Type>
+    <Label>Y Magnetometer Bias</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MBZ">
+    <Name>MBZ</Name>
+    <Type>sensor</Type>
+    <Label>Z Magnetometer Bias</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MSX">
+    <Name>MSX</Name>
+    <Type>sensor</Type>
+    <Label>X Magnetometer Scale</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MSY">
+    <Name>MSY</Name>
+    <Type>sensor</Type>
+    <Label>Y Magnetometer Scale</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MSZ">
+    <Name>MSZ</Name>
+    <Type>sensor</Type>
+    <Label>Z Magnetometer Scale</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MBIX">
+    <Name>MBIX</Name>
+    <Type>sensor</Type>
+    <Label>X Magnetometer Bias - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MBIY">
+    <Name>MBIY</Name>
+    <Type>sensor</Type>
+    <Label>Y Magnetometer Bias - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MSIX">
+    <Name>MSIX</Name>
+    <Type>sensor</Type>
+    <Label>X Magnetometer Scale - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MSIY">
+    <Name>MSIY</Name>
+    <Type>sensor</Type>
+    <Label>Y Magnetometer Scale - Axial Interference Corrected</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="SAG">
+    <Name>SAG</Name>
+    <Type>misalignment</Type>
+    <Label>BHA Sag</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MX">
+    <Name>MX</Name>
+    <Type>misalignment</Type>
+    <Label>Misalignment (Lateral error)</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="azi">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="MY">
+    <Name>MY</Name>
+    <Type>misalignment</Type>
+    <Label>Misalignment (Highside effect)</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="azi">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Inc" uid="00000000-0000-0000-0000-000000000000">
+        <Inc>inc</Inc>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="AXINT">
+    <Name>AXINT</Name>
+    <Type>magnetic</Type>
+    <Label>Axial Magnetic Interferenc (AZ)</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="AMID">
+    <Name>AMID</Name>
+    <Type>magnetic</Type>
+    <Label>Axial Magnetic Interferenc (AMID)</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Azi" uid="00000000-0000-0000-0000-000000000000">
+        <Azi>azimuth</Azi>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="DREF">
+    <Name>DREF</Name>
+    <Type>depth</Type>
+    <Label>Depth Reference</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Depth" uid="00000000-0000-0000-0000-000000000000">
+        <Depth>depth</Depth>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="DSF">
+    <Name>DSF</Name>
+    <Type>depth</Type>
+    <Label>Depth Scale Factor</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Depth" uid="00000000-0000-0000-0000-000000000000">
+        <Depth>depth</Depth>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+  <ErrorTerm uid="DST">
+    <Name>DST</Name>
+    <Type>depth</Type>
+    <Label>Depth Stretch</Label>
+    <Description>Some more words here</Description>
+    <ErrorCoefficient uid="1">
+      <AbstractIscwsaErrorCoefficient xsi:type="Depth" uid="00000000-0000-0000-0000-000000000000">
+        <Depth>depth</Depth>
+      </AbstractIscwsaErrorCoefficient>
+    </ErrorCoefficient>
+  </ErrorTerm>
+</ToolErrorTermSet>

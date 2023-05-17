@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rig xmlns="http://www.energistics.org/energyml/data/witsmlv2"
+     xmlns:eml="http://www.energistics.org/energyml/data/commonv2"
+     xmlns:gco="http://www.isotc211.org/2005/gco"
+     xmlns:gmd="http://www.isotc211.org/2005/gmd"
+     xmlns:gsr="http://www.isotc211.org/2005/gsr"
+     xmlns:gts="http://www.isotc211.org/2005/gts"
+     xmlns:gml="http://www.opengis.net/gml/3.2"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///C:/Energistics2/energyml/data/witsml/v2.0/xsd_schemas/Rig.xsd"
+     schemaVersion="2.0"
+     uuid="00000000-0000-0000-0000-000000000000">
+   <eml:Aliases authority="1.4.1.1">
+      <eml:Identifier>xr31</eml:Identifier>
+      <eml:Description>Identifier is created from the uid of the input scheme</eml:Description>
+   </eml:Aliases>
+   <eml:Citation>
+      <eml:Title>Deep Drill #5</eml:Title>
+      <eml:Originator>1411_input</eml:Originator>
+      <eml:Creation>2018-01-23T08:18:34.832-06:00</eml:Creation>
+      <eml:Format>Mapforce</eml:Format>
+   </eml:Citation>
+   <Owner>Deep Drilling Co.</Owner>
+   <TypeRig>floater</TypeRig>
+   <Manufacturer>Fitsui Engineering</Manufacturer>
+   <ClassRig>ABS Class A1 M CSDU AMS ACCU</ClassRig>
+   <Approvals>DNV</Approvals>
+   <Registration>Panama</Registration>
+   <TelNumber>281 222-2221</TelNumber>
+   <FaxNumber>281 222-2222</FaxNumber>
+   <EmailAddress>John.Doe@his-ISP.com</EmailAddress>
+   <NameContact>John Doe</NameContact>
+   <RatingDrillDepth uom="ft">30000</RatingDrillDepth>
+   <RatingWaterDepth uom="ft">500</RatingWaterDepth>
+   <IsOffshore>true</IsOffshore>
+   <TypeDerrick>triple</TypeDerrick>
+   <RatingDerrick uom="lbf">1475000</RatingDerrick>
+   <HtDerrick uom="ft">180</HtDerrick>
+   <CapWindDerrick uom="mi/h">200</CapWindDerrick>
+   <NumCranes>3</NumCranes>
+</Rig>

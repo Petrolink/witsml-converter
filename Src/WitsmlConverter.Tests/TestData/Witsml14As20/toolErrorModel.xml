@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ToolErrorModel xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/ToolErrorModel.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1.4.1.1">
+    <eml:Identifier>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx10</eml:Identifier>
+    <eml:Description>Identifier is created from the uid of the input scheme</eml:Description>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>ISCWSA Basic MWD</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+  </eml:Citation>
+  <UseErrorTermSet>SPE67616</UseErrorTermSet>
+  <Authorization>
+    <Author>Phil.Dickson@PDGM.com</Author>
+    <Source>SPE 67616</Source>
+    <Authority>ISCWSA</Authority>
+    <Status>draft</Status>
+    <Version>1.0</Version>
+  </Authorization>
+  <OperatingCondition uid="1">
+    <Parameter>axialMagneticCorrection</Parameter>
+    <Value>false</Value>
+  </OperatingCondition>
+  <ErrorTermValue uid="ABX">
+    <Term>ABX</Term>
+    <Prop>S</Prop>
+    <Value uom="m/s2">0.004</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="ABZ">
+    <Term>ABZ</Term>
+    <Prop>S</Prop>
+    <Value uom="m/s2">0.004</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="ASX">
+    <Term>ASX</Term>
+    <Prop>S</Prop>
+    <Value uom="m/s2">0.0005</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="ASY">
+    <Term>ASY</Term>
+    <Prop>S</Prop>
+    <Value uom="m/s2">0.0005</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="ASZ">
+    <Term>ASZ</Term>
+    <Prop>S</Prop>
+    <Value uom="m/s2">0.0005</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MBX">
+    <Term>MBX</Term>
+    <Prop>S</Prop>
+    <Value uom="nT">70</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MBY">
+    <Term>MBY</Term>
+    <Prop>S</Prop>
+    <Value uom="nT">70</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MBZ">
+    <Term>MBZ</Term>
+    <Prop>S</Prop>
+    <Value uom="nT">70</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MSX">
+    <Term>MSX</Term>
+    <Prop>S</Prop>
+    <Value uom="UnitofMeasureExt">0.0016</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MSY">
+    <Term>MSY</Term>
+    <Prop>S</Prop>
+    <Value uom="UnitofMeasureExt">0.0016</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MSZ">
+    <Term>MSZ</Term>
+    <Prop>S</Prop>
+    <Value uom="UnitofMeasureExt">0.0016</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="SAG">
+    <Term>SAG</Term>
+    <Prop>S</Prop>
+    <Value uom="dega">0.004</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MX">
+    <Term>MX</Term>
+    <Prop>S</Prop>
+    <Value uom="dega">0.004</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="MY">
+    <Term>MY</Term>
+    <Prop>S</Prop>
+    <Value uom="dega">0.004</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="AXI">
+    <Term>AXI</Term>
+    <Prop>S</Prop>
+    <Value uom="dega">0.25</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="AMID">
+    <Term>AMID</Term>
+    <Prop>S</Prop>
+    <Value uom="dega">0.6</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="DECL">
+    <Term>DECL</Term>
+    <Prop>S</Prop>
+    <Value uom="dega">0.25</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="DBH">
+    <Term>DBH</Term>
+    <Prop>S</Prop>
+    <Value uom="nT">5000</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="DREF">
+    <Term>DREF</Term>
+    <Prop>S</Prop>
+    <Value uom="m">0.35</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="DSF">
+    <Term>DSF</Term>
+    <Prop>S</Prop>
+    <Value uom="UnitofMeasureExt">0.00024</Value>
+  </ErrorTermValue>
+  <ErrorTermValue uid="DST">
+    <Term>DST</Term>
+    <Prop>S</Prop>
+    <Value uom="m">2.2E-07</Value>
+  </ErrorTermValue>
+</ToolErrorModel>

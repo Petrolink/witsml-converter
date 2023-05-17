@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-16"?>
+<WellboreGeometry xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.0/data/witsml/v2.0/xsd_schemas/WellboreGeometry.xsd" schemaVersion="2.0" uuid="00000000-0000-0000-0000-000000000000" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1.4.1.1">
+    <eml:Identifier>W-12B-0123wbg51</eml:Identifier>
+    <eml:Description>Identifier is created from the uid of the input scheme</eml:Description>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>WB Geometry ABC</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2023-05-01T01:00:00.0000000Z</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+    <eml:LastUpdate>2001-10-31T08:15:00Z</eml:LastUpdate>
+  </eml:Citation>
+  <MdBase uom="ft" datum="kb">8000</MdBase>
+  <GapAir uom="ft">50.00</GapAir>
+  <DepthWaterMean uom="ft">1000.00</DepthWaterMean>
+  <GrowingStatus>active</GrowingStatus>
+  <WellboreGeometrySection uid="wbsection-001">
+    <Citation>
+      <eml:Originator>1411_input</eml:Originator>
+      <eml:Format>Mapforce</eml:Format>
+    </Citation>
+    <TypeHoleCasing>casing</TypeHoleCasing>
+    <SectionMdInterval datum="kb">
+      <eml:MdTop uom="ft">3000</eml:MdTop>
+      <eml:MdBase uom="ft">4000</eml:MdBase>
+    </SectionMdInterval>
+    <SectionTvdInterval datum="kb">
+      <eml:TvdTop uom="ft">2500</eml:TvdTop>
+      <eml:TvdBase uom="ft">2800</eml:TvdBase>
+    </SectionTvdInterval>
+    <IdSection uom="in">8.00</IdSection>
+    <OdSection uom="in">10.00</OdSection>
+    <WtPerLen uom="lbm/ft">30.00</WtPerLen>
+    <Grade>E</Grade>
+    <CurveConductor>false</CurveConductor>
+    <DiaDrift uom="in">7.50</DiaDrift>
+    <FactFric>0.6</FactFric>
+  </WellboreGeometrySection>
+  <Wellbore>
+    <eml:ContentType>obj_wellbore</eml:ContentType>
+    <eml:Title>A-42</eml:Title>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+  </Wellbore>
+</WellboreGeometry>

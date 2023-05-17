@@ -5,4 +5,20 @@ Petrolink.WitsmlConverter.WitsmlConversionType.Witsml20To14 = 1 -> Petrolink.Wit
 Petrolink.WitsmlConverter.WitsmlConversionType.Witsml20To21 = 2 -> Petrolink.WitsmlConverter.WitsmlConversionType
 Petrolink.WitsmlConverter.WitsmlConversionType.Witsml21To20 = 3 -> Petrolink.WitsmlConverter.WitsmlConversionType
 Petrolink.WitsmlConverter.WitsmlTransformer
+Petrolink.WitsmlConverter.WitsmlTransformOptions
+Petrolink.WitsmlConverter.WitsmlTransformOptions.AddCreationTimes.get -> bool?
+Petrolink.WitsmlConverter.WitsmlTransformOptions.AddCreationTimes.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ConversionType.get -> Petrolink.WitsmlConverter.WitsmlConversionType
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ConversionType.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.get -> bool?
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.get -> System.DateTime?
+Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.DestinationTypeName.get -> string!
+Petrolink.WitsmlConverter.WitsmlTransformOptions.DestinationTypeName.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.WitsmlTransformOptions() -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.WitsmlTransformOptions(Petrolink.WitsmlConverter.WitsmlConversionType conversionType, string! destinationTypeName) -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.get -> System.Xml.XmlWriterSettings?
+Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.init -> void
 static Petrolink.WitsmlConverter.WitsmlTransformer.Transform(string! input, Petrolink.WitsmlConverter.WitsmlConversionType version, string! typeName) -> string!
+static Petrolink.WitsmlConverter.WitsmlTransformer.Transform(string! input, Petrolink.WitsmlConverter.WitsmlTransformOptions! options) -> string!
