@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Wellbore xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///C:/Projects/Energistics/Repo/energyml/data/witsml/v2.1/xsd_schemas/Wellbore.xsd" uuid="00000000-0000-0000-0000-000000000000" schemaVersion="2.1" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
+  <eml:Aliases authority="1.4.1.1">
+    <eml:Identifier>B-01</eml:Identifier>
+    <eml:Description>Identifier is created from the uid of the input scheme</eml:Description>
+  </eml:Aliases>
+  <eml:Citation>
+    <eml:Title>A-42</eml:Title>
+    <eml:Originator>1411_input</eml:Originator>
+    <eml:Creation>2018-01-23T08:19:23.93-06:00</eml:Creation>
+    <eml:Format>Mapforce</eml:Format>
+    <eml:LastUpdate>2001-05-31T08:15:00Z</eml:LastUpdate>
+  </eml:Citation>
+  <Number>1234-0987</Number>
+  <SuffixAPI>02</SuffixAPI>
+  <NumGovt>Govt001</NumGovt>
+  <StatusWellbore>active</StatusWellbore>
+  <PurposeWellbore>exploration</PurposeWellbore>
+  <TypeWellbore>initial</TypeWellbore>
+  <Shape>horizontal</Shape>
+  <DTimKickoff>2001-03-15T13:20:00Z</DTimKickoff>
+  <Md>
+    <eml:MeasuredDepth uom="ft">0</eml:MeasuredDepth>
+    <eml:Datum>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>undefined</eml:QualifiedType>
+      <eml:Title>unknown</eml:Title>
+    </eml:Datum>
+  </Md>
+  <MdKickoff>
+    <eml:MeasuredDepth uom="ft">0</eml:MeasuredDepth>
+    <eml:Datum>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>undefined</eml:QualifiedType>
+      <eml:Title>unknown</eml:Title>
+    </eml:Datum>
+  </MdKickoff>
+  <MdPlanned>
+    <eml:MeasuredDepth uom="ft">15800</eml:MeasuredDepth>
+    <eml:Datum>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>undefined</eml:QualifiedType>
+      <eml:Title>unknown</eml:Title>
+    </eml:Datum>
+  </MdPlanned>
+  <MdSubSeaPlanned>
+    <eml:MeasuredDepth uom="ft">12800</eml:MeasuredDepth>
+    <eml:Datum>
+      <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+      <eml:QualifiedType>undefined</eml:QualifiedType>
+      <eml:Title>unknown</eml:Title>
+    </eml:Datum>
+  </MdSubSeaPlanned>
+  <DayTarget uom="d">128</DayTarget>
+  <Well>
+    <eml:Uuid>00000000-0000-0000-0000-000000000000</eml:Uuid>
+    <eml:QualifiedType>witsml21.Well</eml:QualifiedType>
+    <eml:Title>6507/7-A-42</eml:Title>
+  </Well>
+</Wellbore>

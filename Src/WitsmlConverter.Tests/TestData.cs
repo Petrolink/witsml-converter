@@ -35,6 +35,11 @@ internal static class TestData
         return Path.Combine(AppContext.BaseDirectory, "TestData", "Witsml20As14", $"{type}.xml");
     }
 
+    public static string Get20As21Path(string type)
+    {
+        return Path.Combine(AppContext.BaseDirectory, "TestData", "Witsml20As21", $"{type}.xml");
+    }
+
     public static string Read14SourceData(string type)
     {
         return File.ReadAllText(Get14SourcePath(type));

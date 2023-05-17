@@ -90,4 +90,28 @@ public class WitsmlTransformerTests
 
         Assert.Equal(dstObj, resObj);
     }
+
+    [Theory]
+    [MemberData(nameof(Witsml20To14TypesData))]
+    public void Transform_20Objects_21Objects(string w14type, string? w20type)
+    {
+        var dstType = w20type ?? w14type;
+        var srcType = w20type ?? w14type;
+
+        var resName = $"{srcType}";
+
+        var srcObj = File.ReadAllText(TestData.Get20SourcePath(srcType));
+        var dstObj = File.ReadAllText(TestData.Get20As21Path(resName));
+
+        var options = new WitsmlTransformOptions
+        {
+            DestinationTypeName = dstType,
+            ConversionType = WitsmlConversionType.Witsml20To21,
+            XmlWriterSettings = new XmlWriterSettings { Indent = true }
+        };
+
+        var resObj = WitsmlTransformer.Transform(srcObj, options);
+
+        Assert.Equal(dstObj, resObj);
+    }
 }
