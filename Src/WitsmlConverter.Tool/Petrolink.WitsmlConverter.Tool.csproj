@@ -8,6 +8,9 @@
     <Nullable>enable</Nullable>
     <AssemblyName>WitsmlConvert</AssemblyName>
     <Version>0.1.0</Version>
+    <Company>Petrolink</Company>
+    <Product>WITSML Converter</Product>
+    <Copyright>Copyright (c) 2023 Petrolink</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
