@@ -16,6 +16,7 @@ var transformCommand = new Command("transform", "Transform one or more WITSML do
     outputOption,
     typeOption,
     modeOption,
+    overwriteOption
 };
 
 rootCommand.AddCommand(transformCommand);
