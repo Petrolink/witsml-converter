@@ -19,14 +19,12 @@ public class WitsmlTransformerTests
 
         var options = new WitsmlTransformOptions
         {
-            DestinationTypeName = destType,
-            ConversionType = WitsmlConversionType.Witsml14To20,
             XmlWriterSettings = new XmlWriterSettings { Indent = true },
             // Must use a specific creation time to ensure the resulting XML is identical
             CreationTime = TestData.CreationTime
         };
 
-        var resObj = WitsmlTransformer.Transform(srcObj, options);
+        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml14To20, destType, options);
 
         Assert.Equal(dstObj, resObj);
     }
@@ -48,21 +46,12 @@ public class WitsmlTransformerTests
 
         var options20 = new WitsmlTransformOptions
         {
-            DestinationTypeName = dest20Type,
-            ConversionType = WitsmlConversionType.Witsml14To20,
             // Must use a specific creation time to ensure the resulting XML is identical
             CreationTime = TestData.CreationTime
         };
 
-        var options21 = new WitsmlTransformOptions
-        {
-            DestinationTypeName = dest20Type,
-            ConversionType = WitsmlConversionType.Witsml20To21,
-            XmlWriterSettings = new XmlWriterSettings { Indent = true }
-        };
-
-        var resObj20 = WitsmlTransformer.Transform(srcObj, options20);
-        var resObj21 = WitsmlTransformer.Transform(resObj20, options21);
+        var resObj20 = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml14To20, dest20Type, options20);
+        var resObj21 = WitsmlTransformer.Transform(resObj20, WitsmlConversionType.Witsml20To21, dest20Type, OptionsWithIndent());
 
         Assert.Equal(dstObj, resObj21);
     }
@@ -79,14 +68,7 @@ public class WitsmlTransformerTests
         var srcObj = File.ReadAllText(TestData.Get20SourcePath(srcType));
         var dstObj = File.ReadAllText(TestData.Get20As14Path(resName));
 
-        var options = new WitsmlTransformOptions
-        {
-            DestinationTypeName = dstType,
-            ConversionType = WitsmlConversionType.Witsml20To14,
-            XmlWriterSettings = new XmlWriterSettings { Indent = true }
-        };
-
-        var resObj = WitsmlTransformer.Transform(srcObj, options);
+        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml20To14, dstType, OptionsWithIndent());
 
         Assert.Equal(dstObj, resObj);
     }
@@ -103,15 +85,13 @@ public class WitsmlTransformerTests
         var srcObj = File.ReadAllText(TestData.Get20SourcePath(srcType));
         var dstObj = File.ReadAllText(TestData.Get20As21Path(resName));
 
-        var options = new WitsmlTransformOptions
-        {
-            DestinationTypeName = dstType,
-            ConversionType = WitsmlConversionType.Witsml20To21,
-            XmlWriterSettings = new XmlWriterSettings { Indent = true }
-        };
-
-        var resObj = WitsmlTransformer.Transform(srcObj, options);
+        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml20To21, dstType, OptionsWithIndent());
 
         Assert.Equal(dstObj, resObj);
     }
+
+    private static WitsmlTransformOptions OptionsWithIndent() => new()
+    {
+        XmlWriterSettings = new XmlWriterSettings { Indent = true }
+    };
 }

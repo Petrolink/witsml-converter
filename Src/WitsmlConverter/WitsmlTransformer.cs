@@ -5,7 +5,7 @@ using System.Xml;
 namespace Petrolink.WitsmlConverter;
 
 /// <summary>
-/// Performs transformations between WITSML 2.0 and WITSML 1.4
+/// Performs transformations on WITSML documents.
 /// </summary>
 public static class WitsmlTransformer
 {
@@ -15,30 +15,27 @@ public static class WitsmlTransformer
     private delegate bool UomConverter(string uom, out string newUom);
 
     /// <summary>
-    /// Transforms a document from WITSML 1.4 to 2.0, or the reverse.
+    /// Transforms a WITSML document between versions.
     /// </summary>
-    /// <param name="input">Input XML document string</param>
-    /// <param name="version">The mapping version</param>
-    /// <param name="typeName">The destination type name</param>
-    public static string Transform(string input, WitsmlConversionType version, string typeName)
-    {
-        return Transform(input, new WitsmlTransformOptions(version, typeName));
-    }
-
-    /// <summary>
-    /// Transforms a document from WITSML 1.4 to 2.0, or the reverse.
-    /// </summary>
-    /// <param name="input">Input XML document string</param>
-    /// <param name="options">Options for the transformation</returns>
+    /// <param name="input">An input XML document string.</param>
+    /// <param name="conversionType">The mapping version.</param>
+    /// <param name="destinationType">The destination type name. This is not case-sensitive.</param>
+    /// <param name="options">Options for the transformation.</param>
+    /// <returns>An output XML document string.</returns>
     public static string Transform(
         string input,
-        WitsmlTransformOptions options)
+        WitsmlConversionType conversionType,
+        string destinationType,
+        WitsmlTransformOptions? options = null)
     {
         if (input == null)
             throw new ArgumentNullException(nameof(input));
-        ValidateOptions(options);
+        if (conversionType is < WitsmlConversionType.Witsml14To20 or > WitsmlConversionType.Witsml21To20)
+            throw new ArgumentOutOfRangeException(nameof(conversionType));
+        if (destinationType == null)
+            throw new ArgumentNullException(nameof(destinationType));
 
-        var types = GetMapperTypes(options.ConversionType, options.DestinationTypeName);
+        var types = GetMapperTypes(conversionType, destinationType!);
 
         var inputDoc = ToXmlDocument(input);
 
@@ -56,9 +53,9 @@ public static class WitsmlTransformer
 
         // Need to add creation times before running the second mapper to ensure that the document is valid,
         // otherwise the second mapper will throw an exception when eml:Creation is missing.
-        if (options.ConversionType == WitsmlConversionType.Witsml14To20 && (options.AddCreationTimes ?? true))
+        if (conversionType == WitsmlConversionType.Witsml14To20 && (options?.AddCreationTimes ?? true))
         {
-            AddCreationTimes(outputDoc, nsm, options.CreationTime);
+            AddCreationTimes(outputDoc, nsm, options?.CreationTime);
         }
 
         if (types.Map2 != null)
@@ -66,13 +63,13 @@ public static class WitsmlTransformer
             outputDoc = RunMapper(outputDoc, types.Map2);
         }
 
-        if (options.ConvertUnits ?? true)
+        if (options?.ConvertUnits ?? true)
         {
-            if (options.ConversionType == WitsmlConversionType.Witsml14To20)
+            if (conversionType == WitsmlConversionType.Witsml14To20)
             {
                 ConvertUnits(outputDoc, nsm, Witsml20UnitConverter.TryConvert14To20);
             }
-            else if (options.ConversionType == WitsmlConversionType.Witsml20To14)
+            else if (conversionType == WitsmlConversionType.Witsml20To14)
             {
                 ConvertUnits(outputDoc, nsm, Witsml20UnitConverter.TryConvert20To14);
             }
@@ -84,17 +81,7 @@ public static class WitsmlTransformer
         if (types.After2 != null)
             outputDoc = RunMapper(outputDoc, types.After2);
 
-        return ToString(outputDoc, options.XmlWriterSettings);
-    }
-
-    private static void ValidateOptions(WitsmlTransformOptions options)
-    {
-        if (options == null)
-            throw new ArgumentNullException(nameof(options));
-        if (options.ConversionType is < WitsmlConversionType.Witsml14To20 or > WitsmlConversionType.Witsml21To20)
-            throw new ArgumentOutOfRangeException(nameof(options), "ConversionType is invalid");
-        if (string.IsNullOrWhiteSpace(options.DestinationTypeName))
-            throw new ArgumentException("DestinationTypeName must be specified", nameof(options));
+        return ToString(outputDoc, options?.XmlWriterSettings);
     }
 
     /// <summary>
@@ -121,6 +108,7 @@ public static class WitsmlTransformer
     /// </summary>
     /// <param name="doc"></param>
     /// <param name="nsm"></param>
+    /// <param name="creationTime"></param>
     private static void AddCreationTimes(XmlDocument doc, XmlNamespaceManager nsm, DateTime? creationTime)
     {
         creationTime ??= DateTime.UtcNow;

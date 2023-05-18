@@ -7,23 +7,10 @@ namespace Petrolink.WitsmlConverter;
 /// </summary>
 public class WitsmlTransformOptions
 {
+    /// <summary>
+    /// Initializes a new instance with default options.
+    /// </summary>
     public WitsmlTransformOptions() { }
-
-    public WitsmlTransformOptions(WitsmlConversionType conversionType, string destinationTypeName)
-    {
-        ConversionType = conversionType;
-        DestinationTypeName = destinationTypeName;
-    }
-
-    /// <summary>
-    /// Gets the conversion type.
-    /// </summary>
-    public WitsmlConversionType ConversionType { get; init; }
-
-    /// <summary>
-    /// Gets the destination WITSML type name.
-    /// </summary>
-    public string DestinationTypeName { get; init; }
 
     /// <summary>
     /// Gets the XML writer settings. If null, default settings will be used.
@@ -31,8 +18,7 @@ public class WitsmlTransformOptions
     public XmlWriterSettings? XmlWriterSettings { get; init; }
 
     /// <summary>
-    /// Gets whether to add creation timestamps when converting from WITSML 1.4 to 2.0
-    /// If null, defaults to true.
+    /// Gets whether to add creation timestamps when converting from WITSML 1.4 to 2.0. If null, defaults to true.
     /// </summary>
     public bool? AddCreationTimes { get; init; }
 

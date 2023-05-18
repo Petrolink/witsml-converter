@@ -6,6 +6,7 @@
     <LangVersion>11.0</LangVersion>
     <Nullable>enable</Nullable>
     <Version>0.1.0</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
