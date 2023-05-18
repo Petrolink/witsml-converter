@@ -24,7 +24,7 @@ public class WitsmlTransformerTests
             CreationTime = TestData.CreationTime
         };
 
-        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml14To20, destType, options);
+        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlTransformType.Witsml14To20, destType, options);
 
         Assert.Equal(dstObj, resObj);
     }
@@ -50,8 +50,8 @@ public class WitsmlTransformerTests
             CreationTime = TestData.CreationTime
         };
 
-        var resObj20 = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml14To20, dest20Type, options20);
-        var resObj21 = WitsmlTransformer.Transform(resObj20, WitsmlConversionType.Witsml20To21, dest20Type, OptionsWithIndent());
+        var resObj20 = WitsmlTransformer.Transform(srcObj, WitsmlTransformType.Witsml14To20, dest20Type, options20);
+        var resObj21 = WitsmlTransformer.Transform(resObj20, WitsmlTransformType.Witsml20To21, dest20Type, OptionsWithIndent());
 
         Assert.Equal(dstObj, resObj21);
     }
@@ -68,7 +68,7 @@ public class WitsmlTransformerTests
         var srcObj = File.ReadAllText(TestData.Get20SourcePath(srcType));
         var dstObj = File.ReadAllText(TestData.Get20As14Path(resName));
 
-        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml20To14, dstType, OptionsWithIndent());
+        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlTransformType.Witsml20To14, dstType, OptionsWithIndent());
 
         Assert.Equal(dstObj, resObj);
     }
@@ -85,7 +85,7 @@ public class WitsmlTransformerTests
         var srcObj = File.ReadAllText(TestData.Get20SourcePath(srcType));
         var dstObj = File.ReadAllText(TestData.Get20As21Path(resName));
 
-        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlConversionType.Witsml20To21, dstType, OptionsWithIndent());
+        var resObj = WitsmlTransformer.Transform(srcObj, WitsmlTransformType.Witsml20To21, dstType, OptionsWithIndent());
 
         Assert.Equal(dstObj, resObj);
     }

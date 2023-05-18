@@ -5,7 +5,7 @@ using System.Xml;
 namespace Petrolink.WitsmlConverter;
 
 /// <summary>
-/// Performs transformations on WITSML documents.
+/// Performs XML transformations on WITSML documents.
 /// </summary>
 public static class WitsmlTransformer
 {
@@ -15,27 +15,27 @@ public static class WitsmlTransformer
     private delegate bool UomConverter(string uom, out string newUom);
 
     /// <summary>
-    /// Transforms a WITSML document between versions.
+    /// Performs an XML transformation on a WITSML document.
     /// </summary>
     /// <param name="input">An input XML document string.</param>
-    /// <param name="conversionType">The mapping version.</param>
+    /// <param name="transformType">The mapping version.</param>
     /// <param name="destinationType">The destination type name. This is not case-sensitive.</param>
     /// <param name="options">Options for the transformation.</param>
     /// <returns>An output XML document string.</returns>
     public static string Transform(
         string input,
-        WitsmlConversionType conversionType,
+        WitsmlTransformType transformType,
         string destinationType,
         WitsmlTransformOptions? options = null)
     {
         if (input == null)
             throw new ArgumentNullException(nameof(input));
-        if (conversionType is < WitsmlConversionType.Witsml14To20 or > WitsmlConversionType.Witsml21To20)
-            throw new ArgumentOutOfRangeException(nameof(conversionType));
+        if (transformType is < WitsmlTransformType.Witsml14To20 or > WitsmlTransformType.Witsml21To20)
+            throw new ArgumentOutOfRangeException(nameof(transformType));
         if (destinationType == null)
             throw new ArgumentNullException(nameof(destinationType));
 
-        var types = GetMapperTypes(conversionType, destinationType!);
+        var types = GetMapperTypes(transformType, destinationType!);
 
         var inputDoc = ToXmlDocument(input);
 
@@ -53,7 +53,7 @@ public static class WitsmlTransformer
 
         // Need to add creation times before running the second mapper to ensure that the document is valid,
         // otherwise the second mapper will throw an exception when eml:Creation is missing.
-        if (conversionType == WitsmlConversionType.Witsml14To20 && (options?.AddCreationTimes ?? true))
+        if (transformType == WitsmlTransformType.Witsml14To20 && (options?.AddCreationTimes ?? true))
         {
             AddCreationTimes(outputDoc, nsm, options?.CreationTime);
         }
@@ -65,11 +65,11 @@ public static class WitsmlTransformer
 
         if (options?.ConvertUnits ?? true)
         {
-            if (conversionType == WitsmlConversionType.Witsml14To20)
+            if (transformType == WitsmlTransformType.Witsml14To20)
             {
                 ConvertUnits(outputDoc, nsm, Witsml20UnitConverter.TryConvert14To20);
             }
-            else if (conversionType == WitsmlConversionType.Witsml20To14)
+            else if (transformType == WitsmlTransformType.Witsml20To14)
             {
                 ConvertUnits(outputDoc, nsm, Witsml20UnitConverter.TryConvert20To14);
             }
@@ -178,16 +178,16 @@ public static class WitsmlTransformer
         return outputDoc;
     }
 
-    private static MappingRegistry.MappingTypes GetMapperTypes(WitsmlConversionType version, string type)
+    private static MappingRegistry.MappingTypes GetMapperTypes(WitsmlTransformType version, string type)
     {
         try
         {
             return version switch
             {
-                WitsmlConversionType.Witsml14To20 => MappingRegistry.s_14to20Types[type],
-                WitsmlConversionType.Witsml20To14 => MappingRegistry.s_20to14Types[type],
-                WitsmlConversionType.Witsml20To21 => MappingRegistry.s_20To21Types[type],
-                WitsmlConversionType.Witsml21To20 => MappingRegistry.s_21To20Types[type],
+                WitsmlTransformType.Witsml14To20 => MappingRegistry.s_14to20Types[type],
+                WitsmlTransformType.Witsml20To14 => MappingRegistry.s_20to14Types[type],
+                WitsmlTransformType.Witsml20To21 => MappingRegistry.s_20To21Types[type],
+                WitsmlTransformType.Witsml21To20 => MappingRegistry.s_21To20Types[type],
                 _ => throw new ArgumentOutOfRangeException(nameof(version)),
             };
         }

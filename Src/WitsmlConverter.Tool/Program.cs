@@ -1,13 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.CommandLine;
-using System.Diagnostics.CodeAnalysis;
 using Petrolink.WitsmlConverter;
 
 var inputOption = new Option<List<string>>(new[] { "--input", "-i" }, "Input file paths for the transformation") { IsRequired = true };
 var outputOption = new Option<string>(new[] { "--output", "-o" }, "Output directory") { IsRequired = true };
 var typeOption = new Option<string>(new[] { "--type", "-t" }, "The output object type") { IsRequired = true };
-var modeOption = new Option<WitsmlConversionType>(new[] { "--conversion", "-c" }, "The conversion type") { IsRequired = true };
-var overwriteOption = new Option<bool>(new[] { "--overwrite", "-r" }, "Whether to overwrite destination files");
+var modeOption = new Option<WitsmlTransformType>(new[] { "--transform", "-x" }, "The transformation type") { IsRequired = true };
+var overwriteOption = new Option<bool>(new[] { "--overwrite", "-f" }, "Whether to overwrite destination files");
 
 var rootCommand = new RootCommand("WITSML Converter");
 
@@ -26,7 +25,7 @@ transformCommand.SetHandler(ExecuteTransform, inputOption, outputOption, typeOpt
 return rootCommand.Invoke(args);
 
 // Execute the transform command
-void ExecuteTransform(List<string> input, string output, string type, WitsmlConversionType conversion, bool overwrite)
+void ExecuteTransform(List<string> input, string output, string type, WitsmlTransformType conversion, bool overwrite)
 {
     // TODO Detect destination type based on the input
 

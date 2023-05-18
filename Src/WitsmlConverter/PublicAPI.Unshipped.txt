@@ -1,9 +1,4 @@
 ﻿#nullable enable
-Petrolink.WitsmlConverter.WitsmlConversionType
-Petrolink.WitsmlConverter.WitsmlConversionType.Witsml14To20 = 0 -> Petrolink.WitsmlConverter.WitsmlConversionType
-Petrolink.WitsmlConverter.WitsmlConversionType.Witsml20To14 = 1 -> Petrolink.WitsmlConverter.WitsmlConversionType
-Petrolink.WitsmlConverter.WitsmlConversionType.Witsml20To21 = 2 -> Petrolink.WitsmlConverter.WitsmlConversionType
-Petrolink.WitsmlConverter.WitsmlConversionType.Witsml21To20 = 3 -> Petrolink.WitsmlConverter.WitsmlConversionType
 Petrolink.WitsmlConverter.WitsmlTransformer
 Petrolink.WitsmlConverter.WitsmlTransformOptions
 Petrolink.WitsmlConverter.WitsmlTransformOptions.AddCreationTimes.get -> bool?
@@ -15,4 +10,9 @@ Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.init -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.WitsmlTransformOptions() -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.get -> System.Xml.XmlWriterSettings?
 Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.init -> void
-static Petrolink.WitsmlConverter.WitsmlTransformer.Transform(string! input, Petrolink.WitsmlConverter.WitsmlConversionType conversionType, string! destinationType, Petrolink.WitsmlConverter.WitsmlTransformOptions? options = null) -> string!
+Petrolink.WitsmlConverter.WitsmlTransformType
+Petrolink.WitsmlConverter.WitsmlTransformType.Witsml14To20 = 0 -> Petrolink.WitsmlConverter.WitsmlTransformType
+Petrolink.WitsmlConverter.WitsmlTransformType.Witsml20To14 = 1 -> Petrolink.WitsmlConverter.WitsmlTransformType
+Petrolink.WitsmlConverter.WitsmlTransformType.Witsml20To21 = 2 -> Petrolink.WitsmlConverter.WitsmlTransformType
+Petrolink.WitsmlConverter.WitsmlTransformType.Witsml21To20 = 3 -> Petrolink.WitsmlConverter.WitsmlTransformType
+static Petrolink.WitsmlConverter.WitsmlTransformer.Transform(string! input, Petrolink.WitsmlConverter.WitsmlTransformType transformType, string! destinationType, Petrolink.WitsmlConverter.WitsmlTransformOptions? options = null) -> string!
