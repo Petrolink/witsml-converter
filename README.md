@@ -16,7 +16,7 @@ The Petrolink.WitsmlConverter library can be included as a dependency for a C# p
 
 If a command line tool is needed, the Petrolink.WitsmlConverter.Tool project, which builds the WitsmlConvert.exe file, can be used. This tool is merely a wrapper around the WitsmlTransformer class. Execute `WitsmlConvert.exe --help` for usage details.
 
-For example - to convert a 1411 Well object to 2.1 Well object the command will be `witsmlconvert transform -i "C:\Samples\well1411_1.xml" -o "C:\Samples\Output" -t "well" -x "Witsml14To20"`
+For example - to convert a 1411 Well object to 2.1 Well object the command will be `witsmlconvert transform -i "C:\Samples\well1411_1.xml" -o "C:\Samples\Output" -t "well" -x "Witsml14To21"`
 
 ## Building
 
