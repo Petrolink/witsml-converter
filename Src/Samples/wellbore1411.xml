@@ -1,0 +1,12 @@
+<wellbores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.witsml.org/schemas/1series  ../xsd_schemas/obj_wellbore.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
+   <wellbore uidWell="Petrolink1" uid="Drilling_Demo1">
+      <nameWell>Petrolink1</nameWell>
+      <name>Drilling_Demo1</name>
+      <statusWellbore>tight</statusWellbore>
+      <dayTarget uom="d">50</dayTarget>
+      <commonData>
+         <dTimCreation>2020-02-04T11:29:04.913Z</dTimCreation>
+         <dTimLastChange>2023-03-27T05:39:33.65Z</dTimLastChange>
+      </commonData>
+   </wellbore>
+</wellbores>

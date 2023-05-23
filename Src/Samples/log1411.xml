@@ -1,0 +1,131 @@
+<logs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.witsml.org/schemas/1series  ../xsd_schemas/obj_log.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
+   <log uidWell="Petrolink1" uidWellbore="Drilling_Demo1" uid="rt_RI_TIME">
+      <nameWell>Temp_Well</nameWell>
+      <nameWellbore>Temp_Wellbore</nameWellbore>
+      <name>rt_RI_TIME</name>
+      <objectGrowing>true</objectGrowing>
+      <serviceCompany>Petrolink</serviceCompany>
+      <description>This Log is a virtual log indexed by time created by Petrolink</description>
+      <indexType>date time</indexType>
+      <startDateTimeIndex>2023-04-19T07:28:31Z</startDateTimeIndex>
+      <endDateTimeIndex>2023-05-19T11:57:11Z</endDateTimeIndex>
+      <indexCurve>TIME</indexCurve>
+	  <direction>increasing</direction>
+      <nullValue>-999.25</nullValue>
+      <logCurveInfo uid="TIME">
+         <mnemonic>TIME</mnemonic>
+         <unit>DateTime</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <typeLogData>date time</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="BITDEPTH">
+         <mnemonic>BITDEPTH</mnemonic>
+         <unit>ft</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>BITDEPTH</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="BPOS">
+         <mnemonic>BPOS</mnemonic>
+         <unit>ft</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>BPOS</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="HOLEDEPTH">
+         <mnemonic>HOLEDEPTH</mnemonic>
+         <unit>ft</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>HOLEDEPTH</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="FLOWIN">
+         <mnemonic>FLOWIN</mnemonic>
+         <unit>galUS/min</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>FLOWIN</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="HOOKLOAD">
+         <mnemonic>HOOKLOAD</mnemonic>
+         <unit>klbf</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>HOOKLOAD</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="ROP">
+         <mnemonic>ROP</mnemonic>
+         <unit>ft/h</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>ROP</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="SPM1">
+         <mnemonic>SPM1</mnemonic>
+         <unit>spm</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>SPM1</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="SPM2">
+         <mnemonic>SPM2</mnemonic>
+         <unit>spm</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>SPM2</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="SPM3">
+         <mnemonic>SPM3</mnemonic>
+         <unit>spm</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>SPM3</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="SPP">
+         <mnemonic>SPP</mnemonic>
+         <unit>psi</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>SPP</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="RPM">
+         <mnemonic>RPM</mnemonic>
+         <unit>rpm</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>RPM</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="TORQUE">
+         <mnemonic>TORQUE</mnemonic>
+         <unit>ft.lbf</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>TORQUE</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo uid="WOB">
+         <mnemonic>WOB</mnemonic>
+         <unit>klbf</unit>
+         <minDateTimeIndex>2023-04-19T07:28:31Z</minDateTimeIndex>
+         <maxDateTimeIndex>2023-05-19T11:57:11Z</maxDateTimeIndex>
+         <curveDescription>WOB</curveDescription>
+         <typeLogData>double</typeLogData>
+      </logCurveInfo>
+      <commonData>
+         <dTimCreation>2023-04-19T07:28:37.936Z</dTimCreation>
+         <dTimLastChange>2023-05-19T11:57:11.873Z</dTimLastChange>
+      </commonData>
+   </log>
+</logs>

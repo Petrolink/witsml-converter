@@ -1,0 +1,23 @@
+<wells xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.witsml.org/schemas/1series  ../xsd_schemas/obj_well.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
+   <well uid="Petrolink1">
+      <name>Petrolink 1</name>
+      <field>Field A</field>
+      <country>USA</country>
+      <county>USA</county>
+      <timeZone>-06:00</timeZone>
+      <operator>Petrolink</operator>
+      <dTimSpud>2020-09-30T06:40:00Z</dTimSpud>
+      <wellDatum uid="wd-1">
+         <name>wd-0</name>
+      </wellDatum>
+      <wellLocation uid="Loc-1">
+      </wellLocation>
+      <wellCRS uid="crs-0">
+         <name>test</name>
+      </wellCRS>
+      <commonData>
+         <dTimCreation>2020-02-04T11:28:28.663Z</dTimCreation>
+         <dTimLastChange>2022-05-10T12:16:23.839Z</dTimLastChange>
+      </commonData>
+   </well>
+</wells>
