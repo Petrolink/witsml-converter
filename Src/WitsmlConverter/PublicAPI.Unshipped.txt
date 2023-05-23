@@ -7,6 +7,10 @@ Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.get -> bool?
 Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.init -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.get -> System.DateTime?
 Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.SchemaSet.get -> System.Xml.Schema.XmlSchemaSet?
+Petrolink.WitsmlConverter.WitsmlTransformOptions.SchemaSet.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ValidationMode.get -> Petrolink.WitsmlConverter.WitsmlValidationMode
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ValidationMode.init -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.WitsmlTransformOptions() -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.get -> System.Xml.XmlWriterSettings?
 Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.init -> void
@@ -15,4 +19,9 @@ Petrolink.WitsmlConverter.WitsmlTransformType.Witsml14To20 = 0 -> Petrolink.Wits
 Petrolink.WitsmlConverter.WitsmlTransformType.Witsml20To14 = 1 -> Petrolink.WitsmlConverter.WitsmlTransformType
 Petrolink.WitsmlConverter.WitsmlTransformType.Witsml20To21 = 2 -> Petrolink.WitsmlConverter.WitsmlTransformType
 Petrolink.WitsmlConverter.WitsmlTransformType.Witsml21To20 = 3 -> Petrolink.WitsmlConverter.WitsmlTransformType
+Petrolink.WitsmlConverter.WitsmlValidationMode
+Petrolink.WitsmlConverter.WitsmlValidationMode.Default = 0 -> Petrolink.WitsmlConverter.WitsmlValidationMode
+Petrolink.WitsmlConverter.WitsmlValidationMode.Disabled = 1 -> Petrolink.WitsmlConverter.WitsmlValidationMode
+Petrolink.WitsmlConverter.WitsmlValidationMode.Enabled = 3 -> Petrolink.WitsmlConverter.WitsmlValidationMode
+Petrolink.WitsmlConverter.WitsmlValidationMode.OnError = 2 -> Petrolink.WitsmlConverter.WitsmlValidationMode
 static Petrolink.WitsmlConverter.WitsmlTransformer.Transform(string! input, Petrolink.WitsmlConverter.WitsmlTransformType transformType, string! destinationType, Petrolink.WitsmlConverter.WitsmlTransformOptions? options = null) -> string!

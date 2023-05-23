@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using System.Xml.Schema;
 
 namespace Petrolink.WitsmlConverter;
 
@@ -33,4 +34,15 @@ public class WitsmlTransformOptions
     /// If null, defaults to true.
     /// </summary>
     public bool? ConvertUnits { get; init; }
+
+    /// <summary>
+    /// Gets or sets the <see cref="WitsmlValidationMode"/> to be used for input documents.
+    /// </summary>
+    public WitsmlValidationMode ValidationMode { get; init; }
+
+    /// <summary>
+    /// Gets or sets the <see cref="XmlSchemaSet"/> to use when validating input documents. Required when
+    /// <see cref="ValidationMode"/> is <see cref="WitsmlValidationMode.Enabled"/>.
+    /// </summary>
+    public XmlSchemaSet? SchemaSet { get; init; }
 }
