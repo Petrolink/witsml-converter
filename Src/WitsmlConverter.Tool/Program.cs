@@ -1,9 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.CommandLine;
+using System.Xml.Schema;
 using Microsoft.Extensions.FileSystemGlobbing;
 using Petrolink.WitsmlConverter;
 
 const string DefaultPattern = "*.xml";
+const string SchemaPattern = "*.xsd";
 
 var inputOption = new Option<IList<string>>(new[] { "--input", "-i" }, "An input file or directory path for the transformation. May be specified multiple times. Directory contents will be matched using the --patterns option.") { IsRequired = true };
 var outputOption = new Option<string>(new[] { "--output", "-o" }, "The output directory.") { IsRequired = true };
@@ -11,6 +13,10 @@ var typeOption = new Option<string>(new[] { "--type", "-t" }, "The output object
 var modeOption = new Option<WitsmlTransformType>(new[] { "--transform", "-x" }, "The transformation type.") { IsRequired = true };
 var patternsOption = new Option<IList<string>>(new[] { "--patterns", "-p" }, () => new[] { DefaultPattern }, "An input file pattern used when matching against input directories. May be specified multiple times.");
 var overwriteOption = new Option<bool>(new[] { "--overwrite", "-f" }, "Whether to overwrite destination files.");
+var validationModeOption = new Option<WitsmlValidationMode>(new[] { "--validation-mode", "-a" }, "How to validate WITSML documents against their schemas. Default is equivalent to OnError.");
+var schemaDirOption = new Option<IList<string>>(new[] { "--schemas", "-s" }, "A path to a directory containing WITSML schemas. All .xsd files in the directory or a sub-directory will be used. May be specified multiple times.");
+
+// TODO Add verbosity option, -v is reversed for this
 
 var rootCommand = new RootCommand("WITSML Converter");
 
@@ -21,7 +27,9 @@ var transformCommand = new Command("transform", "Transform one or more WITSML do
     typeOption,
     modeOption,
     patternsOption,
-    overwriteOption
+    overwriteOption,
+    validationModeOption,
+    schemaDirOption
 };
 
 rootCommand.AddCommand(transformCommand);
@@ -32,7 +40,9 @@ transformCommand.SetHandler(ExecuteTransform,
                             typeOption,
                             modeOption,
                             patternsOption,
-                            overwriteOption);
+                            overwriteOption,
+                            validationModeOption,
+                            schemaDirOption);
 
 return rootCommand.Invoke(args);
 
@@ -43,7 +53,9 @@ void ExecuteTransform(
     string type,
     WitsmlTransformType conversion,
     IList<string> patterns,
-    bool overwrite)
+    bool overwrite,
+    WitsmlValidationMode validationMode,
+    IList<string> schemaDirs)
 {
     // TODO Detect destination type based on the input
     var matcher = new Matcher();
@@ -54,28 +66,52 @@ void ExecuteTransform(
 
     if (inputFilePaths.Count == 0)
     {
-        WriteError("No valid inputs found");
+        WriteError("Error: No valid inputs found");
         return;
     }
 
-    PathType outputType = GetPathType(output);
-
-    if (outputType != PathType.Directory)
+    switch (GetPathType(output))
     {
-        throw DefaultException("Output path is not a directory");
+        case PathType.File:
+            WriteError("Error: Output path is a file");
+            return;
+        case PathType.None:
+            Directory.CreateDirectory(output);
+            break;
     }
 
-    Directory.CreateDirectory(output);
+    XmlSchemaSet? schemaSet = null;
+
+    if (schemaDirs.Count > 0)
+    {
+        schemaSet = new XmlSchemaSet();
+
+        // Deduplicate by file name
+        var loadedFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        foreach (var schemaDir in schemaDirs)
+        {
+            foreach (var (path, schema) in LoadAllSchemas(schemaDir))
+            {
+                var fileName = Path.GetFileName(path);
+
+                if (loadedFiles.Add(fileName))
+                {
+                    schemaSet.Add(schema);
+                }
+            }
+        }
+    }
 
     foreach (var inputPath in inputFilePaths)
     {
         var outputPath = Path.Combine(output, Path.GetFileName(inputPath));
 
-        Console.WriteLine(inputPath);
+        Console.WriteLine($"Processing {inputPath}");
 
         if (!overwrite && File.Exists(outputPath))
         {
-            WriteError($"Output file already exists: {outputPath}");
+            WriteError($"Error: Output file already exists: {outputPath}");
             continue;
         }
 
@@ -83,7 +119,13 @@ void ExecuteTransform(
         {
             var inputData = File.ReadAllText(inputPath);
 
-            var outputData = WitsmlTransformer.Transform(inputData, conversion, type);
+            var options = new WitsmlTransformOptions
+            {
+                ValidationMode = validationMode,
+                SchemaSet = schemaSet
+            };
+
+            var outputData = WitsmlTransformer.Transform(inputData, conversion, type, options);
 
             File.WriteAllText(outputPath, outputData);
         }
@@ -121,6 +163,22 @@ Exception DefaultException(string text) => new Exception(text);
 void WriteError(string text)
 {
     Console.Error.WriteLine(text);
+}
+
+IEnumerable<(string, XmlSchema)> LoadAllSchemas(string path)
+{
+    foreach (var p in Directory.EnumerateFiles(path, SchemaPattern, SearchOption.AllDirectories))
+    {
+        XmlSchema? schema;
+
+        using (var stream = File.OpenRead(p))
+        {
+            schema = XmlSchema.Read(stream, null);
+        }
+
+        if (schema != null)
+            yield return (p, schema);
+    }
 }
 
 enum PathType
