@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map21To20" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="4" kind="2">
+					<targets>
+						<datapoint pos="0" key="110"/>
+					</targets>
+					<view ltx="523" lty="60" rbx="580" rby="77"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+					</data>
+				</component>
+				<component name="Rig" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="759" rbx="1119" rby="933"/>
+					<data>
+						<root scrollposition="205">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Rig" ns="2" inpkey="111" expanded="1">
+										<entry name="objectVersion" type="attribute" inpkey="112"/>
+										<entry name="schemaVersion" type="attribute" inpkey="113"/>
+										<entry name="uuid" type="attribute" inpkey="114"/>
+										<entry name="existenceKind" type="attribute" inpkey="115"/>
+										<entry name="Aliases" ns="1" inpkey="116" expanded="1">
+											<entry name="authority" type="attribute" inpkey="117"/>
+											<entry name="Identifier" ns="1" inpkey="118"/>
+											<entry name="Description" ns="1" inpkey="119"/>
+										</entry>
+										<entry name="Citation" ns="1" inpkey="120" expanded="1">
+											<entry name="Title" ns="1" inpkey="121"/>
+											<entry name="Originator" ns="1" inpkey="122"/>
+											<entry name="Creation" ns="1" inpkey="123"/>
+											<entry name="Format" ns="1" inpkey="124"/>
+											<entry name="Editor" ns="1" inpkey="125"/>
+											<entry name="LastUpdate" ns="1" inpkey="126"/>
+											<entry name="Description" ns="1" inpkey="127"/>
+											<entry name="DescriptiveKeywords" ns="1" inpkey="128"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="129" expanded="1"/>
+										<entry name="ExtensionNameValue" ns="1" inpkey="130" expanded="1">
+											<entry name="Name" ns="1" inpkey="131"/>
+											<entry name="Value" ns="1" inpkey="132">
+												<entry name="uom" type="attribute" inpkey="133"/>
+											</entry>
+											<entry name="MeasureClass" ns="1" inpkey="134"/>
+											<entry name="DTim" ns="1" inpkey="135"/>
+											<entry name="Index" ns="1" inpkey="136"/>
+											<entry name="Description" ns="1" inpkey="137"/>
+										</entry>
+										<entry name="Owner" ns="2" inpkey="138"/>
+										<entry name="TypeRig" ns="2" inpkey="139"/>
+										<entry name="Manufacturer" ns="2" inpkey="140"/>
+										<entry name="YearEntService" ns="2" inpkey="141"/>
+										<entry name="ClassRig" ns="2" inpkey="142"/>
+										<entry name="Approvals" ns="2" inpkey="143"/>
+										<entry name="Registration" ns="2" inpkey="144"/>
+										<entry name="TelNumber" ns="2" inpkey="145"/>
+										<entry name="FaxNumber" ns="2" inpkey="146"/>
+										<entry name="EmailAddress" ns="2" inpkey="147"/>
+										<entry name="NameContact" ns="2" inpkey="148"/>
+										<entry name="RatingDrillDepth" ns="2" inpkey="149" expanded="1">
+											<entry name="uom" type="attribute" inpkey="150"/>
+										</entry>
+										<entry name="RatingWaterDepth" ns="2" inpkey="151" expanded="1">
+											<entry name="uom" type="attribute" inpkey="152"/>
+										</entry>
+										<entry name="IsOffshore" ns="2" inpkey="153"/>
+										<entry name="TypeDerrick" ns="2" inpkey="154"/>
+										<entry name="RatingDerrick" ns="2" inpkey="155" expanded="1">
+											<entry name="uom" type="attribute" inpkey="156"/>
+										</entry>
+										<entry name="HtDerrick" ns="2" inpkey="157" expanded="1">
+											<entry name="uom" type="attribute" inpkey="158"/>
+										</entry>
+										<entry name="CapWindDerrick" ns="2" inpkey="159" expanded="1">
+											<entry name="uom" type="attribute" inpkey="160"/>
+										</entry>
+										<entry name="NumCranes" ns="2" inpkey="161"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Repo\energyml\data\witsml\v2.0\xsd_schemas\Rig.xsd" instanceroot="{}Rig" inputinstance="..\WITSML\energyml\data\witsml\v2.0\xsd_schemas\Rig.xml"/>
+					</data>
+				</component>
+				<component name="Rig" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="437" rby="933"/>
+					<data>
+						<root scrollposition="154">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Rig" ns="2" outkey="162" expanded="1">
+										<entry name="uuid" type="attribute" outkey="163"/>
+										<entry name="objectVersion" type="attribute" outkey="164"/>
+										<entry name="Aliases" ns="1" outkey="165" expanded="1">
+											<entry name="authority" type="attribute" outkey="166"/>
+											<entry name="Identifier" ns="1" outkey="167"/>
+											<entry name="Description" ns="1" outkey="168"/>
+										</entry>
+										<entry name="Citation" ns="1" outkey="169" expanded="1">
+											<entry name="Title" ns="1" outkey="170"/>
+											<entry name="Originator" ns="1" outkey="171"/>
+											<entry name="Creation" ns="1" outkey="172"/>
+											<entry name="Format" ns="1" outkey="173"/>
+											<entry name="Editor" ns="1" outkey="174"/>
+											<entry name="LastUpdate" ns="1" outkey="175"/>
+											<entry name="Description" ns="1" outkey="176"/>
+											<entry name="DescriptiveKeywords" ns="1" outkey="177"/>
+										</entry>
+										<entry name="Existence" ns="1" outkey="178"/>
+										<entry name="CustomData" ns="1" outkey="179" expanded="1"/>
+										<entry name="ExtensionNameValue" ns="1" outkey="180">
+											<entry name="Name" ns="1" outkey="181"/>
+											<entry name="Value" ns="1" outkey="182">
+												<entry name="uom" type="attribute" outkey="183"/>
+											</entry>
+											<entry name="MeasureClass" ns="1" outkey="184"/>
+											<entry name="DTim" ns="1" outkey="185"/>
+											<entry name="Index" ns="1" outkey="186"/>
+											<entry name="Description" ns="1" outkey="187"/>
+										</entry>
+										<entry name="Owner" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="212"/>
+										</entry>
+										<entry name="TypeRig" ns="2" outkey="189"/>
+										<entry name="Manufacturer" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="213"/>
+										</entry>
+										<entry name="YearEntService" ns="2" outkey="191"/>
+										<entry name="ClassRig" ns="2" outkey="192"/>
+										<entry name="Approvals" ns="2" outkey="193"/>
+										<entry name="Registration" ns="2" outkey="194"/>
+										<entry name="TelNumber" ns="2" outkey="195"/>
+										<entry name="FaxNumber" ns="2" outkey="196"/>
+										<entry name="EmailAddress" ns="2" outkey="197"/>
+										<entry name="NameContact" ns="2" outkey="198"/>
+										<entry name="RatingDrillDepth" ns="2" outkey="199" expanded="1">
+											<entry name="uom" type="attribute" outkey="200"/>
+										</entry>
+										<entry name="RatingWaterDepth" ns="2" outkey="201" expanded="1">
+											<entry name="uom" type="attribute" outkey="202"/>
+										</entry>
+										<entry name="IsOffshore" ns="2" outkey="203"/>
+										<entry name="TypeDerrick" ns="2" outkey="204"/>
+										<entry name="RatingDerrick" ns="2" outkey="205" expanded="1">
+											<entry name="uom" type="attribute" outkey="206"/>
+										</entry>
+										<entry name="HtDerrick" ns="2" outkey="207" expanded="1">
+											<entry name="uom" type="attribute" outkey="208"/>
+										</entry>
+										<entry name="CapWindDerrick" ns="2" outkey="209" expanded="1">
+											<entry name="uom" type="attribute" outkey="210"/>
+										</entry>
+										<entry name="NumCranes" ns="2" outkey="211"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Standards\energyML_202205\energyml\data\witsml\v2.1\xsd_schemas\Rig.xsd" instanceroot="{}Rig" inputinstance="..\Standards\energyML_202205\energyml\data\witsml\v2.1\xsd_schemas\Rig.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="162">
+						<edges>
+							<edge vertexkey="111"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="164">
+						<edges>
+							<edge vertexkey="112"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="110">
+						<edges>
+							<edge vertexkey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="163">
+						<edges>
+							<edge vertexkey="114"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="178">
+						<edges>
+							<edge vertexkey="115"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="165">
+						<edges>
+							<edge vertexkey="116"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="166">
+						<edges>
+							<edge vertexkey="117"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="167">
+						<edges>
+							<edge vertexkey="118"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168">
+						<edges>
+							<edge vertexkey="119"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169">
+						<edges>
+							<edge vertexkey="120"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="170">
+						<edges>
+							<edge vertexkey="121"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="171">
+						<edges>
+							<edge vertexkey="122"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="172">
+						<edges>
+							<edge vertexkey="123"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="173">
+						<edges>
+							<edge vertexkey="124"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="174">
+						<edges>
+							<edge vertexkey="125"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="175">
+						<edges>
+							<edge vertexkey="126"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="176">
+						<edges>
+							<edge vertexkey="127"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="177">
+						<edges>
+							<edge vertexkey="128"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="179">
+						<edges>
+							<edge vertexkey="129"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="180">
+						<edges>
+							<edge vertexkey="130"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="181">
+						<edges>
+							<edge vertexkey="131"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="182">
+						<edges>
+							<edge vertexkey="132"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="183">
+						<edges>
+							<edge vertexkey="133"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="184">
+						<edges>
+							<edge vertexkey="134"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="185">
+						<edges>
+							<edge vertexkey="135"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="186">
+						<edges>
+							<edge vertexkey="136"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="187">
+						<edges>
+							<edge vertexkey="137"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="212">
+						<edges>
+							<edge vertexkey="138"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="189">
+						<edges>
+							<edge vertexkey="139"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="213">
+						<edges>
+							<edge vertexkey="140"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="191">
+						<edges>
+							<edge vertexkey="141"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="192">
+						<edges>
+							<edge vertexkey="142"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="193">
+						<edges>
+							<edge vertexkey="143"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="194">
+						<edges>
+							<edge vertexkey="144"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="195">
+						<edges>
+							<edge vertexkey="145"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="196">
+						<edges>
+							<edge vertexkey="146"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="197">
+						<edges>
+							<edge vertexkey="147"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="198">
+						<edges>
+							<edge vertexkey="148"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="199">
+						<edges>
+							<edge vertexkey="149"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="200">
+						<edges>
+							<edge vertexkey="150"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="201">
+						<edges>
+							<edge vertexkey="151"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="202">
+						<edges>
+							<edge vertexkey="152"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="203">
+						<edges>
+							<edge vertexkey="153"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="204">
+						<edges>
+							<edge vertexkey="154"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="205">
+						<edges>
+							<edge vertexkey="155"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="206">
+						<edges>
+							<edge vertexkey="156"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="207">
+						<edges>
+							<edge vertexkey="157"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="208">
+						<edges>
+							<edge vertexkey="158"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="209">
+						<edges>
+							<edge vertexkey="159"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="210">
+						<edges>
+							<edge vertexkey="160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="211">
+						<edges>
+							<edge vertexkey="161"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

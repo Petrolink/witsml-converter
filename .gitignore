@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Energistics standards files
+/Mappings/Energistics/energyml/

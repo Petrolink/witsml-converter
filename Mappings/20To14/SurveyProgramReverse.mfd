@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="obj_surveyProgram" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="563" rbx="858" rby="542"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="surveyPrograms" expanded="1">
+										<entry name="surveyProgram" inpkey="669" expanded="1">
+											<entry name="nameWellbore" inpkey="670"/>
+											<entry name="name" inpkey="671"/>
+											<entry name="surveyVer" inpkey="672"/>
+											<entry name="engineer" inpkey="673"/>
+											<entry name="final" inpkey="674"/>
+											<entry name="surveySection" inpkey="675" expanded="1">
+												<entry name="uid" ns="1" type="attribute" inpkey="676"/>
+												<entry name="sequence" inpkey="677"/>
+												<entry name="name" inpkey="678"/>
+												<entry name="mdStart" inpkey="679" expanded="1">
+													<entry name="uom" ns="1" type="attribute" inpkey="680"/>
+												</entry>
+												<entry name="mdEnd" inpkey="681" expanded="1">
+													<entry name="uom" ns="1" type="attribute" inpkey="682"/>
+												</entry>
+												<entry name="nameSurveyCompany" inpkey="683"/>
+												<entry name="nameTool" inpkey="684"/>
+												<entry name="typeTool" inpkey="685"/>
+												<entry name="modelError" inpkey="686"/>
+												<entry name="overwrite" inpkey="687"/>
+												<entry name="frequencyMx" inpkey="688"/>
+												<entry name="itemState" inpkey="689"/>
+												<entry name="comments" inpkey="690"/>
+												<entry name="extensionNameValue" inpkey="691">
+													<entry name="name" inpkey="692"/>
+													<entry name="value" inpkey="693"/>
+													<entry name="dTim" inpkey="694"/>
+													<entry name="index" inpkey="695"/>
+													<entry name="measureClass" inpkey="696"/>
+													<entry name="description" inpkey="697"/>
+												</entry>
+											</entry>
+											<entry name="customData" inpkey="698"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_surveyProgram.xsd" instanceroot="{http://www.witsml.org/schemas/1series}surveyPrograms" outputinstance="..\output\reverse\surveyProgram\surveyProgram_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SurveyProgram" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="304" rby="542"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="SurveyProgram" ns="1" outkey="699" expanded="1">
+										<entry name="Citation" expanded="1">
+											<entry name="Title" outkey="700"/>
+										</entry>
+										<entry name="CustomData" outkey="701"/>
+										<entry name="SurveyVer" ns="1" outkey="702"/>
+										<entry name="Engineer" ns="1" outkey="703"/>
+										<entry name="Final" ns="1" outkey="704"/>
+										<entry name="SurveySection" ns="1" outkey="705" expanded="1">
+											<entry name="uid" ns="2" type="attribute" outkey="706"/>
+											<entry name="Sequence" ns="1" outkey="707"/>
+											<entry name="Name" ns="1" outkey="708"/>
+											<entry name="MdInterval" ns="1" expanded="1">
+												<entry name="MdTop" outkey="709" expanded="1">
+													<entry name="uom" ns="2" type="attribute" outkey="710"/>
+												</entry>
+												<entry name="MdBase" outkey="711" expanded="1">
+													<entry name="uom" ns="2" type="attribute" outkey="712"/>
+												</entry>
+											</entry>
+											<entry name="NameSurveyCompany" ns="1" outkey="713"/>
+											<entry name="NameTool" ns="1" outkey="714"/>
+											<entry name="TypeTool" ns="1" outkey="715"/>
+											<entry name="ModelError" ns="1" outkey="716"/>
+											<entry name="Overwrite" ns="1" outkey="717"/>
+											<entry name="FrequencyMx" ns="1" outkey="718"/>
+											<entry name="ItemState" ns="1" outkey="719"/>
+											<entry name="Comments" ns="1" outkey="720"/>
+											<entry name="ExtensionNameValue" ns="1" outkey="721">
+												<entry name="Name" outkey="722"/>
+												<entry name="Value" outkey="723"/>
+												<entry name="MeasureClass" outkey="724"/>
+												<entry name="DTim" outkey="725"/>
+												<entry name="Index" outkey="726"/>
+												<entry name="Description" outkey="727"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="1" expanded="1">
+											<entry name="Title" outkey="728"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\SurveyProgram.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}SurveyProgram" inputinstance="..\..\input\reverse\surveyProgram\surveyProgram_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="688">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="693">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="698">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="699">
+						<edges>
+							<edge vertexkey="669"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="728">
+						<edges>
+							<edge vertexkey="670"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="700">
+						<edges>
+							<edge vertexkey="671"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="702">
+						<edges>
+							<edge vertexkey="672"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="703">
+						<edges>
+							<edge vertexkey="673"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="704">
+						<edges>
+							<edge vertexkey="674"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="705">
+						<edges>
+							<edge vertexkey="675"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="706">
+						<edges>
+							<edge vertexkey="676"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="707">
+						<edges>
+							<edge vertexkey="677"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="708">
+						<edges>
+							<edge vertexkey="678"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="709">
+						<edges>
+							<edge vertexkey="679"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="710">
+						<edges>
+							<edge vertexkey="680"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="711">
+						<edges>
+							<edge vertexkey="681"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="712">
+						<edges>
+							<edge vertexkey="682"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="713">
+						<edges>
+							<edge vertexkey="683"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="714">
+						<edges>
+							<edge vertexkey="684"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="715">
+						<edges>
+							<edge vertexkey="685"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="716">
+						<edges>
+							<edge vertexkey="686"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="717">
+						<edges>
+							<edge vertexkey="687"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="718">
+						<edges>
+							<edge vertexkey="688" edgekey="688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="719">
+						<edges>
+							<edge vertexkey="689"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="720">
+						<edges>
+							<edge vertexkey="690"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="721">
+						<edges>
+							<edge vertexkey="691"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="722">
+						<edges>
+							<edge vertexkey="692"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="723">
+						<edges>
+							<edge vertexkey="693" edgekey="693"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="725">
+						<edges>
+							<edge vertexkey="694"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="726">
+						<edges>
+							<edge vertexkey="695"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="724">
+						<edges>
+							<edge vertexkey="696"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="727">
+						<edges>
+							<edge vertexkey="697"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="701">
+						<edges>
+							<edge vertexkey="698" edgekey="698"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

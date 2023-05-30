@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map21To20" ShowSchemaTypes="1" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="19" kind="2">
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="407" lty="234" rbx="454" rby="251"/>
+					<data>
+						<constant value="x" datatype="string"/>
+					</data>
+				</component>
+				<component name="ChannelSet" library="xml" uid="22" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="33" lty="137" rbx="333" rby="637"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ChannelSet" ns="2" outkey="279" expanded="1">
+										<entry name="uuid" type="attribute" outkey="280"/>
+										<entry name="schemaVersion" type="attribute" outkey="281"/>
+										<entry name="objectVersion" type="attribute" outkey="282"/>
+										<entry name="Citation" ns="1" outkey="283"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}ChannelSet" outputinstance="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xml"/>
+					</data>
+				</component>
+				<component name="LogFromChannelSet" library="xml" uid="21" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="698" lty="137" rbx="998" rby="637"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" ns="2" expanded="1">
+										<entry name="uuid" type="attribute" inpkey="284"/>
+										<entry name="schemaVersion" type="attribute" inpkey="285"/>
+										<entry name="objectVersion" type="attribute" inpkey="286"/>
+										<entry name="Citation" ns="1" inpkey="287"/>
+										<entry name="ChannelSet" ns="2" inpkey="288"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" outputinstance="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xml"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="407" lty="206" rbx="572" rby="223"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="287">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="288">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="280">
+						<edges>
+							<edge vertexkey="284"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="281">
+						<edges>
+							<edge vertexkey="285"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="282">
+						<edges>
+							<edge vertexkey="286"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="283">
+						<edges>
+							<edge vertexkey="287" edgekey="287"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="279">
+						<edges>
+							<edge vertexkey="288" edgekey="288"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

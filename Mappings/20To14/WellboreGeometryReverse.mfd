@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="4" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="302"/>
+					</targets>
+					<view ltx="376" lty="99" rbx="518" rby="116"/>
+					<data>
+						<constant value="WellboreGeometry-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="5" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="303"/>
+						<datapoint/>
+						<datapoint pos="2" key="301"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="376" lty="11" rbx="468" rby="84"/>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="300"/>
+					</targets>
+					<view ltx="376" lty="116" rbx="438" rby="133"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_wbGeometry" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="589" rbx="898" rby="1008"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="wbGeometrys" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="305"/>
+										<entry name="wbGeometry" ns="1" inpkey="306" expanded="1">
+											<entry name="nameWellbore" ns="1" inpkey="307"/>
+											<entry name="name" ns="1" inpkey="308"/>
+											<entry name="dTimReport" ns="1" inpkey="309"/>
+											<entry name="mdBottom" ns="1" inpkey="310">
+												<entry name="uom" type="attribute" inpkey="311"/>
+											</entry>
+											<entry name="gapAir" ns="1" inpkey="312"/>
+											<entry name="depthWaterMean" ns="1" inpkey="313"/>
+											<entry name="wbGeometrySection" ns="1" inpkey="314" expanded="1">
+												<entry name="uid" type="attribute" inpkey="315"/>
+												<entry name="typeHoleCasing" ns="1" inpkey="316"/>
+												<entry name="mdTop" ns="1" inpkey="317" expanded="1">
+													<entry name="uom" type="attribute" inpkey="318"/>
+												</entry>
+												<entry name="mdBottom" ns="1" inpkey="319" expanded="1">
+													<entry name="uom" type="attribute" inpkey="320"/>
+												</entry>
+												<entry name="tvdTop" ns="1" inpkey="321" expanded="1">
+													<entry name="uom" type="attribute" inpkey="322"/>
+												</entry>
+												<entry name="tvdBottom" ns="1" inpkey="323" expanded="1">
+													<entry name="uom" type="attribute" inpkey="324"/>
+												</entry>
+												<entry name="idSection" ns="1" inpkey="325"/>
+												<entry name="odSection" ns="1" inpkey="326"/>
+												<entry name="wtPerLen" ns="1" inpkey="327"/>
+												<entry name="grade" ns="1" inpkey="328"/>
+												<entry name="curveConductor" ns="1" inpkey="329"/>
+												<entry name="diaDrift" ns="1" inpkey="330"/>
+												<entry name="factFric" ns="1" inpkey="331"/>
+												<entry name="extensionNameValue" ns="1" inpkey="332">
+													<entry name="name" ns="1" inpkey="333"/>
+													<entry name="value" ns="1" inpkey="334"/>
+													<entry name="dTim" ns="1" inpkey="335"/>
+													<entry name="index" ns="1" inpkey="336"/>
+													<entry name="measureClass" ns="1" inpkey="337"/>
+													<entry name="description" ns="1" inpkey="338"/>
+												</entry>
+											</entry>
+											<entry name="customData" ns="1" inpkey="339"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_wbGeometry.xsd" instanceroot="{http://www.witsml.org/schemas/1series}wbGeometrys" outputinstance="..\..\output\reverse\wellboreGeometry\wellboreGeometry_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="WellboreGeometry" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view lty="11" rbx="321" rby="1008"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="WellboreGeometry" ns="2" outkey="340" expanded="1">
+										<entry name="Aliases" ns="1">
+											<entry name="authority" type="attribute" outkey="341"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="342"/>
+											<entry name="LastUpdate" ns="1" outkey="343"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="344"/>
+										<entry name="MdBase" ns="2" outkey="345" expanded="1">
+											<entry name="uom" type="attribute" outkey="346"/>
+										</entry>
+										<entry name="GapAir" ns="2" outkey="347"/>
+										<entry name="DepthWaterMean" ns="2" outkey="348"/>
+										<entry name="WellboreGeometrySection" ns="2" outkey="349" expanded="1">
+											<entry name="uid" type="attribute" outkey="350"/>
+											<entry name="Citation" ns="2" expanded="1"/>
+											<entry name="TypeHoleCasing" ns="2" outkey="351"/>
+											<entry name="SectionMdInterval" ns="2" expanded="1">
+												<entry name="MdTop" ns="1" outkey="352" expanded="1">
+													<entry name="uom" type="attribute" outkey="353"/>
+												</entry>
+												<entry name="MdBase" ns="1" outkey="354" expanded="1">
+													<entry name="uom" type="attribute" outkey="355"/>
+												</entry>
+											</entry>
+											<entry name="SectionTvdInterval" ns="2" expanded="1">
+												<entry name="TvdTop" ns="1" outkey="356" expanded="1">
+													<entry name="uom" type="attribute" outkey="357"/>
+												</entry>
+												<entry name="TvdBase" ns="1" outkey="358" expanded="1">
+													<entry name="uom" type="attribute" outkey="359"/>
+												</entry>
+											</entry>
+											<entry name="IdSection" ns="2" outkey="360"/>
+											<entry name="OdSection" ns="2" outkey="361"/>
+											<entry name="WtPerLen" ns="2" outkey="362"/>
+											<entry name="Grade" ns="2" outkey="363"/>
+											<entry name="CurveConductor" ns="2" outkey="364"/>
+											<entry name="DiaDrift" ns="2" outkey="365"/>
+											<entry name="FactFric" ns="2" outkey="366"/>
+											<entry name="ExtensionNameValue" ns="2" outkey="367">
+												<entry name="Name" ns="1" outkey="368"/>
+												<entry name="Value" ns="1" outkey="369"/>
+												<entry name="MeasureClass" ns="1" outkey="370"/>
+												<entry name="DTim" ns="1" outkey="371"/>
+												<entry name="Index" ns="1" outkey="372"/>
+												<entry name="Description" ns="1" outkey="373"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="374"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\WellboreGeometry.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}WellboreGeometry" inputinstance="..\..\input\reverse\wellboreGeometry\wellboreGeometry_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="312">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="313">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="325">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="326">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="327">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="330">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="334">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="339">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="300">
+						<edges>
+							<edge vertexkey="301"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="302">
+						<edges>
+							<edge vertexkey="303"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="341">
+						<edges>
+							<edge vertexkey="305"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="340">
+						<edges>
+							<edge vertexkey="306"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="374">
+						<edges>
+							<edge vertexkey="307"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="342">
+						<edges>
+							<edge vertexkey="308"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="343">
+						<edges>
+							<edge vertexkey="309"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="345">
+						<edges>
+							<edge vertexkey="310"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="346">
+						<edges>
+							<edge vertexkey="311"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="347">
+						<edges>
+							<edge vertexkey="312" edgekey="312"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="348">
+						<edges>
+							<edge vertexkey="313" edgekey="313"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="349">
+						<edges>
+							<edge vertexkey="314"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="350">
+						<edges>
+							<edge vertexkey="315"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="351">
+						<edges>
+							<edge vertexkey="316"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="352">
+						<edges>
+							<edge vertexkey="317"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="353">
+						<edges>
+							<edge vertexkey="318"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="354">
+						<edges>
+							<edge vertexkey="319"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="355">
+						<edges>
+							<edge vertexkey="320"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="356">
+						<edges>
+							<edge vertexkey="321"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="357">
+						<edges>
+							<edge vertexkey="322"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="358">
+						<edges>
+							<edge vertexkey="323"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="359">
+						<edges>
+							<edge vertexkey="324"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="360">
+						<edges>
+							<edge vertexkey="325" edgekey="325"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="361">
+						<edges>
+							<edge vertexkey="326" edgekey="326"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="362">
+						<edges>
+							<edge vertexkey="327" edgekey="327"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="363">
+						<edges>
+							<edge vertexkey="328"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="364">
+						<edges>
+							<edge vertexkey="329"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="365">
+						<edges>
+							<edge vertexkey="330" edgekey="330"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="366">
+						<edges>
+							<edge vertexkey="331"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="367">
+						<edges>
+							<edge vertexkey="332"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="368">
+						<edges>
+							<edge vertexkey="333"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="369">
+						<edges>
+							<edge vertexkey="334" edgekey="334"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="371">
+						<edges>
+							<edge vertexkey="335"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="372">
+						<edges>
+							<edge vertexkey="336"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370">
+						<edges>
+							<edge vertexkey="337"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="373">
+						<edges>
+							<edge vertexkey="338"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="344">
+						<edges>
+							<edge vertexkey="339" edgekey="339"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

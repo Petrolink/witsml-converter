@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  MapForce Project File  -->
+<Project Expanded="Yes" language="cs" OutputDir="XSLT2" Title="WITSML1411to2" OutputName="Map14To20" Version="6">
+	<Folder FolderName="Mapping Folder" Expanded="Yes" Type="MappingFolder">
+		<File Type="Mapping" FilePath="Attachment.mfd"/>
+		<File Type="Mapping" FilePath="BhaRun.mfd"/>
+		<File Type="Mapping" FilePath="CementJob.mfd"/>
+		<File Type="Mapping" FilePath="DownholeComponent.mfd"/>
+		<File Type="Mapping" FilePath="DrillReport.mfd"/>
+		<File Type="Mapping" FilePath="FluidsReport.mfd"/>
+		<File Type="Mapping" FilePath="Log.mfd"/>
+		<File Type="Mapping" FilePath="MudLogReport.mfd"/>
+		<File Type="Mapping" FilePath="OpsReport.mfd"/>
+		<File Type="Mapping" FilePath="Rig.mfd"/>
+		<File Type="Mapping" FilePath="RigUtilization.mfd"/>
+		<File Type="Mapping" FilePath="Risk.mfd"/>
+		<File Type="Mapping" FilePath="StimJob.mfd"/>
+		<File Type="Mapping" FilePath="SurveyProgram.mfd"/>
+		<File Type="Mapping" FilePath="ToolErrorModel.mfd"/>
+		<File Type="Mapping" FilePath="ToolErrorTermSet.mfd"/>
+		<File Type="Mapping" FilePath="Trajectory.mfd"/>
+		<File Type="Mapping" FilePath="Tubular.mfd"/>
+		<File Type="Mapping" FilePath="Well.mfd"/>
+		<File Type="Mapping" FilePath="Wellbore.mfd"/>
+		<File Type="Mapping" FilePath="WellboreCompletion.mfd"/>
+		<File Type="Mapping" FilePath="WellboreGeology.mfd"/>
+		<File Type="Mapping" FilePath="WellboreGeometry.mfd"/>
+		<File Type="Mapping" FilePath="WellboreMarkers.mfd"/>
+		<File Type="Mapping" FilePath="WellCMLedger.mfd"/>
+		<File Type="Mapping" FilePath="WellCompletion.mfd"/>
+	</Folder>
+</Project>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To21" ShowSchemaTypes="1" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="19" kind="2">
+					<targets>
+						<datapoint pos="0" key="258"/>
+					</targets>
+					<view ltx="407" lty="234" rbx="454" rby="251"/>
+					<data>
+						<constant value="x" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<targets>
+						<datapoint pos="0" key="259"/>
+					</targets>
+					<view ltx="407" lty="315" rbx="572" rby="332"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+					</data>
+				</component>
+				<component name="ChannelSet" library="xml" uid="17" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="300" rby="500"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ChannelSet" ns="2" outkey="269" expanded="1">
+										<entry name="objectVersion" type="attribute" outkey="270"/>
+										<entry name="schemaVersion" type="attribute" outkey="271"/>
+										<entry name="uuid" type="attribute" outkey="272"/>
+										<entry name="existenceKind" type="attribute" outkey="273"/>
+										<entry name="Citation" ns="1" outkey="274"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.0\data\witsml\v2.0\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}ChannelSet" inputinstance="..\..\energyml\2.0\data\witsml\v2.0\xml_examples\Log.xml"/>
+					</data>
+				</component>
+				<component name="WrappedChannelSet" library="xml" uid="18" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="719" lty="12" rbx="1019" rby="512"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" ns="2" expanded="1">
+										<entry name="objectVersion" type="attribute" inpkey="260"/>
+										<entry name="schemaVersion" type="attribute" inpkey="261"/>
+										<entry name="uuid" type="attribute" inpkey="262"/>
+										<entry name="existenceKind" type="attribute" inpkey="263"/>
+										<entry name="Citation" ns="1" inpkey="264"/>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="ContentType" ns="1" inpkey="265"/>
+											<entry name="Title" ns="1" inpkey="266"/>
+											<entry name="Uuid" ns="1" inpkey="267"/>
+										</entry>
+										<entry name="ChannelSet" ns="2" inpkey="268"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.0\data\witsml\v2.0\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" inputinstance="..\..\energyml\2.0\data\witsml\v2.0\xml_examples\Log.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="264">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="268">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="270">
+						<edges>
+							<edge vertexkey="260"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="271">
+						<edges>
+							<edge vertexkey="261"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="272">
+						<edges>
+							<edge vertexkey="262"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="273">
+						<edges>
+							<edge vertexkey="263"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="274">
+						<edges>
+							<edge vertexkey="264" edgekey="264"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="258">
+						<edges>
+							<edge vertexkey="265"/>
+							<edge vertexkey="266"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="259">
+						<edges>
+							<edge vertexkey="267"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="269">
+						<edges>
+							<edge vertexkey="268" edgekey="268"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

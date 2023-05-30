@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2017sp2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1795"/>
+					</targets>
+					<view ltx="342" lty="113" rbx="423" rby="131"/>
+					<data>
+						<constant value="StimJob-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1821"/>
+					</targets>
+					<view ltx="342" lty="130" rbx="401" rby="148"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1799"/>
+					</targets>
+					<view ltx="341" lty="147" rbx="396" rby="165"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1802"/>
+					</targets>
+					<view ltx="341" lty="181" rbx="476" rby="199"/>
+					<data>
+						<constant value="Identifier is created from the uid of the input scheme" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1808"/>
+					</targets>
+					<view ltx="341" lty="198" rbx="433" rby="216"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="current-dateTime" library="xpath2" uid="12" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1809"/>
+					</targets>
+					<view ltx="341" lty="215" rbx="450" rby="254"/>
+				</component>
+				<component name="constant" library="core" uid="4" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1767"/>
+					</targets>
+					<view ltx="342" lty="253" rbx="428" rby="271"/>
+					<data>
+						<constant value="Mapforce" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="6" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1796"/>
+						<datapoint pos="1" key="1800"/>
+						<datapoint pos="2" key="1822"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="342" lty="38" rbx="427" rby="114"/>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2188"/>
+					</targets>
+					<view ltx="371" lty="454" rbx="423" rby="472"/>
+					<data>
+						<constant value="hp" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2189"/>
+					</targets>
+					<view ltx="359" lty="494" rbx="433" rby="512"/>
+					<data>
+						<constant value="gal[US]" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2196"/>
+					</targets>
+					<view ltx="341" lty="270" rbx="423" rby="288"/>
+					<data>
+						<constant value="wellbore" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1798"/>
+					</targets>
+					<view ltx="342" lty="164" rbx="505" rby="182"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2201"/>
+					</targets>
+					<view ltx="331" lty="828" rbx="494" rby="846"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="17" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2205"/>
+					</targets>
+					<view ltx="359" lty="930" rbx="452" rby="948"/>
+					<data>
+						<constant value="AdditivesId" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2211"/>
+					</targets>
+					<view ltx="350" lty="1030" rbx="452" rby="1048"/>
+					<data>
+						<constant value="AdditiveType" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2212"/>
+					</targets>
+					<view ltx="348" lty="1047" rbx="452" rby="1065"/>
+					<data>
+						<constant value="SupplierCode" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_stimJob" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="262" rby="2053"/>
+					<data>
+						<root scrollposition="2317">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="stimJobs" ns="1" expanded="1">
+										<entry name="version" type="attribute" outkey="1776"/>
+										<entry name="stimJob" ns="1" outkey="592" expanded="1">
+											<entry name="uidWellbore" type="attribute" outkey="2197"/>
+											<entry name="uid" type="attribute" outkey="593"/>
+											<entry name="name" ns="1" outkey="594"/>
+											<entry name="kind" ns="1" outkey="2"/>
+											<entry name="serviceCompany" ns="1" outkey="596"/>
+											<entry name="supervisor" ns="1" outkey="597"/>
+											<entry name="customerName" ns="1" outkey="599"/>
+											<entry name="dTimArrival" ns="1" outkey="600"/>
+											<entry name="dTimStart" ns="1" outkey="601"/>
+											<entry name="dTimEnd" ns="1" outkey="602"/>
+											<entry name="totalPumpTime" ns="1" outkey="603"/>
+											<entry name="maxJobPres" ns="1" outkey="604"/>
+											<entry name="maxFluidRate" ns="1" outkey="605"/>
+											<entry name="avgJobPres" ns="1" outkey="606"/>
+											<entry name="totalJobVolume" ns="1" outkey="607" expanded="1"/>
+											<entry name="hhpOrdered" ns="1" outkey="613"/>
+											<entry name="hhpUsed" ns="1" outkey="614"/>
+											<entry name="fluidEfficiency" ns="1" outkey="616"/>
+											<entry name="flowBackPres" ns="1" outkey="617"/>
+											<entry name="flowBackRate" ns="1" outkey="618"/>
+											<entry name="flowBackVolume" ns="1" outkey="619"/>
+											<entry name="bottomholeStaticTemperature" ns="1" outkey="621"/>
+											<entry name="treatingBottomholeTemperature" ns="1" outkey="622"/>
+											<entry name="jobInterval" ns="1" expanded="1">
+												<entry name="totalVolume" ns="1" expanded="1"/>
+												<entry name="maxProppantConcSurface" ns="1" expanded="1"/>
+												<entry name="maxProppantConcBottomhole" ns="1" expanded="1"/>
+												<entry name="avgProppantConcSurface" ns="1" expanded="1"/>
+												<entry name="avgProppantConcBottomhole" ns="1" expanded="1"/>
+												<entry name="perfproppantConc" ns="1" expanded="1"/>
+												<entry name="totalN2StdVolume" ns="1" expanded="1"/>
+												<entry name="totalCO2Mass" ns="1" expanded="1"/>
+												<entry name="hhpOrderedCO2" ns="1" expanded="1"/>
+												<entry name="hhpOrderedFluid" ns="1" expanded="1"/>
+												<entry name="hhpUsedCO2" ns="1" expanded="1"/>
+												<entry name="hhpUsedFluid" ns="1" expanded="1"/>
+												<entry name="perfBallSize" ns="1" expanded="1"/>
+												<entry name="avgFractureWidth" ns="1" expanded="1"/>
+												<entry name="pdatSession" ns="1" expanded="1">
+													<entry name="baseFluidVol" ns="1" expanded="1"/>
+													<entry name="wellboreVolume" ns="1" expanded="1"/>
+													<entry name="mdSurface" ns="1" expanded="1"/>
+													<entry name="mdMidPerforation" ns="1" expanded="1"/>
+													<entry name="tvdMidPerforation" ns="1" expanded="1"/>
+													<entry name="fluidSpecificHeat" ns="1" expanded="1"/>
+													<entry name="fluidThermalConductivity" ns="1" expanded="1"/>
+													<entry name="fluidThermalExpansionCoefficient" ns="1" expanded="1"/>
+													<entry name="fluidEfficiencyTest" ns="1">
+														<entry name="fractureExtensionPres" ns="1" expanded="1"/>
+														<entry name="fractureLength" ns="1" expanded="1"/>
+														<entry name="fractureWidth" ns="1" expanded="1"/>
+													</entry>
+													<entry name="stepDownTest" ns="1" expanded="1">
+														<entry name="diameterEntryHole" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+												<entry name="additive" ns="1" expanded="1">
+													<entry name="volume" ns="1" expanded="1"/>
+													<entry name="mass" ns="1" expanded="1"/>
+													<entry name="extensionNameValue" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1" outkey="2163"/>
+											<entry name="customData" ns="1" outkey="1178"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v1.4.1.1\xsd_schemas\obj_stimJob.xsd" inputinstance="..\Energistics\energyml\data\witsml\v1.4.1.1\xml_examples\stimJob_no_xsl.xml" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\StimJob.xml" instanceroot="{http://www.witsml.org/schemas/1series}stimJobs"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="StimJob" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="557" rbx="971" rby="2053"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="StimJob" ns="2" inpkey="5" expanded="1">
+										<entry name="schemaVersion" type="attribute" inpkey="1769"/>
+										<entry name="uuid" type="attribute" inpkey="6"/>
+										<entry name="Aliases" ns="1">
+											<entry name="authority" type="attribute" inpkey="1804"/>
+											<entry name="Identifier" ns="1" inpkey="1805"/>
+											<entry name="Description" ns="1" inpkey="1806"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" inpkey="7"/>
+											<entry name="Originator" ns="1" inpkey="1770"/>
+											<entry name="Creation" ns="1" inpkey="1771"/>
+											<entry name="Format" ns="1" inpkey="1772"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="8"/>
+										<entry name="AvgJobPres" ns="2" inpkey="20"/>
+										<entry name="BottomholeStaticTemperature" ns="2" inpkey="35"/>
+										<entry name="CustomerName" ns="2" inpkey="13"/>
+										<entry name="DTimArrival" ns="2" inpkey="14"/>
+										<entry name="DTimEnd" ns="2" inpkey="16"/>
+										<entry name="DTimStart" ns="2" inpkey="15"/>
+										<entry name="FlowBackPres" ns="2" inpkey="31"/>
+										<entry name="FlowBackRate" ns="2" inpkey="32"/>
+										<entry name="FlowBackVolume" ns="2" inpkey="33"/>
+										<entry name="FluidEfficiency" ns="2" inpkey="30"/>
+										<entry name="HhpOrdered" ns="2" inpkey="27" expanded="1">
+											<entry name="uom" type="attribute" inpkey="2190"/>
+										</entry>
+										<entry name="HhpUsed" ns="2" inpkey="28" expanded="1">
+											<entry name="uom" type="attribute" inpkey="2191"/>
+										</entry>
+										<entry name="Kind" ns="2" inpkey="1"/>
+										<entry name="MaxFluidRate" ns="2" inpkey="19"/>
+										<entry name="MaxJobPres" ns="2" inpkey="18"/>
+										<entry name="ServiceCompany" ns="2" inpkey="10"/>
+										<entry name="Supervisor" ns="2" inpkey="11"/>
+										<entry name="TotalJobVolume" ns="2" inpkey="21" expanded="1">
+											<entry name="uom" type="attribute" inpkey="2192"/>
+										</entry>
+										<entry name="TotalPumpTime" ns="2" inpkey="17"/>
+										<entry name="TreatingBottomholeTemperature" ns="2" inpkey="36"/>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="ContentType" ns="1" inpkey="2198"/>
+											<entry name="Title" ns="1" inpkey="2199"/>
+											<entry name="Uuid" ns="1" inpkey="2200"/>
+										</entry>
+										<entry name="MaterialCatalog" ns="2" expanded="1">
+											<entry name="Additives" ns="2" expanded="1">
+												<entry name="uid" type="attribute" inpkey="2206"/>
+												<entry name="Type" ns="2" inpkey="2207"/>
+												<entry name="SupplierCode" ns="2" inpkey="2208"/>
+											</entry>
+										</entry>
+										<entry name="CommonData" ns="2" inpkey="2164"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\StimJob.xsd" inputinstance="..\Energistics\energyml\data\witsml\v1.4.1.1\xml_examples\stimJob_no_xsl.xml" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\StimJob.xml" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}StimJob"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="2165">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2166">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2167">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2168">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2169">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2170">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2171">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2172">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2173">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2175">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2178">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="1" edgekey="2179"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="592">
+						<edges>
+							<edge vertexkey="5" edgekey="1480"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="593">
+						<edges>
+							<edge vertexkey="1805" edgekey="1810"/>
+							<edge vertexkey="1800" edgekey="2092"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="594">
+						<edges>
+							<edge vertexkey="7" edgekey="1483"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="596">
+						<edges>
+							<edge vertexkey="10" edgekey="2181"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="597">
+						<edges>
+							<edge vertexkey="11" edgekey="2182"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="599">
+						<edges>
+							<edge vertexkey="13" edgekey="2183"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="600">
+						<edges>
+							<edge vertexkey="14" edgekey="2184"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="601">
+						<edges>
+							<edge vertexkey="15" edgekey="2185"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="602">
+						<edges>
+							<edge vertexkey="16" edgekey="2186"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="603">
+						<edges>
+							<edge vertexkey="17" edgekey="2170"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="604">
+						<edges>
+							<edge vertexkey="18" edgekey="2178"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="605">
+						<edges>
+							<edge vertexkey="19" edgekey="2165"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="606">
+						<edges>
+							<edge vertexkey="20" edgekey="2169"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="607">
+						<edges>
+							<edge vertexkey="21" edgekey="2177"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="613">
+						<edges>
+							<edge vertexkey="27" edgekey="2176"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="614">
+						<edges>
+							<edge vertexkey="28" edgekey="2174"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="616">
+						<edges>
+							<edge vertexkey="30" edgekey="2172"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="617">
+						<edges>
+							<edge vertexkey="31" edgekey="2171"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="618">
+						<edges>
+							<edge vertexkey="32" edgekey="2166"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="619">
+						<edges>
+							<edge vertexkey="33" edgekey="2175"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="621">
+						<edges>
+							<edge vertexkey="35" edgekey="2167"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="622">
+						<edges>
+							<edge vertexkey="36" edgekey="2173"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1178">
+						<edges>
+							<edge vertexkey="8" edgekey="2168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1767">
+						<edges>
+							<edge vertexkey="1772" edgekey="1781"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1776">
+						<edges>
+							<edge vertexkey="1804" edgekey="1812"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1795">
+						<edges>
+							<edge vertexkey="1796" edgekey="1797"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1798">
+						<edges>
+							<edge vertexkey="6" edgekey="1815"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1799">
+						<edges>
+							<edge vertexkey="1769" edgekey="1816"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1802">
+						<edges>
+							<edge vertexkey="1806" edgekey="1818"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1808">
+						<edges>
+							<edge vertexkey="1770" edgekey="1819"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1809">
+						<edges>
+							<edge vertexkey="1771" edgekey="1820"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1821">
+						<edges>
+							<edge vertexkey="1822" edgekey="1823"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2163">
+						<edges>
+							<edge vertexkey="2164" edgekey="2187"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2188">
+						<edges>
+							<edge vertexkey="2190" edgekey="2193"/>
+							<edge vertexkey="2191" edgekey="2194"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2189">
+						<edges>
+							<edge vertexkey="2192" edgekey="2195"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2196">
+						<edges>
+							<edge vertexkey="2198" edgekey="2202"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2197">
+						<edges>
+							<edge vertexkey="2199" edgekey="2203"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2201">
+						<edges>
+							<edge vertexkey="2200" edgekey="2204"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2205">
+						<edges>
+							<edge vertexkey="2206" edgekey="2217"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2211">
+						<edges>
+							<edge vertexkey="2207" edgekey="2218"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2212">
+						<edges>
+							<edge vertexkey="2208" edgekey="2216"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

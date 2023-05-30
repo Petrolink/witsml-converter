@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="if-else" library="core" uid="61" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1154"/>
+						<datapoint pos="1" key="1155"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1156"/>
+					</targets>
+					<view ltx="1462" lty="370" rbx="1566" rby="443"/>
+				</component>
+				<component name="string_is_not_unknown" library="user" uid="59" kind="19" visible="0" blackbox="0">
+					<view ltx="1169" lty="393" rbx="1272" rby="410"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="1157" componentid="35"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="1158" componentid="32"/>
+						</root>
+					</data>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="124" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1166"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1167"/>
+					</targets>
+					<view ltx="602" lty="620" rbx="692" rby="658"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="126" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1170"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1171"/>
+					</targets>
+					<view ltx="602" lty="695" rbx="692" rby="733"/>
+				</component>
+				<component name="obj_trajectory" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="714" rbx="1084" rby="1124"/>
+					<data>
+						<root scrollposition="835">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="trajectorys" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="767"/>
+										<entry name="trajectory" ns="1" inpkey="768" expanded="1">
+											<entry name="uidWellbore" type="attribute" inpkey="769"/>
+											<entry name="uid" type="attribute" inpkey="770"/>
+											<entry name="nameWellbore" ns="1" inpkey="771"/>
+											<entry name="name" ns="1" inpkey="772"/>
+											<entry name="parentTrajectory" ns="1" inpkey="773" expanded="1">
+												<entry name="trajectoryReference" ns="1" inpkey="774" expanded="1">
+													<entry name="uidRef" type="attribute" inpkey="775"/>
+												</entry>
+											</entry>
+											<entry name="dTimTrajEnd" ns="1" inpkey="776"/>
+											<entry name="mdMn" ns="1" inpkey="777">
+												<entry name="uom" type="attribute" inpkey="778"/>
+											</entry>
+											<entry name="mdMx" ns="1" inpkey="779">
+												<entry name="uom" type="attribute" inpkey="780"/>
+											</entry>
+											<entry name="serviceCompany" ns="1" inpkey="781"/>
+											<entry name="magDeclUsed" ns="1" inpkey="782"/>
+											<entry name="gridCorUsed" ns="1" expanded="1"/>
+											<entry name="gridConUsed" ns="1" inpkey="783"/>
+											<entry name="aziVertSect" ns="1" inpkey="784"/>
+											<entry name="dispNsVertSectOrig" ns="1" inpkey="785"/>
+											<entry name="dispEwVertSectOrig" ns="1" inpkey="786"/>
+											<entry name="definitive" ns="1" inpkey="787"/>
+											<entry name="memory" ns="1" inpkey="788"/>
+											<entry name="finalTraj" ns="1" inpkey="789"/>
+											<entry name="aziRef" ns="1" inpkey="790"/>
+											<entry name="trajectoryStation" ns="1" inpkey="791" expanded="1">
+												<entry name="uid" type="attribute" inpkey="792"/>
+												<entry name="target" ns="1" inpkey="793"/>
+												<entry name="dTimStn" ns="1" inpkey="794"/>
+												<entry name="typeTrajStation" ns="1" inpkey="1160"/>
+												<entry name="typeSurveyTool" ns="1" inpkey="795"/>
+												<entry name="calcAlgorithm" ns="1" inpkey="796"/>
+												<entry name="md" ns="1" inpkey="797">
+													<entry name="uom" type="attribute" inpkey="798"/>
+												</entry>
+												<entry name="tvd" ns="1" inpkey="799">
+													<entry name="uom" type="attribute" inpkey="800"/>
+												</entry>
+												<entry name="incl" ns="1" inpkey="801"/>
+												<entry name="azi" ns="1" inpkey="802"/>
+												<entry name="mtf" ns="1" inpkey="803"/>
+												<entry name="gtf" ns="1" inpkey="804"/>
+												<entry name="dispNs" ns="1" inpkey="805"/>
+												<entry name="dispEw" ns="1" inpkey="806"/>
+												<entry name="vertSect" ns="1" inpkey="807"/>
+												<entry name="dls" ns="1" inpkey="808" expanded="1"/>
+												<entry name="rateTurn" ns="1" inpkey="809"/>
+												<entry name="rateBuild" ns="1" inpkey="810"/>
+												<entry name="mdDelta" ns="1" inpkey="811"/>
+												<entry name="tvdDelta" ns="1" inpkey="812"/>
+												<entry name="iscwsaToolErrorModel" ns="1" inpkey="1165">
+													<entry name="uidRef" type="attribute" inpkey="813"/>
+												</entry>
+												<entry name="gravTotalUncert" ns="1" inpkey="814"/>
+												<entry name="dipAngleUncert" ns="1" inpkey="815"/>
+												<entry name="magTotalUncert" ns="1" inpkey="816"/>
+												<entry name="gravAccelCorUsed" ns="1" inpkey="817"/>
+												<entry name="magXAxialCorUsed" ns="1" inpkey="818"/>
+												<entry name="sagCorUsed" ns="1" inpkey="819"/>
+												<entry name="magDrlstrCorUsed" ns="1" inpkey="820"/>
+												<entry name="infieldRefCorUsed" ns="1" inpkey="821"/>
+												<entry name="interpolatedInfieldRefCorUsed" ns="1" inpkey="822"/>
+												<entry name="inHoleRefCorUsed" ns="1" inpkey="823"/>
+												<entry name="axialMagInterferenceCorUsed" ns="1" inpkey="824"/>
+												<entry name="cosagCorUsed" ns="1" inpkey="825"/>
+												<entry name="MSACorUsed" ns="1" inpkey="826"/>
+												<entry name="gravTotalFieldReference" ns="1" inpkey="827"/>
+												<entry name="magTotalFieldReference" ns="1" inpkey="828"/>
+												<entry name="magDipAngleReference" ns="1" inpkey="829"/>
+												<entry name="magModelUsed" ns="1" inpkey="830"/>
+												<entry name="magModelValid" ns="1" inpkey="831"/>
+												<entry name="geoModelUsed" ns="1" inpkey="832"/>
+												<entry name="statusTrajStation" ns="1" inpkey="833"/>
+												<entry name="rawData" ns="1" inpkey="834">
+													<entry name="gravAxialRaw" ns="1" inpkey="835"/>
+													<entry name="gravTran1Raw" ns="1" inpkey="836"/>
+													<entry name="gravTran2Raw" ns="1" inpkey="837"/>
+													<entry name="magAxialRaw" ns="1" inpkey="838"/>
+													<entry name="magTran1Raw" ns="1" inpkey="839"/>
+													<entry name="magTran2Raw" ns="1" inpkey="840"/>
+												</entry>
+												<entry name="corUsed" ns="1" inpkey="841" expanded="1">
+													<entry name="gravAxialAccelCor" ns="1" inpkey="842"/>
+													<entry name="gravTran1AccelCor" ns="1" inpkey="843"/>
+													<entry name="gravTran2AccelCor" ns="1" inpkey="844"/>
+													<entry name="magAxialDrlstrCor" ns="1" inpkey="845"/>
+													<entry name="magTran1DrlstrCor" ns="1" inpkey="846"/>
+													<entry name="magTran2DrlstrCor" ns="1" inpkey="847"/>
+													<entry name="magTran1MSACor" ns="1" inpkey="848"/>
+													<entry name="magTran2MSACor" ns="1" inpkey="849"/>
+													<entry name="magAxialMSACor" ns="1" inpkey="850"/>
+													<entry name="sagIncCor" ns="1" inpkey="851"/>
+													<entry name="sagAziCor" ns="1" inpkey="852"/>
+													<entry name="stnMagDeclUsed" ns="1" inpkey="853"/>
+													<entry name="stnGridConUsed" ns="1" inpkey="854"/>
+													<entry name="dirSensorOffset" ns="1" inpkey="855"/>
+												</entry>
+												<entry name="valid" ns="1" inpkey="856">
+													<entry name="magTotalFieldCalc" ns="1" inpkey="857" expanded="1"/>
+													<entry name="magDipAngleCalc" ns="1" inpkey="858" expanded="1"/>
+													<entry name="gravTotalFieldCalc" ns="1" inpkey="859" expanded="1"/>
+												</entry>
+												<entry name="matrixCov" ns="1" inpkey="860" expanded="1">
+													<entry name="varianceNN" ns="1" inpkey="861"/>
+													<entry name="varianceNE" ns="1" inpkey="862"/>
+													<entry name="varianceNVert" ns="1" inpkey="863"/>
+													<entry name="varianceEE" ns="1" inpkey="864"/>
+													<entry name="varianceEVert" ns="1" inpkey="865"/>
+													<entry name="varianceVertVert" ns="1" inpkey="866"/>
+													<entry name="biasN" ns="1" inpkey="867"/>
+													<entry name="biasE" ns="1" inpkey="868"/>
+													<entry name="biasVert" ns="1" inpkey="869"/>
+												</entry>
+												<entry name="location" ns="1" inpkey="1175" expanded="1">
+													<entry name="uid" type="attribute" inpkey="870"/>
+													<entry name="wellCRS" ns="1" inpkey="871" expanded="1"/>
+													<entry name="latitude" ns="1" inpkey="872" expanded="1"/>
+													<entry name="longitude" ns="1" inpkey="873" expanded="1"/>
+													<entry name="original" ns="1" inpkey="874"/>
+													<entry name="description" ns="1" inpkey="875"/>
+													<entry name="extensionNameValue" ns="1" inpkey="876">
+														<entry name="name" ns="1" inpkey="877"/>
+														<entry name="value" ns="1" inpkey="878"/>
+														<entry name="dTim" ns="1" inpkey="879"/>
+														<entry name="index" ns="1" inpkey="880"/>
+														<entry name="measureClass" ns="1" inpkey="881"/>
+														<entry name="description" ns="1" inpkey="882"/>
+													</entry>
+												</entry>
+												<entry name="sourceStation" ns="1" inpkey="883">
+													<entry name="stationReference" ns="1" inpkey="884"/>
+													<entry name="trajectoryParent" ns="1" inpkey="885"/>
+													<entry name="wellboreParent" ns="1" inpkey="886"/>
+												</entry>
+												<entry name="extensionNameValue" ns="1" inpkey="887" expanded="1">
+													<entry name="name" ns="1" inpkey="888"/>
+													<entry name="value" ns="1" inpkey="889"/>
+													<entry name="dTim" ns="1" inpkey="890"/>
+													<entry name="index" ns="1" inpkey="891"/>
+													<entry name="measureClass" ns="1" inpkey="892"/>
+													<entry name="description" ns="1" inpkey="893"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1" inpkey="1172" expanded="1">
+												<entry name="dTimLastChange" ns="1" inpkey="894"/>
+											</entry>
+											<entry name="customData" ns="1" inpkey="895"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_trajectory.xsd" instanceroot="{http://www.witsml.org/schemas/1series}trajectorys" outputinstance="..\output\reverse\trajectory\trajectory_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Trajectory" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="545" rby="1124"/>
+					<data>
+						<root scrollposition="935">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Trajectory" ns="2" outkey="896" expanded="1">
+										<entry name="Aliases" ns="1">
+											<entry name="authority" type="attribute" outkey="897"/>
+											<entry name="Identifier" ns="1" outkey="898"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="899"/>
+											<entry name="LastUpdate" ns="1" outkey="900"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="901"/>
+										<entry name="DTimTrajEnd" ns="2" outkey="902"/>
+										<entry name="MdMn" ns="2" outkey="903" expanded="1">
+											<entry name="uom" type="attribute" outkey="904"/>
+										</entry>
+										<entry name="MdMx" ns="2" outkey="905" expanded="1">
+											<entry name="uom" type="attribute" outkey="906"/>
+										</entry>
+										<entry name="ServiceCompany" ns="2" outkey="907"/>
+										<entry name="MagDeclUsed" ns="2" outkey="908"/>
+										<entry name="GridConUsed" ns="2" outkey="909"/>
+										<entry name="AziVertSect" ns="2" outkey="910"/>
+										<entry name="DispNsVertSectOrig" ns="2" outkey="911"/>
+										<entry name="DispEwVertSectOrig" ns="2" outkey="912"/>
+										<entry name="Definitive" ns="2" outkey="913"/>
+										<entry name="Memory" ns="2" outkey="914"/>
+										<entry name="FinalTraj" ns="2" outkey="915"/>
+										<entry name="AziRef" ns="2" outkey="916"/>
+										<entry name="TrajectoryStation" ns="2" outkey="917" expanded="1">
+											<entry name="uid" type="attribute" outkey="918"/>
+											<entry name="Target" ns="2" outkey="919"/>
+											<entry name="DTimStn" ns="2" outkey="920"/>
+											<entry name="TypeTrajStation" ns="2" outkey="1159"/>
+											<entry name="TypeSurveyTool" ns="2" outkey="921"/>
+											<entry name="CalcAlgorithm" ns="2" outkey="922"/>
+											<entry name="Md" ns="2" outkey="923" expanded="1">
+												<entry name="uom" type="attribute" outkey="924"/>
+											</entry>
+											<entry name="Tvd" ns="2" outkey="925" expanded="1">
+												<entry name="uom" type="attribute" outkey="926"/>
+											</entry>
+											<entry name="Incl" ns="2" outkey="927"/>
+											<entry name="Azi" ns="2" outkey="928"/>
+											<entry name="Mtf" ns="2" outkey="929"/>
+											<entry name="Gtf" ns="2" outkey="930"/>
+											<entry name="DispNs" ns="2" outkey="931"/>
+											<entry name="DispEw" ns="2" outkey="932"/>
+											<entry name="VertSect" ns="2" outkey="933"/>
+											<entry name="Dls" ns="2" outkey="934" expanded="1"/>
+											<entry name="RateTurn" ns="2" outkey="935"/>
+											<entry name="RateBuild" ns="2" outkey="936"/>
+											<entry name="MdDelta" ns="2" outkey="937"/>
+											<entry name="TvdDelta" ns="2" outkey="938"/>
+											<entry name="GravTotalUncert" ns="2" outkey="939"/>
+											<entry name="DipAngleUncert" ns="2" outkey="940"/>
+											<entry name="MagTotalUncert" ns="2" outkey="941"/>
+											<entry name="GravAccelCorUsed" ns="2" outkey="942"/>
+											<entry name="MagXAxialCorUsed" ns="2" outkey="943"/>
+											<entry name="SagCorUsed" ns="2" outkey="944"/>
+											<entry name="MagDrlstrCorUsed" ns="2" outkey="945"/>
+											<entry name="InfieldRefCorUsed" ns="2" outkey="946"/>
+											<entry name="InterpolatedInfieldRefCorUsed" ns="2" outkey="947"/>
+											<entry name="InHoleRefCorUsed" ns="2" outkey="948"/>
+											<entry name="AxialMagInterferenceCorUsed" ns="2" outkey="949"/>
+											<entry name="CosagCorUsed" ns="2" outkey="950"/>
+											<entry name="MSACorUsed" ns="2" outkey="951"/>
+											<entry name="GravTotalFieldReference" ns="2" outkey="952"/>
+											<entry name="MagTotalFieldReference" ns="2" outkey="953"/>
+											<entry name="MagDipAngleReference" ns="2" outkey="954"/>
+											<entry name="MagModelUsed" ns="2" outkey="955"/>
+											<entry name="MagModelValid" ns="2" outkey="956"/>
+											<entry name="GeoModelUsed" ns="2" outkey="957"/>
+											<entry name="StatusTrajStation" ns="2" outkey="958"/>
+											<entry name="ExtensionNameValue" ns="2" outkey="959">
+												<entry name="Name" ns="1" outkey="960"/>
+												<entry name="Value" ns="1" outkey="961"/>
+												<entry name="MeasureClass" ns="1" outkey="962"/>
+												<entry name="DTim" ns="1" outkey="963"/>
+												<entry name="Index" ns="1" outkey="964"/>
+												<entry name="Description" ns="1" outkey="965"/>
+											</entry>
+											<entry name="Valid" ns="2" outkey="966">
+												<entry name="MagTotalFieldCalc" ns="2" outkey="967"/>
+												<entry name="MagDipAngleCalc" ns="2" outkey="968"/>
+												<entry name="GravTotalFieldCalc" ns="2" outkey="969"/>
+											</entry>
+											<entry name="MatrixCov" ns="2" outkey="970">
+												<entry name="VarianceNN" ns="2" outkey="971"/>
+												<entry name="VarianceNE" ns="2" outkey="972"/>
+												<entry name="VarianceNVert" ns="2" outkey="973"/>
+												<entry name="VarianceEE" ns="2" outkey="974"/>
+												<entry name="VarianceEVert" ns="2" outkey="975"/>
+												<entry name="VarianceVertVert" ns="2" outkey="976"/>
+												<entry name="BiasN" ns="2" outkey="977"/>
+												<entry name="BiasE" ns="2" outkey="978"/>
+												<entry name="BiasVert" ns="2" outkey="979"/>
+											</entry>
+											<entry name="Location" ns="2" displayselectionmode="all"/>
+											<entry name="Location" ns="2" outkey="1176" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/witsmlv2}GeodeticWellLocation" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="uid" type="attribute" outkey="980"/>
+												<entry name="Original" ns="2" outkey="981"/>
+												<entry name="Description" ns="2" outkey="982"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="983">
+													<entry name="Name" ns="1" outkey="984"/>
+													<entry name="Value" ns="1" outkey="985"/>
+													<entry name="MeasureClass" ns="1" outkey="986"/>
+													<entry name="DTim" ns="1" outkey="987"/>
+													<entry name="Index" ns="1" outkey="988"/>
+													<entry name="Description" ns="1" outkey="989"/>
+												</entry>
+												<entry name="Latitude" ns="2" outkey="990" expanded="1"/>
+												<entry name="Longitude" ns="2" outkey="991" expanded="1"/>
+												<entry name="Crs" ns="2" displayselectionmode="all"/>
+												<entry name="Crs" ns="2" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/commonv2}GeodeticLocalAuthorityCrs" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="LocalAuthorityCrsName" ns="1" outkey="992" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="SourceStation" ns="2" outkey="993">
+												<entry name="StationReference" ns="2" outkey="994"/>
+												<entry name="TrajectoryParent" ns="2" outkey="995"/>
+												<entry name="WellboreParent" ns="2" outkey="996"/>
+											</entry>
+											<entry name="RawData" ns="2" outkey="997">
+												<entry name="GravAxialRaw" ns="2" outkey="998"/>
+												<entry name="GravTran1Raw" ns="2" outkey="999"/>
+												<entry name="GravTran2Raw" ns="2" outkey="1000"/>
+												<entry name="MagAxialRaw" ns="2" outkey="1001"/>
+												<entry name="MagTran1Raw" ns="2" outkey="1002"/>
+												<entry name="MagTran2Raw" ns="2" outkey="1003"/>
+											</entry>
+											<entry name="CorUsed" ns="2" outkey="1004">
+												<entry name="GravAxialAccelCor" ns="2" outkey="1005"/>
+												<entry name="GravTran1AccelCor" ns="2" outkey="1006"/>
+												<entry name="GravTran2AccelCor" ns="2" outkey="1007"/>
+												<entry name="MagAxialDrlstrCor" ns="2" outkey="1008"/>
+												<entry name="MagTran1DrlstrCor" ns="2" outkey="1009"/>
+												<entry name="MagTran2DrlstrCor" ns="2" outkey="1010"/>
+												<entry name="MagTran1MSACor" ns="2" outkey="1011"/>
+												<entry name="MagTran2MSACor" ns="2" outkey="1012"/>
+												<entry name="MagAxialMSACor" ns="2" outkey="1013"/>
+												<entry name="SagIncCor" ns="2" outkey="1014"/>
+												<entry name="SagAziCor" ns="2" outkey="1015"/>
+												<entry name="StnMagDeclUsed" ns="2" outkey="1016"/>
+												<entry name="StnGridConUsed" ns="2" outkey="1017"/>
+												<entry name="DirSensorOffset" ns="2" outkey="1018"/>
+											</entry>
+											<entry name="IscwsaToolErrorModel" ns="2" expanded="1">
+												<entry name="Title" ns="1" outkey="1019"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="1020"/>
+											<entry name="UuidAuthority" ns="1" outkey="1021"/>
+										</entry>
+										<entry name="ParentTrajectory" ns="2" outkey="1022" expanded="1">
+											<entry name="Title" ns="1" outkey="1023"/>
+											<entry name="UuidAuthority" ns="1" outkey="1024"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Trajectory.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Trajectory" inputinstance="..\..\input\reverse\trajectory\trajectory_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="782">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="783">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="784">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="785">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="786">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="801">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="802">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="803">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="804">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="805">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="806">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="807">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="809">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="810">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="811">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="812">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="814">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="815">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="816">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="827">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="828">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="829">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="835">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="836">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="837">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="838">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="839">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="840">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="842">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="843">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="844">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="845">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="846">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="847">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="848">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="849">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="850">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="851">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="852">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="853">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="854">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="855">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="857">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="858">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="859">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="861">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="862">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="863">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="864">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="865">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="866">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="867">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="868">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="869">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="895">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="897">
+						<edges>
+							<edge vertexkey="767"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="896">
+						<edges>
+							<edge vertexkey="768"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1021">
+						<edges>
+							<edge vertexkey="769"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="898">
+						<edges>
+							<edge vertexkey="770"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1020">
+						<edges>
+							<edge vertexkey="771"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="899">
+						<edges>
+							<edge vertexkey="772"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1022">
+						<edges>
+							<edge vertexkey="773"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1023">
+						<edges>
+							<edge vertexkey="774"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1024">
+						<edges>
+							<edge vertexkey="775"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="902">
+						<edges>
+							<edge vertexkey="776"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="903">
+						<edges>
+							<edge vertexkey="777"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="904">
+						<edges>
+							<edge vertexkey="778"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="905">
+						<edges>
+							<edge vertexkey="779"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="906">
+						<edges>
+							<edge vertexkey="780"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="907">
+						<edges>
+							<edge vertexkey="781"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="908">
+						<edges>
+							<edge vertexkey="782" edgekey="782"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="909">
+						<edges>
+							<edge vertexkey="783" edgekey="783"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="910">
+						<edges>
+							<edge vertexkey="784" edgekey="784"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="911">
+						<edges>
+							<edge vertexkey="785" edgekey="785"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="912">
+						<edges>
+							<edge vertexkey="786" edgekey="786"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="913">
+						<edges>
+							<edge vertexkey="787"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="914">
+						<edges>
+							<edge vertexkey="788"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="915">
+						<edges>
+							<edge vertexkey="789"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="916">
+						<edges>
+							<edge vertexkey="790"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="917">
+						<edges>
+							<edge vertexkey="791"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="918">
+						<edges>
+							<edge vertexkey="792"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="919">
+						<edges>
+							<edge vertexkey="793"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="920">
+						<edges>
+							<edge vertexkey="794"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="921">
+						<edges>
+							<edge vertexkey="795"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="922">
+						<edges>
+							<edge vertexkey="796"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="923">
+						<edges>
+							<edge vertexkey="797"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="924">
+						<edges>
+							<edge vertexkey="798"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="925">
+						<edges>
+							<edge vertexkey="799"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="926">
+						<edges>
+							<edge vertexkey="800"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="927">
+						<edges>
+							<edge vertexkey="801" edgekey="801"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="928">
+						<edges>
+							<edge vertexkey="802" edgekey="802"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="929">
+						<edges>
+							<edge vertexkey="803" edgekey="803"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="930">
+						<edges>
+							<edge vertexkey="804" edgekey="804"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="931">
+						<edges>
+							<edge vertexkey="805" edgekey="805"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="932">
+						<edges>
+							<edge vertexkey="806" edgekey="806"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="933">
+						<edges>
+							<edge vertexkey="807" edgekey="807"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="934">
+						<edges>
+							<edge vertexkey="808"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="935">
+						<edges>
+							<edge vertexkey="809" edgekey="809"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="936">
+						<edges>
+							<edge vertexkey="810" edgekey="810"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="937">
+						<edges>
+							<edge vertexkey="811" edgekey="811"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="938">
+						<edges>
+							<edge vertexkey="812" edgekey="812"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1019">
+						<edges>
+							<edge vertexkey="813"/>
+							<edge vertexkey="1166"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="939">
+						<edges>
+							<edge vertexkey="814" edgekey="814"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="940">
+						<edges>
+							<edge vertexkey="815" edgekey="815"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="941">
+						<edges>
+							<edge vertexkey="816" edgekey="816"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="942">
+						<edges>
+							<edge vertexkey="817"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="943">
+						<edges>
+							<edge vertexkey="818"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="944">
+						<edges>
+							<edge vertexkey="819"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="945">
+						<edges>
+							<edge vertexkey="820"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="946">
+						<edges>
+							<edge vertexkey="821"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="947">
+						<edges>
+							<edge vertexkey="822"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="948">
+						<edges>
+							<edge vertexkey="823"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="949">
+						<edges>
+							<edge vertexkey="824"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="950">
+						<edges>
+							<edge vertexkey="825"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="951">
+						<edges>
+							<edge vertexkey="826"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="952">
+						<edges>
+							<edge vertexkey="827" edgekey="827"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="953">
+						<edges>
+							<edge vertexkey="828" edgekey="828"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="954">
+						<edges>
+							<edge vertexkey="829" edgekey="829"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="955">
+						<edges>
+							<edge vertexkey="830"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="956">
+						<edges>
+							<edge vertexkey="831"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="957">
+						<edges>
+							<edge vertexkey="832"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="958">
+						<edges>
+							<edge vertexkey="833"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="997">
+						<edges>
+							<edge vertexkey="834"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="998">
+						<edges>
+							<edge vertexkey="835" edgekey="835"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="999">
+						<edges>
+							<edge vertexkey="836" edgekey="836"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1000">
+						<edges>
+							<edge vertexkey="837" edgekey="837"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1001">
+						<edges>
+							<edge vertexkey="838" edgekey="838"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1002">
+						<edges>
+							<edge vertexkey="839" edgekey="839"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1003">
+						<edges>
+							<edge vertexkey="840" edgekey="840"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1004">
+						<edges>
+							<edge vertexkey="841"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1005">
+						<edges>
+							<edge vertexkey="842" edgekey="842"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1006">
+						<edges>
+							<edge vertexkey="843" edgekey="843"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1007">
+						<edges>
+							<edge vertexkey="844" edgekey="844"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1008">
+						<edges>
+							<edge vertexkey="845" edgekey="845"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1009">
+						<edges>
+							<edge vertexkey="846" edgekey="846"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1010">
+						<edges>
+							<edge vertexkey="847" edgekey="847"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1011">
+						<edges>
+							<edge vertexkey="848" edgekey="848"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1012">
+						<edges>
+							<edge vertexkey="849" edgekey="849"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1013">
+						<edges>
+							<edge vertexkey="850" edgekey="850"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1014">
+						<edges>
+							<edge vertexkey="851" edgekey="851"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1015">
+						<edges>
+							<edge vertexkey="852" edgekey="852"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1016">
+						<edges>
+							<edge vertexkey="853" edgekey="853"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1017">
+						<edges>
+							<edge vertexkey="854" edgekey="854"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1018">
+						<edges>
+							<edge vertexkey="855" edgekey="855"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="966">
+						<edges>
+							<edge vertexkey="856"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="967">
+						<edges>
+							<edge vertexkey="857" edgekey="857"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="968">
+						<edges>
+							<edge vertexkey="858" edgekey="858"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="969">
+						<edges>
+							<edge vertexkey="859" edgekey="859"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="970">
+						<edges>
+							<edge vertexkey="860"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="971">
+						<edges>
+							<edge vertexkey="861" edgekey="861"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="972">
+						<edges>
+							<edge vertexkey="862" edgekey="862"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="973">
+						<edges>
+							<edge vertexkey="863" edgekey="863"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="974">
+						<edges>
+							<edge vertexkey="864" edgekey="864"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="975">
+						<edges>
+							<edge vertexkey="865" edgekey="865"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="976">
+						<edges>
+							<edge vertexkey="866" edgekey="866"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="977">
+						<edges>
+							<edge vertexkey="867" edgekey="867"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="978">
+						<edges>
+							<edge vertexkey="868" edgekey="868"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="979">
+						<edges>
+							<edge vertexkey="869" edgekey="869"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="980">
+						<edges>
+							<edge vertexkey="870"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="992">
+						<edges>
+							<edge vertexkey="871"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="990">
+						<edges>
+							<edge vertexkey="872"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="991">
+						<edges>
+							<edge vertexkey="873"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="981">
+						<edges>
+							<edge vertexkey="874"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="982">
+						<edges>
+							<edge vertexkey="875"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="983">
+						<edges>
+							<edge vertexkey="876"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="984">
+						<edges>
+							<edge vertexkey="877"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="985">
+						<edges>
+							<edge vertexkey="878"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="987">
+						<edges>
+							<edge vertexkey="879"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="988">
+						<edges>
+							<edge vertexkey="880"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="986">
+						<edges>
+							<edge vertexkey="881"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="989">
+						<edges>
+							<edge vertexkey="882"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="993">
+						<edges>
+							<edge vertexkey="883"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="994">
+						<edges>
+							<edge vertexkey="884"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="995">
+						<edges>
+							<edge vertexkey="885"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="996">
+						<edges>
+							<edge vertexkey="886"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="959">
+						<edges>
+							<edge vertexkey="887"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="960">
+						<edges>
+							<edge vertexkey="888"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="961">
+						<edges>
+							<edge vertexkey="889"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="963">
+						<edges>
+							<edge vertexkey="890"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="964">
+						<edges>
+							<edge vertexkey="891"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="962">
+						<edges>
+							<edge vertexkey="892"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="965">
+						<edges>
+							<edge vertexkey="893"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="900">
+						<edges>
+							<edge vertexkey="894"/>
+							<edge vertexkey="1170"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="901">
+						<edges>
+							<edge vertexkey="895" edgekey="895"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1158">
+						<edges>
+							<edge vertexkey="1154"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1159">
+						<edges>
+							<edge vertexkey="1155"/>
+							<edge vertexkey="1157"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1156">
+						<edges>
+							<edge vertexkey="1160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1167">
+						<edges>
+							<edge vertexkey="1165"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1171">
+						<edges>
+							<edge vertexkey="1172"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1176">
+						<edges>
+							<edge vertexkey="1175"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_not_unknown" library="user" uid="129" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="logical-not" library="core" uid="37" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="309" lty="147" rbx="392" rby="185"/>
+				</component>
+				<component name="result" library="core" uid="32" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<view ltx="438" lty="147" rbx="495" rby="185"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="string" library="core" uid="35" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="9" lty="147" rbx="96" rby="185"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+				<component name="string_is_unknown" library="user" uid="57" kind="19" visible="0" blackbox="0">
+					<view ltx="133" lty="147" rbx="236" rby="164"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="5" componentid="27"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="6" componentid="26"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_unknown" library="user" uid="130" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="string" library="core" uid="27" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="98" lty="280" rbx="185" rby="318"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="30" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="91" lty="346" rbx="183" rby="363"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+					</data>
+				</component>
+				<component name="string_is_same" library="user" uid="29" kind="19" visible="0" blackbox="0">
+					<view ltx="253" lty="280" rbx="362" rby="314"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="3" componentid="10"/>
+							<entry name="string2" inpkey="4" componentid="11"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="5" componentid="9"/>
+						</root>
+					</data>
+				</component>
+				<component name="result" library="core" uid="26" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<view ltx="424" lty="280" rbx="481" rby="318"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_same" library="user" uid="131" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="string1" library="core" uid="10" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="68" lty="88" rbx="161" rby="126"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string1"/>
+					</data>
+				</component>
+				<component name="string2" library="core" uid="11" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="100" lty="191" rbx="193" rby="229"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string2"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="122" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="313" lty="134" rbx="369" rby="188"/>
+				</component>
+				<component name="result" library="core" uid="9" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="397" lty="150" rbx="454" rby="188"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

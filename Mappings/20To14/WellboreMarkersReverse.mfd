@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="WellboreMarkers" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="312" rby="853"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="WellboreMarker" ns="2" outkey="201" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="202"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="203"/>
+											<entry name="LastUpdate" ns="1" outkey="204"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="205" expanded="1"/>
+										<entry name="ExtensionNameValue" ns="1" expanded="1"/>
+										<entry name="Md" ns="2" outkey="207" expanded="1">
+											<entry name="uom" type="attribute" outkey="208"/>
+										</entry>
+										<entry name="Tvd" ns="2" outkey="209" expanded="1">
+											<entry name="uom" type="attribute" outkey="210"/>
+										</entry>
+										<entry name="DipAngle" ns="2" outkey="211"/>
+										<entry name="DipDirection" ns="2" outkey="212"/>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="213"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\WellboreMarkers.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}WellboreMarker" inputinstance="..\..\input\reverse\wellboreMarkers\formationMarker_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_formationMarker" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="644" rbx="959" rby="853"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="formationMarkers" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="214"/>
+										<entry name="formationMarker" ns="1" inpkey="215" expanded="1">
+											<entry name="nameWellbore" ns="1" inpkey="216"/>
+											<entry name="name" ns="1" inpkey="217"/>
+											<entry name="mdTopSample" ns="1" inpkey="218">
+												<entry name="uom" type="attribute" inpkey="219"/>
+											</entry>
+											<entry name="tvdTopSample" ns="1" inpkey="220">
+												<entry name="uom" type="attribute" inpkey="221"/>
+											</entry>
+											<entry name="dip" ns="1" inpkey="222"/>
+											<entry name="dipDirection" ns="1" inpkey="223"/>
+											<entry name="commonData" ns="1" inpkey="240" expanded="1">
+												<entry name="dTimLastChange" ns="1" inpkey="224"/>
+												<entry name="extensionNameValue" ns="1" expanded="1"/>
+											</entry>
+											<entry name="customData" ns="1" inpkey="226"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_formationMarker.xsd" instanceroot="{http://www.witsml.org/schemas/1series}formationMarkers" outputinstance="..\..\output\reverse\wellboreMarkers\formationMarker_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="222">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="223">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="226">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="202">
+						<edges>
+							<edge vertexkey="214"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="201">
+						<edges>
+							<edge vertexkey="215"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="213">
+						<edges>
+							<edge vertexkey="216"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="203">
+						<edges>
+							<edge vertexkey="217"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="207">
+						<edges>
+							<edge vertexkey="218"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="208">
+						<edges>
+							<edge vertexkey="219"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="209">
+						<edges>
+							<edge vertexkey="220"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="210">
+						<edges>
+							<edge vertexkey="221"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="211">
+						<edges>
+							<edge vertexkey="222" edgekey="222"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="212">
+						<edges>
+							<edge vertexkey="223" edgekey="223"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="204">
+						<edges>
+							<edge vertexkey="224"/>
+							<edge vertexkey="240"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="205">
+						<edges>
+							<edge vertexkey="226" edgekey="226"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

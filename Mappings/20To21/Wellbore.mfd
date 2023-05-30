@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To21" ShowSchemaTypes="1" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="4" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="484" lty="104" rbx="541" rby="121"/>
+					<data>
+						<constant value="2.1" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="402" lty="344" rbx="562" rby="361"/>
+					<data>
+						<constant value="eml23.BusinessAssociate" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="397" lty="251" rbx="562" rby="268"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<targets>
+						<datapoint pos="0" key="62"/>
+					</targets>
+					<view ltx="466" lty="298" rbx="562" rby="315"/>
+					<data>
+						<constant value="undefined" datatype="string"/>
+					</data>
+				</component>
+				<component name="Wellbore" library="xml" uid="3" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="677" rbx="998" rby="585"/>
+					<data>
+						<root scrollposition="5778">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Wellbore" ns="2" inpkey="4" expanded="1">
+										<entry name="uuid" type="attribute" inpkey="5"/>
+										<entry name="schemaVersion" type="attribute" inpkey="6"/>
+										<entry name="objectVersion" type="attribute" inpkey="7"/>
+										<entry name="Aliases" ns="1" inpkey="8">
+											<entry name="authority" type="attribute" inpkey="9"/>
+											<entry name="Identifier" ns="1" inpkey="10"/>
+											<entry name="Description" ns="1" inpkey="11"/>
+										</entry>
+										<entry name="Citation" ns="1" inpkey="12">
+											<entry name="Title" ns="1" inpkey="13"/>
+											<entry name="Originator" ns="1" inpkey="14"/>
+											<entry name="Creation" ns="1" inpkey="15"/>
+											<entry name="Format" ns="1" inpkey="16"/>
+											<entry name="Editor" ns="1" inpkey="17"/>
+											<entry name="LastUpdate" ns="1" inpkey="18"/>
+											<entry name="Description" ns="1" inpkey="19"/>
+											<entry name="DescriptiveKeywords" ns="1" inpkey="20"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="21"/>
+										<entry name="ExtensionNameValue" ns="1" inpkey="22"/>
+										<entry name="Number" ns="2" inpkey="23"/>
+										<entry name="SuffixAPI" ns="2" inpkey="24"/>
+										<entry name="NumGovt" ns="2" inpkey="25"/>
+										<entry name="StatusWellbore" ns="2" inpkey="26"/>
+										<entry name="PurposeWellbore" ns="2" inpkey="27"/>
+										<entry name="TypeWellbore" ns="2" inpkey="28"/>
+										<entry name="Shape" ns="2" inpkey="29"/>
+										<entry name="DTimKickoff" ns="2" inpkey="30"/>
+										<entry name="AchievedTD" ns="2" inpkey="31"/>
+										<entry name="Md" ns="2" inpkey="32" expanded="1">
+											<entry name="MeasuredDepth" ns="1" inpkey="33" expanded="1">
+												<entry name="uom" type="attribute" inpkey="34"/>
+											</entry>
+											<entry name="Datum" ns="1" inpkey="35" expanded="1">
+												<entry name="Uuid" ns="1" inpkey="36"/>
+												<entry name="QualifiedType" ns="1" inpkey="37"/>
+												<entry name="Title" ns="1" inpkey="38"/>
+											</entry>
+										</entry>
+										<entry name="MdBit" ns="2" inpkey="39" expanded="1">
+											<entry name="MeasuredDepth" ns="1" inpkey="40" expanded="1">
+												<entry name="uom" type="attribute" inpkey="41"/>
+											</entry>
+											<entry name="Datum" ns="1" inpkey="42" expanded="1">
+												<entry name="Uuid" ns="1" inpkey="43"/>
+												<entry name="QualifiedType" ns="1" inpkey="44"/>
+												<entry name="Title" ns="1" inpkey="45"/>
+											</entry>
+										</entry>
+										<entry name="MdKickoff" ns="2" inpkey="46" expanded="1">
+											<entry name="MeasuredDepth" ns="1" inpkey="47" expanded="1">
+												<entry name="uom" type="attribute" inpkey="48"/>
+											</entry>
+											<entry name="Datum" ns="1" inpkey="49" expanded="1">
+												<entry name="Uuid" ns="1" inpkey="50"/>
+												<entry name="QualifiedType" ns="1" inpkey="51"/>
+												<entry name="Title" ns="1" inpkey="52"/>
+											</entry>
+										</entry>
+										<entry name="MdPlanned" ns="2" inpkey="53" expanded="1">
+											<entry name="MeasuredDepth" ns="1" inpkey="108" expanded="1">
+												<entry name="uom" type="attribute" inpkey="109"/>
+											</entry>
+											<entry name="Datum" ns="1" inpkey="110" expanded="1">
+												<entry name="Uuid" ns="1" inpkey="111"/>
+												<entry name="QualifiedType" ns="1" inpkey="112"/>
+												<entry name="Title" ns="1" inpkey="113"/>
+											</entry>
+										</entry>
+										<entry name="MdSubSeaPlanned" ns="2" inpkey="54" expanded="1">
+											<entry name="MeasuredDepth" ns="1" inpkey="114" expanded="1">
+												<entry name="uom" type="attribute" inpkey="115"/>
+											</entry>
+											<entry name="Datum" ns="1" inpkey="116" expanded="1">
+												<entry name="Uuid" ns="1" inpkey="117"/>
+												<entry name="QualifiedType" ns="1" inpkey="118"/>
+												<entry name="Title" ns="1" inpkey="119"/>
+											</entry>
+										</entry>
+										<entry name="DayTarget" ns="2" inpkey="55"/>
+										<entry name="Well" ns="2" inpkey="56" expanded="1">
+											<entry name="Uuid" ns="1" inpkey="57"/>
+											<entry name="QualifiedType" ns="1" inpkey="124"/>
+											<entry name="Title" ns="1" inpkey="58"/>
+											<entry name="EnergisticsUri" ns="1" inpkey="125"/>
+										</entry>
+										<entry name="ParentWellbore" ns="2" inpkey="59" expanded="1">
+											<entry name="Uuid" ns="1" inpkey="60"/>
+											<entry name="QualifiedType" ns="1" inpkey="126"/>
+											<entry name="Title" ns="1" inpkey="61"/>
+											<entry name="EnergisticsUri" ns="1" inpkey="127"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.1\xsd_schemas\Wellbore.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Wellbore" outputinstance="..\Energistics\energyml\data\witsml\v2.1\xsd_schemas\Wellbore.xml"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<targets>
+						<datapoint pos="0" key="128"/>
+					</targets>
+					<view ltx="449" lty="372" rbx="562" rby="389"/>
+					<data>
+						<constant value="witsml21.Well" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<targets>
+						<datapoint pos="0" key="129"/>
+					</targets>
+					<view ltx="425" lty="407" rbx="562" rby="424"/>
+					<data>
+						<constant value="witsml21.Wellbore" datatype="string"/>
+					</data>
+				</component>
+				<component name="Wellbore" library="xml" uid="2" kind="14">
+					<properties/>
+					<view rbx="305" rby="585"/>
+					<data>
+						<root scrollposition="2329">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Wellbore" ns="2" outkey="63" expanded="1">
+										<entry name="objectVersion" type="attribute" outkey="64"/>
+										<entry name="uuid" type="attribute" outkey="65"/>
+										<entry name="Aliases" ns="1" outkey="66">
+											<entry name="authority" type="attribute" outkey="67"/>
+											<entry name="Identifier" ns="1" outkey="68"/>
+											<entry name="Description" ns="1" outkey="69"/>
+										</entry>
+										<entry name="Citation" ns="1" outkey="70">
+											<entry name="Title" ns="1" outkey="71"/>
+											<entry name="Originator" ns="1" outkey="72"/>
+											<entry name="Creation" ns="1" outkey="73"/>
+											<entry name="Format" ns="1" outkey="74"/>
+											<entry name="Editor" ns="1" outkey="75"/>
+											<entry name="LastUpdate" ns="1" outkey="76"/>
+											<entry name="Description" ns="1" outkey="77"/>
+											<entry name="DescriptiveKeywords" ns="1" outkey="78"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="79"/>
+										<entry name="ExtensionNameValue" ns="1" outkey="80"/>
+										<entry name="Number" ns="2" outkey="81"/>
+										<entry name="SuffixAPI" ns="2" outkey="82"/>
+										<entry name="NumGovt" ns="2" outkey="83"/>
+										<entry name="StatusWellbore" ns="2" outkey="84"/>
+										<entry name="PurposeWellbore" ns="2" outkey="85"/>
+										<entry name="TypeWellbore" ns="2" outkey="86"/>
+										<entry name="Shape" ns="2" outkey="87"/>
+										<entry name="DTimKickoff" ns="2" outkey="88"/>
+										<entry name="AchievedTD" ns="2" outkey="89"/>
+										<entry name="Md" ns="2" outkey="90" expanded="1">
+											<entry name="uom" type="attribute" outkey="91"/>
+											<entry name="datum" type="attribute" outkey="92"/>
+										</entry>
+										<entry name="MdBit" ns="2" outkey="93" expanded="1">
+											<entry name="uom" type="attribute" outkey="94"/>
+											<entry name="datum" type="attribute" outkey="95"/>
+										</entry>
+										<entry name="MdKickoff" ns="2" outkey="96" expanded="1">
+											<entry name="uom" type="attribute" outkey="97"/>
+											<entry name="datum" type="attribute" outkey="98"/>
+										</entry>
+										<entry name="MdPlanned" ns="2" outkey="99" expanded="1">
+											<entry name="uom" type="attribute" outkey="120"/>
+											<entry name="datum" type="attribute" outkey="121"/>
+										</entry>
+										<entry name="MdSubSeaPlanned" ns="2" outkey="100" expanded="1">
+											<entry name="uom" type="attribute" outkey="122"/>
+											<entry name="datum" type="attribute" outkey="123"/>
+										</entry>
+										<entry name="DayTarget" ns="2" outkey="101"/>
+										<entry name="Well" ns="2" outkey="102" expanded="1">
+											<entry name="Title" ns="1" outkey="103"/>
+											<entry name="Uuid" ns="1" outkey="104"/>
+											<entry name="Uri" ns="1" outkey="130"/>
+										</entry>
+										<entry name="ParentWellbore" ns="2" outkey="105" expanded="1">
+											<entry name="Title" ns="1" outkey="106"/>
+											<entry name="Uuid" ns="1" outkey="107"/>
+											<entry name="Uri" ns="1" outkey="131"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Wellbore.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Wellbore" inputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\Wellbore.xml" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\Wellbore.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="21">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="22">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="55">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="65">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="68">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="70">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="71">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="72">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="73">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="75">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="76">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="77">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="78">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="79">
+						<edges>
+							<edge vertexkey="21" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="80">
+						<edges>
+							<edge vertexkey="22" edgekey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="81">
+						<edges>
+							<edge vertexkey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="82">
+						<edges>
+							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="83">
+						<edges>
+							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="84">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="85">
+						<edges>
+							<edge vertexkey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="86">
+						<edges>
+							<edge vertexkey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87">
+						<edges>
+							<edge vertexkey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="88">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="89">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="90">
+						<edges>
+							<edge vertexkey="32"/>
+							<edge vertexkey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91">
+						<edges>
+							<edge vertexkey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="92">
+						<edges>
+							<edge vertexkey="35"/>
+							<edge vertexkey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="36"/>
+							<edge vertexkey="43"/>
+							<edge vertexkey="50"/>
+							<edge vertexkey="111"/>
+							<edge vertexkey="117"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="62">
+						<edges>
+							<edge vertexkey="37"/>
+							<edge vertexkey="44"/>
+							<edge vertexkey="51"/>
+							<edge vertexkey="112"/>
+							<edge vertexkey="118"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="93">
+						<edges>
+							<edge vertexkey="39"/>
+							<edge vertexkey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94">
+						<edges>
+							<edge vertexkey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="95">
+						<edges>
+							<edge vertexkey="42"/>
+							<edge vertexkey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="96">
+						<edges>
+							<edge vertexkey="46"/>
+							<edge vertexkey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="97">
+						<edges>
+							<edge vertexkey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="98">
+						<edges>
+							<edge vertexkey="49"/>
+							<edge vertexkey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="99">
+						<edges>
+							<edge vertexkey="53"/>
+							<edge vertexkey="108"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="100">
+						<edges>
+							<edge vertexkey="54"/>
+							<edge vertexkey="114"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="101">
+						<edges>
+							<edge vertexkey="55" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="102">
+						<edges>
+							<edge vertexkey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="104">
+						<edges>
+							<edge vertexkey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="103">
+						<edges>
+							<edge vertexkey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="105">
+						<edges>
+							<edge vertexkey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="107">
+						<edges>
+							<edge vertexkey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="106">
+						<edges>
+							<edge vertexkey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="120">
+						<edges>
+							<edge vertexkey="109"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="121">
+						<edges>
+							<edge vertexkey="110"/>
+							<edge vertexkey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="122">
+						<edges>
+							<edge vertexkey="115"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="123">
+						<edges>
+							<edge vertexkey="116"/>
+							<edge vertexkey="119"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="128">
+						<edges>
+							<edge vertexkey="124"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="130">
+						<edges>
+							<edge vertexkey="125"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="129">
+						<edges>
+							<edge vertexkey="126"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="131">
+						<edges>
+							<edge vertexkey="127"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

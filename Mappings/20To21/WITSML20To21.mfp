@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  MapForce Project File  -->
+<Project Expanded="Yes" language="xslt2" OutputDir="output\" Title="WITSML20To21" OutputName="WITSML20To21" Version="6">
+	<Folder FolderName="Mapping Folder" Expanded="Yes" Type="MappingFolder">
+		<File Type="Mapping" FilePath="Log.mfd"/>
+		<File Type="Mapping" FilePath="Rig.mfd"/>
+		<File Type="Mapping" FilePath="RigUtilization.mfd"/>
+		<File Type="Mapping" FilePath="Trajectory.mfd"/>
+		<File Type="Mapping" FilePath="UnwrapChannel.mfd"/>
+		<File Type="Mapping" FilePath="UnwrapChannelSet.mfd"/>
+		<File Type="Mapping" FilePath="Well.mfd"/>
+		<File Type="Mapping" FilePath="Wellbore.mfd"/>
+		<File Type="Mapping" FilePath="WrapChannel.mfd"/>
+		<File Type="Mapping" FilePath="WrapChannelSet.mfd"/>
+	</Folder>
+</Project>

@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map14To20" ShowSchemaTypes="1" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="26" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="183"/>
+					</targets>
+					<view ltx="420" lty="106" rbx="482" rby="123"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="158"/>
+					</targets>
+					<view ltx="420" lty="89" rbx="485" rby="106"/>
+					<data>
+						<constant value="Log-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="23" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="164"/>
+					</targets>
+					<view ltx="420" lty="174" rbx="563" rby="191"/>
+					<data>
+						<constant value="Identifier is created from the uid of the input scheme" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="27" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="189"/>
+					</targets>
+					<view ltx="419" lty="452" rbx="518" rby="469"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="416" lty="520" rbx="486" rby="537"/>
+					<data>
+						<constant value="name" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="103"/>
+					</targets>
+					<view ltx="416" lty="503" rbx="477" rby="520"/>
+					<data>
+						<constant value="raw" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="29" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="322"/>
+					</targets>
+					<view ltx="416" lty="537" rbx="488" rby="554"/>
+					<data>
+						<constant value="mixed" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="30" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="420" lty="631" rbx="486" rby="648"/>
+					<data>
+						<constant value="false" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="32" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="418" lty="665" rbx="504" rby="682"/>
+					<data>
+						<constant value="real time" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="62" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="520"/>
+					</targets>
+					<view ltx="542" lty="246" rbx="613" rby="263"/>
+					<data>
+						<constant value="active" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="65" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="523"/>
+					</targets>
+					<view ltx="612" lty="614" rbx="674" rby="631"/>
+					<data>
+						<constant value="title" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="68" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="535"/>
+					</targets>
+					<view ltx="592" lty="682" rbx="690" rby="699"/>
+					<data>
+						<constant value="decreasing" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="75" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="571"/>
+					</targets>
+					<view ltx="566" lty="380" rbx="612" rby="397"/>
+					<data>
+						<constant value="64" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="77" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="586"/>
+					</targets>
+					<view ltx="542" lty="174" rbx="683" rby="191"/>
+					<data>
+						<constant value="Identifier for this channel" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="63" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="521"/>
+					</targets>
+					<view ltx="568" lty="576" rbx="632" rby="593"/>
+					<data>
+						<constant value="time" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="416" lty="486" rbx="491" rby="503"/>
+					<data>
+						<constant value="2.0.0.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="76" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="572"/>
+					</targets>
+					<view ltx="517" lty="418" rbx="557" rby="435"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="85" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="605"/>
+					</targets>
+					<view ltx="422" lty="1012" rbx="494" rby="1029"/>
+					<data>
+						<constant value="string" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="84" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="601"/>
+					</targets>
+					<view ltx="404" lty="982" rbx="494" rby="999"/>
+					<data>
+						<constant value="date time" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="not-exists" library="core" uid="71" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="563"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="564"/>
+					</targets>
+					<view ltx="552" lty="34" rbx="629" rby="72"/>
+				</component>
+				<component name="if-else" library="core" uid="72" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="560"/>
+						<datapoint pos="1" key="565"/>
+						<datapoint pos="2" key="566"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="555" lty="80" rbx="659" rby="153"/>
+				</component>
+				<component name="constant" library="core" uid="21" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="163"/>
+					</targets>
+					<view ltx="420" lty="123" rbx="477" rby="140"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="19" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="159"/>
+						<datapoint pos="1" key="161"/>
+						<datapoint pos="2" key="184"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="420" lty="14" rbx="512" rby="87"/>
+				</component>
+				<component name="constant" library="core" uid="34" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="324"/>
+					</targets>
+					<view ltx="420" lty="140" rbx="507" rby="157"/>
+					<data>
+						<constant value="wellbore" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="24" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="165"/>
+					</targets>
+					<view ltx="420" lty="191" rbx="519" rby="208"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="419" lty="435" rbx="510" rby="452"/>
+					<data>
+						<constant value="Mapforce" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="not-exists" library="core" uid="78" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="581"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="582"/>
+					</targets>
+					<view ltx="555" lty="452" rbx="632" rby="490"/>
+				</component>
+				<component name="if-else" library="core" uid="79" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="583"/>
+						<datapoint pos="1" key="585"/>
+						<datapoint pos="2" key="584"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="587"/>
+					</targets>
+					<view ltx="685" lty="452" rbx="789" rby="525"/>
+				</component>
+				<component name="constant" library="core" uid="28" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="191"/>
+					</targets>
+					<view ltx="419" lty="469" rbx="494" rby="486"/>
+					<data>
+						<constant value="closed" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="57" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="477"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="478"/>
+					</targets>
+					<view ltx="418" lty="720" rbx="508" rby="758"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="56" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="475"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="476"/>
+					</targets>
+					<view ltx="420" lty="682" rbx="510" rby="720"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="58" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="479"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="480"/>
+					</targets>
+					<view ltx="408" lty="759" rbx="498" rby="797"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="59" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="481"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="482"/>
+					</targets>
+					<view ltx="419" lty="796" rbx="509" rby="834"/>
+				</component>
+				<component name="equal" library="core" uid="83" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="602"/>
+						<datapoint pos="1" key="603"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="604"/>
+					</targets>
+					<view ltx="449" lty="861" rbx="505" rby="915"/>
+				</component>
+				<component name="if-else" library="core" uid="80" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="596"/>
+						<datapoint pos="1" key="597"/>
+						<datapoint pos="2" key="595"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="594"/>
+					</targets>
+					<view ltx="578" lty="872" rbx="682" rby="945"/>
+				</component>
+				<component name="constant" library="core" uid="67" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="525"/>
+					</targets>
+					<view ltx="618" lty="667" rbx="669" rby="684"/>
+					<data>
+						<constant value="m" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="4" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="6"/>
+						<datapoint pos="2" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="420" lty="246" rbx="512" rby="319"/>
+				</component>
+				<component name="substring" library="core" uid="74" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="567"/>
+						<datapoint pos="1" key="568"/>
+						<datapoint pos="2" key="569"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="570"/>
+					</targets>
+					<view ltx="566" lty="287" rbx="649" rby="357"/>
+				</component>
+				<component name="constant" library="core" uid="66" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="524"/>
+					</targets>
+					<view ltx="578" lty="650" rbx="704" rby="667"/>
+					<data>
+						<constant value="measured depth" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="60" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="511"/>
+					</targets>
+					<view ltx="420" lty="834" rbx="484" rby="851"/>
+					<data>
+						<constant value="-999" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="64" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="522"/>
+					</targets>
+					<view ltx="612" lty="593" rbx="671" rby="610"/>
+					<data>
+						<constant value="log" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="69" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="545"/>
+					</targets>
+					<view ltx="596" lty="699" rbx="672" rby="716"/>
+					<data>
+						<constant value="DEPTH" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="22" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="167"/>
+					</targets>
+					<view ltx="420" lty="157" rbx="585" rby="174"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="86" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="653"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="654"/>
+					</targets>
+					<view ltx="708" lty="18" rbx="823" rby="72"/>
+				</component>
+				<component name="constant" library="core" uid="31" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="510"/>
+					</targets>
+					<view ltx="592" lty="537" rbx="643" rby="554"/>
+					<data>
+						<constant value="m" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="46" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="400"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="401"/>
+					</targets>
+					<view ltx="420" lty="555" rbx="510" rby="593"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="35" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="361"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="360"/>
+					</targets>
+					<view ltx="439" lty="593" rbx="529" rby="631"/>
+				</component>
+				<component name="constant" library="core" uid="286" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="662"/>
+					</targets>
+					<view ltx="555" lty="817" rbx="682" rby="834"/>
+					<data>
+						<constant value="WITSML:Unitless" datatype="string"/>
+					</data>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="38" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="376"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="375"/>
+					</targets>
+					<view ltx="420" lty="397" rbx="510" rby="435"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="37" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="371"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="370"/>
+					</targets>
+					<view ltx="420" lty="359" rbx="510" rby="397"/>
+				</component>
+				<component name="exists_or" library="user" uid="285" kind="19" visible="0" blackbox="0">
+					<view ltx="578" lty="683" rbx="730" rby="778"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="659" componentid="289"/>
+							<entry name="default" inpkey="660" componentid="290"/>
+						</root>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="661" componentid="288"/>
+						</root>
+					</data>
+				</component>
+				<component name="exists_or" library="user" uid="297" kind="19" visible="0" blackbox="0">
+					<view ltx="566" lty="1032" rbx="718" rby="1127"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="664" componentid="289"/>
+							<entry name="default" inpkey="665" componentid="290"/>
+						</root>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="663" componentid="288"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="298" kind="2">
+					<targets>
+						<datapoint pos="0" key="666"/>
+					</targets>
+					<view ltx="427" lty="1121" rbx="519" rby="1138"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+					</data>
+				</component>
+				<component name="Log" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1215" rbx="1861" rby="1090"/>
+					<data>
+						<root scrollposition="1430">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" ns="2" inpkey="244" expanded="1">
+										<entry name="schemaVersion" type="attribute" inpkey="36"/>
+										<entry name="uuid" type="attribute" inpkey="11"/>
+										<entry name="Aliases" ns="1">
+											<entry name="authority" type="attribute" inpkey="169"/>
+											<entry name="Identifier" ns="1" inpkey="170"/>
+											<entry name="Description" ns="1" inpkey="171"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" inpkey="37"/>
+											<entry name="Originator" ns="1" inpkey="38"/>
+											<entry name="Format" ns="1" inpkey="3"/>
+											<entry name="LastUpdate" ns="1" inpkey="40"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="245"/>
+										<entry name="ExtensionNameValue" ns="1" inpkey="246">
+											<entry name="Name" ns="1" inpkey="247"/>
+											<entry name="Value" ns="1" inpkey="248"/>
+											<entry name="MeasureClass" ns="1" inpkey="249"/>
+											<entry name="DTim" ns="1" inpkey="250"/>
+											<entry name="Index" ns="1" inpkey="251"/>
+											<entry name="Description" ns="1" inpkey="252"/>
+										</entry>
+										<entry name="TimeDepth" ns="2" inpkey="326"/>
+										<entry name="RunNumber" ns="2" inpkey="347"/>
+										<entry name="StartIndex" ns="2" displayselectionmode="all"/>
+										<entry name="StartIndex" ns="2" inpkey="404">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Depth" ns="2" inpkey="350"/>
+										</entry>
+										<entry name="StartIndex" ns="2">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}PassIndexedDepth" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="StartIndex" ns="2" inpkey="193">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Time" ns="2" inpkey="352"/>
+										</entry>
+										<entry name="EndIndex" ns="2" displayselectionmode="all"/>
+										<entry name="EndIndex" ns="2" inpkey="194">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Depth" ns="2" inpkey="353"/>
+										</entry>
+										<entry name="EndIndex" ns="2" inpkey="195">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Time" ns="2" inpkey="354"/>
+										</entry>
+										<entry name="LoggingCompanyName" ns="2" inpkey="428"/>
+										<entry name="LoggingMethod" ns="2" inpkey="321"/>
+										<entry name="Wellbore" ns="2">
+											<entry name="ContentType" ns="1" inpkey="327"/>
+											<entry name="Title" ns="1" inpkey="328"/>
+											<entry name="Uuid" ns="1" inpkey="329"/>
+										</entry>
+										<entry name="ChannelSet" ns="2" expanded="1">
+											<entry name="schemaVersion" type="attribute" inpkey="48"/>
+											<entry name="uuid" type="attribute" inpkey="49"/>
+											<entry name="Citation" ns="1">
+												<entry name="Title" ns="1" inpkey="129"/>
+												<entry name="Originator" ns="1" inpkey="130"/>
+												<entry name="Creation" ns="1" inpkey="131"/>
+												<entry name="Format" ns="1" inpkey="120"/>
+											</entry>
+											<entry name="ExtensionNameValue" ns="1" inpkey="448">
+												<entry name="Name" ns="1" inpkey="449"/>
+												<entry name="Value" ns="1" inpkey="450"/>
+												<entry name="MeasureClass" ns="1" inpkey="451"/>
+												<entry name="DTim" ns="1" inpkey="452"/>
+												<entry name="Index" ns="1" inpkey="453"/>
+												<entry name="Description" ns="1" inpkey="454"/>
+											</entry>
+											<entry name="Index" ns="2" expanded="1">
+												<entry name="IndexType" ns="2" inpkey="334"/>
+												<entry name="Uom" ns="2" inpkey="383"/>
+												<entry name="Direction" ns="2" inpkey="335"/>
+												<entry name="Mnemonic" ns="2" inpkey="336"/>
+												<entry name="DatumReference" ns="2" inpkey="455"/>
+											</entry>
+											<entry name="Channel" ns="2" inpkey="309" expanded="1">
+												<entry name="schemaVersion" type="attribute" inpkey="50"/>
+												<entry name="uuid" type="attribute" inpkey="95"/>
+												<entry name="Aliases" ns="1">
+													<entry name="authority" type="attribute" inpkey="289"/>
+													<entry name="Identifier" ns="1" inpkey="290"/>
+												</entry>
+												<entry name="Citation" ns="1">
+													<entry name="Title" ns="1" inpkey="96"/>
+													<entry name="Originator" ns="1" inpkey="97"/>
+													<entry name="Creation" ns="1" inpkey="98"/>
+													<entry name="Format" ns="1" inpkey="121"/>
+												</entry>
+												<entry name="Mnemonic" ns="2" inpkey="51"/>
+												<entry name="DataType" ns="2" inpkey="456"/>
+												<entry name="Uom" ns="2" inpkey="526"/>
+												<entry name="GrowingStatus" ns="2" inpkey="527"/>
+												<entry name="Source" ns="2" inpkey="57"/>
+												<entry name="TimeDepth" ns="2" inpkey="528"/>
+												<entry name="ChannelClass" ns="2">
+													<entry name="ContentType" ns="1" inpkey="529"/>
+													<entry name="Title" ns="1" inpkey="530"/>
+													<entry name="Uuid" ns="1" inpkey="531"/>
+												</entry>
+												<entry name="RunNumber" ns="2" inpkey="497"/>
+												<entry name="StartIndex" ns="2" displayselectionmode="all"/>
+												<entry name="StartIndex" ns="2" inpkey="53">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Depth" ns="2" inpkey="457"/>
+												</entry>
+												<entry name="StartIndex" ns="2" inpkey="276">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Time" ns="2" inpkey="458"/>
+												</entry>
+												<entry name="EndIndex" ns="2" displayselectionmode="all"/>
+												<entry name="EndIndex" ns="2" inpkey="55">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Depth" ns="2" inpkey="459"/>
+												</entry>
+												<entry name="EndIndex" ns="2" inpkey="277">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Time" ns="2" inpkey="460"/>
+												</entry>
+												<entry name="LoggingCompanyName" ns="2" inpkey="506"/>
+												<entry name="Derivation" ns="2" inpkey="106"/>
+												<entry name="LoggingMethod" ns="2" inpkey="507"/>
+												<entry name="NominalHoleSize" ns="2" inpkey="508">
+													<entry name="uom" type="attribute" inpkey="509"/>
+												</entry>
+												<entry name="Index" ns="2">
+													<entry name="IndexType" ns="2" inpkey="546"/>
+													<entry name="Uom" ns="2" inpkey="547"/>
+													<entry name="Direction" ns="2" inpkey="548"/>
+													<entry name="Mnemonic" ns="2" inpkey="549"/>
+												</entry>
+												<entry name="Status" ns="2" inpkey="105"/>
+												<entry name="CurveClass" ns="2" inpkey="496"/>
+											</entry>
+											<entry name="Data" ns="2" expanded="1">
+												<entry name="Data" ns="2" inpkey="649"/>
+											</entry>
+											<entry name="DataContext" ns="2" displayselectionmode="all"/>
+											<entry name="DataContext" ns="2" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/witsmlv2}ChannelValueContext" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="ChannelReference" ns="2" expanded="1">
+													<entry name="ContentType" ns="1" inpkey="550"/>
+													<entry name="Title" ns="1" inpkey="406"/>
+													<entry name="Uuid" ns="1" inpkey="551"/>
+												</entry>
+												<entry name="DataValue" ns="2" inpkey="338"/>
+											</entry>
+										</entry>
+										<entry name="CurveClass" ns="2" inpkey="402"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\Log.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_log" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="335" rby="1090"/>
+					<data>
+						<root scrollposition="957">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="logs" ns="1" expanded="1">
+										<entry name="version" type="attribute" outkey="18"/>
+										<entry name="log" ns="1" outkey="233" expanded="1">
+											<entry name="uidWell" type="attribute" outkey="12"/>
+											<entry name="uidWellbore" type="attribute" outkey="9"/>
+											<entry name="uid" type="attribute" outkey="10"/>
+											<entry name="nameWellbore" ns="1" outkey="325"/>
+											<entry name="name" ns="1" outkey="19"/>
+											<entry name="serviceCompany" ns="1" outkey="426"/>
+											<entry name="runNumber" ns="1" outkey="346"/>
+											<entry name="bhaRunNumber" ns="1" outkey="500"/>
+											<entry name="indexType" ns="1" outkey="21"/>
+											<entry name="startIndex" ns="1" outkey="139" expanded="1">
+												<entry name="uom" type="attribute" outkey="445"/>
+											</entry>
+											<entry name="endIndex" ns="1" outkey="86"/>
+											<entry name="startDateTimeIndex" ns="1" outkey="196"/>
+											<entry name="endDateTimeIndex" ns="1" outkey="197"/>
+											<entry name="direction" ns="1" outkey="23"/>
+											<entry name="logCurveInfo" ns="1" outkey="312" expanded="1">
+												<entry name="uid" type="attribute" outkey="293"/>
+												<entry name="mnemonic" ns="1" outkey="26"/>
+												<entry name="classWitsml" ns="1" outkey="408"/>
+												<entry name="unit" ns="1" outkey="657"/>
+												<entry name="wellDatum" ns="1" outkey="491" expanded="1"/>
+												<entry name="minIndex" ns="1" outkey="296" expanded="1"/>
+												<entry name="maxIndex" ns="1" outkey="297" expanded="1"/>
+												<entry name="minDateTimeIndex" ns="1" outkey="298"/>
+												<entry name="maxDateTimeIndex" ns="1" outkey="299"/>
+												<entry name="dataSource" ns="1" outkey="32"/>
+												<entry name="typeLogData" ns="1" outkey="446"/>
+											</entry>
+											<entry name="logData" ns="1" outkey="397" expanded="1"/>
+											<entry name="commonData" ns="1" expanded="1">
+												<entry name="dTimCreation" ns="1" outkey="34"/>
+												<entry name="dTimLastChange" ns="1" outkey="35"/>
+												<entry name="extensionNameValue" ns="1" outkey="236">
+													<entry name="name" ns="1" outkey="237"/>
+													<entry name="value" ns="1" outkey="238"/>
+													<entry name="dTim" ns="1" outkey="239"/>
+													<entry name="index" ns="1" outkey="240"/>
+													<entry name="measureClass" ns="1" outkey="241"/>
+													<entry name="description" ns="1" outkey="242"/>
+												</entry>
+											</entry>
+											<entry name="customData" ns="1" outkey="243"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_log.xsd" instanceroot="{http://www.witsml.org/schemas/1series}logs" sps="..\..\..\..\witsml_v1.4.1.1_data\xml_examples\stylesheets\all_object_utility_templates.xsl" inputinstance="..\Energistics\energyml\data\witsml\v1.4.1.1\xml_examples\log_no_xsl.xml" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\Log.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="exists_or" library="user" uid="300" kind="19" visible="0" blackbox="0">
+					<view ltx="850" lty="780" rbx="1002" rby="875"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="667" componentid="289"/>
+							<entry name="default" inpkey="668" componentid="290"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="669" componentid="288"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="301" kind="2">
+					<targets>
+						<datapoint pos="0" key="670"/>
+					</targets>
+					<view ltx="708" lty="850" rbx="803" rby="867"/>
+					<data>
+						<constant value="increasing" datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="245">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="120"/>
+							<edge vertexkey="121"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="7"/>
+							<edge vertexkey="161"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="167">
+						<edges>
+							<edge vertexkey="11"/>
+							<edge vertexkey="49"/>
+							<edge vertexkey="95"/>
+							<edge vertexkey="329"/>
+							<edge vertexkey="531"/>
+							<edge vertexkey="551"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="163">
+						<edges>
+							<edge vertexkey="36"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="37"/>
+							<edge vertexkey="129"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="165">
+						<edges>
+							<edge vertexkey="38"/>
+							<edge vertexkey="97"/>
+							<edge vertexkey="565"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="48"/>
+							<edge vertexkey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="51"/>
+							<edge vertexkey="96"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="476">
+						<edges>
+							<edge vertexkey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="478">
+						<edges>
+							<edge vertexkey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="98"/>
+							<edge vertexkey="131"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="191">
+						<edges>
+							<edge vertexkey="105"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="103">
+						<edges>
+							<edge vertexkey="106"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="189">
+						<edges>
+							<edge vertexkey="130"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="158">
+						<edges>
+							<edge vertexkey="159"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="169"/>
+							<edge vertexkey="563"/>
+							<edge vertexkey="566"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="570">
+						<edges>
+							<edge vertexkey="170"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="164">
+						<edges>
+							<edge vertexkey="171"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="183">
+						<edges>
+							<edge vertexkey="184"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="360">
+						<edges>
+							<edge vertexkey="193"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="375">
+						<edges>
+							<edge vertexkey="194"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370">
+						<edges>
+							<edge vertexkey="195"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="654">
+						<edges>
+							<edge vertexkey="244"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="243">
+						<edges>
+							<edge vertexkey="245" edgekey="245"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="236">
+						<edges>
+							<edge vertexkey="246"/>
+							<edge vertexkey="448"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="237">
+						<edges>
+							<edge vertexkey="247"/>
+							<edge vertexkey="449"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="238">
+						<edges>
+							<edge vertexkey="248"/>
+							<edge vertexkey="450"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="241">
+						<edges>
+							<edge vertexkey="249"/>
+							<edge vertexkey="451"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="239">
+						<edges>
+							<edge vertexkey="250"/>
+							<edge vertexkey="452"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="240">
+						<edges>
+							<edge vertexkey="251"/>
+							<edge vertexkey="453"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="242">
+						<edges>
+							<edge vertexkey="252"/>
+							<edge vertexkey="454"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="480">
+						<edges>
+							<edge vertexkey="276"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="482">
+						<edges>
+							<edge vertexkey="277"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="293">
+						<edges>
+							<edge vertexkey="289"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="586">
+						<edges>
+							<edge vertexkey="290"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="312">
+						<edges>
+							<edge vertexkey="309"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="322">
+						<edges>
+							<edge vertexkey="321"/>
+							<edge vertexkey="507"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="326"/>
+							<edge vertexkey="334"/>
+							<edge vertexkey="336"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="324">
+						<edges>
+							<edge vertexkey="327"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="325">
+						<edges>
+							<edge vertexkey="328"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="669">
+						<edges>
+							<edge vertexkey="335"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="511">
+						<edges>
+							<edge vertexkey="338"/>
+							<edge vertexkey="508"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="346">
+						<edges>
+							<edge vertexkey="347"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="139">
+						<edges>
+							<edge vertexkey="350"/>
+							<edge vertexkey="400"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="196">
+						<edges>
+							<edge vertexkey="352"/>
+							<edge vertexkey="361"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="86">
+						<edges>
+							<edge vertexkey="353"/>
+							<edge vertexkey="376"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="197">
+						<edges>
+							<edge vertexkey="354"/>
+							<edge vertexkey="371"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="587">
+						<edges>
+							<edge vertexkey="383"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="408">
+						<edges>
+							<edge vertexkey="402"/>
+							<edge vertexkey="496"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="401">
+						<edges>
+							<edge vertexkey="404"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="545">
+						<edges>
+							<edge vertexkey="406"/>
+							<edge vertexkey="549"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="426">
+						<edges>
+							<edge vertexkey="428"/>
+							<edge vertexkey="664"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="491">
+						<edges>
+							<edge vertexkey="455"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="594">
+						<edges>
+							<edge vertexkey="456"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="296">
+						<edges>
+							<edge vertexkey="457"/>
+							<edge vertexkey="475"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="298">
+						<edges>
+							<edge vertexkey="458"/>
+							<edge vertexkey="479"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="297">
+						<edges>
+							<edge vertexkey="459"/>
+							<edge vertexkey="477"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="299">
+						<edges>
+							<edge vertexkey="460"/>
+							<edge vertexkey="481"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="500">
+						<edges>
+							<edge vertexkey="497"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="663">
+						<edges>
+							<edge vertexkey="506"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="510">
+						<edges>
+							<edge vertexkey="509"/>
+							<edge vertexkey="585"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="661">
+						<edges>
+							<edge vertexkey="526"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="520">
+						<edges>
+							<edge vertexkey="527"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="521">
+						<edges>
+							<edge vertexkey="528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="522">
+						<edges>
+							<edge vertexkey="529"/>
+							<edge vertexkey="550"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="523">
+						<edges>
+							<edge vertexkey="530"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="524">
+						<edges>
+							<edge vertexkey="546"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="525">
+						<edges>
+							<edge vertexkey="547"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="535">
+						<edges>
+							<edge vertexkey="548"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="564">
+						<edges>
+							<edge vertexkey="560"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="567"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="572">
+						<edges>
+							<edge vertexkey="568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="571">
+						<edges>
+							<edge vertexkey="569"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="445">
+						<edges>
+							<edge vertexkey="581"/>
+							<edge vertexkey="584"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="582">
+						<edges>
+							<edge vertexkey="583"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="446">
+						<edges>
+							<edge vertexkey="595"/>
+							<edge vertexkey="602"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="604">
+						<edges>
+							<edge vertexkey="596"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="605">
+						<edges>
+							<edge vertexkey="597"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="601">
+						<edges>
+							<edge vertexkey="603"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="397">
+						<edges>
+							<edge vertexkey="649"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="233">
+						<edges>
+							<edge vertexkey="653"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="657">
+						<edges>
+							<edge vertexkey="659"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="662">
+						<edges>
+							<edge vertexkey="660"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="666">
+						<edges>
+							<edge vertexkey="665"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="667"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="670">
+						<edges>
+							<edge vertexkey="668"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="exists_or" library="user" uid="287" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="default" library="core" uid="290" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="347" lty="197" rbx="441" rby="235"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="default"/>
+					</data>
+				</component>
+				<component name="node" library="core" uid="289" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="347" lty="138" rbx="431" rby="176"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="node" optional="1"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="292" kind="4">
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="4"/>
+						<datapoint pos="2" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="590" lty="138" rbx="694" rby="211"/>
+				</component>
+				<component name="result" library="core" uid="288" kind="7">
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<view ltx="762" lty="138" rbx="819" rby="176"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="296" kind="5">
+					<sources>
+						<datapoint pos="0" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="465" lty="75" rbx="541" rby="113"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="4"/>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

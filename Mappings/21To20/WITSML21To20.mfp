@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  MapForce Project File  -->
+<Project Expanded="Yes" language="xslt2" OutputDir="output\" Title="WITSML21To20" OutputName="WITSML21To20" Version="6">
+	<Folder FolderName="Mapping Folder" Expanded="Yes" Type="MappingFolder">
+		<File Type="Mapping" FilePath="LogReverse.mfd"/>
+		<File Type="Mapping" FilePath="RigReverse.mfd"/>
+		<File Type="Mapping" FilePath="UnwrapChannelReverse.mfd"/>
+		<File Type="Mapping" FilePath="UnwrapChannelSetReverse.mfd"/>
+		<File Type="Mapping" FilePath="WellboreReverse.mfd"/>
+		<File Type="Mapping" FilePath="WellReverse.mfd"/>
+		<File Type="Mapping" FilePath="WrapChannelReverse.mfd"/>
+		<File Type="Mapping" FilePath="WrapChannelSetReverse.mfd"/>
+	</Folder>
+</Project>

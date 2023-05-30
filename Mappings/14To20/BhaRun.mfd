@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2018sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="current-dateTime" library="xpath2" uid="17" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="344"/>
+					</targets>
+					<view ltx="359" lty="426" rbx="473" rby="464"/>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="320"/>
+					</targets>
+					<view ltx="359" lty="273" rbx="500" rby="290"/>
+					<data>
+						<constant value="Identifier is created from the uid of the input scheme" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="319"/>
+					</targets>
+					<view ltx="359" lty="213" rbx="414" rby="230"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="321"/>
+					</targets>
+					<view ltx="359" lty="306" rbx="456" rby="323"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="322"/>
+					</targets>
+					<view ltx="359" lty="243" rbx="522" rby="260"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="273"/>
+					</targets>
+					<view ltx="359" lty="464" rbx="448" rby="481"/>
+					<data>
+						<constant value="Mapforce" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="277"/>
+					</targets>
+					<view ltx="359" lty="481" rbx="466" rby="498"/>
+					<data>
+						<constant value="obj_wellbore" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="276"/>
+					</targets>
+					<view ltx="358" lty="498" rbx="458" rby="515"/>
+					<data>
+						<constant value="obj_tubular" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="323"/>
+					</targets>
+					<view ltx="363" lty="140" rbx="448" rby="157"/>
+					<data>
+						<constant value="BhaRun-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="347"/>
+					</targets>
+					<view ltx="359" lty="182" rbx="419" rby="199"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="595"/>
+					</targets>
+					<view ltx="431" lty="213" rbx="540" rby="230"/>
+					<data>
+						<constant value="kelly bushing" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="10" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="324"/>
+						<datapoint pos="1" key="317"/>
+						<datapoint pos="2" key="348"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="408" lty="25" rbx="496" rby="98"/>
+				</component>
+				<component name="concat" library="core" uid="9" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="307"/>
+						<datapoint pos="1" key="308"/>
+						<datapoint pos="2" key="309"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="306"/>
+					</targets>
+					<view ltx="408" lty="306" rbx="496" rby="379"/>
+				</component>
+				<component name="obj_bhaRun" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="295" rby="542"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="bhaRuns" ns="1" expanded="1">
+										<entry name="version" type="attribute" outkey="264"/>
+										<entry name="bhaRun" ns="1" outkey="270" expanded="1">
+											<entry name="uidWell" type="attribute" outkey="310"/>
+											<entry name="uidWellbore" type="attribute" outkey="289"/>
+											<entry name="uid" type="attribute" outkey="265"/>
+											<entry name="name" ns="1" outkey="8"/>
+											<entry name="tubular" ns="1" outkey="9" expanded="1">
+												<entry name="uidRef" type="attribute" outkey="291"/>
+											</entry>
+											<entry name="dTimStart" ns="1" outkey="124"/>
+											<entry name="dTimStop" ns="1" outkey="125"/>
+											<entry name="dTimStartDrilling" ns="1" outkey="28"/>
+											<entry name="dTimStopDrilling" ns="1" outkey="29"/>
+											<entry name="planDogleg" ns="1" outkey="30"/>
+											<entry name="actDogleg" ns="1" outkey="31"/>
+											<entry name="actDoglegMx" ns="1" outkey="32"/>
+											<entry name="statusBha" ns="1" outkey="33"/>
+											<entry name="numBitRun" ns="1" outkey="34"/>
+											<entry name="numStringRun" ns="1" outkey="35"/>
+											<entry name="reasonTrip" ns="1" outkey="36"/>
+											<entry name="objectiveBha" ns="1" outkey="37"/>
+											<entry name="drillingParams" ns="1" outkey="38" expanded="1">
+												<entry name="uid" type="attribute" outkey="39"/>
+												<entry name="eTimOpBit" ns="1" outkey="126"/>
+												<entry name="mdHoleStart" ns="1" outkey="127">
+													<entry name="uom" type="attribute" outkey="589"/>
+												</entry>
+												<entry name="mdHoleStop" ns="1" outkey="128">
+													<entry name="uom" type="attribute" outkey="590"/>
+												</entry>
+												<entry name="tubular" ns="1" outkey="129"/>
+												<entry name="hkldRot" ns="1" outkey="130"/>
+												<entry name="overPull" ns="1" outkey="131"/>
+												<entry name="slackOff" ns="1" outkey="132"/>
+												<entry name="hkldUp" ns="1" outkey="133"/>
+												<entry name="hkldDn" ns="1" outkey="134"/>
+												<entry name="tqOnBotAv" ns="1" outkey="135"/>
+												<entry name="tqOnBotMx" ns="1" outkey="136"/>
+												<entry name="tqOnBotMn" ns="1" outkey="137"/>
+												<entry name="tqOffBotAv" ns="1" outkey="138"/>
+												<entry name="tqDhAv" ns="1" outkey="139"/>
+												<entry name="wtAboveJar" ns="1" outkey="140"/>
+												<entry name="wtBelowJar" ns="1" outkey="141"/>
+												<entry name="wtMud" ns="1" outkey="142" expanded="1"/>
+												<entry name="flowratePump" ns="1" outkey="143" expanded="1"/>
+												<entry name="powBit" ns="1" outkey="144"/>
+												<entry name="velNozzleAv" ns="1" outkey="145"/>
+												<entry name="presDropBit" ns="1" outkey="146"/>
+												<entry name="cTimHold" ns="1" outkey="147"/>
+												<entry name="cTimSteering" ns="1" outkey="148"/>
+												<entry name="cTimDrillRot" ns="1" outkey="149"/>
+												<entry name="cTimDrillSlid" ns="1" outkey="150"/>
+												<entry name="cTimCirc" ns="1" outkey="151"/>
+												<entry name="cTimReam" ns="1" outkey="152"/>
+												<entry name="distDrillRot" ns="1" outkey="153"/>
+												<entry name="distDrillSlid" ns="1" outkey="154"/>
+												<entry name="distReam" ns="1" outkey="155"/>
+												<entry name="distHold" ns="1" outkey="156"/>
+												<entry name="distSteering" ns="1" outkey="157"/>
+												<entry name="rpmAv" ns="1" outkey="158"/>
+												<entry name="rpmMx" ns="1" outkey="159"/>
+												<entry name="rpmMn" ns="1" outkey="160"/>
+												<entry name="rpmAvDh" ns="1" outkey="161"/>
+												<entry name="ropAv" ns="1" outkey="162"/>
+												<entry name="ropMx" ns="1" outkey="163"/>
+												<entry name="ropMn" ns="1" outkey="164"/>
+												<entry name="wobAv" ns="1" outkey="165"/>
+												<entry name="wobMx" ns="1" outkey="166"/>
+												<entry name="wobMn" ns="1" outkey="167"/>
+												<entry name="wobAvDh" ns="1" outkey="168"/>
+												<entry name="reasonTrip" ns="1" outkey="169"/>
+												<entry name="objectiveBha" ns="1" outkey="170"/>
+												<entry name="aziTop" ns="1" outkey="171"/>
+												<entry name="aziBottom" ns="1" outkey="172"/>
+												<entry name="inclStart" ns="1" outkey="173"/>
+												<entry name="inclMx" ns="1" outkey="174"/>
+												<entry name="inclMn" ns="1" outkey="175"/>
+												<entry name="inclStop" ns="1" outkey="176"/>
+												<entry name="tempMudDhMx" ns="1" outkey="177"/>
+												<entry name="presPumpAv" ns="1" outkey="178"/>
+												<entry name="flowrateBit" ns="1" outkey="179"/>
+												<entry name="mudClass" ns="1" outkey="180"/>
+												<entry name="mudSubClass" ns="1" outkey="181"/>
+												<entry name="comments" ns="1" outkey="182"/>
+												<entry name="extensionNameValue" ns="1" outkey="183" expanded="1">
+													<entry name="name" ns="1" outkey="491"/>
+													<entry name="value" ns="1" outkey="492"/>
+													<entry name="dTim" ns="1" outkey="493"/>
+													<entry name="index" ns="1" outkey="494"/>
+													<entry name="measureClass" ns="1" outkey="495"/>
+													<entry name="description" ns="1" outkey="496"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1">
+												<entry name="dTimLastChange" ns="1" outkey="293"/>
+											</entry>
+											<entry name="customData" ns="1" outkey="193"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_bhaRun.xsd" inputinstance="..\Energistics\energyml\data\witsml\v1.4.1.1\xml_examples\bhaRun_no_xsl.xml" instanceroot="{http://www.witsml.org/schemas/1series}bhaRuns"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="BhaRun" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="563" rbx="867" rby="542"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BhaRun" ns="2" inpkey="271" expanded="1">
+										<entry name="schemaVersion" type="attribute" inpkey="267"/>
+										<entry name="uuid" type="attribute" inpkey="278"/>
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" inpkey="326"/>
+											<entry name="Identifier" ns="1" inpkey="327"/>
+											<entry name="Description" ns="1" inpkey="335"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" inpkey="52"/>
+											<entry name="Originator" ns="1" inpkey="279"/>
+											<entry name="Creation" ns="1" inpkey="280"/>
+											<entry name="Format" ns="1" inpkey="281"/>
+											<entry name="LastUpdate" ns="1" inpkey="282"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="54"/>
+										<entry name="DTimStart" ns="2" inpkey="55"/>
+										<entry name="DTimStop" ns="2" inpkey="56"/>
+										<entry name="DTimStartDrilling" ns="2" inpkey="16"/>
+										<entry name="DTimStopDrilling" ns="2" inpkey="17"/>
+										<entry name="PlanDogleg" ns="2" inpkey="18"/>
+										<entry name="ActDogleg" ns="2" inpkey="19" expanded="1"/>
+										<entry name="ActDoglegMx" ns="2" inpkey="20" expanded="1"/>
+										<entry name="StatusBha" ns="2" inpkey="21"/>
+										<entry name="NumBitRun" ns="2" inpkey="22"/>
+										<entry name="NumStringRun" ns="2" inpkey="23"/>
+										<entry name="ReasonTrip" ns="2" inpkey="24"/>
+										<entry name="ObjectiveBha" ns="2" inpkey="25"/>
+										<entry name="DrillingParams" ns="2" inpkey="26" expanded="1">
+											<entry name="uid" type="attribute" inpkey="27"/>
+											<entry name="ETimOpBit" ns="2" inpkey="57" expanded="1"/>
+											<entry name="MdHoleStart" ns="2" inpkey="58" expanded="1">
+												<entry name="uom" type="attribute" inpkey="591"/>
+												<entry name="datum" type="attribute" inpkey="592"/>
+											</entry>
+											<entry name="MdHoleStop" ns="2" inpkey="59" expanded="1">
+												<entry name="uom" type="attribute" inpkey="593"/>
+												<entry name="datum" type="attribute" inpkey="594"/>
+											</entry>
+											<entry name="Tubular" ns="2" inpkey="60"/>
+											<entry name="HkldRot" ns="2" inpkey="61"/>
+											<entry name="OverPull" ns="2" inpkey="62"/>
+											<entry name="SlackOff" ns="2" inpkey="63"/>
+											<entry name="HkldUp" ns="2" inpkey="64"/>
+											<entry name="HkldDn" ns="2" inpkey="65"/>
+											<entry name="TqOnBotAv" ns="2" inpkey="66"/>
+											<entry name="TqOnBotMx" ns="2" inpkey="67"/>
+											<entry name="TqOnBotMn" ns="2" inpkey="68"/>
+											<entry name="TqOffBotAv" ns="2" inpkey="69"/>
+											<entry name="TqDhAv" ns="2" inpkey="70"/>
+											<entry name="WtAboveJar" ns="2" inpkey="71"/>
+											<entry name="WtBelowJar" ns="2" inpkey="72"/>
+											<entry name="WtMud" ns="2" inpkey="73" expanded="1"/>
+											<entry name="VelNozzleAv" ns="2" inpkey="76"/>
+											<entry name="PowBit" ns="2" inpkey="75"/>
+											<entry name="PresDropBit" ns="2" inpkey="77"/>
+											<entry name="CTimHold" ns="2" inpkey="78"/>
+											<entry name="CTimSteering" ns="2" inpkey="79"/>
+											<entry name="CTimDrillRot" ns="2" inpkey="80"/>
+											<entry name="CTimDrillSlid" ns="2" inpkey="81"/>
+											<entry name="CTimCirc" ns="2" inpkey="82"/>
+											<entry name="CTimReam" ns="2" inpkey="83"/>
+											<entry name="DistDrillRot" ns="2" inpkey="84"/>
+											<entry name="DistDrillSlid" ns="2" inpkey="85"/>
+											<entry name="DistReam" ns="2" inpkey="86"/>
+											<entry name="DistHold" ns="2" inpkey="87"/>
+											<entry name="DistSteering" ns="2" inpkey="88"/>
+											<entry name="RpmAv" ns="2" inpkey="89"/>
+											<entry name="RpmMx" ns="2" inpkey="90"/>
+											<entry name="RpmMn" ns="2" inpkey="91"/>
+											<entry name="RpmAvDh" ns="2" inpkey="92"/>
+											<entry name="RopAv" ns="2" inpkey="93"/>
+											<entry name="RopMx" ns="2" inpkey="94"/>
+											<entry name="RopMn" ns="2" inpkey="95"/>
+											<entry name="WobAv" ns="2" inpkey="96"/>
+											<entry name="WobMx" ns="2" inpkey="97"/>
+											<entry name="WobMn" ns="2" inpkey="98"/>
+											<entry name="WobAvDh" ns="2" inpkey="99" expanded="1"/>
+											<entry name="ReasonTrip" ns="2" inpkey="100"/>
+											<entry name="ObjectiveBha" ns="2" inpkey="101"/>
+											<entry name="AziTop" ns="2" inpkey="102"/>
+											<entry name="AziBottom" ns="2" inpkey="103"/>
+											<entry name="InclStart" ns="2" inpkey="104"/>
+											<entry name="InclMx" ns="2" inpkey="105"/>
+											<entry name="InclMn" ns="2" inpkey="106"/>
+											<entry name="InclStop" ns="2" inpkey="107"/>
+											<entry name="TempMudDhMx" ns="2" inpkey="108"/>
+											<entry name="PresPumpAv" ns="2" inpkey="109"/>
+											<entry name="FlowrateBit" ns="2" inpkey="110"/>
+											<entry name="MudClass" ns="2" inpkey="111"/>
+											<entry name="MudSubClass" ns="2" inpkey="112"/>
+											<entry name="Comments" ns="2" inpkey="113"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="114">
+												<entry name="Name" ns="1" inpkey="497"/>
+												<entry name="Value" ns="1" inpkey="498"/>
+												<entry name="MeasureClass" ns="1" inpkey="499"/>
+												<entry name="DTim" ns="1" inpkey="500"/>
+												<entry name="Index" ns="1" inpkey="501"/>
+												<entry name="Description" ns="1" inpkey="502"/>
+											</entry>
+											<entry name="FlowratePump" ns="2" inpkey="74" expanded="1"/>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="ContentType" ns="1" inpkey="361"/>
+											<entry name="Title" ns="1" inpkey="362"/>
+											<entry name="Uuid" ns="1" inpkey="363"/>
+											<entry name="UuidAuthority" ns="1" inpkey="364"/>
+										</entry>
+										<entry name="Tubular" ns="2" inpkey="4" expanded="1">
+											<entry name="ContentType" ns="1" inpkey="286"/>
+											<entry name="Title" ns="1" inpkey="287"/>
+											<entry name="Uuid" ns="1" inpkey="288"/>
+											<entry name="UuidAuthority" ns="1" inpkey="341"/>
+											<entry name="VersionString" ns="1" inpkey="365"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\BhaRun.xsd" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\BhaRun.xml" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}BhaRun"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="21" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="600"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="601"/>
+					</targets>
+					<view ltx="363" lty="-44" rbx="474" rby="10"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="509">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="510">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="511">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="512">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="513">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="514">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="515">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="516">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="517">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="518">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="520">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="521">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="522">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="523">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="524">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="525">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="526">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="527">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="528">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="529">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="530">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="531">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="533">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="534">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="535">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="536">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="537">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="538">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="539">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="540">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="541">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="542">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="543">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="544">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="545">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="546">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="547">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="548">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="549">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="550">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="551">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="552">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="553">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="554">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="555">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="556">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="557">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="558">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="559">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="560">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="561">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="562">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="563">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="52" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="287" edgekey="295"/>
+							<edge vertexkey="4" edgekey="564"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="16" edgekey="565"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="17" edgekey="566"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="18" edgekey="525"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="19" edgekey="528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="20" edgekey="511"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="21" edgekey="567"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="22" edgekey="568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="23" edgekey="569"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="24" edgekey="570"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="25" edgekey="571"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="26" edgekey="572"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="27" edgekey="573"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="124">
+						<edges>
+							<edge vertexkey="55" edgekey="574"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="125">
+						<edges>
+							<edge vertexkey="56" edgekey="575"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="126">
+						<edges>
+							<edge vertexkey="57" edgekey="537"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="127">
+						<edges>
+							<edge vertexkey="58" edgekey="532"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="128">
+						<edges>
+							<edge vertexkey="59" edgekey="519"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="129">
+						<edges>
+							<edge vertexkey="60" edgekey="576"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="130">
+						<edges>
+							<edge vertexkey="61" edgekey="512"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="131">
+						<edges>
+							<edge vertexkey="62" edgekey="542"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="132">
+						<edges>
+							<edge vertexkey="63" edgekey="530"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="133">
+						<edges>
+							<edge vertexkey="64" edgekey="555"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="134">
+						<edges>
+							<edge vertexkey="65" edgekey="523"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="135">
+						<edges>
+							<edge vertexkey="66" edgekey="557"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136">
+						<edges>
+							<edge vertexkey="67" edgekey="553"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="137">
+						<edges>
+							<edge vertexkey="68" edgekey="531"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="138">
+						<edges>
+							<edge vertexkey="69" edgekey="546"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="139">
+						<edges>
+							<edge vertexkey="70" edgekey="536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="140">
+						<edges>
+							<edge vertexkey="71" edgekey="563"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="141">
+						<edges>
+							<edge vertexkey="72" edgekey="516"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="142">
+						<edges>
+							<edge vertexkey="73" edgekey="544"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="143">
+						<edges>
+							<edge vertexkey="74" edgekey="541"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="144">
+						<edges>
+							<edge vertexkey="75" edgekey="550"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="145">
+						<edges>
+							<edge vertexkey="76" edgekey="547"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="146">
+						<edges>
+							<edge vertexkey="77" edgekey="509"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="147">
+						<edges>
+							<edge vertexkey="78" edgekey="527"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="79" edgekey="534"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="149">
+						<edges>
+							<edge vertexkey="80" edgekey="543"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="150">
+						<edges>
+							<edge vertexkey="81" edgekey="520"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="151">
+						<edges>
+							<edge vertexkey="82" edgekey="551"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="152">
+						<edges>
+							<edge vertexkey="83" edgekey="513"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="153">
+						<edges>
+							<edge vertexkey="84" edgekey="560"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="154">
+						<edges>
+							<edge vertexkey="85" edgekey="514"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="155">
+						<edges>
+							<edge vertexkey="86" edgekey="559"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="156">
+						<edges>
+							<edge vertexkey="87" edgekey="549"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="157">
+						<edges>
+							<edge vertexkey="88" edgekey="535"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="158">
+						<edges>
+							<edge vertexkey="89" edgekey="510"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="159">
+						<edges>
+							<edge vertexkey="90" edgekey="515"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="160">
+						<edges>
+							<edge vertexkey="91" edgekey="545"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="161">
+						<edges>
+							<edge vertexkey="92" edgekey="548"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="162">
+						<edges>
+							<edge vertexkey="93" edgekey="552"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="163">
+						<edges>
+							<edge vertexkey="94" edgekey="539"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="164">
+						<edges>
+							<edge vertexkey="95" edgekey="554"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="165">
+						<edges>
+							<edge vertexkey="96" edgekey="518"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="166">
+						<edges>
+							<edge vertexkey="97" edgekey="522"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="167">
+						<edges>
+							<edge vertexkey="98" edgekey="526"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168">
+						<edges>
+							<edge vertexkey="99" edgekey="538"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169">
+						<edges>
+							<edge vertexkey="100" edgekey="577"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="170">
+						<edges>
+							<edge vertexkey="101" edgekey="578"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="171">
+						<edges>
+							<edge vertexkey="102" edgekey="540"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="172">
+						<edges>
+							<edge vertexkey="103" edgekey="562"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="173">
+						<edges>
+							<edge vertexkey="104" edgekey="517"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="174">
+						<edges>
+							<edge vertexkey="105" edgekey="521"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="175">
+						<edges>
+							<edge vertexkey="106" edgekey="529"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="176">
+						<edges>
+							<edge vertexkey="107" edgekey="533"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="177">
+						<edges>
+							<edge vertexkey="108" edgekey="524"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="178">
+						<edges>
+							<edge vertexkey="109" edgekey="561"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="179">
+						<edges>
+							<edge vertexkey="110" edgekey="558"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="180">
+						<edges>
+							<edge vertexkey="111" edgekey="579"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="181">
+						<edges>
+							<edge vertexkey="112" edgekey="580"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="182">
+						<edges>
+							<edge vertexkey="113" edgekey="581"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="183">
+						<edges>
+							<edge vertexkey="114" edgekey="582"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="193">
+						<edges>
+							<edge vertexkey="54" edgekey="556"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="264">
+						<edges>
+							<edge vertexkey="326" edgekey="329"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="265">
+						<edges>
+							<edge vertexkey="309" edgekey="311"/>
+							<edge vertexkey="317" edgekey="356"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="270">
+						<edges>
+							<edge vertexkey="600" edgekey="602"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="273">
+						<edges>
+							<edge vertexkey="281" edgekey="345"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="276">
+						<edges>
+							<edge vertexkey="286" edgekey="299"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="277">
+						<edges>
+							<edge vertexkey="361" edgekey="366"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="289">
+						<edges>
+							<edge vertexkey="308" edgekey="312"/>
+							<edge vertexkey="364" edgekey="367"/>
+							<edge vertexkey="362" edgekey="368"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="291">
+						<edges>
+							<edge vertexkey="341" edgekey="342"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="293">
+						<edges>
+							<edge vertexkey="282" edgekey="305"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="306">
+						<edges>
+							<edge vertexkey="327" edgekey="330"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="310">
+						<edges>
+							<edge vertexkey="307" edgekey="314"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="319">
+						<edges>
+							<edge vertexkey="267" edgekey="332"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="320">
+						<edges>
+							<edge vertexkey="335" edgekey="336"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="321">
+						<edges>
+							<edge vertexkey="279" edgekey="337"/>
+							<edge vertexkey="365" edgekey="369"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="322">
+						<edges>
+							<edge vertexkey="278" edgekey="333"/>
+							<edge vertexkey="288" edgekey="343"/>
+							<edge vertexkey="363" edgekey="370"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="323">
+						<edges>
+							<edge vertexkey="324" edgekey="334"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="344">
+						<edges>
+							<edge vertexkey="280" edgekey="346"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="347">
+						<edges>
+							<edge vertexkey="348" edgekey="349"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="491">
+						<edges>
+							<edge vertexkey="497" edgekey="583"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="492">
+						<edges>
+							<edge vertexkey="498" edgekey="584"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="493">
+						<edges>
+							<edge vertexkey="500" edgekey="585"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="494">
+						<edges>
+							<edge vertexkey="501" edgekey="586"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="495">
+						<edges>
+							<edge vertexkey="499" edgekey="587"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="496">
+						<edges>
+							<edge vertexkey="502" edgekey="588"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="589">
+						<edges>
+							<edge vertexkey="591" edgekey="596"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="590">
+						<edges>
+							<edge vertexkey="593" edgekey="597"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="595">
+						<edges>
+							<edge vertexkey="592" edgekey="598"/>
+							<edge vertexkey="594" edgekey="599"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="601">
+						<edges>
+							<edge vertexkey="271" edgekey="603"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

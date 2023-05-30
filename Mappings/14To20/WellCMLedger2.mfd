@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2017sp2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="250" rbx="502" rby="268"/>
+					<data>
+						<constant value="Hole_config" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="373" rbx="452" rby="391"/>
+					<data>
+						<constant value="ft" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="17" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="404" lty="390" rbx="552" rby="408"/>
+					<data>
+						<constant value="completion operations" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="18" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="404" lty="407" rbx="458" rby="425"/>
+					<data>
+						<constant value="job" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="339" rbx="487" rby="357"/>
+					<data>
+						<constant value="wellbore" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="404" lty="424" rbx="560" rby="442"/>
+					<data>
+						<constant value="WellCMLedger wellbore" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="404" lty="441" rbx="462" rby="459"/>
+					<data>
+						<constant value="F2F" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="21" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="458" rbx="478" rby="476"/>
+					<data>
+						<constant value="tagged" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="22" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="475" rbx="469" rby="493"/>
+					<data>
+						<constant value="body" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="23" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="522" rbx="533" rby="540"/>
+					<data>
+						<constant value="WellCMLedger title" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="24" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="404" lty="505" rbx="561" rby="523"/>
+					<data>
+						<constant value="WellCMLedger contenttype" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="356" rbx="474" rby="374"/>
+					<data>
+						<constant value="length" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="25" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="405" lty="539" rbx="523" rby="557"/>
+					<data>
+						<constant value="measured depth" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="886"/>
+					</targets>
+					<view ltx="404" lty="95" rbx="513" rby="113"/>
+					<data>
+						<constant value="WellCMLedger" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="4" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="884"/>
+					</targets>
+					<view ltx="404" lty="112" rbx="463" rby="130"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="8" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="887"/>
+						<datapoint pos="1" key="881"/>
+						<datapoint pos="2" key="885"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="880"/>
+					</targets>
+					<view ltx="393" lty="-8" rbx="478" rby="68"/>
+				</component>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="882"/>
+					</targets>
+					<view ltx="405" lty="216" rbx="460" rby="234"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="888"/>
+					</targets>
+					<view ltx="405" lty="233" rbx="568" rby="251"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="5" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="892"/>
+						<datapoint pos="1" key="893"/>
+						<datapoint pos="2" key="894"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="895"/>
+					</targets>
+					<view ltx="476" lty="127" rbx="561" rby="203"/>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="896"/>
+					</targets>
+					<view ltx="405" lty="267" rbx="491" rby="285"/>
+					<data>
+						<constant value="Mapforce" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="current-dateTime" library="xpath2" uid="14" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="889"/>
+					</targets>
+					<view ltx="405" lty="301" rbx="514" rby="340"/>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="883"/>
+					</targets>
+					<view ltx="405" lty="284" rbx="497" rby="302"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="WellCMLedger" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1" DynamicFilenames="1"/>
+					<view ltx="611" lty="10" rbx="905" rby="571"/>
+					<data>
+						<root scrollposition="766">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" inpkey="955" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="WellCMLedger" ns="2" expanded="1">
+										<entry name="schemaVersion" type="attribute" inpkey="957"/>
+										<entry name="uuid" type="attribute" inpkey="958"/>
+										<entry name="Aliases" ns="1" expanded="1"/>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" inpkey="1230"/>
+											<entry name="Originator" ns="1" inpkey="960"/>
+											<entry name="Creation" ns="1" inpkey="961"/>
+											<entry name="Format" ns="1" inpkey="962"/>
+										</entry>
+										<entry name="DTimStart" ns="2" inpkey="973"/>
+										<entry name="DTimEnd" ns="2" inpkey="974"/>
+										<entry name="Duration" ns="2" inpkey="975" expanded="1"/>
+										<entry name="MdInterval" ns="2" expanded="1">
+											<entry name="MdTop" ns="1" inpkey="977" expanded="1">
+												<entry name="uom" type="attribute" inpkey="978"/>
+											</entry>
+											<entry name="MdBase" ns="1" inpkey="979" expanded="1">
+												<entry name="uom" type="attribute" inpkey="980"/>
+											</entry>
+										</entry>
+										<entry name="EventOrder" ns="2" inpkey="981"/>
+										<entry name="RigID" ns="2" inpkey="982"/>
+										<entry name="ActivityCode" ns="2" inpkey="983"/>
+										<entry name="Type" ns="2" inpkey="984" expanded="1">
+											<entry name="Class" type="attribute" inpkey="1243"/>
+										</entry>
+										<entry name="IsPlan" ns="2" inpkey="985"/>
+										<entry name="WorkOrderID" ns="2" inpkey="986"/>
+										<entry name="BusinessAssociate" ns="2" inpkey="987"/>
+										<entry name="ResponsiblePerson" ns="2" inpkey="988"/>
+										<entry name="Contact" ns="2" inpkey="989"/>
+										<entry name="Wellbore" ns="2" expanded="1"/>
+										<entry name="Cost" ns="2" expanded="1">
+											<entry name="NameTag" ns="2" expanded="1">
+												<entry name="ExtensionNameValue" ns="2" expanded="1"/>
+											</entry>
+											<entry name="ExtensionNameValue" ns="2" expanded="1"/>
+											<entry name="CostAmount" ns="2" expanded="1"/>
+											<entry name="CostPerItem" ns="2" expanded="1"/>
+										</entry>
+										<entry name="Participant" ns="2" expanded="1">
+											<entry name="ExtNameValues" ns="2" expanded="1"/>
+											<entry name="Participant" ns="2" expanded="1">
+												<entry name="RangeMin" ns="2" expanded="1"/>
+												<entry name="RangeMax" ns="2" expanded="1"/>
+												<entry name="ReferenceDepth" ns="2" expanded="1"/>
+												<entry name="ExtensionNameValue" ns="2" expanded="1"/>
+												<entry name="Sequence3" ns="2" expanded="1"/>
+												<entry name="ObjectReference" ns="2" expanded="1"/>
+												<entry name="Sequence1" ns="2" expanded="1"/>
+												<entry name="Sequence2" ns="2" expanded="1"/>
+												<entry name="Param" ns="2" inpkey="1088" expanded="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\WellCMLedger.xsd" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\WellCMLedger.xml" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}WellCMLedger"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_wellCMLedger" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view lty="10" rbx="311" rby="570"/>
+					<data>
+						<root scrollposition="1276">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="suppress-cast-in-subtree">
+									<entry name="wellCMLedgers" ns="1" expanded="1">
+										<entry name="wellCMLedger" ns="1" expanded="1">
+											<entry name="uidWellbore" type="attribute" outkey="898"/>
+											<entry name="uid" type="attribute" outkey="899"/>
+											<entry name="nameWell" ns="1" outkey="900"/>
+											<entry name="name" ns="1" outkey="902"/>
+											<entry name="dTimStart" ns="1" outkey="3"/>
+											<entry name="dTimEnd" ns="1" outkey="4"/>
+											<entry name="duration" ns="1" outkey="5" expanded="1"/>
+											<entry name="mdTop" ns="1" outkey="903" expanded="1">
+												<entry name="uom" type="attribute" outkey="1269"/>
+											</entry>
+											<entry name="mdBottom" ns="1" outkey="906">
+												<entry name="uom" type="attribute" outkey="1270"/>
+											</entry>
+											<entry name="eventOrder" ns="1" outkey="6"/>
+											<entry name="rigID" ns="1" outkey="7"/>
+											<entry name="activityCode" ns="1" outkey="1271"/>
+											<entry name="type" ns="1" outkey="9">
+												<entry name="class" type="attribute" outkey="1272"/>
+											</entry>
+											<entry name="isPlan" ns="1" outkey="10"/>
+											<entry name="workOrderID" ns="1" outkey="11"/>
+											<entry name="businessAssociate" ns="1" outkey="194"/>
+											<entry name="responsiblePerson" ns="1" outkey="195"/>
+											<entry name="contact" ns="1" outkey="196"/>
+											<entry name="cost" ns="1" expanded="1">
+												<entry name="nameTag" ns="1" expanded="1"/>
+											</entry>
+											<entry name="participant" ns="1" expanded="1">
+												<entry name="participant" ns="1" expanded="1">
+													<entry name="objectReference" ns="1" expanded="1"/>
+													<entry name="sequence1" ns="1" expanded="1"/>
+													<entry name="extensionNameValue" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\completions_v1.0\xsd_schemas\obj_wellCMLedger.xsd" inputinstance="..\Energistics\energyml\data\witsml\completions_v1.0\xml_examples\WFT_wellCMLedgers_Job1.xml" instanceroot="{http://www.witsml.org/schemas/1series}wellCMLedgers"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="1273">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="973" edgekey="1274"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="974" edgekey="1275"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="975" edgekey="1273"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="981" edgekey="1276"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="982" edgekey="1277"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="984" edgekey="1278"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="985" edgekey="1279"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="986" edgekey="1280"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="194">
+						<edges>
+							<edge vertexkey="987" edgekey="1281"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="195">
+						<edges>
+							<edge vertexkey="988" edgekey="1282"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="196">
+						<edges>
+							<edge vertexkey="989" edgekey="1283"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="880">
+						<edges>
+							<edge vertexkey="955" edgekey="1284"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="882">
+						<edges>
+							<edge vertexkey="957" edgekey="1285"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="883">
+						<edges>
+							<edge vertexkey="962" edgekey="1286"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="884">
+						<edges>
+							<edge vertexkey="885" edgekey="890"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="886">
+						<edges>
+							<edge vertexkey="887" edgekey="891"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="888">
+						<edges>
+							<edge vertexkey="958" edgekey="1287"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="889">
+						<edges>
+							<edge vertexkey="961" edgekey="1288"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="895">
+						<edges>
+							<edge vertexkey="1230" edgekey="1289"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="896">
+						<edges>
+							<edge vertexkey="960" edgekey="1290"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="898">
+						<edges>
+							<edge vertexkey="892" edgekey="941"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="899">
+						<edges>
+							<edge vertexkey="893" edgekey="943"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="900">
+						<edges>
+							<edge vertexkey="894" edgekey="944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="902">
+						<edges>
+							<edge vertexkey="881" edgekey="946"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="903">
+						<edges>
+							<edge vertexkey="977" edgekey="1291"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="906">
+						<edges>
+							<edge vertexkey="979" edgekey="1292"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1269">
+						<edges>
+							<edge vertexkey="978" edgekey="1293"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1270">
+						<edges>
+							<edge vertexkey="980" edgekey="1294"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1271">
+						<edges>
+							<edge vertexkey="983" edgekey="1295"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1272">
+						<edges>
+							<edge vertexkey="1243" edgekey="1296"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="34">
+	<resources/>
+	<component name="defaultmap" uid="1">
+		<properties AppName="Map20To21" ShowSchemaTypes="1" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="value-map" library="core" uid="4" kind="23">
+					<sources>
+						<datapoint pos="0" key="220"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="221"/>
+					</targets>
+					<view ltx="758" lty="481" rbx="838" rby="519"/>
+					<data>
+						<valuemap defaultValueMode="input">
+							<valuemapTable>
+								<entry from="vector" to="double"/>
+							</valuemapTable>
+							<input name="input" type="string"/>
+							<result name="result" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<targets>
+						<datapoint pos="0" key="238"/>
+					</targets>
+					<view ltx="731" lty="544" rbx="827" rby="561"/>
+					<data>
+						<constant value="undefined" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<targets>
+						<datapoint pos="0" key="224"/>
+					</targets>
+					<view ltx="758" lty="95" rbx="815" rby="112"/>
+					<data>
+						<constant value="2.1" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<targets>
+						<datapoint pos="0" key="223"/>
+					</targets>
+					<view ltx="690" lty="333" rbx="855" rby="350"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<targets>
+						<datapoint pos="0" key="225"/>
+					</targets>
+					<view ltx="690" lty="365" rbx="850" rby="382"/>
+					<data>
+						<constant value="eml23.BusinessAssociate" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<targets>
+						<datapoint pos="0" key="236"/>
+					</targets>
+					<view ltx="624" lty="402" rbx="714" rby="419"/>
+					<data>
+						<constant value="witsml20:" datatype="string"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="12" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="233"/>
+						<datapoint pos="1" key="234"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="235"/>
+					</targets>
+					<view ltx="745" lty="402" rbx="827" rby="458"/>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<targets>
+						<datapoint pos="0" key="253"/>
+					</targets>
+					<view ltx="713" lty="594" rbx="850" rby="611"/>
+					<data>
+						<constant value="witsml21.Wellbore" datatype="string"/>
+					</data>
+				</component>
+				<component name="Log" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1072" lty="-39" rbx="2053" rby="918"/>
+					<data>
+						<root scrollposition="687">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" ns="2" inpkey="110" expanded="1">
+										<entry name="uuid" type="attribute" inpkey="111"/>
+										<entry name="schemaVersion" type="attribute" inpkey="112"/>
+										<entry name="objectVersion" type="attribute" inpkey="113"/>
+										<entry name="Aliases" ns="1" inpkey="114">
+											<entry name="authority" type="attribute" inpkey="115"/>
+											<entry name="Identifier" ns="1" inpkey="116"/>
+											<entry name="Description" ns="1" inpkey="117"/>
+										</entry>
+										<entry name="Citation" ns="1" inpkey="118">
+											<entry name="Title" ns="1" inpkey="119"/>
+											<entry name="Originator" ns="1" inpkey="120"/>
+											<entry name="Creation" ns="1" inpkey="121"/>
+											<entry name="Format" ns="1" inpkey="122"/>
+											<entry name="Editor" ns="1" inpkey="123"/>
+											<entry name="LastUpdate" ns="1" inpkey="124"/>
+											<entry name="Description" ns="1" inpkey="125"/>
+											<entry name="DescriptiveKeywords" ns="1" inpkey="126"/>
+										</entry>
+										<entry name="Existence" ns="1" inpkey="226"/>
+										<entry name="CustomData" ns="1" inpkey="127"/>
+										<entry name="ExtensionNameValue" ns="1" inpkey="128"/>
+										<entry name="ChannelState" ns="2" inpkey="129"/>
+										<entry name="RunNumber" ns="2" inpkey="130"/>
+										<entry name="PassNumber" ns="2" inpkey="131"/>
+										<entry name="LoggingCompany" ns="2" inpkey="258" expanded="1">
+											<entry name="Uuid" ns="1" inpkey="227"/>
+											<entry name="QualifiedType" ns="1" inpkey="228"/>
+											<entry name="Title" ns="1" inpkey="229"/>
+										</entry>
+										<entry name="LoggingCompanyCode" ns="2" inpkey="132"/>
+										<entry name="LoggingToolClass" ns="2" inpkey="237"/>
+										<entry name="Derivation" ns="2" inpkey="133"/>
+										<entry name="LoggingMethod" ns="2" inpkey="134"/>
+										<entry name="NominalHoleSize" ns="2" inpkey="135"/>
+										<entry name="ChannelSet" ns="2" inpkey="136">
+											<entry name="uuid" type="attribute" inpkey="137"/>
+											<entry name="schemaVersion" type="attribute" inpkey="138"/>
+											<entry name="objectVersion" type="attribute" inpkey="139"/>
+											<entry name="Aliases" ns="1" inpkey="140">
+												<entry name="authority" type="attribute" inpkey="141"/>
+												<entry name="Identifier" ns="1" inpkey="142"/>
+												<entry name="Description" ns="1" inpkey="143"/>
+											</entry>
+											<entry name="Citation" ns="1" inpkey="144">
+												<entry name="Title" ns="1" inpkey="145"/>
+												<entry name="Originator" ns="1" inpkey="146"/>
+												<entry name="Creation" ns="1" inpkey="147"/>
+												<entry name="Format" ns="1" inpkey="148"/>
+												<entry name="Editor" ns="1" inpkey="149"/>
+												<entry name="LastUpdate" ns="1" inpkey="150"/>
+												<entry name="Description" ns="1" inpkey="151"/>
+												<entry name="DescriptiveKeywords" ns="1" inpkey="152"/>
+											</entry>
+											<entry name="Existence" ns="1" inpkey="245"/>
+											<entry name="CustomData" ns="1" inpkey="153"/>
+											<entry name="ExtensionNameValue" ns="1" inpkey="154"/>
+											<entry name="ChannelState" ns="2" inpkey="155"/>
+											<entry name="RunNumber" ns="2" inpkey="156"/>
+											<entry name="PassNumber" ns="2" inpkey="157"/>
+											<entry name="LoggingCompanyCode" ns="2" inpkey="158"/>
+											<entry name="Derivation" ns="2" inpkey="159"/>
+											<entry name="LoggingMethod" ns="2" inpkey="160"/>
+											<entry name="NominalHoleSize" ns="2" inpkey="161"/>
+											<entry name="Index" ns="2" inpkey="162">
+												<entry name="IndexKind" ns="2" inpkey="163"/>
+												<entry name="Uom" ns="2" inpkey="164"/>
+												<entry name="Direction" ns="2" inpkey="165"/>
+												<entry name="Mnemonic" ns="2" inpkey="166"/>
+												<entry name="Datum" ns="2" inpkey="246" expanded="1">
+													<entry name="Uuid" ns="1" inpkey="167"/>
+													<entry name="QualifiedType" ns="1" inpkey="247"/>
+													<entry name="Title" ns="1" inpkey="248"/>
+												</entry>
+											</entry>
+											<entry name="Channel" ns="2" inpkey="168" expanded="1">
+												<entry name="uuid" type="attribute" inpkey="169"/>
+												<entry name="schemaVersion" type="attribute" inpkey="170"/>
+												<entry name="objectVersion" type="attribute" inpkey="171"/>
+												<entry name="Aliases" ns="1" inpkey="172">
+													<entry name="authority" type="attribute" inpkey="173"/>
+													<entry name="Identifier" ns="1" inpkey="174"/>
+													<entry name="Description" ns="1" inpkey="175"/>
+												</entry>
+												<entry name="Citation" ns="1" inpkey="176">
+													<entry name="Title" ns="1" inpkey="177"/>
+													<entry name="Originator" ns="1" inpkey="178"/>
+													<entry name="Creation" ns="1" inpkey="179"/>
+													<entry name="Format" ns="1" inpkey="180"/>
+													<entry name="Editor" ns="1" inpkey="181"/>
+													<entry name="LastUpdate" ns="1" inpkey="182"/>
+													<entry name="Description" ns="1" inpkey="183"/>
+													<entry name="DescriptiveKeywords" ns="1" inpkey="184"/>
+												</entry>
+												<entry name="Existence" ns="1" inpkey="249"/>
+												<entry name="CustomData" ns="1" inpkey="185"/>
+												<entry name="ExtensionNameValue" ns="1" inpkey="186"/>
+												<entry name="Mnemonic" ns="2" inpkey="187"/>
+												<entry name="GlobalMnemonic" ns="2" inpkey="188"/>
+												<entry name="DataKind" ns="2" inpkey="189"/>
+												<entry name="Uom" ns="2" inpkey="190"/>
+												<entry name="Source" ns="2" inpkey="191"/>
+												<entry name="ChannelState" ns="2" inpkey="192"/>
+												<entry name="RunNumber" ns="2" inpkey="193"/>
+												<entry name="PassNumber" ns="2" inpkey="194"/>
+												<entry name="LoggingCompany" ns="2" expanded="1">
+													<entry name="Uuid" ns="1" inpkey="250"/>
+													<entry name="QualifiedType" ns="1" inpkey="251"/>
+													<entry name="Title" ns="1" inpkey="252"/>
+												</entry>
+												<entry name="LoggingCompanyCode" ns="2" inpkey="195"/>
+												<entry name="Derivation" ns="2" inpkey="196"/>
+												<entry name="LoggingMethod" ns="2" inpkey="197"/>
+												<entry name="NominalHoleSize" ns="2" inpkey="198"/>
+												<entry name="Index" ns="2" inpkey="199" expanded="1">
+													<entry name="IndexKind" ns="2" inpkey="254"/>
+													<entry name="Uom" ns="2" inpkey="200"/>
+													<entry name="Direction" ns="2" inpkey="201"/>
+													<entry name="Mnemonic" ns="2" inpkey="202"/>
+												</entry>
+												<entry name="DerivedFrom" ns="2" inpkey="203">
+													<entry name="Uuid" ns="1" inpkey="204"/>
+													<entry name="Title" ns="1" inpkey="205"/>
+												</entry>
+												<entry name="Wellbore" ns="2" inpkey="206" expanded="1">
+													<entry name="Uuid" ns="1" inpkey="207"/>
+													<entry name="QualifiedType" ns="1" inpkey="255"/>
+													<entry name="Title" ns="1" inpkey="208"/>
+												</entry>
+												<entry name="AxisDefinition" ns="2" inpkey="209"/>
+												<entry name="PointMetadata" ns="2" inpkey="210" expanded="1">
+													<entry name="Name" ns="2" inpkey="211"/>
+													<entry name="Description" ns="2" inpkey="212"/>
+												</entry>
+											</entry>
+											<entry name="Data" ns="2" inpkey="213"/>
+											<entry name="Wellbore" ns="2" inpkey="214" expanded="1">
+												<entry name="Uuid" ns="1" inpkey="215"/>
+												<entry name="QualifiedType" ns="1" inpkey="257"/>
+												<entry name="Title" ns="1" inpkey="216"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="2" inpkey="217">
+											<entry name="Uuid" ns="1" inpkey="218"/>
+											<entry name="Title" ns="1" inpkey="219"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" outputinstance="..\Standards\energyML_202205\energyml\data\witsml\v2.1\xsd_schemas\Log.xml"/>
+					</data>
+				</component>
+				<component name="Log" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-80" lty="-7" rbx="541" rby="943"/>
+					<data>
+						<root scrollposition="286">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" ns="2" outkey="1" expanded="1">
+										<entry name="objectVersion" type="attribute" outkey="2"/>
+										<entry name="uuid" type="attribute" outkey="4"/>
+										<entry name="existenceKind" type="attribute" outkey="230"/>
+										<entry name="Aliases" ns="1" outkey="5">
+											<entry name="authority" type="attribute" outkey="6"/>
+											<entry name="Identifier" ns="1" outkey="7"/>
+											<entry name="Description" ns="1" outkey="8"/>
+										</entry>
+										<entry name="Citation" ns="1" outkey="9">
+											<entry name="Title" ns="1" outkey="10"/>
+											<entry name="Originator" ns="1" outkey="11"/>
+											<entry name="Creation" ns="1" outkey="12"/>
+											<entry name="Format" ns="1" outkey="13"/>
+											<entry name="Editor" ns="1" outkey="14"/>
+											<entry name="LastUpdate" ns="1" outkey="15"/>
+											<entry name="Description" ns="1" outkey="16"/>
+											<entry name="DescriptiveKeywords" ns="1" outkey="17"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="18"/>
+										<entry name="ExtensionNameValue" ns="1" outkey="19"/>
+										<entry name="ChannelState" ns="2" outkey="20"/>
+										<entry name="RunNumber" ns="2" outkey="21"/>
+										<entry name="PassNumber" ns="2" outkey="22"/>
+										<entry name="LoggingCompanyName" ns="2" outkey="231"/>
+										<entry name="LoggingCompanyCode" ns="2" outkey="23"/>
+										<entry name="ToolClass" ns="2" outkey="232"/>
+										<entry name="Derivation" ns="2" outkey="24"/>
+										<entry name="LoggingMethod" ns="2" outkey="25"/>
+										<entry name="NominalHoleSize" ns="2" outkey="26"/>
+										<entry name="Wellbore" ns="2" outkey="27">
+											<entry name="Title" ns="1" outkey="28"/>
+											<entry name="Uuid" ns="1" outkey="29"/>
+										</entry>
+										<entry name="ChannelSet" ns="2" outkey="30" expanded="1">
+											<entry name="objectVersion" type="attribute" outkey="31"/>
+											<entry name="uuid" type="attribute" outkey="33"/>
+											<entry name="existenceKind" type="attribute" outkey="242"/>
+											<entry name="Aliases" ns="1" outkey="34">
+												<entry name="authority" type="attribute" outkey="35"/>
+												<entry name="Identifier" ns="1" outkey="36"/>
+												<entry name="Description" ns="1" outkey="37"/>
+											</entry>
+											<entry name="Citation" ns="1" outkey="38">
+												<entry name="Title" ns="1" outkey="39"/>
+												<entry name="Originator" ns="1" outkey="40"/>
+												<entry name="Creation" ns="1" outkey="41"/>
+												<entry name="Format" ns="1" outkey="42"/>
+												<entry name="Editor" ns="1" outkey="43"/>
+												<entry name="LastUpdate" ns="1" outkey="44"/>
+												<entry name="Description" ns="1" outkey="45"/>
+												<entry name="DescriptiveKeywords" ns="1" outkey="46"/>
+											</entry>
+											<entry name="CustomData" ns="1" outkey="47"/>
+											<entry name="ExtensionNameValue" ns="1" outkey="48"/>
+											<entry name="Index" ns="2" outkey="49">
+												<entry name="IndexType" ns="2" outkey="50"/>
+												<entry name="Uom" ns="2" outkey="51"/>
+												<entry name="Direction" ns="2" outkey="52"/>
+												<entry name="Mnemonic" ns="2" outkey="53"/>
+												<entry name="DatumReference" ns="2" outkey="54"/>
+											</entry>
+											<entry name="Channel" ns="2" outkey="55" expanded="1">
+												<entry name="objectVersion" type="attribute" outkey="56"/>
+												<entry name="uuid" type="attribute" outkey="58"/>
+												<entry name="existenceKind" type="attribute" outkey="243"/>
+												<entry name="Aliases" ns="1" outkey="59">
+													<entry name="authority" type="attribute" outkey="60"/>
+													<entry name="Identifier" ns="1" outkey="61"/>
+													<entry name="Description" ns="1" outkey="62"/>
+												</entry>
+												<entry name="Citation" ns="1" outkey="63">
+													<entry name="Title" ns="1" outkey="64"/>
+													<entry name="Originator" ns="1" outkey="65"/>
+													<entry name="Creation" ns="1" outkey="66"/>
+													<entry name="Format" ns="1" outkey="67"/>
+													<entry name="Editor" ns="1" outkey="68"/>
+													<entry name="LastUpdate" ns="1" outkey="69"/>
+													<entry name="Description" ns="1" outkey="70"/>
+													<entry name="DescriptiveKeywords" ns="1" outkey="71"/>
+												</entry>
+												<entry name="CustomData" ns="1" outkey="72"/>
+												<entry name="ExtensionNameValue" ns="1" outkey="73"/>
+												<entry name="Mnemonic" ns="2" outkey="74"/>
+												<entry name="DataType" ns="2" outkey="75"/>
+												<entry name="Uom" ns="2" outkey="76"/>
+												<entry name="Source" ns="2" outkey="77"/>
+												<entry name="Wellbore" ns="2" outkey="78">
+													<entry name="Title" ns="1" outkey="79"/>
+													<entry name="Uuid" ns="1" outkey="80"/>
+												</entry>
+												<entry name="AxisDefinition" ns="2" outkey="81"/>
+												<entry name="ChannelState" ns="2" outkey="82"/>
+												<entry name="RunNumber" ns="2" outkey="83"/>
+												<entry name="PassNumber" ns="2" outkey="84"/>
+												<entry name="LoggingCompanyName" ns="2" outkey="244"/>
+												<entry name="LoggingCompanyCode" ns="2" outkey="85"/>
+												<entry name="Derivation" ns="2" outkey="86"/>
+												<entry name="LoggingMethod" ns="2" outkey="87"/>
+												<entry name="NominalHoleSize" ns="2" outkey="88"/>
+												<entry name="PointMetadata" ns="2" outkey="89">
+													<entry name="Name" ns="2" outkey="90"/>
+													<entry name="Description" ns="2" outkey="91"/>
+												</entry>
+												<entry name="DerivedFrom" ns="2" outkey="92">
+													<entry name="Title" ns="1" outkey="93"/>
+													<entry name="Uuid" ns="1" outkey="94"/>
+												</entry>
+												<entry name="Index" ns="2" outkey="95" expanded="1">
+													<entry name="IndexType" ns="2" outkey="256"/>
+													<entry name="Uom" ns="2" outkey="96"/>
+													<entry name="Direction" ns="2" outkey="97"/>
+													<entry name="Mnemonic" ns="2" outkey="98"/>
+												</entry>
+											</entry>
+											<entry name="Data" ns="2" outkey="99"/>
+											<entry name="ChannelState" ns="2" outkey="100"/>
+											<entry name="RunNumber" ns="2" outkey="101"/>
+											<entry name="PassNumber" ns="2" outkey="102"/>
+											<entry name="LoggingCompanyCode" ns="2" outkey="103"/>
+											<entry name="Derivation" ns="2" outkey="104"/>
+											<entry name="LoggingMethod" ns="2" outkey="105"/>
+											<entry name="NominalHoleSize" ns="2" outkey="106"/>
+											<entry name="Wellbore" ns="2" outkey="107">
+												<entry name="Title" ns="1" outkey="108"/>
+												<entry name="Uuid" ns="1" outkey="109"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.0\data\witsml\v2.0\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" inputinstance="..\..\energyml\2.0\data\witsml\v2.0\xml_examples\Log.xml" outputinstance="..\WITSML\energyml\data\witsml\v2.0\xml_examples\Log.xml"/>
+					</data>
+				</component>
+			</children>
+		</structure>
+		<connections>
+			<edge from="1" to="110"/>
+			<edge from="4" to="111"/>
+			<edge from="224" to="112"/>
+			<edge from="2" to="113"/>
+			<edge from="5" to="114"/>
+			<edge from="6" to="115"/>
+			<edge from="7" to="116"/>
+			<edge from="8" to="117"/>
+			<edge from="9" to="118"/>
+			<edge from="10" to="119"/>
+			<edge from="11" to="120"/>
+			<edge from="12" to="121"/>
+			<edge from="13" to="122"/>
+			<edge from="14" to="123"/>
+			<edge from="15" to="124"/>
+			<edge from="16" to="125"/>
+			<edge from="17" to="126"/>
+			<edge from="18" to="127">
+				<data type="2"/>
+			</edge>
+			<edge from="19" to="128">
+				<data type="2"/>
+			</edge>
+			<edge from="20" to="129"/>
+			<edge from="21" to="130"/>
+			<edge from="22" to="131"/>
+			<edge from="23" to="132"/>
+			<edge from="24" to="133"/>
+			<edge from="25" to="134"/>
+			<edge from="26" to="135">
+				<data type="2"/>
+			</edge>
+			<edge from="30" to="136"/>
+			<edge from="33" to="137"/>
+			<edge from="224" to="138"/>
+			<edge from="31" to="139"/>
+			<edge from="34" to="140"/>
+			<edge from="35" to="141"/>
+			<edge from="36" to="142"/>
+			<edge from="37" to="143"/>
+			<edge from="38" to="144"/>
+			<edge from="39" to="145"/>
+			<edge from="40" to="146"/>
+			<edge from="41" to="147"/>
+			<edge from="42" to="148"/>
+			<edge from="43" to="149"/>
+			<edge from="44" to="150"/>
+			<edge from="45" to="151"/>
+			<edge from="46" to="152"/>
+			<edge from="47" to="153">
+				<data type="2"/>
+			</edge>
+			<edge from="48" to="154">
+				<data type="2"/>
+			</edge>
+			<edge from="100" to="155"/>
+			<edge from="101" to="156"/>
+			<edge from="102" to="157"/>
+			<edge from="103" to="158"/>
+			<edge from="104" to="159"/>
+			<edge from="105" to="160"/>
+			<edge from="106" to="161">
+				<data type="2"/>
+			</edge>
+			<edge from="49" to="162"/>
+			<edge from="50" to="163"/>
+			<edge from="51" to="164"/>
+			<edge from="52" to="165"/>
+			<edge from="53" to="166"/>
+			<edge from="223" to="167"/>
+			<edge from="55" to="168"/>
+			<edge from="58" to="169"/>
+			<edge from="224" to="170"/>
+			<edge from="56" to="171"/>
+			<edge from="59" to="172"/>
+			<edge from="60" to="173"/>
+			<edge from="61" to="174"/>
+			<edge from="62" to="175"/>
+			<edge from="63" to="176"/>
+			<edge from="64" to="177"/>
+			<edge from="65" to="178"/>
+			<edge from="66" to="179"/>
+			<edge from="67" to="180"/>
+			<edge from="68" to="181"/>
+			<edge from="69" to="182"/>
+			<edge from="70" to="183"/>
+			<edge from="71" to="184"/>
+			<edge from="72" to="185">
+				<data type="2"/>
+			</edge>
+			<edge from="73" to="186">
+				<data type="2"/>
+			</edge>
+			<edge from="74" to="187"/>
+			<edge from="74" to="188"/>
+			<edge from="221" to="189"/>
+			<edge from="76" to="190"/>
+			<edge from="77" to="191"/>
+			<edge from="82" to="192"/>
+			<edge from="83" to="193"/>
+			<edge from="84" to="194"/>
+			<edge from="85" to="195"/>
+			<edge from="86" to="196"/>
+			<edge from="87" to="197"/>
+			<edge from="88" to="198">
+				<data type="2"/>
+			</edge>
+			<edge from="95" to="199"/>
+			<edge from="96" to="200"/>
+			<edge from="97" to="201"/>
+			<edge from="98" to="202"/>
+			<edge from="92" to="203"/>
+			<edge from="94" to="204"/>
+			<edge from="93" to="205"/>
+			<edge from="78" to="206"/>
+			<edge from="80" to="207"/>
+			<edge from="79" to="208"/>
+			<edge from="81" to="209">
+				<data type="2"/>
+			</edge>
+			<edge from="89" to="210"/>
+			<edge from="90" to="211"/>
+			<edge from="91" to="212"/>
+			<edge from="99" to="213">
+				<data type="2"/>
+			</edge>
+			<edge from="107" to="214"/>
+			<edge from="109" to="215"/>
+			<edge from="108" to="216"/>
+			<edge from="27" to="217"/>
+			<edge from="29" to="218"/>
+			<edge from="28" to="219"/>
+			<edge from="75" to="220"/>
+			<edge from="230" to="226"/>
+			<edge from="223" to="227"/>
+			<edge from="225" to="228"/>
+			<edge from="231" to="229"/>
+			<edge from="236" to="233"/>
+			<edge from="232" to="234"/>
+			<edge from="235" to="237"/>
+			<edge from="242" to="245"/>
+			<edge from="54" to="246"/>
+			<edge from="238" to="247"/>
+			<edge from="54" to="248"/>
+			<edge from="243" to="249"/>
+			<edge from="223" to="250"/>
+			<edge from="225" to="251"/>
+			<edge from="244" to="252"/>
+			<edge from="256" to="254"/>
+			<edge from="253" to="255"/>
+			<edge from="253" to="257"/>
+			<edge from="231" to="258"/>
+		</connections>
+	</component>
+</mapping>

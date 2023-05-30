@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="Attachment" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="275" rby="545"/>
+					<data>
+						<root scrollposition="403">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Attachment" ns="2" outkey="359" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="360"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="361"/>
+											<entry name="Creation" ns="1" outkey="362"/>
+											<entry name="LastUpdate" ns="1" outkey="363"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="364"/>
+										<entry name="Md" ns="2" outkey="365">
+											<entry name="uom" type="attribute" outkey="366"/>
+											<entry name="datum" type="attribute" outkey="367"/>
+										</entry>
+										<entry name="Param" ns="2" outkey="368"/>
+										<entry name="MdBit" ns="2" outkey="369"/>
+										<entry name="FileName" ns="2" outkey="370"/>
+										<entry name="FileType" ns="2" outkey="371"/>
+										<entry name="Content" ns="2" outkey="372"/>
+										<entry name="SubObjectReference" ns="2" outkey="373" expanded="1" displayselectionmode="all"/>
+										<entry name="SubObjectReference" ns="2" outkey="374" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/commonv2}AuthorityQualifiedName" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="375"/>
+											<entry name="UuidAuthority" ns="1" outkey="376"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Attachment.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Attachment" inputinstance="..\..\input\reverse\attachment\attachment_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_attachment" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="655" rbx="956" rby="506"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="attachments" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="341"/>
+										<entry name="attachment" ns="1" inpkey="342" expanded="1">
+											<entry name="uidWellbore" type="attribute" inpkey="343"/>
+											<entry name="nameWellbore" ns="1" inpkey="344"/>
+											<entry name="name" ns="1" inpkey="345"/>
+											<entry name="subObjectReference" ns="1" inpkey="346">
+												<entry name="object" type="attribute" inpkey="347"/>
+											</entry>
+											<entry name="md" ns="1" inpkey="348">
+												<entry name="uom" type="attribute" inpkey="349"/>
+												<entry name="datum" type="attribute" inpkey="350"/>
+											</entry>
+											<entry name="mdBit" ns="1" inpkey="351"/>
+											<entry name="param" ns="1" inpkey="352"/>
+											<entry name="fileName" ns="1" inpkey="353"/>
+											<entry name="fileType" ns="1" inpkey="354"/>
+											<entry name="content" ns="1" inpkey="355"/>
+											<entry name="commonData" ns="1">
+												<entry name="dTimCreation" ns="1" inpkey="356"/>
+												<entry name="dTimLastChange" ns="1" inpkey="357"/>
+											</entry>
+											<entry name="customData" ns="1" inpkey="358"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_attachment.xsd" instanceroot="{http://www.witsml.org/schemas/1series}attachments" outputinstance="..\..\output\reverse\attachment\attachment_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="351">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="352">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="358">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="360">
+						<edges>
+							<edge vertexkey="341"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="359">
+						<edges>
+							<edge vertexkey="342"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="376">
+						<edges>
+							<edge vertexkey="343"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="375">
+						<edges>
+							<edge vertexkey="344"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="361">
+						<edges>
+							<edge vertexkey="345"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="373">
+						<edges>
+							<edge vertexkey="346"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="374">
+						<edges>
+							<edge vertexkey="347"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="365">
+						<edges>
+							<edge vertexkey="348"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="366">
+						<edges>
+							<edge vertexkey="349"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="367">
+						<edges>
+							<edge vertexkey="350"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="369">
+						<edges>
+							<edge vertexkey="351" edgekey="351"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="368">
+						<edges>
+							<edge vertexkey="352" edgekey="352"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370">
+						<edges>
+							<edge vertexkey="353"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="371">
+						<edges>
+							<edge vertexkey="354"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="372">
+						<edges>
+							<edge vertexkey="355"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="362">
+						<edges>
+							<edge vertexkey="356"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="363">
+						<edges>
+							<edge vertexkey="357"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="364">
+						<edges>
+							<edge vertexkey="358" edgekey="358"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

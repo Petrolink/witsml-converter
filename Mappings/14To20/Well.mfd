@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="34">
+	<resources/>
+	<component name="defaultmap1" uid="1">
+		<properties SelectedLanguage="cs" UseWindowsPathConvention="0"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="21" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="533"/>
+					</targets>
+					<view ltx="473" lty="127" rbx="540" rby="144"/>
+					<data>
+						<constant value="well-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="27" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="550"/>
+					</targets>
+					<view ltx="473" lty="144" rbx="535" rby="161"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="24" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="535"/>
+					</targets>
+					<view ltx="473" lty="195" rbx="616" rby="212"/>
+					<data>
+						<constant value="Identifier is created from the uid of the input scheme" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="23" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="529"/>
+					</targets>
+					<view ltx="473" lty="178" rbx="638" rby="195"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="22" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="527"/>
+					</targets>
+					<view ltx="473" lty="161" rbx="530" rby="178"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="25" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="528"/>
+					</targets>
+					<view ltx="473" lty="212" rbx="572" rby="229"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="493"/>
+					</targets>
+					<view ltx="473" lty="229" rbx="564" rby="246"/>
+					<data>
+						<constant value="Mapforce" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="31" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="477" lty="449" rbx="568" rby="466"/>
+					<data>
+						<constant value="1.67198083" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="32" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="477" lty="466" rbx="556" rby="483"/>
+					<data>
+						<constant value="WGS84" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="47" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="972"/>
+					</targets>
+					<view ltx="423" lty="885" rbx="463" rby="902"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="74" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1038"/>
+						<datapoint pos="1" key="1039"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1040"/>
+					</targets>
+					<view ltx="413" lty="1329" rbx="469" rby="1383"/>
+				</component>
+				<component name="constant" library="core" uid="77" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="657" lty="1204" rbx="749" rby="1221"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="53" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1013"/>
+					</targets>
+					<view ltx="360" lty="1070" rbx="481" rby="1087"/>
+					<data>
+						<constant value="reference point" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="54" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1017"/>
+						<datapoint pos="1" key="1020"/>
+						<datapoint pos="2" key="1019"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1015"/>
+					</targets>
+					<view ltx="498" lty="1108" rbx="602" rby="1181"/>
+				</component>
+				<component name="constant" library="core" uid="71" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1033"/>
+					</targets>
+					<view ltx="323" lty="1380" rbx="376" rby="1397"/>
+					<data>
+						<constant value="SL" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="70" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1032"/>
+					</targets>
+					<view ltx="323" lty="1362" rbx="377" rby="1379"/>
+					<data>
+						<constant value="KB" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="30" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="477" lty="432" rbx="562" rby="449"/>
+					<data>
+						<constant value="59.743844" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="41" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="941"/>
+					</targets>
+					<view ltx="477" lty="483" rbx="543" rby="500"/>
+					<data>
+						<constant value="4326" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="57" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1027"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1025"/>
+					</targets>
+					<view ltx="407" lty="1183" rbx="483" rby="1221"/>
+				</component>
+				<component name="constant" library="core" uid="56" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1018"/>
+					</targets>
+					<view ltx="402" lty="1154" rbx="494" rby="1171"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="58" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1026"/>
+						<datapoint pos="1" key="1023"/>
+						<datapoint pos="2" key="1024"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1028"/>
+					</targets>
+					<view ltx="498" lty="1183" rbx="602" rby="1256"/>
+				</component>
+				<component name="constant" library="core" uid="75" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="498" lty="1380" rbx="614" rby="1397"/>
+					<data>
+						<constant value="mean sea level" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="69" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1034"/>
+						<datapoint pos="1" key="1035"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1036"/>
+					</targets>
+					<view ltx="413" lty="1274" rbx="469" rby="1328"/>
+				</component>
+				<component name="constant" library="core" uid="72" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1037"/>
+					</targets>
+					<view ltx="498" lty="1285" rbx="609" rby="1302"/>
+					<data>
+						<constant value="kelly bushing" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="73" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1029"/>
+					</targets>
+					<view ltx="487" lty="1341" rbx="603" rby="1358"/>
+					<data>
+						<constant value="mean sea level" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="59" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1041"/>
+						<datapoint pos="1" key="1042"/>
+						<datapoint pos="2" key="1043"/>
+						<datapoint pos="3" key="1030"/>
+						<datapoint pos="4" key="1044"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1045"/>
+					</targets>
+					<view ltx="641" lty="1274" rbx="748" rby="1381"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="40" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="473" lty="588" rbx="563" rby="626"/>
+				</component>
+				<component name="constant" library="core" uid="50" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="982"/>
+					</targets>
+					<view ltx="395" lty="978" rbx="463" rby="995"/>
+					<data>
+						<constant value="dega" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="55" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1014"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1016"/>
+					</targets>
+					<view ltx="407" lty="1108" rbx="483" rby="1146"/>
+				</component>
+				<component name="if-else" library="core" uid="51" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1009"/>
+						<datapoint pos="1" key="1010"/>
+						<datapoint pos="2" key="1008"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="498" lty="1012" rbx="602" rby="1085"/>
+				</component>
+				<component name="exists" library="core" uid="52" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1012"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1011"/>
+					</targets>
+					<view ltx="407" lty="1012" rbx="483" rby="1050"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="37" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="846"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="845"/>
+					</targets>
+					<view ltx="473" lty="746" rbx="563" rby="784"/>
+				</component>
+				<component name="concat" library="core" uid="20" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="534"/>
+						<datapoint pos="1" key="530"/>
+						<datapoint pos="2" key="551"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="473" lty="-1" rbx="565" rby="72"/>
+				</component>
+				<component name="if-else" library="core" uid="44" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="963"/>
+						<datapoint pos="1" key="964"/>
+						<datapoint pos="2" key="965"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="966"/>
+					</targets>
+					<view ltx="498" lty="847" rbx="602" rby="920"/>
+				</component>
+				<component name="exists" library="core" uid="45" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="985"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="973"/>
+					</targets>
+					<view ltx="360" lty="922" rbx="436" rby="960"/>
+				</component>
+				<component name="if-else" library="core" uid="48" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="975"/>
+						<datapoint pos="1" key="974"/>
+						<datapoint pos="2" key="980"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="976"/>
+					</targets>
+					<view ltx="637" lty="847" rbx="741" rby="920"/>
+				</component>
+				<component name="if-else" library="core" uid="49" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="979"/>
+						<datapoint pos="1" key="981"/>
+						<datapoint pos="2" key="978"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="977"/>
+					</targets>
+					<view ltx="637" lty="922" rbx="741" rby="995"/>
+				</component>
+				<component name="if-else" library="core" uid="46" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="967"/>
+						<datapoint pos="1" key="968"/>
+						<datapoint pos="2" key="969"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="970"/>
+					</targets>
+					<view ltx="498" lty="922" rbx="602" rby="995"/>
+				</component>
+				<component name="constant" library="core" uid="76" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1190"/>
+					</targets>
+					<view ltx="657" lty="1186" rbx="697" rby="1203"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="39" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="889"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="458" lty="637" rbx="548" rby="675"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="38" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="880"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="881"/>
+					</targets>
+					<view ltx="477" lty="794" rbx="567" rby="832"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="36" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="844"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="843"/>
+					</targets>
+					<view ltx="473" lty="689" rbx="563" rby="727"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="29" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="735"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="733"/>
+					</targets>
+					<view ltx="477" lty="394" rbx="567" rby="432"/>
+				</component>
+				<component name="exists" library="core" uid="43" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="986"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="971"/>
+					</targets>
+					<view ltx="407" lty="847" rbx="483" rby="885"/>
+				</component>
+				<component name="witsml:wellLocation" library="core" uid="28" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="731"/>
+						<datapoint pos="1" key="734"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="777"/>
+					</targets>
+					<view ltx="473" lty="294" rbx="601" rby="348"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="35" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="838"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="839"/>
+					</targets>
+					<view ltx="473" lty="550" rbx="563" rby="588"/>
+				</component>
+				<component name="obj_well" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="17" lty="-2" rbx="312" rby="1329"/>
+					<data>
+						<root scrollposition="154">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="wells" ns="1" expanded="1">
+										<entry name="version" type="attribute" outkey="487"/>
+										<entry name="well" ns="1" outkey="397" expanded="1">
+											<entry name="uid" type="attribute" outkey="389"/>
+											<entry name="name" ns="1" outkey="390"/>
+											<entry name="nameLegal" ns="1" outkey="2"/>
+											<entry name="numLicense" ns="1" outkey="3"/>
+											<entry name="numGovt" ns="1" outkey="4"/>
+											<entry name="dTimLicense" ns="1" outkey="5"/>
+											<entry name="field" ns="1" outkey="6"/>
+											<entry name="country" ns="1" outkey="7"/>
+											<entry name="state" ns="1" outkey="8"/>
+											<entry name="county" ns="1" outkey="9"/>
+											<entry name="region" ns="1" outkey="10"/>
+											<entry name="district" ns="1" outkey="11"/>
+											<entry name="block" ns="1" outkey="12"/>
+											<entry name="timeZone" ns="1" outkey="13"/>
+											<entry name="operator" ns="1" outkey="14"/>
+											<entry name="operatorDiv" ns="1" outkey="15"/>
+											<entry name="pcInterest" ns="1" outkey="16"/>
+											<entry name="numAPI" ns="1" outkey="17"/>
+											<entry name="statusWell" ns="1" outkey="18"/>
+											<entry name="purposeWell" ns="1" outkey="19"/>
+											<entry name="fluidWell" ns="1" outkey="20"/>
+											<entry name="directionWell" ns="1" outkey="21"/>
+											<entry name="dTimSpud" ns="1" outkey="22"/>
+											<entry name="dTimPa" ns="1" outkey="23"/>
+											<entry name="wellheadElevation" ns="1" outkey="24" expanded="1">
+												<entry name="uom" type="attribute" outkey="1046"/>
+												<entry name="datum" type="attribute" outkey="1021"/>
+											</entry>
+											<entry name="wellDatum" ns="1" outkey="25" expanded="1">
+												<entry name="uid" type="attribute" outkey="26"/>
+												<entry name="name" ns="1" outkey="27"/>
+												<entry name="code" ns="1" outkey="28"/>
+												<entry name="datumName" ns="1" expanded="1">
+													<entry name="code" type="attribute" outkey="1091"/>
+												</entry>
+												<entry name="datumCRS" ns="1" expanded="1"/>
+												<entry name="kind" ns="1" outkey="31"/>
+												<entry name="wellbore" ns="1" outkey="32" expanded="1">
+													<entry name="wellboreReference" ns="1" outkey="33"/>
+													<entry name="wellParent" ns="1" outkey="398"/>
+												</entry>
+												<entry name="rig" ns="1" outkey="34">
+													<entry name="rigReference" ns="1" outkey="35" expanded="1"/>
+													<entry name="wellboreParent" ns="1" outkey="36" expanded="1"/>
+													<entry name="wellParent" ns="1" outkey="37" expanded="1"/>
+												</entry>
+												<entry name="elevation" ns="1" outkey="38"/>
+												<entry name="measuredDepth" ns="1" outkey="39"/>
+												<entry name="horizontalLocation" ns="1" expanded="1">
+													<entry name="uid" type="attribute" outkey="858"/>
+													<entry name="wellCRS" ns="1" expanded="1"/>
+													<entry name="latitude" ns="1" outkey="859" expanded="1">
+														<entry name="uom" type="attribute" outkey="987"/>
+													</entry>
+													<entry name="longitude" ns="1" outkey="860" expanded="1">
+														<entry name="uom" type="attribute" outkey="988"/>
+													</entry>
+													<entry name="localX" ns="1" outkey="861"/>
+													<entry name="localY" ns="1" outkey="862"/>
+													<entry name="original" ns="1" outkey="863"/>
+													<entry name="description" ns="1" outkey="864"/>
+												</entry>
+												<entry name="comment" ns="1" outkey="307"/>
+												<entry name="extensionNameValue" ns="1" outkey="44">
+													<entry name="name" ns="1" outkey="636"/>
+													<entry name="value" ns="1" outkey="637"/>
+													<entry name="dTim" ns="1" outkey="638"/>
+													<entry name="index" ns="1" outkey="639"/>
+													<entry name="measureClass" ns="1" outkey="640"/>
+													<entry name="description" ns="1" outkey="641"/>
+												</entry>
+											</entry>
+											<entry name="groundElevation" ns="1" outkey="54">
+												<entry name="uom" type="attribute" outkey="1047"/>
+												<entry name="datum" type="attribute" outkey="1048"/>
+											</entry>
+											<entry name="waterDepth" ns="1" outkey="55"/>
+											<entry name="wellLocation" ns="1" outkey="748" expanded="1">
+												<entry name="uid" type="attribute" outkey="749"/>
+												<entry name="wellCRS" ns="1" outkey="821" expanded="1">
+													<entry name="uidRef" type="attribute" outkey="1109"/>
+												</entry>
+												<entry name="latitude" ns="1" outkey="750" expanded="1">
+													<entry name="uom" type="attribute" outkey="1110"/>
+												</entry>
+												<entry name="longitude" ns="1" outkey="751" expanded="1">
+													<entry name="uom" type="attribute" outkey="1111"/>
+												</entry>
+												<entry name="localX" ns="1" outkey="865"/>
+												<entry name="original" ns="1" outkey="618"/>
+												<entry name="description" ns="1" outkey="619"/>
+												<entry name="extensionNameValue" ns="1" outkey="752">
+													<entry name="name" ns="1" outkey="753"/>
+													<entry name="value" ns="1" outkey="754"/>
+													<entry name="dTim" ns="1" outkey="755"/>
+													<entry name="index" ns="1" outkey="756"/>
+													<entry name="measureClass" ns="1" outkey="757"/>
+													<entry name="description" ns="1" outkey="758"/>
+												</entry>
+											</entry>
+											<entry name="wellPublicLandSurveySystemLocation" ns="1" outkey="68">
+												<entry name="principalMeridian" ns="1" outkey="69"/>
+												<entry name="range" ns="1" outkey="70"/>
+												<entry name="rangeDir" ns="1" outkey="71"/>
+												<entry name="township" ns="1" outkey="72"/>
+												<entry name="townshipDir" ns="1" outkey="73"/>
+												<entry name="section" ns="1" outkey="74"/>
+												<entry name="quarterSection" ns="1" outkey="75"/>
+												<entry name="quarterTownship" ns="1" outkey="76"/>
+												<entry name="footageNS" ns="1" outkey="414"/>
+												<entry name="footageEW" ns="1" outkey="415"/>
+											</entry>
+											<entry name="referencePoint" ns="1" outkey="77" expanded="1">
+												<entry name="uid" type="attribute" outkey="78"/>
+												<entry name="name" ns="1" outkey="79"/>
+												<entry name="type" ns="1" outkey="80"/>
+												<entry name="elevation" ns="1" outkey="308" expanded="1"/>
+												<entry name="measuredDepth" ns="1" outkey="309" expanded="1"/>
+												<entry name="location" ns="1" expanded="1">
+													<entry name="uid" type="attribute" outkey="311"/>
+													<entry name="latitude" ns="1" outkey="312" expanded="1">
+														<entry name="uom" type="attribute" outkey="1112"/>
+													</entry>
+													<entry name="longitude" ns="1" outkey="313" expanded="1">
+														<entry name="uom" type="attribute" outkey="1113"/>
+													</entry>
+													<entry name="localX" ns="1" outkey="900" expanded="1"/>
+													<entry name="original" ns="1" outkey="322"/>
+													<entry name="description" ns="1" outkey="323"/>
+													<entry name="extensionNameValue" ns="1" outkey="324" expanded="1">
+														<entry name="name" ns="1" outkey="326"/>
+														<entry name="value" ns="1" outkey="327"/>
+														<entry name="dTim" ns="1" outkey="329"/>
+														<entry name="index" ns="1" outkey="331"/>
+														<entry name="measureClass" ns="1" outkey="332"/>
+														<entry name="description" ns="1" outkey="333"/>
+													</entry>
+												</entry>
+												<entry name="description" ns="1" outkey="416"/>
+												<entry name="extensionNameValue" ns="1" outkey="417" expanded="1">
+													<entry name="name" ns="1" outkey="419"/>
+													<entry name="value" ns="1" outkey="642"/>
+													<entry name="dTim" ns="1" outkey="643"/>
+													<entry name="index" ns="1" outkey="644"/>
+													<entry name="measureClass" ns="1" outkey="645"/>
+													<entry name="description" ns="1" outkey="646"/>
+												</entry>
+											</entry>
+											<entry name="wellCRS" ns="1" expanded="1">
+												<entry name="mapProjection" ns="1" outkey="1125" expanded="1">
+													<entry name="nameCRS" ns="1" outkey="1126" expanded="1">
+														<entry name="namingSystem" type="attribute" outkey="1127"/>
+														<entry name="code" type="attribute" outkey="1128"/>
+													</entry>
+												</entry>
+												<entry name="geographic" ns="1">
+													<entry name="nameCRS" ns="1" expanded="1"/>
+												</entry>
+												<entry name="mapProjectionCRS" ns="1" outkey="1161" expanded="1">
+													<entry name="uidRef" type="attribute" outkey="1162"/>
+												</entry>
+												<entry name="geodeticCRS" ns="1" outkey="1184" expanded="1">
+													<entry name="uidRef" type="attribute" outkey="1185"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1">
+												<entry name="dTimLastChange" ns="1" outkey="92"/>
+												<entry name="extensionNameValue" ns="1" outkey="920" expanded="1">
+													<entry name="name" ns="1" outkey="921"/>
+													<entry name="value" ns="1" outkey="922"/>
+													<entry name="dTim" ns="1" outkey="923"/>
+													<entry name="index" ns="1" outkey="924"/>
+													<entry name="measureClass" ns="1" outkey="925"/>
+													<entry name="description" ns="1" outkey="926"/>
+												</entry>
+											</entry>
+											<entry name="customData" ns="1" outkey="93"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_well.xsd" instanceroot="{http://www.witsml.org/schemas/1series}wells" inputinstance="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/XML_Examples/well_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Well" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="850" lty="-2" rbx="1333" rby="1329"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Well" ns="2" inpkey="427" expanded="1">
+										<entry name="schemaVersion" type="attribute" inpkey="488"/>
+										<entry name="uuid" type="attribute" inpkey="392"/>
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" inpkey="537"/>
+											<entry name="Identifier" ns="1" inpkey="538"/>
+											<entry name="Description" ns="1" inpkey="539"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" inpkey="393"/>
+											<entry name="Originator" ns="1" inpkey="494"/>
+											<entry name="Creation" ns="1" inpkey="95"/>
+											<entry name="Format" ns="1" inpkey="495"/>
+											<entry name="LastUpdate" ns="1" inpkey="96"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="97"/>
+										<entry name="ExtensionNameValue" ns="1" inpkey="927">
+											<entry name="Name" ns="1" inpkey="928"/>
+											<entry name="Value" ns="1" inpkey="929"/>
+											<entry name="MeasureClass" ns="1" inpkey="930"/>
+											<entry name="DTim" ns="1" inpkey="931"/>
+											<entry name="Index" ns="1" inpkey="932"/>
+											<entry name="Description" ns="1" inpkey="933"/>
+										</entry>
+										<entry name="NameLegal" ns="2" inpkey="98"/>
+										<entry name="NumLicense" ns="2" inpkey="99"/>
+										<entry name="NumGovt" ns="2" inpkey="100"/>
+										<entry name="DTimLicense" ns="2" inpkey="101"/>
+										<entry name="Field" ns="2" inpkey="102"/>
+										<entry name="Country" ns="2" inpkey="103"/>
+										<entry name="State" ns="2" inpkey="104"/>
+										<entry name="County" ns="2" inpkey="105"/>
+										<entry name="Region" ns="2" inpkey="106"/>
+										<entry name="District" ns="2" inpkey="107"/>
+										<entry name="Block" ns="2" inpkey="108"/>
+										<entry name="TimeZone" ns="2" inpkey="109"/>
+										<entry name="Operator" ns="2" inpkey="110"/>
+										<entry name="OperatorDiv" ns="2" inpkey="111"/>
+										<entry name="PcInterest" ns="2" inpkey="112"/>
+										<entry name="NumAPI" ns="2" inpkey="113"/>
+										<entry name="StatusWell" ns="2" inpkey="114"/>
+										<entry name="PurposeWell" ns="2" inpkey="115"/>
+										<entry name="FluidWell" ns="2" inpkey="116"/>
+										<entry name="DirectionWell" ns="2" inpkey="117"/>
+										<entry name="DTimSpud" ns="2" inpkey="118"/>
+										<entry name="DTimPa" ns="2" inpkey="119"/>
+										<entry name="WaterDepth" ns="2" inpkey="163"/>
+										<entry name="GeographicLocationWGS84" ns="2" inpkey="736" expanded="1">
+											<entry name="uid" type="attribute" inpkey="737"/>
+											<entry name="Original" ns="2" inpkey="738"/>
+											<entry name="Description" ns="2" inpkey="739"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="740" expanded="1">
+												<entry name="Name" ns="1" inpkey="741"/>
+												<entry name="Value" ns="1" inpkey="742" expanded="1"/>
+												<entry name="MeasureClass" ns="1" inpkey="743"/>
+												<entry name="DTim" ns="1" inpkey="744"/>
+												<entry name="Index" ns="1" inpkey="745"/>
+												<entry name="Description" ns="1" inpkey="746"/>
+											</entry>
+											<entry name="Latitude" ns="2" inpkey="774" expanded="1">
+												<entry name="uom" type="attribute" inpkey="983"/>
+											</entry>
+											<entry name="Longitude" ns="2" inpkey="747" expanded="1">
+												<entry name="uom" type="attribute" inpkey="984"/>
+											</entry>
+											<entry name="Crs" ns="2" displayselectionmode="all"/>
+											<entry name="Crs" ns="2" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/commonv2}GeodeticEpsgCrs" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="EpsgCode" ns="1" inpkey="942"/>
+											</entry>
+										</entry>
+										<entry name="WellLocation" ns="2" displayselectionmode="all"/>
+										<entry name="WellLocation" ns="2" inpkey="807" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}GeodeticWellLocation" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="uid" type="attribute" inpkey="808"/>
+											<entry name="Original" ns="2" inpkey="809"/>
+											<entry name="Description" ns="2" inpkey="810"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="811">
+												<entry name="Name" ns="1" inpkey="812"/>
+												<entry name="Value" ns="1" inpkey="813" expanded="1"/>
+												<entry name="MeasureClass" ns="1" inpkey="814"/>
+												<entry name="DTim" ns="1" inpkey="815"/>
+												<entry name="Index" ns="1" inpkey="816"/>
+												<entry name="Description" ns="1" inpkey="817"/>
+											</entry>
+											<entry name="Latitude" ns="2" inpkey="818" expanded="1">
+												<entry name="uom" type="attribute" inpkey="1105"/>
+											</entry>
+											<entry name="Longitude" ns="2" inpkey="819" expanded="1">
+												<entry name="uom" type="attribute" inpkey="1106"/>
+											</entry>
+											<entry name="Crs" ns="2" displayselectionmode="all"/>
+											<entry name="Crs" ns="2" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/commonv2}GeodeticLocalAuthorityCrs" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="LocalAuthorityCrsName" ns="1" inpkey="820" expanded="1">
+													<entry name="authority" type="attribute" inpkey="1101"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="WellLocation" ns="2" inpkey="1120">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}ProjectedWellLocation" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="uid" type="attribute" inpkey="1121"/>
+											<entry name="Description" ns="2" inpkey="1122"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="1163" expanded="1">
+												<entry name="Name" ns="1" inpkey="1164"/>
+												<entry name="Value" ns="1" inpkey="1165" expanded="1"/>
+												<entry name="MeasureClass" ns="1" inpkey="1166"/>
+												<entry name="DTim" ns="1" inpkey="1167"/>
+												<entry name="Index" ns="1" inpkey="1168"/>
+												<entry name="Description" ns="1" inpkey="1169"/>
+											</entry>
+											<entry name="Crs" ns="2" displayselectionmode="all"/>
+											<entry name="Crs" ns="2" inpkey="1157" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/commonv2}ProjectedLocalAuthorityCrs" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="LocalAuthorityCrsName" ns="1" inpkey="1123" expanded="1">
+													<entry name="authority" type="attribute" inpkey="1124"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="WellPublicLandSurveySystemLocation" ns="2" inpkey="172" expanded="1">
+											<entry name="PrincipalMeridian" ns="2" inpkey="173"/>
+											<entry name="Range" ns="2" inpkey="174"/>
+											<entry name="RangeDir" ns="2" inpkey="175"/>
+											<entry name="Township" ns="2" inpkey="176"/>
+											<entry name="TownshipDir" ns="2" inpkey="177"/>
+											<entry name="Section" ns="2" inpkey="178"/>
+											<entry name="QuarterSection" ns="2" inpkey="179"/>
+											<entry name="QuarterTownship" ns="2" inpkey="180"/>
+											<entry name="FootageNS" ns="2" inpkey="444" expanded="1"/>
+											<entry name="FootageEW" ns="2" inpkey="445"/>
+										</entry>
+										<entry name="ReferencePoint" ns="2" inpkey="181" expanded="1">
+											<entry name="uid" type="attribute" inpkey="182"/>
+											<entry name="Name" ns="2" inpkey="183"/>
+											<entry name="Type" ns="2" inpkey="184"/>
+											<entry name="MeasuredDepth" ns="2" inpkey="281" expanded="1"/>
+											<entry name="Description" ns="2" inpkey="446"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="447">
+												<entry name="Name" ns="1" inpkey="554"/>
+												<entry name="Value" ns="1" inpkey="647"/>
+												<entry name="MeasureClass" ns="1" inpkey="648"/>
+												<entry name="DTim" ns="1" inpkey="649"/>
+												<entry name="Index" ns="1" inpkey="650"/>
+												<entry name="Description" ns="1" inpkey="651"/>
+											</entry>
+											<entry name="Elevation" ns="2" inpkey="282"/>
+											<entry name="Location" ns="2" displayselectionmode="all"/>
+											<entry name="Location" ns="2" inpkey="557" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/witsmlv2}GeodeticWellLocation" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="uid" type="attribute" inpkey="558"/>
+												<entry name="Original" ns="2" inpkey="559"/>
+												<entry name="Description" ns="2" inpkey="560"/>
+												<entry name="ExtensionNameValue" ns="2" inpkey="561">
+													<entry name="Name" ns="1" inpkey="562"/>
+													<entry name="Value" ns="1" inpkey="563"/>
+													<entry name="MeasureClass" ns="1" inpkey="564"/>
+													<entry name="DTim" ns="1" inpkey="565"/>
+													<entry name="Index" ns="1" inpkey="566"/>
+													<entry name="Description" ns="1" inpkey="567"/>
+												</entry>
+												<entry name="Latitude" ns="2" inpkey="568">
+													<entry name="uom" type="attribute" inpkey="1107"/>
+												</entry>
+												<entry name="Longitude" ns="2" inpkey="569">
+													<entry name="uom" type="attribute" inpkey="1108"/>
+												</entry>
+												<entry name="Crs" ns="2" displayselectionmode="all"/>
+												<entry name="Crs" ns="2" inpkey="1086" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/commonv2}GeodeticLocalAuthorityCrs" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="LocalAuthorityCrsName" ns="1" inpkey="1087" expanded="1">
+														<entry name="authority" type="attribute" inpkey="1088"/>
+														<entry name="code" type="attribute" inpkey="1089"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="Location" ns="2" inpkey="1135" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/witsmlv2}ProjectedWellLocation" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="uid" type="attribute" inpkey="1136"/>
+												<entry name="Original" ns="2" inpkey="1137"/>
+												<entry name="Description" ns="2" inpkey="1138"/>
+												<entry name="ExtensionNameValue" ns="2" inpkey="1139">
+													<entry name="Name" ns="1" inpkey="1140"/>
+													<entry name="Value" ns="1" inpkey="1141" expanded="1"/>
+													<entry name="MeasureClass" ns="1" inpkey="1142"/>
+													<entry name="DTim" ns="1" inpkey="1143"/>
+													<entry name="Index" ns="1" inpkey="1144"/>
+													<entry name="Description" ns="1" inpkey="1145"/>
+												</entry>
+												<entry name="Coordinate1" ns="2" inpkey="1188"/>
+												<entry name="Coordinate2" ns="2" inpkey="1189"/>
+												<entry name="Crs" ns="2" displayselectionmode="all"/>
+												<entry name="Crs" ns="2" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/commonv2}ProjectedLocalAuthorityCrs" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="LocalAuthorityCrsName" ns="1" inpkey="1170" expanded="1">
+														<entry name="authority" type="attribute" inpkey="1171"/>
+														<entry name="code" type="attribute" inpkey="1172"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="WellheadElevation" ns="2" inpkey="185">
+											<entry name="uom" type="attribute" inpkey="1049"/>
+											<entry name="datum" type="attribute" inpkey="1022"/>
+										</entry>
+										<entry name="WellDatum" ns="2" inpkey="120" expanded="1">
+											<entry name="uid" type="attribute" inpkey="121"/>
+											<entry name="Name" ns="2" inpkey="122"/>
+											<entry name="Code" ns="2" inpkey="123"/>
+											<entry name="Kind" ns="2" inpkey="124"/>
+											<entry name="MeasuredDepth" ns="2" inpkey="125"/>
+											<entry name="Comment" ns="2" inpkey="280"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="126">
+												<entry name="Name" ns="1" inpkey="652"/>
+												<entry name="Value" ns="1" inpkey="653"/>
+												<entry name="MeasureClass" ns="1" inpkey="654"/>
+												<entry name="DTim" ns="1" inpkey="655"/>
+												<entry name="Index" ns="1" inpkey="656"/>
+												<entry name="Description" ns="1" inpkey="657"/>
+											</entry>
+											<entry name="Wellbore" ns="2" inpkey="138">
+												<entry name="WellboreReference" ns="2" inpkey="139"/>
+												<entry name="WellParent" ns="2" inpkey="428"/>
+											</entry>
+											<entry name="Rig" ns="2" inpkey="140">
+												<entry name="RigReference" ns="2" inpkey="141"/>
+												<entry name="WellboreParent" ns="2" inpkey="142"/>
+												<entry name="WellParent" ns="2" inpkey="143"/>
+											</entry>
+											<entry name="Elevation" ns="2" inpkey="144"/>
+											<entry name="HorizontalLocation" ns="2" displayselectionmode="all"/>
+											<entry name="HorizontalLocation" ns="2" inpkey="847" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/witsmlv2}GeodeticWellLocation" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="Original" ns="2" inpkey="848"/>
+												<entry name="Description" ns="2" inpkey="849"/>
+												<entry name="Latitude" ns="2" inpkey="850"/>
+												<entry name="Longitude" ns="2" inpkey="851"/>
+											</entry>
+											<entry name="HorizontalLocation" ns="2" inpkey="852" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/witsmlv2}ProjectedWellLocation" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="uid" type="attribute" inpkey="853"/>
+												<entry name="Original" ns="2" inpkey="854"/>
+												<entry name="Description" ns="2" inpkey="855"/>
+												<entry name="ExtensionNameValue" ns="2" inpkey="944" expanded="1">
+													<entry name="Name" ns="1" inpkey="945"/>
+													<entry name="Value" ns="1" inpkey="946" expanded="1"/>
+													<entry name="MeasureClass" ns="1" inpkey="947"/>
+													<entry name="DTim" ns="1" inpkey="948"/>
+													<entry name="Index" ns="1" inpkey="949"/>
+													<entry name="Description" ns="1" inpkey="950"/>
+												</entry>
+												<entry name="Coordinate1" ns="2" inpkey="951"/>
+												<entry name="Coordinate2" ns="2" inpkey="952"/>
+											</entry>
+											<entry name="Crs" ns="2" displayselectionmode="all"/>
+											<entry name="Crs" ns="2" expanded="1">
+												<condition>
+													<expression>
+														<function name="equal" library="core">
+															<expression>
+																<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+															</expression>
+															<expression>
+																<constant value="{http://www.energistics.org/energyml/data/commonv2}VerticalUnknownCrs" datatype="QName"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="Unknown" ns="1" inpkey="1102"/>
+											</entry>
+										</entry>
+										<entry name="GroundElevation" ns="2" inpkey="186" expanded="1">
+											<entry name="uom" type="attribute" inpkey="1052"/>
+											<entry name="datum" type="attribute" inpkey="1053"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Well.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Well" outputinstance="..\Energistics\energyml\data\witsml\v2.0\xml_examples\Well.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="78" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1199"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1198"/>
+					</targets>
+					<view ltx="637" lty="38" rbx="752" rby="92"/>
+				</component>
+				<component name="current-dateTime" library="xpath2" uid="26" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="532"/>
+					</targets>
+					<view ltx="473" lty="246" rbx="588" rby="284"/>
+				</component>
+				<component name="convert_uom" library="posc22_to_energistics1" uid="82" kind="5">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="229" lty="1394" rbx="322" rby="1432"/>
+				</component>
+				<component name="value-map" library="core" uid="79" kind="23">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="823" lty="1380" rbx="903" rby="1418"/>
+					<data>
+						<valuemap>
+							<valuemapTable/>
+							<input name="input" type="string"/>
+							<result name="result" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+			</children>
+		</structure>
+		<connections>
+			<edge from="532" to="95"/>
+			<edge from="92" to="96"/>
+			<edge from="93" to="97">
+				<data type="2"/>
+			</edge>
+			<edge from="2" to="98"/>
+			<edge from="3" to="99"/>
+			<edge from="4" to="100"/>
+			<edge from="5" to="101"/>
+			<edge from="6" to="102"/>
+			<edge from="7" to="103"/>
+			<edge from="8" to="104"/>
+			<edge from="9" to="105"/>
+			<edge from="10" to="106"/>
+			<edge from="11" to="107"/>
+			<edge from="12" to="108"/>
+			<edge from="13" to="109"/>
+			<edge from="14" to="110"/>
+			<edge from="15" to="111"/>
+			<edge from="16" to="112">
+				<data type="2"/>
+			</edge>
+			<edge from="17" to="113"/>
+			<edge from="18" to="114"/>
+			<edge from="19" to="115"/>
+			<edge from="20" to="116"/>
+			<edge from="21" to="117"/>
+			<edge from="22" to="118"/>
+			<edge from="23" to="119"/>
+			<edge from="25" to="120"/>
+			<edge from="26" to="121"/>
+			<edge from="27" to="122"/>
+			<edge from="1045" to="123"/>
+			<edge from="31" to="124"/>
+			<edge from="39" to="125">
+				<data type="2"/>
+			</edge>
+			<edge from="44" to="126"/>
+			<edge from="32" to="138"/>
+			<edge from="33" to="139"/>
+			<edge from="34" to="140"/>
+			<edge from="35" to="141"/>
+			<edge from="36" to="142"/>
+			<edge from="37" to="143"/>
+			<edge from="38" to="144">
+				<data type="2"/>
+			</edge>
+			<edge from="55" to="163">
+				<data type="2"/>
+			</edge>
+			<edge from="68" to="172"/>
+			<edge from="69" to="173"/>
+			<edge from="70" to="174"/>
+			<edge from="71" to="175"/>
+			<edge from="72" to="176"/>
+			<edge from="73" to="177"/>
+			<edge from="74" to="178"/>
+			<edge from="75" to="179"/>
+			<edge from="76" to="180"/>
+			<edge from="77" to="181"/>
+			<edge from="78" to="182"/>
+			<edge from="79" to="183"/>
+			<edge from="80" to="184"/>
+			<edge from="24" to="185"/>
+			<edge from="54" to="186"/>
+			<edge from="307" to="280"/>
+			<edge from="309" to="281">
+				<data type="2"/>
+			</edge>
+			<edge from="308" to="282">
+				<data type="2"/>
+			</edge>
+			<edge from="529" to="392"/>
+			<edge from="390" to="393"/>
+			<edge from="1198" to="427"/>
+			<edge from="398" to="428"/>
+			<edge from="414" to="444">
+				<data type="2"/>
+			</edge>
+			<edge from="415" to="445">
+				<data type="2"/>
+			</edge>
+			<edge from="416" to="446"/>
+			<edge from="417" to="447"/>
+			<edge from="527" to="488"/>
+			<edge from="528" to="494"/>
+			<edge from="493" to="495"/>
+			<edge from="389" to="530"/>
+			<edge from="533" to="534"/>
+			<edge from="487" to="537"/>
+			<edge from="389" to="538"/>
+			<edge from="535" to="539"/>
+			<edge from="550" to="551"/>
+			<edge from="419" to="554"/>
+			<edge from="881" to="557"/>
+			<edge from="311" to="558"/>
+			<edge from="322" to="559"/>
+			<edge from="323" to="560"/>
+			<edge from="324" to="561"/>
+			<edge from="326" to="562"/>
+			<edge from="327" to="563"/>
+			<edge from="332" to="564"/>
+			<edge from="329" to="565"/>
+			<edge from="331" to="566"/>
+			<edge from="333" to="567"/>
+			<edge from="312" to="568"/>
+			<edge from="313" to="569"/>
+			<edge from="642" to="647">
+				<data type="2"/>
+			</edge>
+			<edge from="645" to="648"/>
+			<edge from="643" to="649"/>
+			<edge from="644" to="650"/>
+			<edge from="646" to="651"/>
+			<edge from="636" to="652"/>
+			<edge from="637" to="653"/>
+			<edge from="640" to="654"/>
+			<edge from="638" to="655"/>
+			<edge from="639" to="656"/>
+			<edge from="641" to="657"/>
+			<edge from="748" to="731"/>
+			<edge from="733" to="734"/>
+			<edge from="750" to="735"/>
+			<edge from="777" to="736"/>
+			<edge from="749" to="737"/>
+			<edge from="618" to="738"/>
+			<edge from="619" to="739"/>
+			<edge from="752" to="740"/>
+			<edge from="753" to="741"/>
+			<edge from="754" to="742"/>
+			<edge from="757" to="743"/>
+			<edge from="755" to="744"/>
+			<edge from="756" to="745"/>
+			<edge from="758" to="746"/>
+			<edge from="970" to="747"/>
+			<edge from="966" to="774"/>
+			<edge from="839" to="807"/>
+			<edge from="749" to="808"/>
+			<edge from="618" to="809"/>
+			<edge from="619" to="810"/>
+			<edge from="752" to="811"/>
+			<edge from="753" to="812"/>
+			<edge from="754" to="813"/>
+			<edge from="757" to="814"/>
+			<edge from="755" to="815"/>
+			<edge from="756" to="816"/>
+			<edge from="758" to="817"/>
+			<edge from="750" to="818"/>
+			<edge from="751" to="819"/>
+			<edge from="821" to="820"/>
+			<edge from="750" to="838"/>
+			<edge from="859" to="844"/>
+			<edge from="865" to="846"/>
+			<edge from="843" to="847"/>
+			<edge from="863" to="848"/>
+			<edge from="864" to="849"/>
+			<edge from="859" to="850"/>
+			<edge from="860" to="851"/>
+			<edge from="845" to="852"/>
+			<edge from="858" to="853"/>
+			<edge from="618" to="854"/>
+			<edge from="619" to="855"/>
+			<edge from="312" to="880"/>
+			<edge from="900" to="889"/>
+			<edge from="920" to="927"/>
+			<edge from="921" to="928"/>
+			<edge from="922" to="929"/>
+			<edge from="925" to="930"/>
+			<edge from="923" to="931"/>
+			<edge from="924" to="932"/>
+			<edge from="926" to="933"/>
+			<edge from="941" to="942"/>
+			<edge from="752" to="944"/>
+			<edge from="753" to="945"/>
+			<edge from="754" to="946"/>
+			<edge from="757" to="947"/>
+			<edge from="755" to="948"/>
+			<edge from="756" to="949"/>
+			<edge from="758" to="950"/>
+			<edge from="861" to="951"/>
+			<edge from="862" to="952"/>
+			<edge from="971" to="963"/>
+			<edge from="859" to="964"/>
+			<edge from="972" to="965"/>
+			<edge from="973" to="967"/>
+			<edge from="860" to="968"/>
+			<edge from="972" to="969"/>
+			<edge from="987" to="974"/>
+			<edge from="971" to="975"/>
+			<edge from="982" to="978"/>
+			<edge from="971" to="979"/>
+			<edge from="982" to="980"/>
+			<edge from="988" to="981"/>
+			<edge from="976" to="983"/>
+			<edge from="977" to="984"/>
+			<edge from="751" to="985"/>
+			<edge from="750" to="986"/>
+			<edge from="1013" to="1008"/>
+			<edge from="1011" to="1009"/>
+			<edge from="77" to="1010"/>
+			<edge from="77" to="1012"/>
+			<edge from="1021" to="1014"/>
+			<edge from="1016" to="1017"/>
+			<edge from="1018" to="1019"/>
+			<edge from="1021" to="1020"/>
+			<edge from="1015" to="1022"/>
+			<edge from="1048" to="1023"/>
+			<edge from="1018" to="1024"/>
+			<edge from="1025" to="1026"/>
+			<edge from="1048" to="1027"/>
+			<edge from="1029" to="1030"/>
+			<edge from="28" to="1034"/>
+			<edge from="1032" to="1035"/>
+			<edge from="28" to="1038"/>
+			<edge from="1033" to="1039"/>
+			<edge from="1036" to="1041"/>
+			<edge from="1037" to="1042"/>
+			<edge from="1040" to="1043"/>
+			<edge from="1037" to="1044"/>
+			<edge from="1046" to="1049"/>
+			<edge from="1047" to="1052"/>
+			<edge from="1028" to="1053"/>
+			<edge from="821" to="1086"/>
+			<edge from="1184" to="1087"/>
+			<edge from="1185" to="1088"/>
+			<edge from="1091" to="1089"/>
+			<edge from="311" to="1101"/>
+			<edge from="1018" to="1102"/>
+			<edge from="1110" to="1105"/>
+			<edge from="1111" to="1106"/>
+			<edge from="1112" to="1107"/>
+			<edge from="1113" to="1108"/>
+			<edge from="1125" to="1120"/>
+			<edge from="1126" to="1121"/>
+			<edge from="323" to="1122"/>
+			<edge from="1127" to="1123"/>
+			<edge from="1128" to="1124"/>
+			<edge from="821" to="1135"/>
+			<edge from="1109" to="1136"/>
+			<edge from="618" to="1137"/>
+			<edge from="619" to="1138"/>
+			<edge from="752" to="1139"/>
+			<edge from="753" to="1140"/>
+			<edge from="754" to="1141">
+				<data type="2"/>
+			</edge>
+			<edge from="757" to="1142"/>
+			<edge from="755" to="1143"/>
+			<edge from="756" to="1144"/>
+			<edge from="758" to="1145"/>
+			<edge from="1126" to="1157"/>
+			<edge from="324" to="1163"/>
+			<edge from="753" to="1164"/>
+			<edge from="754" to="1165">
+				<data type="2"/>
+			</edge>
+			<edge from="757" to="1166"/>
+			<edge from="755" to="1167"/>
+			<edge from="756" to="1168"/>
+			<edge from="758" to="1169"/>
+			<edge from="1161" to="1170"/>
+			<edge from="1162" to="1171"/>
+			<edge from="1162" to="1172"/>
+			<edge from="1190" to="1188"/>
+			<edge from="1190" to="1189"/>
+			<edge from="397" to="1199"/>
+		</connections>
+	</component>
+	<component name="convert_uom_gen" library="user" uid="83">
+		<description/>
+		<structure>
+			<children>
+				<component name="result" library="core" uid="84" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="870" lty="36" rbx="927" rby="74"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="input" library="core" uid="85" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="238" lty="84" rbx="323" rby="122"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="86" kind="23">
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="481" lty="84" rbx="561" rby="122"/>
+					<data>
+						<valuemap defaultValueMode="input">
+							<valuemapTable>
+				<entry from="1/K" to="1/deltaK"/>
+				<entry from="1/degC" to="1/deltaC"/>
+				<entry from="1/degF" to="1/deltaF"/>
+				<entry from="1/degR" to="1/deltaR"/>
+				<entry from="1/galUK" to="1/gal[UK]"/>
+				<entry from="1/galUS" to="1/gal[US]"/>
+				<entry from="1000ft3" to="1000 ft3"/>
+				<entry from="1000ft3/bbl" to="1000 ft3/bbl"/>
+				<entry from="1000ft3/d" to="1000 ft3/d"/>
+				<entry from="1000ft3/d.ft" to="1000 ft3/(d.ft)"/>
+				<entry from="1000ft3/psi.d" to="1000 ft3/(psi.d)"/>
+				<entry from="1000m3/d" to="1000 m3/d"/>
+				<entry from="1000m3/d.m" to="1000 m3/(d.m)"/>
+				<entry from="1000m3/h" to="1000 m3/h"/>
+				<entry from="1000m3/h.m" to="1000 m3/(h.m)"/>
+				<entry from="1000m4/d" to="1000 m4/d"/>
+				<entry from="100ka" to="100 ka[t]"/>
+				<entry from="10Mg/m3" to="10 Mg/m3"/>
+				<entry from="Bd" to="bit/s"/>
+				<entry from="Btu" to="Btu[IT]"/>
+				<entry from="Btu(million)/hr" to="1E6 Btu[IT]/h"/>
+				<entry from="Btu.in/hr.ft2.F" to="Btu[IT].in/(h.ft2.deltaF)"/>
+				<entry from="Btu/bbl" to="Btu[IT]/bbl"/>
+				<entry from="Btu/bhp.hr" to="Btu[IT]/(hp.h)"/>
+				<entry from="Btu/ft3" to="Btu[IT]/ft3"/>
+				<entry from="Btu/galUK" to="Btu[IT]/gal[UK]"/>
+				<entry from="Btu/galUS" to="Btu[IT]/gal[US]"/>
+				<entry from="Btu/hr" to="Btu[IT]/h"/>
+				<entry from="Btu/hr.ft.degF" to="Btu[IT]/(h.ft.deltaF)"/>
+				<entry from="Btu/hr.ft2" to="Btu[IT]/(h.ft2)"/>
+				<entry from="Btu/hr.ft2.degF" to="Btu[IT]/(h.ft2.deltaF)"/>
+				<entry from="Btu/hr.ft2.degR" to="Btu[IT]/(h.ft2.deltaR)"/>
+				<entry from="Btu/hr.ft3" to="Btu[IT]/(h.ft3)"/>
+				<entry from="Btu/hr.ft3.degF" to="Btu[IT]/(h.ft3.deltaF)"/>
+				<entry from="Btu/hr.m2.degC" to="Btu[IT]/(h.m2.deltaC)"/>
+				<entry from="Btu/lbm" to="Btu[IT]/lbm"/>
+				<entry from="Btu/lbm.degF" to="Btu[IT]/(lbm.deltaF)"/>
+				<entry from="Btu/lbm.degR" to="Btu[IT]/(lbm.deltaR)"/>
+				<entry from="Btu/lbmole" to="Btu[IT]/lbmol"/>
+				<entry from="Btu/lbmole.F" to="Btu[IT]/(lbmol.deltaF)"/>
+				<entry from="Btu/min" to="Btu[IT]/min"/>
+				<entry from="Btu/mol(lbm)" to="Btu[IT]/lbmol"/>
+				<entry from="Btu/mol(lbm).F" to="Btu[IT]/(lbmol.deltaF)"/>
+				<entry from="Btu/s" to="Btu[IT]/s"/>
+				<entry from="Btu/s.ft2" to="Btu[IT]/(s.ft2)"/>
+				<entry from="Btu/s.ft2.degF" to="Btu[IT]/(s.ft2.deltaF)"/>
+				<entry from="Btu/s.ft3" to="Btu[IT]/(s.ft3)"/>
+				<entry from="Btu/s.ft3.degF" to="Btu[IT]/(s.ft3.deltaF)"/>
+				<entry from="CV" to="hp[metric]"/>
+				<entry from="CV.h" to="hp[metric].h"/>
+				<entry from="Ga" to="Ga[t]"/>
+				<entry from="Gsm3" to="km3"/>
+				<entry from="J/K" to="J/deltaK"/>
+				<entry from="J/g.K" to="J/(g.deltaK)"/>
+				<entry from="J/kg.K" to="J/(kg.deltaK)"/>
+				<entry from="J/mol.K" to="J/(mol.deltaK)"/>
+				<entry from="J/s.m2.degC" to="J/(s.m2.deltaC)"/>
+				<entry from="K.m2/W" to="deltaK.m2/W"/>
+				<entry from="K.m2/kW" to="deltaK.m2/kW"/>
+				<entry from="K/W" to="deltaK/W"/>
+				<entry from="K/m" to="deltaK/m"/>
+				<entry from="K/s" to="deltaK/s"/>
+				<entry from="L/100kg" to="0.01 L/kg"/>
+				<entry from="L/100km" to="0.01 L/km"/>
+				<entry from="L/10bbl" to="0.1 L/bbl"/>
+				<entry from="L/bar.min" to="L/(bar.min)"/>
+				<entry from="L/km(100)" to="0.01 L/km"/>
+				<entry from="L/mol(g)" to="L/mol"/>
+				<entry from="L/mol(kg)" to="L/kmol"/>
+				<entry from="L/tonUK" to="L/ton[UK]"/>
+				<entry from="M(ft3)" to="1E6 ft3"/>
+				<entry from="M(ft3)/acre.ft" to="1E6 ft3/(acre.ft)"/>
+				<entry from="M(ft3)/d" to="1E6 ft3/d"/>
+				<entry from="M(m3)" to="1E6 m3"/>
+				<entry from="M(m3)/d" to="1E6 m3/d"/>
+				<entry from="MBtu/hr" to="1E6 Btu[IT]/h"/>
+				<entry from="MJ/mol(kg)" to="MJ/kmol"/>
+				<entry from="MMbbl" to="1E6 bbl"/>
+				<entry from="MMbbl/acre.ft" to="1E6 bbl/(acre.ft)"/>
+				<entry from="MMcf" to="1E6 ft3"/>
+				<entry from="MMscf(60F)" to="1E6 ft3"/>
+				<entry from="MMscf(60F)/d" to="1E6 ft3/d"/>
+				<entry from="MMscf60/stb60" to="1E6 ft3/bbl"/>
+				<entry from="MMscm(15C)" to="1E6 m3"/>
+				<entry from="MMscm(15C)/d" to="1E6 m3/d"/>
+				<entry from="MMstb(60F)" to="1E6 bbl"/>
+				<entry from="MMstb(60F)/d" to="1E6 bbl/d"/>
+				<entry from="MMstb/acre" to="1E6 bbl/acre"/>
+				<entry from="MMstb/acre.ft" to="1E6 bbl/(acre.ft)"/>
+				<entry from="MY" to="Ma[t]"/>
+				<entry from="Ma" to="Ma[t]"/>
+				<entry from="Mbbl" to="1000 bbl"/>
+				<entry from="Mbbl.ft/d" to="1000 bbl.ft/d"/>
+				<entry from="Mbbl/d" to="1000 bbl/d"/>
+				<entry from="Mbyte" to="Mibyte"/>
+				<entry from="Mcf" to="1000 ft3"/>
+				<entry from="Mflops" to="1/us"/>
+				<entry from="Mlbm/yr" to="1E6 lbm/a"/>
+				<entry from="Mscf(60F)" to="1000 ft3"/>
+				<entry from="Mscf(60F)/d" to="1000 ft3/d"/>
+				<entry from="Mscf60/stb60" to="1000 ft3/bbl"/>
+				<entry from="Mscm(15C)/d" to="1000 m3/d"/>
+				<entry from="Msm3" to="1E6 m3"/>
+				<entry from="Mstb(60F)" to="1000 bbl"/>
+				<entry from="Mstb(60F)/d" to="1000 bbl/d"/>
+				<entry from="N/30m" to="1/30 N/m"/>
+				<entry from="Pa(g)" to="Pa"/>
+				<entry from="W/K" to="W/deltaK"/>
+				<entry from="W/m.K" to="W/(m.deltaK)"/>
+				<entry from="W/m2.K" to="W/(m2.deltaK)"/>
+				<entry from="W/m2.sr" to="W/(m2.sr)"/>
+				<entry from="W/m3.K" to="W/(m3.deltaK)"/>
+				<entry from="acre.ft/MMstb" to="1E-6 acre.ft/bbl"/>
+				<entry from="bbl/100bbl" to="0.01 bbl/bbl"/>
+				<entry from="bbl/M(ft3)" to="1E-6 bbl/ft3"/>
+				<entry from="bbl/MMscf(60F)" to="1E-6 bbl/ft3"/>
+				<entry from="bbl/acre.ft" to="bbl/(acre.ft)"/>
+				<entry from="bbl/d.acre.ft" to="bbl/(d.acre.ft)"/>
+				<entry from="bbl/d.ft" to="bbl/(d.ft)"/>
+				<entry from="bbl/d.ft.psi" to="bbl/(ft.psi.d)"/>
+				<entry from="bbl/d.psi" to="bbl/(psi.d)"/>
+				<entry from="bbl/hr" to="bbl/h"/>
+				<entry from="bbl/hr2" to="bbl/h2"/>
+				<entry from="bbl/k(ft3)" to="0.001 bbl/ft3"/>
+				<entry from="bbl/kPa.d" to="bbl/(kPa.d)"/>
+				<entry from="bbl/psi.d" to="bbl/(psi.d)"/>
+				<entry from="bbl/stb(60F)" to="bbl/bbl"/>
+				<entry from="bbl/tonUK" to="bbl/ton[UK]"/>
+				<entry from="bbl/tonUS" to="bbl/ton[US]"/>
+				<entry from="bblPft" to="bbl/ft"/>
+				<entry from="bcf" to="1E9 ft3"/>
+				<entry from="bps" to="bit/s"/>
+				<entry from="c" to="rev"/>
+				<entry from="c/s" to="rev/s"/>
+				<entry from="cal" to="cal[th]"/>
+				<entry from="cal/cm3" to="cal[th]/cm3"/>
+				<entry from="cal/g" to="cal[th]/g"/>
+				<entry from="cal/g.K" to="cal[th]/(g.deltaK)"/>
+				<entry from="cal/h.cm.degC" to="cal[th]/(h.cm.deltaC)"/>
+				<entry from="cal/h.cm2" to="cal[th]/(h.cm2)"/>
+				<entry from="cal/h.cm2.degC" to="cal[th]/(h.cm2.deltaC)"/>
+				<entry from="cal/h.cm3" to="cal[th]/(h.cm3)"/>
+				<entry from="cal/kg" to="cal[th]/kg"/>
+				<entry from="cal/lbm" to="cal[th]/lbm"/>
+				<entry from="cal/mL" to="cal[th]/mL"/>
+				<entry from="cal/mm3" to="cal[th]/mm3"/>
+				<entry from="cal/mol(g).degC" to="cal[th]/(mol.deltaC)"/>
+				<entry from="cal/mol.degC" to="cal[th]/(mol.deltaC)"/>
+				<entry from="cal/s.cm.degC" to="cal[th]/(s.cm.deltaC)"/>
+				<entry from="cal/s.cm2.degC" to="cal[th]/(s.cm2.deltaC)"/>
+				<entry from="cal/s.cm3" to="cal[th]/(s.cm3)"/>
+				<entry from="ch" to="hp[metric]"/>
+				<entry from="ch.h" to="hp[metric].h"/>
+				<entry from="chBnA" to="chain[BnA]"/>
+				<entry from="chBnB" to="chain[BnB]"/>
+				<entry from="chCla" to="chain[Cla]"/>
+				<entry from="chSe" to="chain[Se]"/>
+				<entry from="chUS" to="chain[US]"/>
+				<entry from="cm3/30min" to="1/30 cm3/min"/>
+				<entry from="cmH2O(4degC)" to="cmH2O[4degC]"/>
+				<entry from="cu ft" to="ft3"/>
+				<entry from="cu in" to="in3"/>
+				<entry from="cu yd" to="yd3"/>
+				<entry from="cubem" to="mi3"/>
+				<entry from="curie" to="Ci"/>
+				<entry from="cwtUK" to="cwt[UK]"/>
+				<entry from="cwtUS" to="cwt[US]"/>
+				<entry from="d/k(ft3)" to="0.001 d/ft3"/>
+				<entry from="ddegC" to="deltaC"/>
+				<entry from="ddegF" to="deltaF"/>
+				<entry from="ddegK" to="deltaK"/>
+				<entry from="ddegR" to="deltaR"/>
+				<entry from="degC.m2.h/kcal" to="deltaC.m2.h/kcal[th]"/>
+				<entry from="degC/100m" to="deltaC/hm"/>
+				<entry from="degC/ft" to="deltaC/ft"/>
+				<entry from="degC/h" to="deltaC/h"/>
+				<entry from="degC/km" to="deltaC/km"/>
+				<entry from="degC/m" to="deltaC/m"/>
+				<entry from="degC/min" to="deltaC/min"/>
+				<entry from="degC/s" to="deltaC/s"/>
+				<entry from="degF.ft2.h/Btu" to="deltaF.ft2.h/Btu[IT]"/>
+				<entry from="degF/100ft" to="0.01 deltaF/ft"/>
+				<entry from="degF/ft" to="deltaF/ft"/>
+				<entry from="degF/ft(100)" to="0.01 deltaF/ft"/>
+				<entry from="degF/h" to="deltaF/h"/>
+				<entry from="degF/m" to="deltaF/m"/>
+				<entry from="degF/min" to="deltaF/min"/>
+				<entry from="degF/s" to="deltaF/s"/>
+				<entry from="dega/100ft" to="0.01 dega/ft"/>
+				<entry from="dega/30ft" to="1/30 dega/ft"/>
+				<entry from="dega/30m" to="1/30 dega/m"/>
+				<entry from="dega/ft(100)" to="0.01 dega/ft"/>
+				<entry from="dega/m(30)" to="1/30 dega/m"/>
+				<entry from="dm3/100km" to="0.01 dm3/km"/>
+				<entry from="dm3/kW.h" to="dm3/(kW.h)"/>
+				<entry from="dm3/km(100)" to="0.01 dm3/km"/>
+				<entry from="dm3/mol(kg)" to="dm3/kmol"/>
+				<entry from="ehp" to="hp[elec]"/>
+				<entry from="fl ozUK" to="floz[UK]"/>
+				<entry from="fl ozUS" to="floz[US]"/>
+				<entry from="flops" to="1/s"/>
+				<entry from="flozUK" to="floz[UK]"/>
+				<entry from="flozUS" to="floz[US]"/>
+				<entry from="ft.lbf" to="lbf.ft"/>
+				<entry from="ft.lbf/bbl" to="lbf.ft/bbl"/>
+				<entry from="ft.lbf/galUS" to="lbf.ft/gal[US]"/>
+				<entry from="ft.lbf/lbm" to="lbf.ft/lbm"/>
+				<entry from="ft.lbf/min" to="lbf.ft/min"/>
+				<entry from="ft.lbf/s" to="lbf.ft/s"/>
+				<entry from="ft.lbm" to="lbm.ft"/>
+				<entry from="ft/100ft" to="0.01 ft/ft"/>
+				<entry from="ft/degF" to="ft/deltaF"/>
+				<entry from="ft/galUS" to="ft/gal[US]"/>
+				<entry from="ft3(std,60F)" to="ft3"/>
+				<entry from="ft3/d.ft.psi" to="ft3/(ft.psi.d)"/>
+				<entry from="ft3/lbmole" to="ft3/lbmol"/>
+				<entry from="ft3/min.ft2" to="ft3/(min.ft2)"/>
+				<entry from="ft3/mol(lbm)" to="ft3/lbmol"/>
+				<entry from="ft3/s.ft2" to="ft3/(s.ft2)"/>
+				<entry from="ft3/sack94" to="ft3/sack[94lbm]"/>
+				<entry from="ft3/scf(60F)" to="ft3/ft3"/>
+				<entry from="ftBnA" to="ft[BnA]"/>
+				<entry from="ftBnB" to="ft[BnB]"/>
+				<entry from="ftBr(65)" to="ft[Br65]"/>
+				<entry from="ftCla" to="ft[Cla]"/>
+				<entry from="ftGC" to="ft[GC]"/>
+				<entry from="ftInd" to="ft[Ind]"/>
+				<entry from="ftInd(37)" to="ft[Ind37]"/>
+				<entry from="ftInd(62)" to="ft[Ind62]"/>
+				<entry from="ftInd(75)" to="ft[Ind75]"/>
+				<entry from="ftSe" to="ft[Se]"/>
+				<entry from="ftUS" to="ft[US]"/>
+				<entry from="g.ft/cm3.s" to="g.ft/(cm3.s)"/>
+				<entry from="g/galUK" to="g/gal[UK]"/>
+				<entry from="g/galUS" to="g/gal[US]"/>
+				<entry from="gal/sack" to="gal[US]/sack[94lbm]"/>
+				<entry from="galUK" to="gal[UK]"/>
+				<entry from="galUK/Mbbl" to="0.001 gal[UK]/bbl"/>
+				<entry from="galUK/d" to="gal[UK]/d"/>
+				<entry from="galUK/ft3" to="gal[UK]/ft3"/>
+				<entry from="galUK/hr" to="gal[UK]/h"/>
+				<entry from="galUK/hr.ft" to="gal[UK]/(h.ft)"/>
+				<entry from="galUK/hr.ft2" to="gal[UK]/(h.ft2)"/>
+				<entry from="galUK/hr.in" to="gal[UK]/(h.in)"/>
+				<entry from="galUK/hr.in2" to="gal[UK]/(h.in2)"/>
+				<entry from="galUK/hr2" to="gal[UK]/h2"/>
+				<entry from="galUK/kgalUK" to="0.001 gal[UK]/gal[UK]"/>
+				<entry from="galUK/lbm" to="gal[UK]/lbm"/>
+				<entry from="galUK/mi" to="gal[UK]/mi"/>
+				<entry from="galUK/min" to="gal[UK]/min"/>
+				<entry from="galUK/min.ft" to="gal[UK]/(min.ft)"/>
+				<entry from="galUK/min.ft2" to="gal[UK]/(min.ft2)"/>
+				<entry from="galUK/min2" to="gal[UK]/min2"/>
+				<entry from="galUS" to="gal[US]"/>
+				<entry from="galUS/10bbl" to="0.1 gal[US]/bbl"/>
+				<entry from="galUS/Mbbl" to="0.001 gal[US]/bbl"/>
+				<entry from="galUS/Mscf(60F)" to="0.001 gal[US]/ft3"/>
+				<entry from="galUS/bbl" to="gal[US]/bbl"/>
+				<entry from="galUS/d" to="gal[US]/d"/>
+				<entry from="galUS/ft" to="gal[US]/ft"/>
+				<entry from="galUS/ft3" to="gal[US]/ft3"/>
+				<entry from="galUS/hr" to="gal[US]/h"/>
+				<entry from="galUS/hr.ft" to="gal[US]/(h.ft)"/>
+				<entry from="galUS/hr.ft2" to="gal[US]/(h.ft2)"/>
+				<entry from="galUS/hr.in" to="gal[US]/(h.in)"/>
+				<entry from="galUS/hr.in2" to="gal[US]/(h.in2)"/>
+				<entry from="galUS/hr2" to="gal[US]/h2"/>
+				<entry from="galUS/kgalUS" to="0.001 gal[US]/gal[US]"/>
+				<entry from="galUS/lbm" to="gal[US]/lbm"/>
+				<entry from="galUS/mi" to="gal[US]/mi"/>
+				<entry from="galUS/min" to="gal[US]/min"/>
+				<entry from="galUS/min.ft" to="gal[US]/(min.ft)"/>
+				<entry from="galUS/min.ft2" to="gal[US]/(min.ft2)"/>
+				<entry from="galUS/min2" to="gal[US]/min2"/>
+				<entry from="galUS/sack94" to="gal[US]/sack[94lbm]"/>
+				<entry from="galUS/tonUK" to="gal[US]/ton[UK]"/>
+				<entry from="galUS/tonUS" to="gal[US]/ton[US]"/>
+				<entry from="gr" to="gon"/>
+				<entry from="grain/100ft3" to="0.01 grain/ft3"/>
+				<entry from="grain/ft3(100)" to="0.01 grain/ft3"/>
+				<entry from="grain/galUS" to="grain/gal[US]"/>
+				<entry from="h/kft" to="0.001 h/ft"/>
+				<entry from="hhp" to="hp[hyd]"/>
+				<entry from="hhp/in2" to="hp[hyd]/in2"/>
+				<entry from="hp.hr" to="hp.h"/>
+				<entry from="hp.hr/bbl" to="hp.h/bbl"/>
+				<entry from="hp.hr/lbm" to="hp.h/lbm"/>
+				<entry from="in/10" to="0.1 in"/>
+				<entry from="in/16" to="1/16 in"/>
+				<entry from="in/32" to="1/32 in"/>
+				<entry from="in/64" to="1/64 in"/>
+				<entry from="in/in.degF" to="in/(in.deltaF)"/>
+				<entry from="inH2O(39.2F)" to="inH2O[39degF]"/>
+				<entry from="inH2O(60F)" to="inH2O[60degF]"/>
+				<entry from="inHg(32F)" to="inHg[32degF]"/>
+				<entry from="inHg(60F)" to="inHg[60degF]"/>
+				<entry from="inUS" to="in[US]"/>
+				<entry from="kEuc/s" to="1/ms"/>
+				<entry from="kJ.m/h.m2.K" to="kJ.m/(h.m2.deltaK)"/>
+				<entry from="kJ/h.m2.K" to="kJ/(h.m2.deltaK)"/>
+				<entry from="kJ/kg.K" to="kJ/(kg.deltaK)"/>
+				<entry from="kJ/kmol.K" to="kJ/(kmol.deltaK)"/>
+				<entry from="kJ/mol(kg)" to="kJ/kmol"/>
+				<entry from="kJ/mol(kg).K" to="kJ/(kmol.deltaK)"/>
+				<entry from="kPa/100m" to="kPa/hm"/>
+				<entry from="kPa2/kcP" to="0.001 kPa2/cP"/>
+				<entry from="kW.h/kg.degC" to="kW.h/(kg.deltaC)"/>
+				<entry from="kW/m2.K" to="kW/(m2.deltaK)"/>
+				<entry from="kW/m3.K" to="kW/(m3.deltaK)"/>
+				<entry from="kbbl/d" to="1000 bbl/d"/>
+				<entry from="kbyte" to="Kibyte"/>
+				<entry from="kcal" to="kcal[th]"/>
+				<entry from="kcal.m/cm2" to="kcal[th].m/cm2"/>
+				<entry from="kcal/cm3" to="kcal[th]/cm3"/>
+				<entry from="kcal/g" to="kcal[th]/g"/>
+				<entry from="kcal/h" to="kcal[th]/h"/>
+				<entry from="kcal/h.m.degC" to="kcal[th]/(h.m.deltaC)"/>
+				<entry from="kcal/h.m2.degC" to="kcal[th]/(h.m2.deltaC)"/>
+				<entry from="kcal/kg" to="kcal[th]/kg"/>
+				<entry from="kcal/kg.degC" to="kcal[th]/(kg.deltaC)"/>
+				<entry from="kcal/m3" to="kcal[th]/m3"/>
+				<entry from="kcal/mol" to="kcal[th]/mol"/>
+				<entry from="kcal/mol(g)" to="kcal[th]/mol"/>
+				<entry from="kft.lbf" to="1000 lbf.ft"/>
+				<entry from="kft/h" to="1000 ft/h"/>
+				<entry from="kft/s" to="1000 ft/s"/>
+				<entry from="kg/kW.h" to="kg/(kW.h)"/>
+				<entry from="kg/m.s" to="kg/(m.s)"/>
+				<entry from="kg/m2.s" to="kg/(m2.s)"/>
+				<entry from="kg/sack94" to="kg/sack[94lbm]"/>
+				<entry from="ksm3" to="1000 m3"/>
+				<entry from="ksm3/d" to="1000 m3/d"/>
+				<entry from="ksm3/sm3" to="1000 m3/m3"/>
+				<entry from="lbf/100ft" to="0.01 lbf/ft"/>
+				<entry from="lbf/100ft2" to="0.01 lbf/ft2"/>
+				<entry from="lbf/30m" to="1/30 lbf/m"/>
+				<entry from="lbf/ft2(100)" to="0.01 lbf/ft2"/>
+				<entry from="lbf/galUS" to="lbf/gal[US]"/>
+				<entry from="lbf/in2" to="psi"/>
+				<entry from="lbm(million)/yr" to="1E6 lbm/a"/>
+				<entry from="lbm/1000galUK" to="0.001 lbm/gal[UK]"/>
+				<entry from="lbm/1000galUS" to="0.001 lbm/gal[US]"/>
+				<entry from="lbm/100ft2" to="0.01 lbm/ft2"/>
+				<entry from="lbm/10bbl" to="0.1 lbm/bbl"/>
+				<entry from="lbm/Mbbl" to="0.001 lbm/bbl"/>
+				<entry from="lbm/ft.h" to="lbm/(ft.h)"/>
+				<entry from="lbm/ft.s" to="lbm/(ft.s)"/>
+				<entry from="lbm/galUK" to="lbm/gal[UK]"/>
+				<entry from="lbm/galUK(1000)" to="0.001 lbm/gal[UK]"/>
+				<entry from="lbm/galUK.ft" to="lbm/(gal[UK].ft)"/>
+				<entry from="lbm/galUS" to="lbm/gal[US]"/>
+				<entry from="lbm/galUS(1000)" to="0.001 lbm/gal[US]"/>
+				<entry from="lbm/galUS.ft" to="lbm/(gal[US].ft)"/>
+				<entry from="lbm/h.ft" to="lbm/(ft.h)"/>
+				<entry from="lbm/h.ft2" to="lbm/(ft2.h)"/>
+				<entry from="lbm/hp.h" to="lbm/(hp.h)"/>
+				<entry from="lbm/s.ft" to="lbm/(ft.s)"/>
+				<entry from="lbm/s.ft2" to="lbm/(ft2.s)"/>
+				<entry from="lbmole" to="lbmol"/>
+				<entry from="lbmole/ft3" to="lbmol/ft3"/>
+				<entry from="lbmole/galUK" to="lbmol/gal[UK]"/>
+				<entry from="lbmole/galUS" to="lbmol/gal[US]"/>
+				<entry from="lbmole/h" to="lbmol/h"/>
+				<entry from="lbmole/h.ft2" to="lbmol/(h.ft2)"/>
+				<entry from="lbmole/s" to="lbmol/s"/>
+				<entry from="lbmole/s.ft2" to="lbmol/(s.ft2)"/>
+				<entry from="lkBnA" to="link[BnA]"/>
+				<entry from="lkBnB" to="link[BnB]"/>
+				<entry from="lkCla" to="link[Cla]"/>
+				<entry from="lkSe" to="link[Se]"/>
+				<entry from="lkUS" to="link[US]"/>
+				<entry from="m/30m" to="1/30 m/m"/>
+				<entry from="m/K" to="m/deltaK"/>
+				<entry from="m/m.K" to="m/(m.deltaK)"/>
+				<entry from="m2/Pa.s" to="m2/(Pa.s)"/>
+				<entry from="m2/d.kPa" to="m2/(kPa.d)"/>
+				<entry from="m3/Pa.s" to="m3/(Pa.s)"/>
+				<entry from="m3/Pa/s" to="m3/(Pa.s)"/>
+				<entry from="m3/bar.d" to="m3/(bar.d)"/>
+				<entry from="m3/bar.h" to="m3/(bar.h)"/>
+				<entry from="m3/bar.min" to="m3/(bar.min)"/>
+				<entry from="m3/d.kPa" to="m3/(kPa.d)"/>
+				<entry from="m3/d.m" to="m3/(d.m)"/>
+				<entry from="m3/h.m" to="m3/(h.m)"/>
+				<entry from="m3/ha.m" to="m3/(ha.m)"/>
+				<entry from="m3/kPa.d" to="m3/(kPa.d)"/>
+				<entry from="m3/kPa.h" to="m3/(kPa.h)"/>
+				<entry from="m3/kW.h" to="m3/(kW.h)"/>
+				<entry from="m3/mol(kg)" to="m3/kmol"/>
+				<entry from="m3/psi.d" to="m3/(psi.d)"/>
+				<entry from="m3/s.ft" to="m3/(s.ft)"/>
+				<entry from="m3/s.m" to="m3/(s.m)"/>
+				<entry from="m3/s.m2" to="m3/(s.m2)"/>
+				<entry from="m3/scm(0C)" to="m3/m3"/>
+				<entry from="m3/scm(15C)" to="m3/m3"/>
+				<entry from="m3/tonUK" to="m3/ton[UK]"/>
+				<entry from="m3/tonUS" to="m3/ton[US]"/>
+				<entry from="mD.ft2/lbf.s" to="mD.ft2/(lbf.s)"/>
+				<entry from="mD.in2/lbf.s" to="mD.in2/(lbf.s)"/>
+				<entry from="mD/Pa.s" to="mD/(Pa.s)"/>
+				<entry from="mGer" to="m[Ger]"/>
+				<entry from="mK/m" to="deltaK/km"/>
+				<entry from="mL/galUK" to="mL/gal[UK]"/>
+				<entry from="mL/galUS" to="mL/gal[US]"/>
+				<entry from="mcurie" to="mCi"/>
+				<entry from="mg/galUS" to="mg/gal[US]"/>
+				<entry from="mho" to="S"/>
+				<entry from="mho/m" to="S/m"/>
+				<entry from="mi/galUK" to="mi/gal[UK]"/>
+				<entry from="mi/galUS" to="mi/gal[US]"/>
+				<entry from="miUS" to="mi[US]"/>
+				<entry from="miUS2" to="mi[US]2"/>
+				<entry from="mil/yr" to="mil/a"/>
+				<entry from="mm/mm.K" to="mm/(mm.deltaK)"/>
+				<entry from="mmHg(0C)" to="mmHg[0degC]"/>
+				<entry from="mmho/m" to="mS/m"/>
+				<entry from="mol(g)" to="mol"/>
+				<entry from="mol(kg)" to="kmol"/>
+				<entry from="mol(kg)/h" to="kmol/h"/>
+				<entry from="mol(kg)/m3" to="kmol/m3"/>
+				<entry from="mol(kg)/s" to="kmol/s"/>
+				<entry from="mol(lbm)" to="lbmol"/>
+				<entry from="mol(lbm)/ft3" to="lbmol/ft3"/>
+				<entry from="mol(lbm)/galUK" to="lbmol/gal[UK]"/>
+				<entry from="mol(lbm)/galUS" to="lbmol/gal[US]"/>
+				<entry from="mol(lbm)/h" to="lbmol/h"/>
+				<entry from="mol(lbm)/h.ft2" to="lbmol/(h.ft2)"/>
+				<entry from="mol(lbm)/s" to="lbmol/s"/>
+				<entry from="mol(lbm)/s.ft2" to="lbmol/(s.ft2)"/>
+				<entry from="mol/m2.s" to="mol/(s.m2)"/>
+				<entry from="ms/2" to="1/2 ms"/>
+				<entry from="mseca" to="0.001 seca"/>
+				<entry from="nautmi" to="mi[naut]"/>
+				<entry from="ncurie" to="nCi"/>
+				<entry from="oz(av)" to="ozm"/>
+				<entry from="oz(troy)" to="ozm[troy]"/>
+				<entry from="pcurie" to="pCi"/>
+				<entry from="permil" to="ppk"/>
+				<entry from="ppm/degC" to="ppm[vol]/deltaC"/>
+				<entry from="ppm/degF" to="ppm[vol]/deltaF"/>
+				<entry from="psf" to="lbf/ft2"/>
+				<entry from="psi/100ft" to="0.01 psi/ft"/>
+				<entry from="psi/ft(100)" to="0.01 psi/ft"/>
+				<entry from="psi/kft" to="0.001 psi/ft"/>
+				<entry from="psi2.d/cP.ft3" to="psi2.d/(cP.ft3)"/>
+				<entry from="psi2.d/cp.ft3" to="psi2.d/(cP.ft3)"/>
+				<entry from="psia" to="psi"/>
+				<entry from="psig" to="psi"/>
+				<entry from="ptUK" to="pt[UK]"/>
+				<entry from="ptUK/Mbbl" to="0.001 pt[UK]/bbl"/>
+				<entry from="ptUK/hp.hr" to="pt[UK]/(hp.h)"/>
+				<entry from="ptUS" to="pt[US]"/>
+				<entry from="ptUS/10bbl" to="0.1 pt[US]/bbl"/>
+				<entry from="qtUK" to="qt[UK]"/>
+				<entry from="qtUS" to="qt[US]"/>
+				<entry from="quad/yr" to="quad/a"/>
+				<entry from="rev/min" to="rpm"/>
+				<entry from="s/qtUK" to="s/qt[UK]"/>
+				<entry from="s/qtUS" to="s/qt[US]"/>
+				<entry from="sack94" to="sack[94lbm]"/>
+				<entry from="scf(60F)" to="ft3"/>
+				<entry from="scf(60F)/bbl" to="ft3/bbl"/>
+				<entry from="scf(60F)/d" to="ft3/d"/>
+				<entry from="scf(60F)/ft2" to="ft3/ft2"/>
+				<entry from="scf(60F)/ft3" to="ft3/ft3"/>
+				<entry from="scm(0C)" to="m3"/>
+				<entry from="scm(0C)/m2" to="m3/m2"/>
+				<entry from="scm(0C)/m3" to="m3/m3"/>
+				<entry from="scm(15C)" to="m3"/>
+				<entry from="scm(15C)/d" to="m3/d"/>
+				<entry from="scm(15C)/m2" to="m3/m2"/>
+				<entry from="scm(15C)/m3" to="m3/m3"/>
+				<entry from="scm(15C)/s" to="m3/s"/>
+				<entry from="scm15/stb60" to="m3/bbl"/>
+				<entry from="sigma" to="cu"/>
+				<entry from="sm3/ksm3" to="dm3/m3"/>
+				<entry from="sm3/sm3" to="m3/m3"/>
+				<entry from="sq ft" to="ft2"/>
+				<entry from="sq in" to="in2"/>
+				<entry from="sq mi" to="mi2"/>
+				<entry from="sq yd" to="yd2"/>
+				<entry from="stb(60F)" to="bbl"/>
+				<entry from="stb(60F)/acre" to="bbl/acre"/>
+				<entry from="stb(60F)/bbl" to="bbl/bbl"/>
+				<entry from="stb(60F)/d" to="bbl/d"/>
+				<entry from="stb60/MMscf60" to="1E-6 bbl/ft3"/>
+				<entry from="stb60/MMscm15" to="1E-6 bbl/m3"/>
+				<entry from="stb60/Mscf60" to="0.001 bbl/ft3"/>
+				<entry from="stb60/Mscm15" to="0.001 bbl/m3"/>
+				<entry from="stb60/scm15" to="bbl/m3"/>
+				<entry from="talbot" to="lm.s"/>
+				<entry from="tcf" to="1E12 ft3"/>
+				<entry from="therm" to="therm[UK]"/>
+				<entry from="ton of refrig" to="tonRefrig"/>
+				<entry from="tonUK" to="ton[UK]"/>
+				<entry from="tonUK/a" to="ton[UK]/a"/>
+				<entry from="tonUK/d" to="ton[UK]/d"/>
+				<entry from="tonUK/h" to="ton[UK]/h"/>
+				<entry from="tonUK/min" to="ton[UK]/min"/>
+				<entry from="tonUS" to="ton[US]"/>
+				<entry from="tonUS/a" to="ton[US]/a"/>
+				<entry from="tonUS/d" to="ton[US]/d"/>
+				<entry from="tonUS/ft2" to="ton[US]/ft2"/>
+				<entry from="tonUS/h" to="ton[US]/h"/>
+				<entry from="tonUS/min" to="ton[US]/min"/>
+				<entry from="tonfUK" to="tonf[UK]"/>
+				<entry from="tonfUK.ft2" to="tonf[UK].ft2"/>
+				<entry from="tonfUK/ft" to="tonf[UK]/ft"/>
+				<entry from="tonfUK/ft2" to="tonf[UK]/ft2"/>
+				<entry from="tonfUS" to="tonf[US]"/>
+				<entry from="tonfUS.ft" to="tonf[US].ft"/>
+				<entry from="tonfUS.ft2" to="tonf[US].ft2"/>
+				<entry from="tonfUS.mi" to="tonf[US].mi"/>
+				<entry from="tonfUS.mi/bbl" to="tonf[US].mi/bbl"/>
+				<entry from="tonfUS.mi/ft" to="tonf[US].mi/ft"/>
+				<entry from="tonfUS/ft" to="tonf[US]/ft"/>
+				<entry from="tonfUS/ft2" to="tonf[US]/ft2"/>
+				<entry from="tonfUS/in2" to="tonf[US]/in2"/>
+				<entry from="ucal/s.cm2" to="ucal[th]/(s.cm2)"/>
+				<entry from="ucurie" to="uCi"/>
+				<entry from="umHg(0C)" to="umHg[0degC]"/>
+				<entry from="volpercent" to="%[vol]"/>
+				<entry from="volppm" to="ppm[vol]"/>
+				<entry from="wtpercent" to="%[mass]"/>
+				<entry from="wtppm" to="ppm[mass]"/>
+				<entry from="ydBnA" to="yd[BnA]"/>
+				<entry from="ydBnB" to="yd[BnB]"/>
+				<entry from="ydCla" to="yd[Cla]"/>
+				<entry from="ydIm" to="yd[Cla]"/>
+				<entry from="ydInd" to="yd[Ind]"/>
+				<entry from="ydInd(37)" to="yd[Ind37]"/>
+				<entry from="ydInd(62)" to="yd[Ind62]"/>
+				<entry from="ydInd(75)" to="yd[Ind75]"/>
+				<entry from="ydSe" to="yd[Se]"/>
+				<entry from="yr(100k)" to="100 ka[t]"/>
+							</valuemapTable>
+							<input name="input" type="string"/>
+							<result name="result" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+			</children>
+		</structure>
+		<connections>
+			<edge from="4" to="1"/>
+			<edge from="2" to="3"/>
+		</connections>
+	</component>
+</mapping>

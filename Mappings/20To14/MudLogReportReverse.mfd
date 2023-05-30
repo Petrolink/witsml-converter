@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="131" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2237"/>
+					</targets>
+					<view ltx="631" lty="129" rbx="677" rby="146"/>
+					<data>
+						<constant value="36" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="130" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2240"/>
+						<datapoint pos="1" key="2241"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2242"/>
+					</targets>
+					<view ltx="776" lty="80" rbx="832" rby="134"/>
+				</component>
+				<component name="logical-and" library="core" uid="133" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2246"/>
+						<datapoint pos="1" key="2247"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2248"/>
+					</targets>
+					<view ltx="815" lty="152" rbx="900" rby="208"/>
+				</component>
+				<component name="string-length" library="core" uid="5" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2238"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2239"/>
+					</targets>
+					<view ltx="631" lty="80" rbx="726" rby="118"/>
+				</component>
+				<component name="constant" library="core" uid="126" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2236"/>
+					</targets>
+					<view ltx="608" lty="266" rbx="773" rby="283"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="138" kind="19" visible="0" blackbox="0">
+					<view ltx="583" lty="446" rbx="713" rby="480"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="2249" componentid="179"/>
+							<entry name="lastNode" inpkey="2250" componentid="180"/>
+						</root>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="2251" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="134" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2252"/>
+						<datapoint pos="1" key="2253"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2254"/>
+					</targets>
+					<view ltx="846" lty="234" rbx="950" rby="307"/>
+				</component>
+				<component name="select_exists" library="user" uid="136" kind="19" visible="0" blackbox="0">
+					<view ltx="583" lty="391" rbx="713" rby="425"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="2255" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="2256" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="obj_mudLog" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1171" lty="15" rbx="1455" rby="858"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="mudLogs" ns="1" expanded="1">
+										<entry name="mudLog" ns="1" expanded="1">
+											<entry name="uid" type="attribute" inpkey="2006"/>
+											<entry name="nameWellbore" ns="1" inpkey="2007"/>
+											<entry name="name" ns="1" inpkey="2008"/>
+											<entry name="mudLogCompany" ns="1" inpkey="2009"/>
+											<entry name="mudLogEngineers" ns="1" inpkey="2010"/>
+											<entry name="startMd" ns="1" inpkey="2224">
+												<entry name="uom" type="attribute" inpkey="2225"/>
+											</entry>
+											<entry name="endMd" ns="1" inpkey="2226">
+												<entry name="uom" type="attribute" inpkey="2227"/>
+											</entry>
+											<entry name="parameter" ns="1" inpkey="2011">
+												<entry name="uid" type="attribute" inpkey="2012"/>
+												<entry name="mdTop" ns="1" inpkey="2013" expanded="1">
+													<entry name="uom" type="attribute" inpkey="2014"/>
+												</entry>
+												<entry name="mdBottom" ns="1" inpkey="2015" expanded="1">
+													<entry name="uom" type="attribute" inpkey="2016"/>
+												</entry>
+												<entry name="force" ns="1" inpkey="2259" expanded="1"/>
+												<entry name="text" ns="1" inpkey="2017"/>
+												<entry name="commonTime" ns="1" expanded="1">
+													<entry name="dTimCreation" ns="1" inpkey="2018"/>
+												</entry>
+											</entry>
+											<entry name="geologyInterval" ns="1" inpkey="2019">
+												<entry name="uid" type="attribute" inpkey="2020"/>
+												<entry name="mdTop" ns="1" inpkey="2021">
+													<entry name="uom" type="attribute" inpkey="2022"/>
+												</entry>
+												<entry name="mdBottom" ns="1" inpkey="2023">
+													<entry name="uom" type="attribute" inpkey="2024"/>
+												</entry>
+												<entry name="ropAv" ns="1" inpkey="2025"/>
+												<entry name="wobAv" ns="1" inpkey="2026"/>
+												<entry name="tqAv" ns="1" inpkey="2027"/>
+												<entry name="currentAv" ns="1" inpkey="2028"/>
+												<entry name="rpmAv" ns="1" inpkey="2029"/>
+												<entry name="wtMudAv" ns="1" inpkey="2030"/>
+												<entry name="ecdTdAv" ns="1" inpkey="2031"/>
+												<entry name="dxcAv" ns="1" inpkey="2032"/>
+												<entry name="lithology" ns="1">
+													<entry name="lithPc" ns="1" expanded="1"/>
+													<entry name="qualifier" ns="1">
+														<entry name="mdTop" ns="1" expanded="1"/>
+														<entry name="mdBottom" ns="1" expanded="1"/>
+														<entry name="abundance" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+												<entry name="chromatograph" ns="1" inpkey="2034">
+													<entry name="eTimChromCycle" ns="1" inpkey="2035"/>
+													<entry name="methAv" ns="1" inpkey="2036"/>
+													<entry name="methMn" ns="1" inpkey="2037"/>
+													<entry name="methMx" ns="1" inpkey="2038"/>
+													<entry name="ethAv" ns="1" inpkey="2039"/>
+													<entry name="ethMn" ns="1" inpkey="2040"/>
+													<entry name="ethMx" ns="1" inpkey="2041"/>
+													<entry name="propAv" ns="1" inpkey="2042"/>
+													<entry name="propMn" ns="1" inpkey="2043"/>
+													<entry name="propMx" ns="1" inpkey="2044"/>
+													<entry name="ibutAv" ns="1" inpkey="2045"/>
+													<entry name="ibutMn" ns="1" inpkey="2046"/>
+													<entry name="ibutMx" ns="1" inpkey="2047"/>
+													<entry name="nbutAv" ns="1" inpkey="2048"/>
+													<entry name="nbutMn" ns="1" inpkey="2049"/>
+													<entry name="nbutMx" ns="1" inpkey="2050"/>
+													<entry name="ipentAv" ns="1" inpkey="2051"/>
+													<entry name="ipentMn" ns="1" inpkey="2052"/>
+													<entry name="ipentMx" ns="1" inpkey="2053"/>
+													<entry name="npentAv" ns="1" inpkey="2054"/>
+													<entry name="npentMn" ns="1" inpkey="2055"/>
+													<entry name="npentMx" ns="1" inpkey="2056"/>
+													<entry name="epentAv" ns="1" inpkey="2057"/>
+													<entry name="epentMn" ns="1" inpkey="2058"/>
+													<entry name="epentMx" ns="1" inpkey="2059"/>
+													<entry name="ihexAv" ns="1" inpkey="2060"/>
+													<entry name="ihexMn" ns="1" inpkey="2061"/>
+													<entry name="ihexMx" ns="1" inpkey="2062"/>
+													<entry name="nhexAv" ns="1" inpkey="2063"/>
+													<entry name="nhexMn" ns="1" inpkey="2064"/>
+													<entry name="nhexMx" ns="1" inpkey="2065"/>
+													<entry name="co2Av" ns="1" inpkey="2066"/>
+													<entry name="co2Mn" ns="1" inpkey="2067"/>
+													<entry name="co2Mx" ns="1" inpkey="2068"/>
+													<entry name="h2sAv" ns="1" inpkey="2069"/>
+													<entry name="h2sMn" ns="1" inpkey="2070"/>
+													<entry name="h2sMx" ns="1" inpkey="2071"/>
+													<entry name="acetylene" ns="1" inpkey="2072"/>
+												</entry>
+												<entry name="mudGas" ns="1" inpkey="2073" expanded="1">
+													<entry name="gasAv" ns="1" inpkey="2074" expanded="1"/>
+													<entry name="gasPeak" ns="1" expanded="1"/>
+													<entry name="gasPeakType" ns="1" inpkey="2076"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1">
+												<entry name="extensionNameValue" ns="1" expanded="1"/>
+											</entry>
+											<entry name="customData" ns="1" inpkey="2077" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_mudLog.xsd" instanceroot="{http://www.witsml.org/schemas/1series}mudLogs"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="MudLogReport" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view lty="-17" rbx="406" rby="733"/>
+					<data>
+						<root scrollposition="572">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="MudLogReport" ns="1" expanded="1">
+										<entry name="Aliases" expanded="1">
+											<entry name="Identifier" outkey="2079"/>
+										</entry>
+										<entry name="Citation" expanded="1">
+											<entry name="Title" outkey="2080"/>
+										</entry>
+										<entry name="CustomData" outkey="2081"/>
+										<entry name="MudLogCompany" ns="1" outkey="2082"/>
+										<entry name="MudLogEngineers" ns="1" outkey="2083"/>
+										<entry name="ReportMdInterval" ns="1" expanded="1">
+											<entry name="MdTop" outkey="2228" expanded="1">
+												<entry name="uom" ns="2" type="attribute" outkey="2229"/>
+											</entry>
+											<entry name="MdBase" outkey="2230" expanded="1">
+												<entry name="uom" ns="2" type="attribute" outkey="2231"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="1" expanded="1">
+											<entry name="Title" outkey="2084"/>
+										</entry>
+										<entry name="MudlogIntervals" ns="1" outkey="2085" expanded="1">
+											<entry name="uid" ns="2" type="attribute" outkey="2086"/>
+											<entry name="MdInterval" ns="1" expanded="1">
+												<entry name="MdTop" outkey="2087" expanded="1">
+													<entry name="uom" ns="2" type="attribute" outkey="2088"/>
+												</entry>
+												<entry name="MdBase" outkey="2089" expanded="1">
+													<entry name="uom" ns="2" type="attribute" outkey="2090"/>
+												</entry>
+											</entry>
+											<entry name="CuttingsGeologyInterval" ns="1" expanded="1">
+												<entry name="Uuid" outkey="2257"/>
+											</entry>
+											<entry name="Chromatograph" ns="1" outkey="2092" expanded="1">
+												<entry name="ETimChromCycle" ns="1" outkey="2093"/>
+												<entry name="MethAv" ns="1" outkey="2094"/>
+												<entry name="MethMn" ns="1" outkey="2095"/>
+												<entry name="MethMx" ns="1" outkey="2096"/>
+												<entry name="EthAv" ns="1" outkey="2097"/>
+												<entry name="EthMn" ns="1" outkey="2098"/>
+												<entry name="EthMx" ns="1" outkey="2099"/>
+												<entry name="PropAv" ns="1" outkey="2100"/>
+												<entry name="PropMn" ns="1" outkey="2101"/>
+												<entry name="PropMx" ns="1" outkey="2102"/>
+												<entry name="IbutAv" ns="1" outkey="2103"/>
+												<entry name="IbutMn" ns="1" outkey="2104"/>
+												<entry name="IbutMx" ns="1" outkey="2105"/>
+												<entry name="NbutAv" ns="1" outkey="2106"/>
+												<entry name="NbutMn" ns="1" outkey="2107"/>
+												<entry name="NbutMx" ns="1" outkey="2108"/>
+												<entry name="IpentAv" ns="1" outkey="2109"/>
+												<entry name="IpentMn" ns="1" outkey="2110"/>
+												<entry name="IpentMx" ns="1" outkey="2111"/>
+												<entry name="NpentAv" ns="1" outkey="2112"/>
+												<entry name="NpentMn" ns="1" outkey="2113"/>
+												<entry name="NpentMx" ns="1" outkey="2114"/>
+												<entry name="EpentAv" ns="1" outkey="2115"/>
+												<entry name="EpentMn" ns="1" outkey="2116"/>
+												<entry name="EpentMx" ns="1" outkey="2117"/>
+												<entry name="IhexAv" ns="1" outkey="2118"/>
+												<entry name="IhexMn" ns="1" outkey="2119"/>
+												<entry name="IhexMx" ns="1" outkey="2120"/>
+												<entry name="NhexAv" ns="1" outkey="2121"/>
+												<entry name="NhexMn" ns="1" outkey="2122"/>
+												<entry name="NhexMx" ns="1" outkey="2123"/>
+												<entry name="Co2Av" ns="1" outkey="2124"/>
+												<entry name="Co2Mn" ns="1" outkey="2125"/>
+												<entry name="Co2Mx" ns="1" outkey="2126"/>
+												<entry name="H2sAv" ns="1" outkey="2127"/>
+												<entry name="H2sMn" ns="1" outkey="2128"/>
+												<entry name="H2sMx" ns="1" outkey="2129"/>
+												<entry name="Acetylene" ns="1" outkey="2130"/>
+											</entry>
+											<entry name="DrillingParameters" ns="1" expanded="1">
+												<entry name="Rop" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2131" expanded="1"/>
+												</entry>
+												<entry name="AverageWeightOnBit" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2132" expanded="1"/>
+												</entry>
+												<entry name="AverageTorque" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2133" expanded="1"/>
+												</entry>
+												<entry name="AverageTorqueCurrent" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2134" expanded="1"/>
+												</entry>
+												<entry name="AverageTurnRate" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2135"/>
+												</entry>
+												<entry name="AverageMudDensity" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2136"/>
+												</entry>
+												<entry name="AverageEcdAtTd" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2137" expanded="1"/>
+												</entry>
+												<entry name="AverageDrillingCoefficient" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2138" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="MudGas" ns="1" outkey="2139" expanded="1">
+												<entry name="GasInMud" ns="1" expanded="1">
+													<entry name="Average" ns="1" outkey="2140" expanded="1"/>
+												</entry>
+												<entry name="GasPeak" ns="1" expanded="1">
+													<entry name="PeakType" ns="1" outkey="2142"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="Parameter" ns="1" displayselectionmode="all"/>
+										<entry name="Parameter" ns="1" outkey="2143" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}MudLogForceParameter" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="uid" ns="2" type="attribute" outkey="2144"/>
+											<entry name="MdInterval" ns="1" expanded="1">
+												<entry name="MdTop" outkey="2145" expanded="1">
+													<entry name="uom" ns="2" type="attribute" outkey="2146"/>
+												</entry>
+												<entry name="MdBase" outkey="2147" expanded="1">
+													<entry name="uom" ns="2" type="attribute" outkey="2148"/>
+												</entry>
+											</entry>
+											<entry name="Citation" ns="1" expanded="1">
+												<entry name="Creation" outkey="2149"/>
+											</entry>
+											<entry name="Comments" ns="1" outkey="2150"/>
+											<entry name="Value" ns="1" outkey="2258" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\MudLogReport.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}MudLogReport" inputinstance="..\..\input\reverse\mudLog\mudLog_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="string_is_not_same" library="user" uid="128" kind="19" visible="0" blackbox="0">
+					<view ltx="649" lty="163" rbx="758" rby="197"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="2260" componentid="304"/>
+							<entry name="string2" inpkey="2261" componentid="305"/>
+						</root>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="2262" componentid="303"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="2025">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2026">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2027">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2028">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2029">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2030">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2031">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2035">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2036">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2037">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2038">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2039">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2040">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2041">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2042">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2043">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2044">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2045">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2046">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2047">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2048">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2049">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2050">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2051">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2052">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2053">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2054">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2055">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2056">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2057">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2058">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2059">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2060">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2061">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2062">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2063">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2064">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2065">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2066">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2067">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2068">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2069">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2070">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2071">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2072">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2074">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2077">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="2259">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="2079">
+						<edges>
+							<edge vertexkey="2006"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2084">
+						<edges>
+							<edge vertexkey="2007"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2080">
+						<edges>
+							<edge vertexkey="2008"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2082">
+						<edges>
+							<edge vertexkey="2009"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2083">
+						<edges>
+							<edge vertexkey="2010"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2143">
+						<edges>
+							<edge vertexkey="2011"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2144">
+						<edges>
+							<edge vertexkey="2012"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2145">
+						<edges>
+							<edge vertexkey="2013"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2146">
+						<edges>
+							<edge vertexkey="2014"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2147">
+						<edges>
+							<edge vertexkey="2015"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2148">
+						<edges>
+							<edge vertexkey="2016"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2150">
+						<edges>
+							<edge vertexkey="2017"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2149">
+						<edges>
+							<edge vertexkey="2018"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2085">
+						<edges>
+							<edge vertexkey="2019"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2251">
+						<edges>
+							<edge vertexkey="2020"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2087">
+						<edges>
+							<edge vertexkey="2021"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2088">
+						<edges>
+							<edge vertexkey="2022"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2089">
+						<edges>
+							<edge vertexkey="2023"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2090">
+						<edges>
+							<edge vertexkey="2024"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2131">
+						<edges>
+							<edge vertexkey="2025" edgekey="2025"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2132">
+						<edges>
+							<edge vertexkey="2026" edgekey="2026"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2133">
+						<edges>
+							<edge vertexkey="2027" edgekey="2027"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2134">
+						<edges>
+							<edge vertexkey="2028" edgekey="2028"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2135">
+						<edges>
+							<edge vertexkey="2029" edgekey="2029"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2136">
+						<edges>
+							<edge vertexkey="2030" edgekey="2030"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2137">
+						<edges>
+							<edge vertexkey="2031" edgekey="2031"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2138">
+						<edges>
+							<edge vertexkey="2032"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2092">
+						<edges>
+							<edge vertexkey="2034"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2093">
+						<edges>
+							<edge vertexkey="2035" edgekey="2035"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2094">
+						<edges>
+							<edge vertexkey="2036" edgekey="2036"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2095">
+						<edges>
+							<edge vertexkey="2037" edgekey="2037"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2096">
+						<edges>
+							<edge vertexkey="2038" edgekey="2038"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2097">
+						<edges>
+							<edge vertexkey="2039" edgekey="2039"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2098">
+						<edges>
+							<edge vertexkey="2040" edgekey="2040"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2099">
+						<edges>
+							<edge vertexkey="2041" edgekey="2041"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2100">
+						<edges>
+							<edge vertexkey="2042" edgekey="2042"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2101">
+						<edges>
+							<edge vertexkey="2043" edgekey="2043"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2102">
+						<edges>
+							<edge vertexkey="2044" edgekey="2044"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2103">
+						<edges>
+							<edge vertexkey="2045" edgekey="2045"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2104">
+						<edges>
+							<edge vertexkey="2046" edgekey="2046"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2105">
+						<edges>
+							<edge vertexkey="2047" edgekey="2047"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2106">
+						<edges>
+							<edge vertexkey="2048" edgekey="2048"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2107">
+						<edges>
+							<edge vertexkey="2049" edgekey="2049"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2108">
+						<edges>
+							<edge vertexkey="2050" edgekey="2050"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2109">
+						<edges>
+							<edge vertexkey="2051" edgekey="2051"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2110">
+						<edges>
+							<edge vertexkey="2052" edgekey="2052"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2111">
+						<edges>
+							<edge vertexkey="2053" edgekey="2053"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2112">
+						<edges>
+							<edge vertexkey="2054" edgekey="2054"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2113">
+						<edges>
+							<edge vertexkey="2055" edgekey="2055"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2114">
+						<edges>
+							<edge vertexkey="2056" edgekey="2056"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2115">
+						<edges>
+							<edge vertexkey="2057" edgekey="2057"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2116">
+						<edges>
+							<edge vertexkey="2058" edgekey="2058"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2117">
+						<edges>
+							<edge vertexkey="2059" edgekey="2059"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2118">
+						<edges>
+							<edge vertexkey="2060" edgekey="2060"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2119">
+						<edges>
+							<edge vertexkey="2061" edgekey="2061"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2120">
+						<edges>
+							<edge vertexkey="2062" edgekey="2062"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2121">
+						<edges>
+							<edge vertexkey="2063" edgekey="2063"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2122">
+						<edges>
+							<edge vertexkey="2064" edgekey="2064"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2123">
+						<edges>
+							<edge vertexkey="2065" edgekey="2065"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2124">
+						<edges>
+							<edge vertexkey="2066" edgekey="2066"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2125">
+						<edges>
+							<edge vertexkey="2067" edgekey="2067"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2126">
+						<edges>
+							<edge vertexkey="2068" edgekey="2068"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2127">
+						<edges>
+							<edge vertexkey="2069" edgekey="2069"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2128">
+						<edges>
+							<edge vertexkey="2070" edgekey="2070"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2129">
+						<edges>
+							<edge vertexkey="2071" edgekey="2071"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2130">
+						<edges>
+							<edge vertexkey="2072" edgekey="2072"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2139">
+						<edges>
+							<edge vertexkey="2073"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2140">
+						<edges>
+							<edge vertexkey="2074" edgekey="2074"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2142">
+						<edges>
+							<edge vertexkey="2076"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2081">
+						<edges>
+							<edge vertexkey="2077" edgekey="2077"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2228">
+						<edges>
+							<edge vertexkey="2224"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2229">
+						<edges>
+							<edge vertexkey="2225"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2230">
+						<edges>
+							<edge vertexkey="2226"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2231">
+						<edges>
+							<edge vertexkey="2227"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2257">
+						<edges>
+							<edge vertexkey="2238"/>
+							<edge vertexkey="2253"/>
+							<edge vertexkey="2260"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2239">
+						<edges>
+							<edge vertexkey="2240"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2237">
+						<edges>
+							<edge vertexkey="2241"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2242">
+						<edges>
+							<edge vertexkey="2246"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2262">
+						<edges>
+							<edge vertexkey="2247"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2086">
+						<edges>
+							<edge vertexkey="2249"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2256">
+						<edges>
+							<edge vertexkey="2250"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2248">
+						<edges>
+							<edge vertexkey="2252"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2254">
+						<edges>
+							<edge vertexkey="2255"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2258">
+						<edges>
+							<edge vertexkey="2259" edgekey="2259"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2236">
+						<edges>
+							<edge vertexkey="2261"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="first_item" library="user" uid="288" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="input" library="core" uid="290" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="135" lty="227" rbx="216" rby="265"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="292" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="351" lty="227" rbx="462" rby="281"/>
+				</component>
+				<component name="result" library="core" uid="289" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<view ltx="533" lty="243" rbx="590" rby="281"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="293" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="309" lty="327" rbx="347" rby="344"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="select_exists" library="user" uid="294" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="result" library="core" uid="178" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="800" rbx="857" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="182" kind="5">
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="445" lty="41" rbx="521" rby="79"/>
+				</component>
+				<component name="inputNode" library="core" uid="179" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="270" lty="75" rbx="383" rby="113"/>
+					<data>
+						<input datatype="anySimpleType"/>
+						<parameter usageKind="input" name="inputNode" optional="1"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="183" kind="4">
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="6"/>
+						<datapoint pos="2" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="560" lty="64" rbx="664" rby="137"/>
+				</component>
+				<component name="lastNode" library="core" uid="180" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="320" lty="183" rbx="423" rby="221"/>
+					<data>
+						<input datatype="anySimpleType"/>
+						<parameter usageKind="input" name="lastNode" optional="1"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="2"/>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_not_unknown" library="user" uid="295" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="result" library="core" uid="185" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="822" lty="76" rbx="879" rby="114"/>
+					<data>
+						<output datatype="boolean"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="189" kind="5">
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="456" lty="39" rbx="512" rby="93"/>
+				</component>
+				<component name="constant" library="core" uid="190" kind="2">
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="284" lty="25" rbx="376" rby="42"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="187" kind="4">
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint/>
+						<datapoint pos="2" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="587" lty="104" rbx="691" rby="177"/>
+				</component>
+				<component name="string" library="core" uid="186" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="284" lty="76" rbx="371" rby="114"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_not_same" library="user" uid="302" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="result" library="core" uid="303" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="704" lty="69" rbx="761" rby="107"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="string1" library="core" uid="304" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="240" lty="34" rbx="333" rby="72"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string1"/>
+					</data>
+				</component>
+				<component name="string2" library="core" uid="305" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="260" lty="184" rbx="353" rby="222"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string2"/>
+					</data>
+				</component>
+				<component name="not-equal" library="core" uid="311" kind="5">
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="467" lty="69" rbx="545" rby="123"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

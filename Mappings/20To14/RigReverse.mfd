@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="Rig" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="3" lty="-21" rbx="294" rby="1089"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Rig" ns="2" outkey="4732" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="5951"/>
+											<entry name="Identifier" ns="1" outkey="5952"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" outkey="5953"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="4748"/>
+										<entry name="Owner" ns="2" outkey="4751"/>
+										<entry name="TypeRig" ns="2" outkey="4753"/>
+										<entry name="Manufacturer" ns="2" outkey="4755"/>
+										<entry name="ClassRig" ns="2" outkey="4758"/>
+										<entry name="Approvals" ns="2" outkey="4760"/>
+										<entry name="Registration" ns="2" outkey="4762"/>
+										<entry name="TelNumber" ns="2" outkey="4764"/>
+										<entry name="FaxNumber" ns="2" outkey="4766"/>
+										<entry name="EmailAddress" ns="2" outkey="4768"/>
+										<entry name="NameContact" ns="2" outkey="4770"/>
+										<entry name="RatingDrillDepth" ns="2" outkey="4772"/>
+										<entry name="RatingWaterDepth" ns="2" outkey="4774"/>
+										<entry name="IsOffshore" ns="2" outkey="4776"/>
+										<entry name="TypeDerrick" ns="2" outkey="4778"/>
+										<entry name="RatingDerrick" ns="2" outkey="4780"/>
+										<entry name="HtDerrick" ns="2" outkey="4782"/>
+										<entry name="CapWindDerrick" ns="2" outkey="4784"/>
+										<entry name="NumCranes" ns="2" outkey="4786"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Rig.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Rig" inputinstance="..\..\input\reverse\rig\rig_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_rig" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="763" lty="-12" rbx="1067" rby="1089"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="rigs" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="5954"/>
+										<entry name="rig" ns="1" inpkey="5955" expanded="1">
+											<entry name="uid" type="attribute" inpkey="5956"/>
+											<entry name="name" ns="1" inpkey="5957"/>
+											<entry name="owner" ns="1" inpkey="5958"/>
+											<entry name="typeRig" ns="1" inpkey="5959"/>
+											<entry name="manufacturer" ns="1" inpkey="5960"/>
+											<entry name="classRig" ns="1" inpkey="5961"/>
+											<entry name="approvals" ns="1" inpkey="5962"/>
+											<entry name="registration" ns="1" inpkey="5963"/>
+											<entry name="telNumber" ns="1" inpkey="5964"/>
+											<entry name="faxNumber" ns="1" inpkey="5965"/>
+											<entry name="emailAddress" ns="1" inpkey="5966"/>
+											<entry name="nameContact" ns="1" inpkey="5967"/>
+											<entry name="ratingDrillDepth" ns="1" inpkey="5968" expanded="1"/>
+											<entry name="ratingWaterDepth" ns="1" inpkey="5969"/>
+											<entry name="isOffshore" ns="1" inpkey="5970"/>
+											<entry name="bop" ns="1">
+												<entry name="nameTag" ns="1" expanded="1">
+													<entry name="extensionNameValue" ns="1" expanded="1">
+														<entry name="value" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+												<entry name="sizeConnectionBop" ns="1" expanded="1"/>
+												<entry name="presBopRating" ns="1" expanded="1"/>
+												<entry name="sizeBopSys" ns="1" expanded="1"/>
+												<entry name="idBoosterLine" ns="1" expanded="1"/>
+												<entry name="odBoosterLine" ns="1" expanded="1"/>
+												<entry name="lenBoosterLine" ns="1" expanded="1"/>
+												<entry name="idSurfLine" ns="1" expanded="1"/>
+												<entry name="odSurfLine" ns="1" expanded="1"/>
+												<entry name="lenSurfLine" ns="1" expanded="1"/>
+												<entry name="capAccFluid" ns="1" expanded="1"/>
+												<entry name="volAccPreCharge" ns="1" expanded="1"/>
+											</entry>
+											<entry name="pump" ns="1">
+												<entry name="powHydMx" ns="1" expanded="1"/>
+											</entry>
+											<entry name="shaker" ns="1">
+												<entry name="capFlow" ns="1" expanded="1"/>
+											</entry>
+											<entry name="centrifuge" ns="1">
+												<entry name="capFlow" ns="1" expanded="1"/>
+											</entry>
+											<entry name="degasser" ns="1">
+												<entry name="capFlow" ns="1" expanded="1"/>
+												<entry name="capGasSep" ns="1" expanded="1"/>
+												<entry name="capBlowdown" ns="1" expanded="1"/>
+											</entry>
+											<entry name="typeDerrick" ns="1" inpkey="5971"/>
+											<entry name="ratingDerrick" ns="1" inpkey="5972"/>
+											<entry name="htDerrick" ns="1" inpkey="5973"/>
+											<entry name="capWindDerrick" ns="1" inpkey="5974"/>
+											<entry name="ratingHook" ns="1" expanded="1"/>
+											<entry name="ratingTqRotSys" ns="1" expanded="1"/>
+											<entry name="ratingRotSystem" ns="1" expanded="1"/>
+											<entry name="numCranes" ns="1" inpkey="5975"/>
+											<entry name="customData" ns="1" inpkey="5976"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_rig.xsd" instanceroot="{http://www.witsml.org/schemas/1series}rigs" outputinstance="..\..\output\reverse\rig\rig_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="5968">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="5969">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="5972">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="5973">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="5974">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="5976">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="5951">
+						<edges>
+							<edge vertexkey="5954"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4732">
+						<edges>
+							<edge vertexkey="5955"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5952">
+						<edges>
+							<edge vertexkey="5956"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5953">
+						<edges>
+							<edge vertexkey="5957"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4751">
+						<edges>
+							<edge vertexkey="5958"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4753">
+						<edges>
+							<edge vertexkey="5959"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4755">
+						<edges>
+							<edge vertexkey="5960"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4758">
+						<edges>
+							<edge vertexkey="5961"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4760">
+						<edges>
+							<edge vertexkey="5962"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4762">
+						<edges>
+							<edge vertexkey="5963"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4764">
+						<edges>
+							<edge vertexkey="5964"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4766">
+						<edges>
+							<edge vertexkey="5965"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4768">
+						<edges>
+							<edge vertexkey="5966"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4770">
+						<edges>
+							<edge vertexkey="5967"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4772">
+						<edges>
+							<edge vertexkey="5968" edgekey="5968"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4774">
+						<edges>
+							<edge vertexkey="5969" edgekey="5969"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4776">
+						<edges>
+							<edge vertexkey="5970"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4778">
+						<edges>
+							<edge vertexkey="5971"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4780">
+						<edges>
+							<edge vertexkey="5972" edgekey="5972"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4782">
+						<edges>
+							<edge vertexkey="5973" edgekey="5973"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4784">
+						<edges>
+							<edge vertexkey="5974" edgekey="5974"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4786">
+						<edges>
+							<edge vertexkey="5975"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4748">
+						<edges>
+							<edge vertexkey="5976" edgekey="5976"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

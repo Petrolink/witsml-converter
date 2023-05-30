@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="select_exists" library="user" uid="96" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="55" rbx="1392" rby="89"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="754" componentid="179"/>
+							<entry name="lastNode" inpkey="755" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="756" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="260" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="859"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="860"/>
+					</targets>
+					<view ltx="1437" lty="55" rbx="1538" rby="93"/>
+				</component>
+				<component name="select_exists" library="user" uid="94" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" rbx="1392" rby="34"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="752" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="753" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="120" kind="19" visible="0" blackbox="0">
+					<view ltx="702" lty="445" rbx="832" rby="479"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="791" componentid="179"/>
+							<entry name="lastNode" inpkey="792" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="793" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="142" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="848"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="849"/>
+					</targets>
+					<view ltx="717" lty="560" rbx="818" rby="598"/>
+				</component>
+				<component name="select_exists" library="user" uid="134" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="204" rbx="1392" rby="238"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="811" componentid="179"/>
+							<entry name="lastNode" inpkey="812" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="813" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="136" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="259" rbx="1392" rby="293"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="814" componentid="179"/>
+							<entry name="lastNode" inpkey="815" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="816" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="262" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="861"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="862"/>
+					</targets>
+					<view ltx="1437" lty="259" rbx="1538" rby="297"/>
+				</component>
+				<component name="select_exists" library="user" uid="100" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="405" rbx="1392" rby="439"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="759" componentid="179"/>
+							<entry name="lastNode" inpkey="760" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="761" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="132" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="149" rbx="1392" rby="183"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="809" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="810" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="98" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="350" rbx="1392" rby="384"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="757" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="758" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="138" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="527" rbx="1392" rby="561"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="846" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="847" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="140" kind="19" visible="0" blackbox="0">
+					<view ltx="1262" lty="582" rbx="1392" rby="616"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="843" componentid="179"/>
+							<entry name="lastNode" inpkey="844" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="845" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="264" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="863"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="864"/>
+					</targets>
+					<view ltx="1437" lty="582" rbx="1538" rby="620"/>
+				</component>
+				<component name="select_exists" library="user" uid="128" kind="19" visible="0" blackbox="0">
+					<view ltx="1293" lty="744" rbx="1423" rby="778"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="807" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="808" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="130" kind="19" visible="0" blackbox="0">
+					<view ltx="1293" lty="799" rbx="1423" rby="833"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="804" componentid="179"/>
+							<entry name="lastNode" inpkey="805" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="806" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="266" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="865"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="866"/>
+					</targets>
+					<view ltx="1466" lty="799" rbx="1567" rby="837"/>
+				</component>
+				<component name="select_exists" library="user" uid="124" kind="19" visible="0" blackbox="0">
+					<view ltx="1293" lty="1002" rbx="1423" rby="1036"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="798" componentid="179"/>
+							<entry name="lastNode" inpkey="799" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="800" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="126" kind="19" visible="0" blackbox="0">
+					<view ltx="1293" lty="1057" rbx="1423" rby="1091"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="801" componentid="179"/>
+							<entry name="lastNode" inpkey="802" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="803" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="269" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="867"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="868"/>
+					</targets>
+					<view ltx="1466" lty="1057" rbx="1567" rby="1095"/>
+				</component>
+				<component name="select_exists" library="user" uid="122" kind="19" visible="0" blackbox="0">
+					<view ltx="1293" lty="947" rbx="1423" rby="981"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="796" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="797" componentid="178"/>
+						</root>
+					</data>
+				</component>
+				<component name="obj_log" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="878" rbx="1213" rby="1090"/>
+					<data>
+						<root scrollposition="683">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="logs" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="684"/>
+										<entry name="log" ns="1" inpkey="685" expanded="1">
+											<entry name="nameWellbore" ns="1" inpkey="686"/>
+											<entry name="name" ns="1" inpkey="687"/>
+											<entry name="serviceCompany" ns="1" inpkey="688"/>
+											<entry name="runNumber" ns="1" inpkey="689"/>
+											<entry name="bhaRunNumber" ns="1" inpkey="690"/>
+											<entry name="pass" ns="1" inpkey="691"/>
+											<entry name="indexType" ns="1" inpkey="692"/>
+											<entry name="startIndex" ns="1" inpkey="693" expanded="1">
+												<entry name="uom" type="attribute" inpkey="766"/>
+											</entry>
+											<entry name="endIndex" ns="1" inpkey="694" expanded="1">
+												<entry name="uom" type="attribute" inpkey="883"/>
+											</entry>
+											<entry name="startDateTimeIndex" ns="1" inpkey="695"/>
+											<entry name="endDateTimeIndex" ns="1" inpkey="696"/>
+											<entry name="direction" ns="1" inpkey="697"/>
+											<entry name="logCurveInfo" ns="1" inpkey="698" expanded="1">
+												<entry name="uid" type="attribute" inpkey="699"/>
+												<entry name="mnemonic" ns="1" inpkey="700" expanded="1"/>
+												<entry name="unit" ns="1" inpkey="890"/>
+												<entry name="wellDatum" ns="1" inpkey="701"/>
+												<entry name="minIndex" ns="1" inpkey="702" expanded="1">
+													<entry name="uom" type="attribute" inpkey="885"/>
+												</entry>
+												<entry name="maxIndex" ns="1" inpkey="703" expanded="1">
+													<entry name="uom" type="attribute" inpkey="886"/>
+												</entry>
+												<entry name="minDateTimeIndex" ns="1" inpkey="704"/>
+												<entry name="maxDateTimeIndex" ns="1" inpkey="705"/>
+												<entry name="dataSource" ns="1" inpkey="706"/>
+												<entry name="typeLogData" ns="1" inpkey="767"/>
+											</entry>
+											<entry name="commonData" ns="1" expanded="1">
+												<entry name="dTimCreation" ns="1" inpkey="708"/>
+												<entry name="dTimLastChange" ns="1" inpkey="709"/>
+												<entry name="extensionNameValue" ns="1" inpkey="710" expanded="1">
+													<entry name="name" ns="1" inpkey="711"/>
+													<entry name="value" ns="1" inpkey="712"/>
+													<entry name="dTim" ns="1" inpkey="713"/>
+													<entry name="index" ns="1" inpkey="714"/>
+													<entry name="measureClass" ns="1" inpkey="715"/>
+													<entry name="description" ns="1" inpkey="716"/>
+												</entry>
+											</entry>
+											<entry name="customData" ns="1" inpkey="717"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_log.xsd" instanceroot="{http://www.witsml.org/schemas/1series}logs" sps="..\..\..\..\..\witsml_v1.4.1.1_data\xml_examples\stylesheets\all_object_utility_templates.xsl" outputinstance="..\output\reverse\log\log_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Log" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="646" rby="1090"/>
+					<data>
+						<root scrollposition="1479">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" ns="2" outkey="650" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="651"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="652"/>
+											<entry name="LastUpdate" ns="1" outkey="653"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="654" expanded="1"/>
+										<entry name="ExtensionNameValue" ns="1" outkey="655">
+											<entry name="Name" ns="1" outkey="656"/>
+											<entry name="Value" ns="1" outkey="657"/>
+											<entry name="MeasureClass" ns="1" outkey="658"/>
+											<entry name="DTim" ns="1" outkey="659"/>
+											<entry name="Index" ns="1" outkey="660"/>
+											<entry name="Description" ns="1" outkey="661"/>
+										</entry>
+										<entry name="TimeDepth" ns="2" outkey="662"/>
+										<entry name="RunNumber" ns="2" outkey="663"/>
+										<entry name="PassNumber" ns="2" outkey="664"/>
+										<entry name="StartIndex" ns="2" displayselectionmode="all"/>
+										<entry name="StartIndex" ns="2" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Depth" ns="2" outkey="665"/>
+										</entry>
+										<entry name="StartIndex" ns="2" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}PassIndexedDepth" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Pass" ns="2" outkey="817"/>
+											<entry name="Direction" ns="2" outkey="666"/>
+										</entry>
+										<entry name="StartIndex" ns="2" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Time" ns="2" outkey="667"/>
+										</entry>
+										<entry name="EndIndex" ns="2" displayselectionmode="all"/>
+										<entry name="EndIndex" ns="2" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Depth" ns="2" outkey="668"/>
+										</entry>
+										<entry name="EndIndex" ns="2">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="Time" ns="2" outkey="669"/>
+										</entry>
+										<entry name="LoggingCompanyName" ns="2" outkey="670"/>
+										<entry name="Wellbore" ns="2">
+											<entry name="Title" ns="1" outkey="671"/>
+										</entry>
+										<entry name="ChannelSet" ns="2" expanded="1">
+											<entry name="Citation" ns="1" expanded="1">
+												<entry name="Title" ns="1" outkey="818"/>
+												<entry name="Creation" ns="1" outkey="672"/>
+											</entry>
+											<entry name="Index" ns="2" expanded="1">
+												<entry name="IndexType" ns="2" outkey="819"/>
+												<entry name="Uom" ns="2" outkey="762"/>
+												<entry name="Direction" ns="2" outkey="763"/>
+												<entry name="Mnemonic" ns="2" outkey="820"/>
+												<entry name="DatumReference" ns="2" outkey="673"/>
+											</entry>
+											<entry name="Channel" ns="2" outkey="674" expanded="1">
+												<entry name="Aliases" ns="1">
+													<entry name="authority" type="attribute" outkey="675"/>
+												</entry>
+												<entry name="Citation" ns="1">
+													<entry name="Title" ns="1" outkey="676"/>
+													<entry name="Creation" ns="1" outkey="850"/>
+												</entry>
+												<entry name="Mnemonic" ns="2" outkey="764"/>
+												<entry name="DataType" ns="2" outkey="765"/>
+												<entry name="Uom" ns="2" outkey="887"/>
+												<entry name="Source" ns="2" outkey="677"/>
+												<entry name="RunNumber" ns="2" outkey="678"/>
+												<entry name="PassNumber" ns="2" outkey="821"/>
+												<entry name="StartIndex" ns="2" displayselectionmode="all"/>
+												<entry name="StartIndex" ns="2" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Depth" ns="2" outkey="679"/>
+												</entry>
+												<entry name="StartIndex" ns="2" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Time" ns="2" outkey="680"/>
+												</entry>
+												<entry name="EndIndex" ns="2" displayselectionmode="all"/>
+												<entry name="EndIndex" ns="2" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}DepthIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Depth" ns="2" outkey="681"/>
+												</entry>
+												<entry name="EndIndex" ns="2" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}TimeIndexValue" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+													<entry name="Time" ns="2" outkey="682"/>
+												</entry>
+												<entry name="LoggingCompanyName" ns="2" outkey="822"/>
+											</entry>
+											<entry name="Data" ns="2" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" inputinstance="..\..\input\reverse\log\log_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="118" kind="19" visible="0" blackbox="0">
+					<view ltx="702" lty="390" rbx="832" rby="424"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="794" componentid="179"/>
+							<entry name="lastNode" componentid="180"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="795" componentid="178"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="717">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="651">
+						<edges>
+							<edge vertexkey="684"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="650">
+						<edges>
+							<edge vertexkey="685"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="671">
+						<edges>
+							<edge vertexkey="686"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="866">
+						<edges>
+							<edge vertexkey="687"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="849">
+						<edges>
+							<edge vertexkey="688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="663">
+						<edges>
+							<edge vertexkey="689"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="678">
+						<edges>
+							<edge vertexkey="690"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="868">
+						<edges>
+							<edge vertexkey="691"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="862">
+						<edges>
+							<edge vertexkey="692"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="665">
+						<edges>
+							<edge vertexkey="693"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="668">
+						<edges>
+							<edge vertexkey="694"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="667">
+						<edges>
+							<edge vertexkey="695"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="669">
+						<edges>
+							<edge vertexkey="696"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="860">
+						<edges>
+							<edge vertexkey="697"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="674">
+						<edges>
+							<edge vertexkey="698"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="675">
+						<edges>
+							<edge vertexkey="699"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="761">
+						<edges>
+							<edge vertexkey="700"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="673">
+						<edges>
+							<edge vertexkey="701"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="679">
+						<edges>
+							<edge vertexkey="702"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="681">
+						<edges>
+							<edge vertexkey="703"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="680">
+						<edges>
+							<edge vertexkey="704"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="682">
+						<edges>
+							<edge vertexkey="705"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="677">
+						<edges>
+							<edge vertexkey="706"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="864">
+						<edges>
+							<edge vertexkey="708"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="653">
+						<edges>
+							<edge vertexkey="709"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="655">
+						<edges>
+							<edge vertexkey="710"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="656">
+						<edges>
+							<edge vertexkey="711"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="657">
+						<edges>
+							<edge vertexkey="712"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="659">
+						<edges>
+							<edge vertexkey="713"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="660">
+						<edges>
+							<edge vertexkey="714"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="658">
+						<edges>
+							<edge vertexkey="715"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="661">
+						<edges>
+							<edge vertexkey="716"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="654">
+						<edges>
+							<edge vertexkey="717" edgekey="717"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="666">
+						<edges>
+							<edge vertexkey="752"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="763">
+						<edges>
+							<edge vertexkey="754"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="753">
+						<edges>
+							<edge vertexkey="755"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="676">
+						<edges>
+							<edge vertexkey="757"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="764">
+						<edges>
+							<edge vertexkey="759"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="758">
+						<edges>
+							<edge vertexkey="760"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="762">
+						<edges>
+							<edge vertexkey="766"/>
+							<edge vertexkey="883"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="765">
+						<edges>
+							<edge vertexkey="767"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="670">
+						<edges>
+							<edge vertexkey="791"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="795">
+						<edges>
+							<edge vertexkey="792"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="822">
+						<edges>
+							<edge vertexkey="794"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="821">
+						<edges>
+							<edge vertexkey="796"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="817">
+						<edges>
+							<edge vertexkey="798"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="797">
+						<edges>
+							<edge vertexkey="799"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="664">
+						<edges>
+							<edge vertexkey="801"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="800">
+						<edges>
+							<edge vertexkey="802"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="652">
+						<edges>
+							<edge vertexkey="804"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="808">
+						<edges>
+							<edge vertexkey="805"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="818">
+						<edges>
+							<edge vertexkey="807"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="820">
+						<edges>
+							<edge vertexkey="809"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="819">
+						<edges>
+							<edge vertexkey="811"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="810">
+						<edges>
+							<edge vertexkey="812"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="662">
+						<edges>
+							<edge vertexkey="814"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="813">
+						<edges>
+							<edge vertexkey="815"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="672">
+						<edges>
+							<edge vertexkey="843"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="847">
+						<edges>
+							<edge vertexkey="844"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="850">
+						<edges>
+							<edge vertexkey="846"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="793">
+						<edges>
+							<edge vertexkey="848"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="756">
+						<edges>
+							<edge vertexkey="859"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="816">
+						<edges>
+							<edge vertexkey="861"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="845">
+						<edges>
+							<edge vertexkey="863"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="806">
+						<edges>
+							<edge vertexkey="865"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="803">
+						<edges>
+							<edge vertexkey="867"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="887">
+						<edges>
+							<edge vertexkey="885"/>
+							<edge vertexkey="886"/>
+							<edge vertexkey="890"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="select_exists" library="user" uid="270" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="result" library="core" uid="178" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="800" rbx="857" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="183" kind="4">
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="6"/>
+						<datapoint pos="2" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="560" lty="64" rbx="664" rby="137"/>
+				</component>
+				<component name="lastNode" library="core" uid="180" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="320" lty="183" rbx="423" rby="221"/>
+					<data>
+						<input datatype="anySimpleType"/>
+						<parameter usageKind="input" name="lastNode" optional="1"/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="182" kind="5">
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="445" lty="41" rbx="521" rby="79"/>
+				</component>
+				<component name="inputNode" library="core" uid="179" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="270" lty="75" rbx="383" rby="113"/>
+					<data>
+						<input datatype="anySimpleType"/>
+						<parameter usageKind="input" name="inputNode" optional="1"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="2"/>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_not_unknown" library="user" uid="271" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="result" library="core" uid="185" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="822" lty="76" rbx="879" rby="114"/>
+					<data>
+						<output datatype="boolean"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="189" kind="5">
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="456" lty="39" rbx="512" rby="93"/>
+				</component>
+				<component name="constant" library="core" uid="190" kind="2">
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="284" lty="25" rbx="376" rby="42"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="187" kind="4">
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint/>
+						<datapoint pos="2" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="587" lty="104" rbx="691" rby="177"/>
+				</component>
+				<component name="string" library="core" uid="186" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="284" lty="76" rbx="371" rby="114"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

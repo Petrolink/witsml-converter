@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="substring-before" library="core" uid="5" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="501"/>
+						<datapoint pos="1" key="502"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="499"/>
+					</targets>
+					<view ltx="632" lty="75" rbx="746" rby="129"/>
+				</component>
+				<component name="substring-after" library="core" uid="6" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="503"/>
+						<datapoint pos="1" key="500"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="504"/>
+					</targets>
+					<view ltx="632" lty="128" rbx="736" rby="182"/>
+				</component>
+				<component name="select_exists" library="user" uid="94" kind="19" visible="0" blackbox="0">
+					<view ltx="464" lty="423" rbx="594" rby="457"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="513" componentid="85"/>
+							<entry name="lastNode" componentid="89"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="514" componentid="84"/>
+						</root>
+					</data>
+				</component>
+				<component name="Risk" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="2" lty="-2" rbx="303" rby="554"/>
+					<data>
+						<root scrollposition="847">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Risk" ns="2" outkey="321" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="457"/>
+											<entry name="Identifier" ns="1" outkey="515"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="458"/>
+											<entry name="LastUpdate" ns="1" outkey="459"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="328"/>
+										<entry name="Type" ns="2" outkey="330"/>
+										<entry name="Category" ns="2" outkey="331"/>
+										<entry name="SubCategory" ns="2" outkey="332"/>
+										<entry name="ExtendCategory" ns="2" outkey="333"/>
+										<entry name="AffectedPersonnel" ns="2" outkey="334"/>
+										<entry name="DTimStart" ns="2" outkey="335"/>
+										<entry name="DTimEnd" ns="2" outkey="336"/>
+										<entry name="MdHoleStart" ns="2" outkey="337" expanded="1">
+											<entry name="datum" type="attribute" outkey="517"/>
+										</entry>
+										<entry name="MdHoleEnd" ns="2" outkey="339" expanded="1">
+											<entry name="datum" type="attribute" outkey="519"/>
+										</entry>
+										<entry name="TvdHoleStart" ns="2" outkey="342" expanded="1">
+											<entry name="datum" type="attribute" outkey="521"/>
+										</entry>
+										<entry name="TvdHoleEnd" ns="2" outkey="345" expanded="1">
+											<entry name="datum" type="attribute" outkey="523"/>
+										</entry>
+										<entry name="MdBitStart" ns="2" outkey="348" expanded="1">
+											<entry name="uom" type="attribute" outkey="460"/>
+										</entry>
+										<entry name="MdBitEnd" ns="2" outkey="349" expanded="1">
+											<entry name="uom" type="attribute" outkey="461"/>
+										</entry>
+										<entry name="DiaHole" ns="2" outkey="350"/>
+										<entry name="SeverityLevel" ns="2" outkey="351"/>
+										<entry name="ProbabilityLevel" ns="2" outkey="352"/>
+										<entry name="Summary" ns="2" outkey="353"/>
+										<entry name="Details" ns="2" outkey="354"/>
+										<entry name="Identification" ns="2" outkey="355"/>
+										<entry name="Contingency" ns="2" outkey="356"/>
+										<entry name="Mitigation" ns="2" outkey="357"/>
+										<entry name="ObjectReference" ns="2" outkey="358" expanded="1">
+											<entry name="ContentType" ns="1" outkey="462"/>
+											<entry name="Title" ns="1" outkey="524"/>
+											<entry name="UuidAuthority" ns="1" outkey="463"/>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="464"/>
+											<entry name="UuidAuthority" ns="1" outkey="465"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Risk.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Risk" inputinstance="..\..\input\reverse\risk\risk_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="select_exists" library="user" uid="95" kind="19" visible="0" blackbox="0">
+					<view ltx="464" lty="478" rbx="594" rby="512"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="inputNode" inpkey="525" componentid="85"/>
+							<entry name="lastNode" inpkey="526" componentid="89"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="527" componentid="84"/>
+						</root>
+					</data>
+				</component>
+				<component name="obj_risk" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1087" lty="-2" rbx="1390" rby="554"/>
+					<data>
+						<root scrollposition="534">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="risks" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="424"/>
+										<entry name="documentInfo" ns="1">
+											<entry name="securityInformation" ns="1" expanded="1"/>
+											<entry name="auditTrail" ns="1" expanded="1">
+												<entry name="event" ns="1" expanded="1"/>
+											</entry>
+										</entry>
+										<entry name="risk" ns="1" inpkey="425" expanded="1">
+											<entry name="uidWell" type="attribute" inpkey="528"/>
+											<entry name="uidWellbore" type="attribute" inpkey="426"/>
+											<entry name="uid" type="attribute" inpkey="529"/>
+											<entry name="nameWellbore" ns="1" inpkey="427"/>
+											<entry name="name" ns="1" inpkey="428"/>
+											<entry name="objectReference" ns="1" inpkey="429" expanded="1">
+												<entry name="object" type="attribute" inpkey="430"/>
+												<entry name="uidRef" type="attribute" inpkey="431"/>
+											</entry>
+											<entry name="type" ns="1" inpkey="432"/>
+											<entry name="category" ns="1" inpkey="433"/>
+											<entry name="subCategory" ns="1" inpkey="434"/>
+											<entry name="extendCategory" ns="1" inpkey="435"/>
+											<entry name="affectedPersonnel" ns="1" inpkey="436"/>
+											<entry name="dTimStart" ns="1" inpkey="437"/>
+											<entry name="dTimEnd" ns="1" inpkey="438"/>
+											<entry name="mdHoleStart" ns="1" inpkey="439" expanded="1">
+												<entry name="datum" type="attribute" inpkey="531"/>
+											</entry>
+											<entry name="mdHoleEnd" ns="1" inpkey="440" expanded="1">
+												<entry name="datum" type="attribute" inpkey="533"/>
+											</entry>
+											<entry name="tvdHoleStart" ns="1" inpkey="441" expanded="1">
+												<entry name="datum" type="attribute" inpkey="535"/>
+											</entry>
+											<entry name="tvdHoleEnd" ns="1" inpkey="442" expanded="1">
+												<entry name="datum" type="attribute" inpkey="537"/>
+											</entry>
+											<entry name="mdBitStart" ns="1" inpkey="443" expanded="1">
+												<entry name="uom" type="attribute" inpkey="444"/>
+											</entry>
+											<entry name="mdBitEnd" ns="1" inpkey="445" expanded="1">
+												<entry name="uom" type="attribute" inpkey="446"/>
+											</entry>
+											<entry name="diaHole" ns="1" inpkey="447"/>
+											<entry name="severityLevel" ns="1" inpkey="448"/>
+											<entry name="probabilityLevel" ns="1" inpkey="449"/>
+											<entry name="summary" ns="1" inpkey="450"/>
+											<entry name="details" ns="1" inpkey="451"/>
+											<entry name="identification" ns="1" inpkey="452"/>
+											<entry name="contingency" ns="1" inpkey="453"/>
+											<entry name="mitigation" ns="1" inpkey="454"/>
+											<entry name="commonData" ns="1" inpkey="538">
+												<entry name="dTimLastChange" ns="1" inpkey="455"/>
+											</entry>
+											<entry name="customData" ns="1" inpkey="456"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_risk.xsd" instanceroot="{http://www.witsml.org/schemas/1series}risks" outputinstance="..\..\output\reverse\risk\risk_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="447">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="456">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="457">
+						<edges>
+							<edge vertexkey="424"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="321">
+						<edges>
+							<edge vertexkey="425"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="465">
+						<edges>
+							<edge vertexkey="426"/>
+							<edge vertexkey="500"/>
+							<edge vertexkey="502"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="464">
+						<edges>
+							<edge vertexkey="427"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="458">
+						<edges>
+							<edge vertexkey="428"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="358">
+						<edges>
+							<edge vertexkey="429"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="527">
+						<edges>
+							<edge vertexkey="430"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="463">
+						<edges>
+							<edge vertexkey="431"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="330">
+						<edges>
+							<edge vertexkey="432"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="331">
+						<edges>
+							<edge vertexkey="433"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="332">
+						<edges>
+							<edge vertexkey="434"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="333">
+						<edges>
+							<edge vertexkey="435"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="334">
+						<edges>
+							<edge vertexkey="436"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="335">
+						<edges>
+							<edge vertexkey="437"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="336">
+						<edges>
+							<edge vertexkey="438"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="337">
+						<edges>
+							<edge vertexkey="439"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="339">
+						<edges>
+							<edge vertexkey="440"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="342">
+						<edges>
+							<edge vertexkey="441"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="345">
+						<edges>
+							<edge vertexkey="442"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="348">
+						<edges>
+							<edge vertexkey="443"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="460">
+						<edges>
+							<edge vertexkey="444"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="349">
+						<edges>
+							<edge vertexkey="445"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="461">
+						<edges>
+							<edge vertexkey="446"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="350">
+						<edges>
+							<edge vertexkey="447" edgekey="447"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="351">
+						<edges>
+							<edge vertexkey="448"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="352">
+						<edges>
+							<edge vertexkey="449"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="353">
+						<edges>
+							<edge vertexkey="450"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="354">
+						<edges>
+							<edge vertexkey="451"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="355">
+						<edges>
+							<edge vertexkey="452"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="356">
+						<edges>
+							<edge vertexkey="453"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="357">
+						<edges>
+							<edge vertexkey="454"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="459">
+						<edges>
+							<edge vertexkey="455"/>
+							<edge vertexkey="538"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="328">
+						<edges>
+							<edge vertexkey="456" edgekey="456"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="515">
+						<edges>
+							<edge vertexkey="501"/>
+							<edge vertexkey="503"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="524">
+						<edges>
+							<edge vertexkey="513"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="462">
+						<edges>
+							<edge vertexkey="525"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="514">
+						<edges>
+							<edge vertexkey="526"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="499">
+						<edges>
+							<edge vertexkey="528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="504">
+						<edges>
+							<edge vertexkey="529"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="517">
+						<edges>
+							<edge vertexkey="531"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="519">
+						<edges>
+							<edge vertexkey="533"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="521">
+						<edges>
+							<edge vertexkey="535"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="523">
+						<edges>
+							<edge vertexkey="537"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="select_exists" library="user" uid="96" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="inputNode" library="core" uid="85" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="139" lty="183" rbx="252" rby="221"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="inputNode"/>
+					</data>
+				</component>
+				<component name="result" library="core" uid="84" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="668" lty="183" rbx="725" rby="221"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="87" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="338" lty="132" rbx="414" rby="170"/>
+				</component>
+				<component name="if-else" library="core" uid="92" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="9"/>
+						<datapoint pos="2" key="44"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="497" lty="163" rbx="601" rby="236"/>
+				</component>
+				<component name="lastNode" library="core" uid="89" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="110" lty="255" rbx="213" rby="293"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="lastNode" optional="1"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="44"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

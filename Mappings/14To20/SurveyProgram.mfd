@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2018sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="359" lty="273" rbx="500" rby="290"/>
+					<data>
+						<constant value="Identifier is created from the uid of the input scheme" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="9" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="359" lty="337" rbx="447" rby="410"/>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="358" lty="498" rbx="458" rby="515"/>
+					<data>
+						<constant value="obj_tubular" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="323"/>
+					</targets>
+					<view ltx="363" lty="140" rbx="448" rby="157"/>
+					<data>
+						<constant value="BhaRun-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="347"/>
+					</targets>
+					<view ltx="359" lty="182" rbx="419" rby="199"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="431" lty="213" rbx="540" rby="230"/>
+					<data>
+						<constant value="kelly bushing" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="319"/>
+					</targets>
+					<view ltx="359" lty="213" rbx="414" rby="230"/>
+					<data>
+						<constant value="2.0" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="current-dateTime" library="xpath2" uid="17" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="344"/>
+					</targets>
+					<view ltx="359" lty="426" rbx="473" rby="464"/>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="273"/>
+					</targets>
+					<view ltx="359" lty="464" rbx="448" rby="481"/>
+					<data>
+						<constant value="Mapforce" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="321"/>
+					</targets>
+					<view ltx="359" lty="306" rbx="456" rby="323"/>
+					<data>
+						<constant value="1411_input" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="21" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="601"/>
+					</targets>
+					<view ltx="358" lty="323" rbx="448" rby="340"/>
+					<data>
+						<constant value="unknown" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="277"/>
+					</targets>
+					<view ltx="359" lty="481" rbx="444" rby="498"/>
+					<data>
+						<constant value="wellbore" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="322"/>
+					</targets>
+					<view ltx="359" lty="243" rbx="522" rby="260"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="10" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="324"/>
+						<datapoint/>
+						<datapoint pos="2" key="348"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="326" rbx="414" rby="73"/>
+				</component>
+				<component name="obj_surveyProgram" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="295" rby="542"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="surveyPrograms" expanded="1">
+										<entry name="surveyProgram" outkey="639" expanded="1">
+											<entry name="nameWellbore" outkey="640"/>
+											<entry name="name" outkey="641"/>
+											<entry name="surveyVer" outkey="642"/>
+											<entry name="engineer" outkey="643"/>
+											<entry name="final" outkey="644"/>
+											<entry name="surveySection" outkey="645" expanded="1">
+												<entry name="uid" ns="1" type="attribute" outkey="646"/>
+												<entry name="sequence" outkey="647"/>
+												<entry name="name" outkey="648"/>
+												<entry name="mdStart" outkey="649" expanded="1">
+													<entry name="uom" ns="1" type="attribute" outkey="650"/>
+												</entry>
+												<entry name="mdEnd" outkey="651" expanded="1">
+													<entry name="uom" ns="1" type="attribute" outkey="652"/>
+												</entry>
+												<entry name="nameSurveyCompany" outkey="653"/>
+												<entry name="nameTool" outkey="654"/>
+												<entry name="typeTool" outkey="655"/>
+												<entry name="modelError" outkey="656"/>
+												<entry name="overwrite" outkey="657"/>
+												<entry name="frequencyMx" outkey="658"/>
+												<entry name="itemState" outkey="659"/>
+												<entry name="comments" outkey="660"/>
+												<entry name="extensionNameValue" outkey="661">
+													<entry name="name" outkey="662"/>
+													<entry name="value" outkey="663"/>
+													<entry name="dTim" outkey="664"/>
+													<entry name="index" outkey="665"/>
+													<entry name="measureClass" outkey="666"/>
+													<entry name="description" outkey="667"/>
+												</entry>
+											</entry>
+											<entry name="customData" outkey="668"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_surveyProgram.xsd" instanceroot="{http://www.witsml.org/schemas/1series}surveyPrograms"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SurveyProgram" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="563" rbx="867" rby="542"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="SurveyProgram" ns="2" inpkey="602" expanded="1">
+										<entry name="schemaVersion" type="attribute" inpkey="603"/>
+										<entry name="uuid" type="attribute" inpkey="604"/>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" inpkey="605"/>
+											<entry name="Originator" ns="1" inpkey="600"/>
+											<entry name="Creation" ns="1" inpkey="606"/>
+											<entry name="Format" ns="1" inpkey="607"/>
+										</entry>
+										<entry name="CustomData" ns="1" inpkey="608"/>
+										<entry name="SurveyVer" ns="2" inpkey="609"/>
+										<entry name="Engineer" ns="2" inpkey="610"/>
+										<entry name="Final" ns="2" inpkey="611"/>
+										<entry name="SurveySection" ns="2" inpkey="612" expanded="1">
+											<entry name="uid" type="attribute" inpkey="613"/>
+											<entry name="Sequence" ns="2" inpkey="614"/>
+											<entry name="Name" ns="2" inpkey="615"/>
+											<entry name="MdInterval" ns="2" expanded="1">
+												<entry name="datum" type="attribute" inpkey="616"/>
+												<entry name="MdTop" ns="1" inpkey="617" expanded="1">
+													<entry name="uom" type="attribute" inpkey="618"/>
+												</entry>
+												<entry name="MdBase" ns="1" inpkey="619" expanded="1">
+													<entry name="uom" type="attribute" inpkey="620"/>
+												</entry>
+											</entry>
+											<entry name="NameSurveyCompany" ns="2" inpkey="621"/>
+											<entry name="NameTool" ns="2" inpkey="622"/>
+											<entry name="TypeTool" ns="2" inpkey="623"/>
+											<entry name="ModelError" ns="2" inpkey="624"/>
+											<entry name="Overwrite" ns="2" inpkey="625"/>
+											<entry name="FrequencyMx" ns="2" inpkey="626"/>
+											<entry name="ItemState" ns="2" inpkey="627"/>
+											<entry name="Comments" ns="2" inpkey="628"/>
+											<entry name="ExtensionNameValue" ns="2" inpkey="629">
+												<entry name="Name" ns="1" inpkey="630"/>
+												<entry name="Value" ns="1" inpkey="631"/>
+												<entry name="MeasureClass" ns="1" inpkey="632"/>
+												<entry name="DTim" ns="1" inpkey="633"/>
+												<entry name="Index" ns="1" inpkey="634"/>
+												<entry name="Description" ns="1" inpkey="635"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="ContentType" ns="1" inpkey="636"/>
+											<entry name="Title" ns="1" inpkey="637"/>
+											<entry name="Uuid" ns="1" inpkey="638"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\SurveyProgram.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}SurveyProgram"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="22" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="708"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="707"/>
+					</targets>
+					<view ltx="431" lty="58" rbx="542" rby="112"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="669">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="670">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="671">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="273">
+						<edges>
+							<edge vertexkey="607" edgekey="672"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="277">
+						<edges>
+							<edge vertexkey="636" edgekey="673"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="319">
+						<edges>
+							<edge vertexkey="603" edgekey="674"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="321">
+						<edges>
+							<edge vertexkey="600" edgekey="675"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="322">
+						<edges>
+							<edge vertexkey="604" edgekey="676"/>
+							<edge vertexkey="638" edgekey="677"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="323">
+						<edges>
+							<edge vertexkey="324" edgekey="334"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="344">
+						<edges>
+							<edge vertexkey="606" edgekey="678"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="347">
+						<edges>
+							<edge vertexkey="348" edgekey="349"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="601">
+						<edges>
+							<edge vertexkey="616" edgekey="679"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="639">
+						<edges>
+							<edge vertexkey="708" edgekey="709"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="640">
+						<edges>
+							<edge vertexkey="637" edgekey="681"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="641">
+						<edges>
+							<edge vertexkey="605" edgekey="682"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="642">
+						<edges>
+							<edge vertexkey="609" edgekey="683"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="643">
+						<edges>
+							<edge vertexkey="610" edgekey="684"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="644">
+						<edges>
+							<edge vertexkey="611" edgekey="685"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="645">
+						<edges>
+							<edge vertexkey="612" edgekey="686"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="646">
+						<edges>
+							<edge vertexkey="613" edgekey="687"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="647">
+						<edges>
+							<edge vertexkey="614" edgekey="688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="648">
+						<edges>
+							<edge vertexkey="615" edgekey="689"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="649">
+						<edges>
+							<edge vertexkey="617" edgekey="690"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="650">
+						<edges>
+							<edge vertexkey="618" edgekey="691"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="651">
+						<edges>
+							<edge vertexkey="619" edgekey="692"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="652">
+						<edges>
+							<edge vertexkey="620" edgekey="693"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="653">
+						<edges>
+							<edge vertexkey="621" edgekey="694"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="654">
+						<edges>
+							<edge vertexkey="622" edgekey="695"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="655">
+						<edges>
+							<edge vertexkey="623" edgekey="696"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="656">
+						<edges>
+							<edge vertexkey="624" edgekey="697"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="657">
+						<edges>
+							<edge vertexkey="625" edgekey="698"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="658">
+						<edges>
+							<edge vertexkey="626" edgekey="670"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="659">
+						<edges>
+							<edge vertexkey="627" edgekey="699"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="660">
+						<edges>
+							<edge vertexkey="628" edgekey="700"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="661">
+						<edges>
+							<edge vertexkey="629" edgekey="701"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="662">
+						<edges>
+							<edge vertexkey="630" edgekey="702"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="663">
+						<edges>
+							<edge vertexkey="631" edgekey="671"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="664">
+						<edges>
+							<edge vertexkey="633" edgekey="703"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="665">
+						<edges>
+							<edge vertexkey="634" edgekey="704"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="666">
+						<edges>
+							<edge vertexkey="632" edgekey="705"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="667">
+						<edges>
+							<edge vertexkey="635" edgekey="706"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="668">
+						<edges>
+							<edge vertexkey="608" edgekey="669"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="707">
+						<edges>
+							<edge vertexkey="602" edgekey="710"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="526"/>
+					</targets>
+					<view ltx="653" lty="221" rbx="715" rby="238"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="4" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="523"/>
+					</targets>
+					<view ltx="612" lty="171" rbx="747" rby="188"/>
+					<data>
+						<constant value="ToolErrorTermSet-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="6" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="524"/>
+						<datapoint/>
+						<datapoint pos="2" key="527"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="653" lty="89" rbx="745" rby="162"/>
+				</component>
+				<component name="if-else" library="core" uid="9" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="755"/>
+						<datapoint pos="1" key="757"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="758"/>
+					</targets>
+					<view ltx="707" lty="289" rbx="811" rby="362"/>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="754"/>
+					</targets>
+					<view ltx="522" lty="345" rbx="658" rby="362"/>
+					<data>
+						<constant value="linear acceleration" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="string_is_not_same" library="user" uid="26" kind="19" visible="0" blackbox="0">
+					<view ltx="534" lty="278" rbx="643" rby="312"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="759" componentid="21"/>
+							<entry name="string2" inpkey="760" componentid="22"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="761" componentid="18"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="753"/>
+					</targets>
+					<view ltx="544" lty="441" rbx="680" rby="458"/>
+					<data>
+						<constant value="acceleration linear" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="27" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="762"/>
+						<datapoint/>
+						<datapoint pos="2" key="763"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="764"/>
+					</targets>
+					<view ltx="707" lty="385" rbx="811" rby="458"/>
+				</component>
+				<component name="ToolErrorTermSet" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="14" rbx="453" rby="902"/>
+					<data>
+						<root scrollposition="191">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ToolErrorTermSet" ns="2" outkey="603" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="604"/>
+											<entry name="Identifier" ns="1" outkey="605"/>
+										</entry>
+										<entry name="Citation" ns="1" expanded="1">
+											<entry name="Title" ns="1" outkey="606"/>
+											<entry name="LastUpdate" ns="1" outkey="607"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="608"/>
+										<entry name="Authorization" ns="2" outkey="609" expanded="1">
+											<entry name="Author" ns="2" outkey="610"/>
+											<entry name="Source" ns="2" outkey="611"/>
+											<entry name="Authority" ns="2" outkey="612"/>
+											<entry name="Status" ns="2" outkey="613"/>
+											<entry name="Version" ns="2" outkey="614"/>
+											<entry name="Comment" ns="2" outkey="615"/>
+										</entry>
+										<entry name="Nomenclature" ns="2" outkey="616" expanded="1">
+											<entry name="Parameter" ns="2" outkey="617" expanded="1">
+												<entry name="uid" type="attribute" outkey="618"/>
+												<entry name="Name" ns="2" outkey="619"/>
+												<entry name="Description" ns="2" outkey="620"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="621" expanded="1">
+													<entry name="Name" ns="1" outkey="622"/>
+													<entry name="Value" ns="1" outkey="623"/>
+													<entry name="MeasureClass" ns="1" outkey="624"/>
+													<entry name="DTim" ns="1" outkey="625"/>
+													<entry name="Index" ns="1" outkey="626"/>
+													<entry name="Description" ns="1" outkey="627"/>
+												</entry>
+											</entry>
+											<entry name="Function" ns="2" outkey="628" expanded="1">
+												<entry name="uid" type="attribute" outkey="629"/>
+												<entry name="Name" ns="2" outkey="630"/>
+												<entry name="Description" ns="2" outkey="631"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="632" expanded="1">
+													<entry name="Name" ns="1" outkey="633"/>
+													<entry name="Value" ns="1" outkey="634"/>
+													<entry name="MeasureClass" ns="1" outkey="635"/>
+													<entry name="DTim" ns="1" outkey="636"/>
+													<entry name="Index" ns="1" outkey="637"/>
+													<entry name="Description" ns="1" outkey="638"/>
+												</entry>
+											</entry>
+											<entry name="Constant" ns="2" outkey="639" expanded="1">
+												<entry name="uid" type="attribute" outkey="640"/>
+												<entry name="Name" ns="2" outkey="641"/>
+												<entry name="Value" ns="2" outkey="642"/>
+												<entry name="Unit" ns="2" outkey="643"/>
+												<entry name="Description" ns="2" outkey="644"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="645" expanded="1">
+													<entry name="Name" ns="1" outkey="646"/>
+													<entry name="Value" ns="1" outkey="647"/>
+													<entry name="MeasureClass" ns="1" outkey="648"/>
+													<entry name="DTim" ns="1" outkey="649"/>
+													<entry name="Index" ns="1" outkey="650"/>
+													<entry name="Description" ns="1" outkey="651"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="ErrorTerm" ns="2" outkey="652" expanded="1">
+											<entry name="uid" type="attribute" outkey="653"/>
+											<entry name="Name" ns="2" outkey="654"/>
+											<entry name="Type" ns="2" outkey="655"/>
+											<entry name="MeasureClass" ns="2" outkey="765"/>
+											<entry name="Label" ns="2" outkey="656"/>
+											<entry name="Description" ns="2" outkey="657"/>
+											<entry name="OperatingMode" ns="2" outkey="766"/>
+											<entry name="ExtensionNameValue" ns="2" outkey="658">
+												<entry name="Name" ns="1" outkey="659"/>
+												<entry name="Value" ns="1" outkey="660"/>
+												<entry name="DTim" ns="1" outkey="661"/>
+												<entry name="Index" ns="1" outkey="662"/>
+												<entry name="Description" ns="1" outkey="663"/>
+											</entry>
+											<entry name="ErrorCoefficient" ns="2" outkey="664" expanded="1">
+												<entry name="uid" type="attribute" outkey="665"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="666" expanded="1">
+													<entry name="Name" ns="1" outkey="667"/>
+													<entry name="Value" ns="1" outkey="668"/>
+													<entry name="MeasureClass" ns="1" outkey="669"/>
+													<entry name="DTim" ns="1" outkey="670"/>
+													<entry name="Index" ns="1" outkey="671"/>
+													<entry name="Description" ns="1" outkey="672"/>
+												</entry>
+												<entry name="AbstractIscwsaErrorCoefficient" ns="2" displayselectionmode="all"/>
+												<entry name="AbstractIscwsaErrorCoefficient" ns="2" outkey="673" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}Azi" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="AbstractIscwsaErrorCoefficient" ns="2" outkey="674" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}Depth" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="AbstractIscwsaErrorCoefficient" ns="2" outkey="675" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}Inc" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="AbstractIscwsaErrorCoefficient" ns="2" outkey="676" expanded="1">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}Tvd" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\ToolErrorTermSet.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}ToolErrorTermSet" inputinstance="..\..\input\reverse\toolErrorTermSet\toolErrorTermSet_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_toolErrorTermSet" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1040" rbx="1314" rby="902"/>
+					<data>
+						<root scrollposition="1645">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="toolErrorTermSets" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="529"/>
+										<entry name="toolErrorTermSet" ns="1" inpkey="530" expanded="1">
+											<entry name="uid" type="attribute" inpkey="531"/>
+											<entry name="name" ns="1" inpkey="532"/>
+											<entry name="authorization" ns="1" inpkey="533">
+												<entry name="author" ns="1" inpkey="534"/>
+												<entry name="source" ns="1" inpkey="535"/>
+												<entry name="authority" ns="1" inpkey="536"/>
+												<entry name="status" ns="1" inpkey="537"/>
+												<entry name="version" ns="1" inpkey="538"/>
+												<entry name="comment" ns="1" inpkey="539"/>
+											</entry>
+											<entry name="nomenclature" ns="1" inpkey="540" expanded="1">
+												<entry name="parameter" ns="1" inpkey="541" expanded="1">
+													<entry name="uid" type="attribute" inpkey="542"/>
+													<entry name="name" ns="1" inpkey="543"/>
+													<entry name="description" ns="1" inpkey="544"/>
+													<entry name="extensionNameValue" ns="1" inpkey="545" expanded="1">
+														<entry name="name" ns="1" inpkey="546"/>
+														<entry name="value" ns="1" inpkey="547"/>
+														<entry name="dTim" ns="1" inpkey="548"/>
+														<entry name="index" ns="1" inpkey="549"/>
+														<entry name="measureClass" ns="1" inpkey="550"/>
+														<entry name="description" ns="1" inpkey="551"/>
+													</entry>
+												</entry>
+												<entry name="function" ns="1" inpkey="552" expanded="1">
+													<entry name="uid" type="attribute" inpkey="553"/>
+													<entry name="name" ns="1" inpkey="554"/>
+													<entry name="description" ns="1" inpkey="555"/>
+													<entry name="extensionNameValue" ns="1" inpkey="556" expanded="1">
+														<entry name="name" ns="1" inpkey="557"/>
+														<entry name="value" ns="1" inpkey="558"/>
+														<entry name="dTim" ns="1" inpkey="559"/>
+														<entry name="index" ns="1" inpkey="560"/>
+														<entry name="measureClass" ns="1" inpkey="561"/>
+														<entry name="description" ns="1" inpkey="562"/>
+													</entry>
+												</entry>
+												<entry name="constant" ns="1" inpkey="563" expanded="1">
+													<entry name="uid" type="attribute" inpkey="564"/>
+													<entry name="name" ns="1" inpkey="565"/>
+													<entry name="value" ns="1" inpkey="566"/>
+													<entry name="unit" ns="1" inpkey="567"/>
+													<entry name="description" ns="1" inpkey="568"/>
+													<entry name="extensionNameValue" ns="1" inpkey="569" expanded="1">
+														<entry name="name" ns="1" inpkey="570"/>
+														<entry name="value" ns="1" inpkey="571"/>
+														<entry name="dTim" ns="1" inpkey="572"/>
+														<entry name="index" ns="1" inpkey="573"/>
+														<entry name="measureClass" ns="1" inpkey="574"/>
+														<entry name="description" ns="1" inpkey="575"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="errorTerm" ns="1" inpkey="576" expanded="1">
+												<entry name="uid" type="attribute" inpkey="577"/>
+												<entry name="name" ns="1" inpkey="578"/>
+												<entry name="type" ns="1" inpkey="579"/>
+												<entry name="measureClass" ns="1" inpkey="767"/>
+												<entry name="label" ns="1" inpkey="580"/>
+												<entry name="description" ns="1" inpkey="581"/>
+												<entry name="errorCoefficient" ns="1" inpkey="582" expanded="1">
+													<entry name="uid" type="attribute" inpkey="583"/>
+													<entry name="azi" ns="1" inpkey="584"/>
+													<entry name="inc" ns="1" inpkey="585"/>
+													<entry name="depth" ns="1" inpkey="586"/>
+													<entry name="tvd" ns="1" inpkey="587"/>
+													<entry name="extensionNameValue" ns="1" inpkey="588" expanded="1">
+														<entry name="name" ns="1" inpkey="589"/>
+														<entry name="value" ns="1" inpkey="590"/>
+														<entry name="dTim" ns="1" inpkey="591"/>
+														<entry name="index" ns="1" inpkey="592"/>
+														<entry name="measureClass" ns="1" inpkey="593"/>
+														<entry name="description" ns="1" inpkey="594"/>
+													</entry>
+												</entry>
+												<entry name="operatingMode" ns="1" inpkey="768"/>
+												<entry name="extensionNameValue" ns="1" inpkey="595" expanded="1">
+													<entry name="name" ns="1" inpkey="596"/>
+													<entry name="value" ns="1" inpkey="597"/>
+													<entry name="dTim" ns="1" inpkey="598"/>
+													<entry name="index" ns="1" inpkey="599"/>
+													<entry name="measureClass" ns="1" inpkey="769"/>
+													<entry name="description" ns="1" inpkey="600"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1" expanded="1">
+												<entry name="dTimLastChange" ns="1" inpkey="601"/>
+											</entry>
+											<entry name="customData" ns="1" inpkey="602"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_toolErrorTermSet.xsd" instanceroot="{http://www.witsml.org/schemas/1series}toolErrorTermSets" outputinstance="..\..\output\reverse\toolErrorTermSet\toolErrorTermSet_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="602">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="523">
+						<edges>
+							<edge vertexkey="524"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="526">
+						<edges>
+							<edge vertexkey="527"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="604">
+						<edges>
+							<edge vertexkey="529"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="603">
+						<edges>
+							<edge vertexkey="530"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="605">
+						<edges>
+							<edge vertexkey="531"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="606">
+						<edges>
+							<edge vertexkey="532"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="609">
+						<edges>
+							<edge vertexkey="533"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="610">
+						<edges>
+							<edge vertexkey="534"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="611">
+						<edges>
+							<edge vertexkey="535"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="612">
+						<edges>
+							<edge vertexkey="536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="613">
+						<edges>
+							<edge vertexkey="537"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="614">
+						<edges>
+							<edge vertexkey="538"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="615">
+						<edges>
+							<edge vertexkey="539"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="616">
+						<edges>
+							<edge vertexkey="540"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="617">
+						<edges>
+							<edge vertexkey="541"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="618">
+						<edges>
+							<edge vertexkey="542"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="619">
+						<edges>
+							<edge vertexkey="543"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="620">
+						<edges>
+							<edge vertexkey="544"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="621">
+						<edges>
+							<edge vertexkey="545"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="622">
+						<edges>
+							<edge vertexkey="546"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="623">
+						<edges>
+							<edge vertexkey="547"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="625">
+						<edges>
+							<edge vertexkey="548"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="626">
+						<edges>
+							<edge vertexkey="549"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="624">
+						<edges>
+							<edge vertexkey="550"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="627">
+						<edges>
+							<edge vertexkey="551"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="628">
+						<edges>
+							<edge vertexkey="552"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="629">
+						<edges>
+							<edge vertexkey="553"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="630">
+						<edges>
+							<edge vertexkey="554"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="631">
+						<edges>
+							<edge vertexkey="555"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="632">
+						<edges>
+							<edge vertexkey="556"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="633">
+						<edges>
+							<edge vertexkey="557"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="634">
+						<edges>
+							<edge vertexkey="558"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="636">
+						<edges>
+							<edge vertexkey="559"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="637">
+						<edges>
+							<edge vertexkey="560"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="635">
+						<edges>
+							<edge vertexkey="561"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="638">
+						<edges>
+							<edge vertexkey="562"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="639">
+						<edges>
+							<edge vertexkey="563"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="640">
+						<edges>
+							<edge vertexkey="564"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="641">
+						<edges>
+							<edge vertexkey="565"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="642">
+						<edges>
+							<edge vertexkey="566"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="643">
+						<edges>
+							<edge vertexkey="567"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="644">
+						<edges>
+							<edge vertexkey="568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="645">
+						<edges>
+							<edge vertexkey="569"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="646">
+						<edges>
+							<edge vertexkey="570"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="647">
+						<edges>
+							<edge vertexkey="571"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="649">
+						<edges>
+							<edge vertexkey="572"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="650">
+						<edges>
+							<edge vertexkey="573"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="648">
+						<edges>
+							<edge vertexkey="574"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="651">
+						<edges>
+							<edge vertexkey="575"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="652">
+						<edges>
+							<edge vertexkey="576"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="653">
+						<edges>
+							<edge vertexkey="577"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="654">
+						<edges>
+							<edge vertexkey="578"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="655">
+						<edges>
+							<edge vertexkey="579"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="656">
+						<edges>
+							<edge vertexkey="580"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="657">
+						<edges>
+							<edge vertexkey="581"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="664">
+						<edges>
+							<edge vertexkey="582"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="665">
+						<edges>
+							<edge vertexkey="583"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="673">
+						<edges>
+							<edge vertexkey="584"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="675">
+						<edges>
+							<edge vertexkey="585"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="674">
+						<edges>
+							<edge vertexkey="586"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="676">
+						<edges>
+							<edge vertexkey="587"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="666">
+						<edges>
+							<edge vertexkey="588"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="667">
+						<edges>
+							<edge vertexkey="589"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="668">
+						<edges>
+							<edge vertexkey="590"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="670">
+						<edges>
+							<edge vertexkey="591"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="671">
+						<edges>
+							<edge vertexkey="592"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="669">
+						<edges>
+							<edge vertexkey="593"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="672">
+						<edges>
+							<edge vertexkey="594"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="658">
+						<edges>
+							<edge vertexkey="595"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="659">
+						<edges>
+							<edge vertexkey="596"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="660">
+						<edges>
+							<edge vertexkey="597"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="661">
+						<edges>
+							<edge vertexkey="598"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="662">
+						<edges>
+							<edge vertexkey="599"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="663">
+						<edges>
+							<edge vertexkey="600"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="607">
+						<edges>
+							<edge vertexkey="601"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="608">
+						<edges>
+							<edge vertexkey="602" edgekey="602"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="761">
+						<edges>
+							<edge vertexkey="755"/>
+							<edge vertexkey="762"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="765">
+						<edges>
+							<edge vertexkey="757"/>
+							<edge vertexkey="759"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="754">
+						<edges>
+							<edge vertexkey="760"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="753">
+						<edges>
+							<edge vertexkey="763"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="764">
+						<edges>
+							<edge vertexkey="767"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="766">
+						<edges>
+							<edge vertexkey="768"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="758">
+						<edges>
+							<edge vertexkey="769"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_same" library="user" uid="123" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="string1" library="core" uid="10" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="68" lty="88" rbx="161" rby="126"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string1"/>
+					</data>
+				</component>
+				<component name="string2" library="core" uid="11" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="100" lty="191" rbx="193" rby="229"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string2"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="122" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="313" lty="134" rbx="369" rby="188"/>
+				</component>
+				<component name="result" library="core" uid="9" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="397" lty="150" rbx="454" rby="188"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_not_same" library="user" uid="124" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="string2" library="core" uid="22" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="64" lty="272" rbx="157" rby="310"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string2"/>
+					</data>
+				</component>
+				<component name="string1" library="core" uid="21" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="64" lty="191" rbx="157" rby="229"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string1"/>
+					</data>
+				</component>
+				<component name="string_is_same" library="user" uid="20" kind="19" visible="0" blackbox="0">
+					<view ltx="232" lty="215" rbx="341" rby="249"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="3" componentid="10"/>
+							<entry name="string2" inpkey="4" componentid="11"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="5" componentid="9"/>
+						</root>
+					</data>
+				</component>
+				<component name="logical-not" library="core" uid="24" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="516" lty="233" rbx="599" rby="271"/>
+				</component>
+				<component name="result" library="core" uid="18" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<view ltx="692" lty="233" rbx="749" rby="271"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

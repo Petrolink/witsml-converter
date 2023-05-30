@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To21" ShowSchemaTypes="1" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="19" kind="2">
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="407" lty="234" rbx="454" rby="251"/>
+					<data>
+						<constant value="x" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="407" lty="315" rbx="572" rby="332"/>
+					<data>
+						<constant value="00000000-0000-0000-0000-000000000000" datatype="string"/>
+					</data>
+				</component>
+				<component name="Log" library="xml" uid="21" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="300" rby="500"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Log" expanded="1">
+										<entry name="ChannelSet" outkey="278"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Log" outputinstance="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xml"/>
+					</data>
+				</component>
+				<component name="UnwrappedChannelSet" library="xml" uid="22" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="607" rbx="907" rby="500"/>
+					<data>
+						<root scrollposition="2">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ChannelSet" inpkey="277" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}ChannelSet" outputinstance="..\..\energyml\2.1\data\witsml\v2.1\xsd_schemas\Log.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="277">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="278">
+						<edges>
+							<edge vertexkey="277" edgekey="277"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

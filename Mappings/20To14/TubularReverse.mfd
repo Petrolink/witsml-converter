@@ -1,0 +1,2621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties AppName="Map20To14" SelectedLanguage="cs"/>
+		<structure>
+			<children>
+				<component name="substring-after" library="core" uid="10" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4578"/>
+						<datapoint pos="1" key="4579"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4580"/>
+					</targets>
+					<view ltx="534" lty="102" rbx="638" rby="156"/>
+				</component>
+				<component name="substring-before" library="core" uid="8" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4581"/>
+						<datapoint pos="1" key="4582"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4583"/>
+					</targets>
+					<view ltx="491" rbx="605" rby="54"/>
+				</component>
+				<component name="obj_tubular" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="715" lty="-27" rbx="1029" rby="527"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="tubulars" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="3666"/>
+										<entry name="tubular" ns="1" inpkey="3667" expanded="1">
+											<entry name="uidWell" type="attribute" inpkey="4588"/>
+											<entry name="uidWellbore" type="attribute" inpkey="3668"/>
+											<entry name="uid" type="attribute" inpkey="4589"/>
+											<entry name="nameWellbore" ns="1" inpkey="3669"/>
+											<entry name="name" ns="1" inpkey="3670"/>
+											<entry name="typeTubularAssy" ns="1" inpkey="3671"/>
+											<entry name="valveFloat" ns="1" inpkey="3672"/>
+											<entry name="sourceNuclear" ns="1" inpkey="3673"/>
+											<entry name="diaHoleAssy" ns="1" inpkey="3674"/>
+											<entry name="tubularComponent" ns="1" inpkey="3675" expanded="1">
+												<entry name="uid" type="attribute" inpkey="3676"/>
+												<entry name="typeTubularComp" ns="1" inpkey="3677"/>
+												<entry name="sequence" ns="1" inpkey="3678"/>
+												<entry name="description" ns="1" inpkey="3679"/>
+												<entry name="id" ns="1" inpkey="3680" expanded="1"/>
+												<entry name="od" ns="1" inpkey="3681"/>
+												<entry name="odMx" ns="1" inpkey="3682"/>
+												<entry name="len" ns="1" inpkey="3683"/>
+												<entry name="lenJointAv" ns="1" inpkey="3684"/>
+												<entry name="numJointStand" ns="1" inpkey="3685"/>
+												<entry name="wtPerLen" ns="1" inpkey="3686"/>
+												<entry name="grade" ns="1" inpkey="3687"/>
+												<entry name="odDrift" ns="1" inpkey="3688"/>
+												<entry name="tensYield" ns="1" inpkey="3689"/>
+												<entry name="tqYield" ns="1" inpkey="3690"/>
+												<entry name="lenFishneck" ns="1" inpkey="3691"/>
+												<entry name="idFishneck" ns="1" inpkey="3692"/>
+												<entry name="odFishneck" ns="1" inpkey="3693"/>
+												<entry name="disp" ns="1" inpkey="3694"/>
+												<entry name="presBurst" ns="1" inpkey="3695"/>
+												<entry name="presCollapse" ns="1" inpkey="3696"/>
+												<entry name="classService" ns="1" inpkey="3697"/>
+												<entry name="wearWall" ns="1" inpkey="3698"/>
+												<entry name="thickWall" ns="1" inpkey="3699"/>
+												<entry name="configCon" ns="1" inpkey="3700"/>
+												<entry name="bendStiffness" ns="1" inpkey="3701"/>
+												<entry name="axialStiffness" ns="1" inpkey="3702"/>
+												<entry name="torsionalStiffness" ns="1" inpkey="3703"/>
+												<entry name="typeMaterial" ns="1" inpkey="3704"/>
+												<entry name="doglegMx" ns="1" inpkey="3705"/>
+												<entry name="vendor" ns="1" inpkey="3706"/>
+												<entry name="model" ns="1" inpkey="3707"/>
+												<entry name="nameTag" ns="1" inpkey="3708" expanded="1">
+													<entry name="uid" type="attribute" inpkey="3709"/>
+													<entry name="name" ns="1" inpkey="3710"/>
+													<entry name="numberingScheme" ns="1" inpkey="3711"/>
+													<entry name="technology" ns="1" inpkey="3712"/>
+													<entry name="location" ns="1" inpkey="3713"/>
+													<entry name="installationDate" ns="1" inpkey="3714"/>
+													<entry name="installationCompany" ns="1" inpkey="3715"/>
+													<entry name="mountingCode" ns="1" inpkey="3716"/>
+													<entry name="comment" ns="1" inpkey="3717"/>
+													<entry name="extensionNameValue" ns="1" inpkey="3718" expanded="1">
+														<entry name="name" ns="1" inpkey="3719"/>
+														<entry name="value" ns="1" inpkey="3720"/>
+														<entry name="dTim" ns="1" inpkey="3721"/>
+														<entry name="index" ns="1" inpkey="3722"/>
+														<entry name="measureClass" ns="1" inpkey="3723"/>
+														<entry name="description" ns="1" inpkey="3724"/>
+													</entry>
+												</entry>
+												<entry name="bitRecord" ns="1" inpkey="3725" expanded="1">
+													<entry name="uid" type="attribute" inpkey="3726"/>
+													<entry name="numBit" ns="1" inpkey="3727"/>
+													<entry name="diaBit" ns="1" inpkey="3728"/>
+													<entry name="diaPassThru" ns="1" inpkey="3729"/>
+													<entry name="diaPilot" ns="1" inpkey="3730"/>
+													<entry name="manufacturer" ns="1" inpkey="3731"/>
+													<entry name="typeBit" ns="1" inpkey="3732"/>
+													<entry name="cost" ns="1" inpkey="3733">
+														<entry name="currency" type="attribute" inpkey="3734"/>
+													</entry>
+													<entry name="codeMfg" ns="1" inpkey="3735"/>
+													<entry name="codeIADC" ns="1" inpkey="3736"/>
+													<entry name="condInitInner" ns="1" inpkey="3737"/>
+													<entry name="condInitOuter" ns="1" inpkey="3738"/>
+													<entry name="condInitDull" ns="1" inpkey="3739"/>
+													<entry name="condInitLocation" ns="1" inpkey="3740"/>
+													<entry name="condInitBearing" ns="1" inpkey="3741"/>
+													<entry name="condInitGauge" ns="1" inpkey="3742"/>
+													<entry name="condInitOther" ns="1" inpkey="3743"/>
+													<entry name="condInitReason" ns="1" inpkey="3744"/>
+													<entry name="condFinalInner" ns="1" inpkey="3745"/>
+													<entry name="condFinalOuter" ns="1" inpkey="3746"/>
+													<entry name="condFinalDull" ns="1" inpkey="3747"/>
+													<entry name="condFinalLocation" ns="1" inpkey="3748"/>
+													<entry name="condFinalBearing" ns="1" inpkey="3749"/>
+													<entry name="condFinalGauge" ns="1" inpkey="3750"/>
+													<entry name="condFinalOther" ns="1" inpkey="3751"/>
+													<entry name="condFinalReason" ns="1" inpkey="3752"/>
+													<entry name="drive" ns="1" inpkey="3753"/>
+													<entry name="bitClass" ns="1" inpkey="3754"/>
+													<entry name="extensionAny" ns="1" inpkey="3755"/>
+													<entry name="extensionNameValue" ns="1" inpkey="3756" expanded="1">
+														<entry name="name" ns="1" inpkey="3757"/>
+														<entry name="value" ns="1" inpkey="3758"/>
+														<entry name="dTim" ns="1" inpkey="3759"/>
+														<entry name="index" ns="1" inpkey="3760"/>
+														<entry name="measureClass" ns="1" inpkey="3761"/>
+														<entry name="description" ns="1" inpkey="3762"/>
+													</entry>
+												</entry>
+												<entry name="areaNozzleFlow" ns="1" inpkey="3763"/>
+												<entry name="nozzle" ns="1" inpkey="3764" expanded="1">
+													<entry name="uid" type="attribute" inpkey="3765"/>
+													<entry name="index" ns="1" inpkey="3766"/>
+													<entry name="diaNozzle" ns="1" inpkey="3767"/>
+													<entry name="typeNozzle" ns="1" inpkey="3768"/>
+													<entry name="len" ns="1" inpkey="3769"/>
+													<entry name="orientation" ns="1" inpkey="3770"/>
+													<entry name="extensionAny" ns="1" inpkey="3771"/>
+													<entry name="extensionNameValue" ns="1" inpkey="3772" expanded="1">
+														<entry name="name" ns="1" inpkey="3773"/>
+														<entry name="value" ns="1" inpkey="3774" expanded="1"/>
+														<entry name="dTim" ns="1" inpkey="3775"/>
+														<entry name="index" ns="1" inpkey="3776"/>
+														<entry name="measureClass" ns="1" inpkey="3777"/>
+														<entry name="description" ns="1" inpkey="3778"/>
+													</entry>
+												</entry>
+												<entry name="connection" ns="1" inpkey="3779" expanded="1">
+													<entry name="uid" type="attribute" inpkey="3780"/>
+													<entry name="id" ns="1" inpkey="3781"/>
+													<entry name="od" ns="1" inpkey="3782"/>
+													<entry name="len" ns="1" inpkey="3783"/>
+													<entry name="typeThread" ns="1" inpkey="3784"/>
+													<entry name="sizeThread" ns="1" inpkey="3785"/>
+													<entry name="tensYield" ns="1" inpkey="3786"/>
+													<entry name="tqYield" ns="1" inpkey="3787"/>
+													<entry name="position" ns="1" inpkey="3788"/>
+													<entry name="criticalCrossSection" ns="1" inpkey="3789"/>
+													<entry name="presLeak" ns="1" inpkey="3790"/>
+													<entry name="tqMakeup" ns="1" inpkey="3791" expanded="1"/>
+													<entry name="extensionAny" ns="1" inpkey="3792"/>
+													<entry name="extensionNameValue" ns="1" inpkey="3793" expanded="1">
+														<entry name="name" ns="1" inpkey="3794"/>
+														<entry name="value" ns="1" inpkey="3795"/>
+														<entry name="dTim" ns="1" inpkey="3796"/>
+														<entry name="index" ns="1" inpkey="3797"/>
+														<entry name="measureClass" ns="1" inpkey="3798"/>
+														<entry name="description" ns="1" inpkey="3799"/>
+													</entry>
+												</entry>
+												<entry name="jar" ns="1" inpkey="3800">
+													<entry name="forUpSet" ns="1" inpkey="3801"/>
+													<entry name="forDownSet" ns="1" inpkey="3802"/>
+													<entry name="forUpTrip" ns="1" inpkey="3803"/>
+													<entry name="forDownTrip" ns="1" inpkey="3804"/>
+													<entry name="forPmpOpen" ns="1" inpkey="3805"/>
+													<entry name="forSealFric" ns="1" inpkey="3806"/>
+													<entry name="typeJar" ns="1" inpkey="3807"/>
+													<entry name="jarAction" ns="1" inpkey="3808"/>
+													<entry name="extensionAny" ns="1" inpkey="3809"/>
+												</entry>
+												<entry name="mwdTool" ns="1" inpkey="3810" expanded="1">
+													<entry name="flowrateMn" ns="1" inpkey="3811"/>
+													<entry name="flowrateMx" ns="1" inpkey="3812"/>
+													<entry name="tempMx" ns="1" inpkey="3813"/>
+													<entry name="idEquv" ns="1" inpkey="3814"/>
+													<entry name="sensor" ns="1" inpkey="3815" expanded="1">
+														<entry name="uid" type="attribute" inpkey="3816"/>
+														<entry name="typeMeasurement" ns="1" inpkey="3817"/>
+														<entry name="offsetBot" ns="1" inpkey="3818"/>
+														<entry name="comments" ns="1" inpkey="3819"/>
+														<entry name="extensionAny" ns="1" inpkey="3820"/>
+														<entry name="extensionNameValue" ns="1" inpkey="3821" expanded="1">
+															<entry name="name" ns="1" inpkey="3822"/>
+															<entry name="value" ns="1" inpkey="3823"/>
+															<entry name="dTim" ns="1" inpkey="3824"/>
+															<entry name="index" ns="1" inpkey="3825"/>
+															<entry name="measureClass" ns="1" inpkey="3826"/>
+															<entry name="description" ns="1" inpkey="3827"/>
+														</entry>
+													</entry>
+													<entry name="extensionAny" ns="1" inpkey="3828"/>
+												</entry>
+												<entry name="motor" ns="1" inpkey="3829">
+													<entry name="offsetTool" ns="1" inpkey="3830"/>
+													<entry name="presLossFact" ns="1" inpkey="3831"/>
+													<entry name="flowrateMn" ns="1" inpkey="3832"/>
+													<entry name="flowrateMx" ns="1" inpkey="3833"/>
+													<entry name="diaRotorNozzle" ns="1" inpkey="3834"/>
+													<entry name="clearanceBearBox" ns="1" inpkey="3835"/>
+													<entry name="lobesRotor" ns="1" inpkey="3836"/>
+													<entry name="lobesStator" ns="1" inpkey="3837"/>
+													<entry name="typeBearing" ns="1" inpkey="3838"/>
+													<entry name="tempOpMx" ns="1" inpkey="3839"/>
+													<entry name="rotorCatcher" ns="1" inpkey="3840"/>
+													<entry name="dumpValve" ns="1" inpkey="3841"/>
+													<entry name="diaNozzle" ns="1" inpkey="3842"/>
+													<entry name="rotatable" ns="1" inpkey="3843"/>
+													<entry name="bendSettingsMn" ns="1" inpkey="3844"/>
+													<entry name="bendSettingsMx" ns="1" inpkey="3845"/>
+													<entry name="extensionAny" ns="1" inpkey="3846"/>
+												</entry>
+												<entry name="stabilizer" ns="1" inpkey="3847" expanded="1">
+													<entry name="uid" type="attribute" inpkey="3848"/>
+													<entry name="lenBlade" ns="1" inpkey="3849"/>
+													<entry name="lenBladeGauge" ns="1" inpkey="3850"/>
+													<entry name="odBladeMx" ns="1" inpkey="3851"/>
+													<entry name="odBladeMn" ns="1" inpkey="3852"/>
+													<entry name="distBladeBot" ns="1" inpkey="3853"/>
+													<entry name="shapeBlade" ns="1" inpkey="3854"/>
+													<entry name="factFric" ns="1" inpkey="3855"/>
+													<entry name="typeBlade" ns="1" inpkey="3856"/>
+													<entry name="extensionAny" ns="1" inpkey="3857"/>
+													<entry name="extensionNameValue" ns="1" inpkey="3858" expanded="1">
+														<entry name="name" ns="1" inpkey="3859"/>
+														<entry name="value" ns="1" inpkey="3860"/>
+														<entry name="dTim" ns="1" inpkey="3861"/>
+														<entry name="index" ns="1" inpkey="3862"/>
+														<entry name="measureClass" ns="1" inpkey="3863"/>
+														<entry name="description" ns="1" inpkey="3864"/>
+													</entry>
+												</entry>
+												<entry name="bend" ns="1" inpkey="3865" expanded="1">
+													<entry name="uid" type="attribute" inpkey="3866"/>
+													<entry name="angle" ns="1" inpkey="3867"/>
+													<entry name="distBendBot" ns="1" inpkey="3868"/>
+													<entry name="extensionAny" ns="1" inpkey="3869"/>
+													<entry name="extensionNameValue" ns="1" inpkey="3870" expanded="1">
+														<entry name="name" ns="1" inpkey="3871"/>
+														<entry name="value" ns="1" inpkey="3872"/>
+														<entry name="dTim" ns="1" inpkey="3873"/>
+														<entry name="index" ns="1" inpkey="3874"/>
+														<entry name="measureClass" ns="1" inpkey="3875"/>
+														<entry name="description" ns="1" inpkey="3876"/>
+													</entry>
+												</entry>
+												<entry name="holeOpener" ns="1" inpkey="3877">
+													<entry name="typeHoleOpener" ns="1" inpkey="3878"/>
+													<entry name="numCutter" ns="1" inpkey="3879"/>
+													<entry name="manufacturer" ns="1" inpkey="3880"/>
+													<entry name="diaHoleOpener" ns="1" inpkey="3881"/>
+													<entry name="extensionAny" ns="1" inpkey="3882"/>
+												</entry>
+												<entry name="rotarySteerableTool" ns="1" inpkey="3883" expanded="1">
+													<entry name="deflectionMethod" ns="1" inpkey="3884"/>
+													<entry name="bendAngle" ns="1" inpkey="3885"/>
+													<entry name="bendOffset" ns="1" inpkey="3886"/>
+													<entry name="holeSizeMn" ns="1" inpkey="3887"/>
+													<entry name="holeSizeMx" ns="1" inpkey="3888"/>
+													<entry name="wobMx" ns="1" inpkey="3889"/>
+													<entry name="operatingSpeed" ns="1" inpkey="3890"/>
+													<entry name="speedMx" ns="1" inpkey="3891"/>
+													<entry name="flowRateMn" ns="1" inpkey="3892"/>
+													<entry name="flowRateMx" ns="1" inpkey="3893"/>
+													<entry name="downLinkFlowRateMn" ns="1" inpkey="3894"/>
+													<entry name="downLinkFlowRateMx" ns="1" inpkey="3895"/>
+													<entry name="pressLossFact" ns="1" inpkey="3896"/>
+													<entry name="padCount" ns="1" inpkey="3897"/>
+													<entry name="padLen" ns="1" inpkey="3898"/>
+													<entry name="padWidth" ns="1" inpkey="3899"/>
+													<entry name="padOffset" ns="1" inpkey="3900"/>
+													<entry name="openPadOd" ns="1" inpkey="3901"/>
+													<entry name="closePadOd" ns="1" inpkey="3902"/>
+													<entry name="sensor" ns="1" inpkey="3903" expanded="1">
+														<entry name="uid" type="attribute" inpkey="3904"/>
+														<entry name="typeMeasurement" ns="1" inpkey="3905"/>
+														<entry name="offsetBot" ns="1" inpkey="3906"/>
+														<entry name="comments" ns="1" inpkey="3907"/>
+														<entry name="extensionAny" ns="1" inpkey="3908"/>
+														<entry name="extensionNameValue" ns="1" inpkey="3909" expanded="1">
+															<entry name="name" ns="1" inpkey="3910"/>
+															<entry name="value" ns="1" inpkey="3911"/>
+															<entry name="dTim" ns="1" inpkey="3912"/>
+															<entry name="index" ns="1" inpkey="3913"/>
+															<entry name="measureClass" ns="1" inpkey="3914"/>
+															<entry name="description" ns="1" inpkey="3915"/>
+														</entry>
+													</entry>
+													<entry name="extensionAny" ns="1" inpkey="3916"/>
+												</entry>
+												<entry name="extensionAny" ns="1" inpkey="3917"/>
+												<entry name="extensionNameValue" ns="1" inpkey="3918" expanded="1">
+													<entry name="name" ns="1" inpkey="3919"/>
+													<entry name="value" ns="1" inpkey="3920"/>
+													<entry name="dTim" ns="1" inpkey="3921"/>
+													<entry name="index" ns="1" inpkey="3922"/>
+													<entry name="measureClass" ns="1" inpkey="3923"/>
+													<entry name="description" ns="1" inpkey="3924"/>
+												</entry>
+											</entry>
+											<entry name="commonData" ns="1" expanded="1">
+												<entry name="dTimLastChange" ns="1" inpkey="3925"/>
+												<entry name="extensionNameValue" ns="1" inpkey="3926">
+													<entry name="name" ns="1" inpkey="3927"/>
+													<entry name="value" ns="1" inpkey="3928"/>
+													<entry name="dTim" ns="1" inpkey="3929"/>
+													<entry name="index" ns="1" inpkey="3930"/>
+													<entry name="measureClass" ns="1" inpkey="3931"/>
+													<entry name="description" ns="1" inpkey="3932"/>
+												</entry>
+											</entry>
+											<entry name="customData" ns="1" inpkey="3933"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_tubular.xsd" instanceroot="{http://www.witsml.org/schemas/1series}tubulars" outputinstance="..\output\reverse\tubular\tubular_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Tubular" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="103" lty="-27" rbx="416" rby="527"/>
+					<data>
+						<root scrollposition="1175">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Tubular" ns="2" outkey="2890" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="3937"/>
+											<entry name="Identifier" ns="1" outkey="4586"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" outkey="3939"/>
+											<entry name="LastUpdate" ns="1" outkey="3940"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="3434"/>
+										<entry name="ExtensionNameValue" ns="1" outkey="3435">
+											<entry name="Name" ns="1" outkey="3941"/>
+											<entry name="Value" ns="1" outkey="3942"/>
+											<entry name="MeasureClass" ns="1" outkey="3943"/>
+											<entry name="DTim" ns="1" outkey="3944"/>
+											<entry name="Index" ns="1" outkey="3945"/>
+											<entry name="Description" ns="1" outkey="3946"/>
+										</entry>
+										<entry name="TypeTubularAssy" ns="2" outkey="3436"/>
+										<entry name="ValveFloat" ns="2" outkey="3437"/>
+										<entry name="SourceNuclear" ns="2" outkey="3438"/>
+										<entry name="DiaHoleAssy" ns="2" outkey="3439"/>
+										<entry name="TubularComponent" ns="2" outkey="3440" expanded="1">
+											<entry name="uid" type="attribute" outkey="3441"/>
+											<entry name="TypeTubularComponent" ns="2" outkey="3442"/>
+											<entry name="Sequence" ns="2" outkey="3443"/>
+											<entry name="Description" ns="2" outkey="3444"/>
+											<entry name="Id" ns="2" outkey="3445"/>
+											<entry name="Od" ns="2" outkey="3446"/>
+											<entry name="OdMx" ns="2" outkey="3447"/>
+											<entry name="Len" ns="2" outkey="3448"/>
+											<entry name="LenJointAv" ns="2" outkey="3449"/>
+											<entry name="NumJointStand" ns="2" outkey="3450"/>
+											<entry name="WtPerLen" ns="2" outkey="3451"/>
+											<entry name="Grade" ns="2" outkey="3452"/>
+											<entry name="OdDrift" ns="2" outkey="3453"/>
+											<entry name="TensYield" ns="2" outkey="3454" expanded="1"/>
+											<entry name="TqYield" ns="2" outkey="3455"/>
+											<entry name="LenFishneck" ns="2" outkey="3457"/>
+											<entry name="IdFishneck" ns="2" outkey="3458"/>
+											<entry name="OdFishneck" ns="2" outkey="3459"/>
+											<entry name="Disp" ns="2" outkey="3460"/>
+											<entry name="PresBurst" ns="2" outkey="3461"/>
+											<entry name="PresCollapse" ns="2" outkey="3462"/>
+											<entry name="ClassService" ns="2" outkey="3463"/>
+											<entry name="WearWall" ns="2" outkey="3464"/>
+											<entry name="ThickWall" ns="2" outkey="3465"/>
+											<entry name="ConfigCon" ns="2" outkey="3466"/>
+											<entry name="BendStiffness" ns="2" outkey="3467"/>
+											<entry name="AxialStiffness" ns="2" outkey="3468"/>
+											<entry name="TorsionalStiffness" ns="2" outkey="3469"/>
+											<entry name="TypeMaterial" ns="2" outkey="3470"/>
+											<entry name="DoglegMx" ns="2" outkey="3471"/>
+											<entry name="Vendor" ns="2" outkey="3472"/>
+											<entry name="Model" ns="2" outkey="3473"/>
+											<entry name="NameTag" ns="2" outkey="3474">
+												<entry name="uid" type="attribute" outkey="3947"/>
+												<entry name="Name" ns="2" outkey="3948"/>
+												<entry name="NumberingScheme" ns="2" outkey="3949"/>
+												<entry name="Technology" ns="2" outkey="3950"/>
+												<entry name="Location" ns="2" outkey="3951"/>
+												<entry name="InstallationDate" ns="2" outkey="3952"/>
+												<entry name="InstallationCompany" ns="2" outkey="3953"/>
+												<entry name="MountingCode" ns="2" outkey="3954"/>
+												<entry name="Comment" ns="2" outkey="3955"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="3956" expanded="1">
+													<entry name="Name" ns="1" outkey="3957"/>
+													<entry name="Value" ns="1" outkey="3958"/>
+													<entry name="MeasureClass" ns="1" outkey="3959"/>
+													<entry name="DTim" ns="1" outkey="3960"/>
+													<entry name="Index" ns="1" outkey="3961"/>
+													<entry name="Description" ns="1" outkey="3962"/>
+												</entry>
+											</entry>
+											<entry name="AreaNozzleFlow" ns="2" outkey="3475" expanded="1"/>
+											<entry name="ExtensionNameValue" ns="2" outkey="3476" expanded="1">
+												<entry name="Name" ns="1" outkey="3963"/>
+												<entry name="Value" ns="1" outkey="3964"/>
+												<entry name="MeasureClass" ns="1" outkey="3965"/>
+												<entry name="DTim" ns="1" outkey="3966"/>
+												<entry name="Index" ns="1" outkey="3967"/>
+												<entry name="Description" ns="1" outkey="3968"/>
+											</entry>
+											<entry name="Connection" ns="2" outkey="3477" expanded="1">
+												<entry name="uid" type="attribute" outkey="3478"/>
+												<entry name="Id" ns="2" outkey="3479"/>
+												<entry name="Od" ns="2" outkey="3480"/>
+												<entry name="Len" ns="2" outkey="3481"/>
+												<entry name="TypeThread" ns="2" outkey="3482"/>
+												<entry name="SizeThread" ns="2" outkey="3483"/>
+												<entry name="TensYield" ns="2" outkey="3484"/>
+												<entry name="TqYield" ns="2" outkey="3485" expanded="1"/>
+												<entry name="Position" ns="2" outkey="3486"/>
+												<entry name="CriticalCrossSection" ns="2" outkey="3487"/>
+												<entry name="PresLeak" ns="2" outkey="3488" expanded="1"/>
+												<entry name="TqMakeup" ns="2" outkey="3489" expanded="1"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="3491" expanded="1">
+													<entry name="Name" ns="1" outkey="3969"/>
+													<entry name="Value" ns="1" outkey="3970"/>
+													<entry name="MeasureClass" ns="1" outkey="3971"/>
+													<entry name="DTim" ns="1" outkey="3972"/>
+													<entry name="Index" ns="1" outkey="3973"/>
+													<entry name="Description" ns="1" outkey="3974"/>
+												</entry>
+												<entry name="ExtensionAny" ns="2" outkey="3492"/>
+											</entry>
+											<entry name="Jar" ns="2" outkey="3493">
+												<entry name="ForUpSet" ns="2" outkey="3975"/>
+												<entry name="ForDownSet" ns="2" outkey="3976"/>
+												<entry name="ForUpTrip" ns="2" outkey="3977"/>
+												<entry name="ForDownTrip" ns="2" outkey="3978"/>
+												<entry name="ForPmpOpen" ns="2" outkey="3979"/>
+												<entry name="ForSealFric" ns="2" outkey="3980"/>
+												<entry name="TypeJar" ns="2" outkey="3981"/>
+												<entry name="JarAction" ns="2" outkey="3982"/>
+												<entry name="ExtensionAny" ns="2" outkey="3983"/>
+											</entry>
+											<entry name="MwdTool" ns="2" outkey="3494" expanded="1">
+												<entry name="FlowrateMn" ns="2" outkey="3984"/>
+												<entry name="FlowrateMx" ns="2" outkey="3985"/>
+												<entry name="TempMx" ns="2" outkey="3986"/>
+												<entry name="IdEquv" ns="2" outkey="3987"/>
+												<entry name="ExtensionAny" ns="2" outkey="3988"/>
+												<entry name="Sensor" ns="2" outkey="3989" expanded="1">
+													<entry name="uid" type="attribute" outkey="3990"/>
+													<entry name="TypeMeasurement" ns="2" outkey="3991"/>
+													<entry name="OffsetBot" ns="2" outkey="3992"/>
+													<entry name="Comments" ns="2" outkey="3993"/>
+													<entry name="ExtensionNameValue" ns="2" outkey="3994" expanded="1">
+														<entry name="Name" ns="1" outkey="3995"/>
+														<entry name="Value" ns="1" outkey="3996"/>
+														<entry name="MeasureClass" ns="1" outkey="3997"/>
+														<entry name="DTim" ns="1" outkey="3998"/>
+														<entry name="Index" ns="1" outkey="3999"/>
+														<entry name="Description" ns="1" outkey="4000"/>
+													</entry>
+													<entry name="ExtensionAny" ns="2" outkey="4001"/>
+												</entry>
+											</entry>
+											<entry name="BitRecord" ns="2" outkey="3495" expanded="1">
+												<entry name="uid" type="attribute" outkey="4002"/>
+												<entry name="NumBit" ns="2" outkey="4003"/>
+												<entry name="DiaBit" ns="2" outkey="4004"/>
+												<entry name="DiaPassThru" ns="2" outkey="4005"/>
+												<entry name="DiaPilot" ns="2" outkey="4006"/>
+												<entry name="Manufacturer" ns="2" outkey="4007"/>
+												<entry name="TypeBit" ns="2" outkey="4008"/>
+												<entry name="CodeMfg" ns="2" outkey="4009"/>
+												<entry name="CodeIADC" ns="2" outkey="4010"/>
+												<entry name="CondInitInner" ns="2" outkey="4011"/>
+												<entry name="CondInitOuter" ns="2" outkey="4012"/>
+												<entry name="CondInitDull" ns="2" outkey="4013"/>
+												<entry name="CondInitLocation" ns="2" outkey="4014"/>
+												<entry name="CondInitBearing" ns="2" outkey="4015"/>
+												<entry name="CondInitGauge" ns="2" outkey="4016"/>
+												<entry name="CondInitOther" ns="2" outkey="4017"/>
+												<entry name="CondInitReason" ns="2" outkey="4018"/>
+												<entry name="CondFinalInner" ns="2" outkey="4019"/>
+												<entry name="CondFinalOuter" ns="2" outkey="4020"/>
+												<entry name="CondFinalDull" ns="2" outkey="4021"/>
+												<entry name="CondFinalLocation" ns="2" outkey="4022"/>
+												<entry name="CondFinalBearing" ns="2" outkey="4023"/>
+												<entry name="CondFinalGauge" ns="2" outkey="4024"/>
+												<entry name="CondFinalOther" ns="2" outkey="4025"/>
+												<entry name="CondFinalReason" ns="2" outkey="4026"/>
+												<entry name="Drive" ns="2" outkey="4027"/>
+												<entry name="BitClass" ns="2" outkey="4028"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="4029" expanded="1">
+													<entry name="Name" ns="1" outkey="4030"/>
+													<entry name="Value" ns="1" outkey="4031"/>
+													<entry name="MeasureClass" ns="1" outkey="4032"/>
+													<entry name="DTim" ns="1" outkey="4033"/>
+													<entry name="Index" ns="1" outkey="4034"/>
+													<entry name="Description" ns="1" outkey="4035"/>
+												</entry>
+												<entry name="Cost" ns="2" outkey="4036">
+													<entry name="currency" type="attribute" outkey="4037"/>
+												</entry>
+												<entry name="ExtensionAny" ns="2" outkey="4038"/>
+											</entry>
+											<entry name="Motor" ns="2" outkey="3496">
+												<entry name="OffsetTool" ns="2" outkey="4039"/>
+												<entry name="PresLossFact" ns="2" outkey="4040"/>
+												<entry name="FlowrateMn" ns="2" outkey="4041"/>
+												<entry name="FlowrateMx" ns="2" outkey="4042"/>
+												<entry name="DiaRotorNozzle" ns="2" outkey="4043"/>
+												<entry name="ClearanceBearBox" ns="2" outkey="4044"/>
+												<entry name="LobesRotor" ns="2" outkey="4045"/>
+												<entry name="LobesStator" ns="2" outkey="4046"/>
+												<entry name="TypeBearing" ns="2" outkey="4047"/>
+												<entry name="TempOpMx" ns="2" outkey="4048"/>
+												<entry name="RotorCatcher" ns="2" outkey="4049"/>
+												<entry name="DumpValve" ns="2" outkey="4050"/>
+												<entry name="DiaNozzle" ns="2" outkey="4051"/>
+												<entry name="Rotatable" ns="2" outkey="4052"/>
+												<entry name="BendSettingsMn" ns="2" outkey="4053"/>
+												<entry name="BendSettingsMx" ns="2" outkey="4054"/>
+												<entry name="ExtensionAny" ns="2" outkey="4055"/>
+											</entry>
+											<entry name="Stabilizer" ns="2" outkey="3497" expanded="1">
+												<entry name="uid" type="attribute" outkey="4056"/>
+												<entry name="LenBlade" ns="2" outkey="4057"/>
+												<entry name="LenBladeGauge" ns="2" outkey="4058"/>
+												<entry name="OdBladeMx" ns="2" outkey="4059"/>
+												<entry name="OdBladeMn" ns="2" outkey="4060"/>
+												<entry name="DistBladeBot" ns="2" outkey="4061"/>
+												<entry name="ShapeBlade" ns="2" outkey="4062"/>
+												<entry name="FactFric" ns="2" outkey="4063"/>
+												<entry name="TypeBlade" ns="2" outkey="4064"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="4065" expanded="1">
+													<entry name="Name" ns="1" outkey="4066"/>
+													<entry name="Value" ns="1" outkey="4067"/>
+													<entry name="MeasureClass" ns="1" outkey="4068"/>
+													<entry name="DTim" ns="1" outkey="4069"/>
+													<entry name="Index" ns="1" outkey="4070"/>
+													<entry name="Description" ns="1" outkey="4071"/>
+												</entry>
+												<entry name="ExtensionAny" ns="2" outkey="4072"/>
+											</entry>
+											<entry name="Bend" ns="2" outkey="3498" expanded="1">
+												<entry name="uid" type="attribute" outkey="4073"/>
+												<entry name="Angle" ns="2" outkey="4074"/>
+												<entry name="DistBendBot" ns="2" outkey="4075"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="4076" expanded="1">
+													<entry name="Name" ns="1" outkey="4077"/>
+													<entry name="Value" ns="1" outkey="4078"/>
+													<entry name="MeasureClass" ns="1" outkey="4079"/>
+													<entry name="DTim" ns="1" outkey="4080"/>
+													<entry name="Index" ns="1" outkey="4081"/>
+													<entry name="Description" ns="1" outkey="4082"/>
+												</entry>
+												<entry name="ExtensionAny" ns="2" outkey="4083"/>
+											</entry>
+											<entry name="HoleOpener" ns="2" outkey="3499">
+												<entry name="TypeHoleOpener" ns="2" outkey="4084"/>
+												<entry name="NumCutter" ns="2" outkey="4085"/>
+												<entry name="Manufacturer" ns="2" outkey="4086"/>
+												<entry name="DiaHoleOpener" ns="2" outkey="4087"/>
+												<entry name="ExtensionAny" ns="2" outkey="4088"/>
+											</entry>
+											<entry name="RotarySteerableTool" ns="2" outkey="3500" expanded="1">
+												<entry name="DeflectionMethod" ns="2" outkey="3645"/>
+												<entry name="HoleSizeMn" ns="2" outkey="3646"/>
+												<entry name="HoleSizeMx" ns="2" outkey="3647"/>
+												<entry name="WobMx" ns="2" outkey="3648"/>
+												<entry name="OperatingSpeed" ns="2" outkey="3649"/>
+												<entry name="SpeedMx" ns="2" outkey="3650"/>
+												<entry name="FlowRateMn" ns="2" outkey="3651"/>
+												<entry name="FlowRateMx" ns="2" outkey="3652"/>
+												<entry name="DownLinkFlowRateMn" ns="2" outkey="3653"/>
+												<entry name="DownLinkFlowRateMx" ns="2" outkey="3654"/>
+												<entry name="PressLossFact" ns="2" outkey="3655"/>
+												<entry name="PadCount" ns="2" outkey="3656"/>
+												<entry name="PadLen" ns="2" outkey="3657"/>
+												<entry name="PadWidth" ns="2" outkey="3658"/>
+												<entry name="PadOffset" ns="2" outkey="3659"/>
+												<entry name="OpenPadOd" ns="2" outkey="3660"/>
+												<entry name="ClosePadOd" ns="2" outkey="3661"/>
+												<entry name="AbstractRotarySteerableTool" ns="2" displayselectionmode="all"/>
+												<entry name="AbstractRotarySteerableTool" ns="2" outkey="3662">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}BendAngle" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="AbstractRotarySteerableTool" ns="2" outkey="3663">
+													<condition>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+																</expression>
+																<expression>
+																	<constant value="{http://www.energistics.org/energyml/data/witsmlv2}BendOffset" datatype="QName"/>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Sensor" ns="2" outkey="3664">
+													<entry name="uid" type="attribute" outkey="4089"/>
+													<entry name="TypeMeasurement" ns="2" outkey="4090"/>
+													<entry name="OffsetBot" ns="2" outkey="4091"/>
+													<entry name="Comments" ns="2" outkey="4092"/>
+													<entry name="ExtensionNameValue" ns="2" outkey="4093">
+														<entry name="Name" ns="1" outkey="4094"/>
+														<entry name="Value" ns="1" outkey="4095"/>
+														<entry name="MeasureClass" ns="1" outkey="4096"/>
+														<entry name="DTim" ns="1" outkey="4097"/>
+														<entry name="Index" ns="1" outkey="4098"/>
+														<entry name="Description" ns="1" outkey="4099"/>
+													</entry>
+													<entry name="ExtensionAny" ns="2" outkey="4100"/>
+												</entry>
+												<entry name="ExtensionAny" ns="2" outkey="3665"/>
+											</entry>
+											<entry name="ExtensionAny" ns="2" outkey="3501"/>
+											<entry name="Nozzle" ns="2" outkey="3502">
+												<entry name="uid" type="attribute" outkey="4101"/>
+												<entry name="Index" ns="2" outkey="4102"/>
+												<entry name="DiaNozzle" ns="2" outkey="4103"/>
+												<entry name="TypeNozzle" ns="2" outkey="4104"/>
+												<entry name="Len" ns="2" outkey="4105"/>
+												<entry name="Orientation" ns="2" outkey="4106"/>
+												<entry name="ExtensionNameValue" ns="2" outkey="4107" expanded="1">
+													<entry name="Name" ns="1" outkey="4108"/>
+													<entry name="Value" ns="1" outkey="4109"/>
+													<entry name="MeasureClass" ns="1" outkey="4110"/>
+													<entry name="DTim" ns="1" outkey="4111"/>
+													<entry name="Index" ns="1" outkey="4112"/>
+													<entry name="Description" ns="1" outkey="4113"/>
+												</entry>
+												<entry name="ExtensionAny" ns="2" outkey="4114"/>
+											</entry>
+										</entry>
+										<entry name="Wellbore" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="4116"/>
+											<entry name="UuidAuthority" ns="1" outkey="4117"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\Tubular.xsd" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}Tubular" inputinstance="..\..\input\reverse\tubular\tubular_no_xsl.xml"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="3674">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3680">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3681">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3682">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3683">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3684">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3686">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3688">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3689">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3690">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3691">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3692">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3693">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3694">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3695">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3696">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3698">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3699">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3701">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3702">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3703">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3705">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3728">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3729">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3730">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3755">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3763">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3767">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3769">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3771">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3781">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3782">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3783">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3785">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3786">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3787">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3789">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3790">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3792">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3801">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3802">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3803">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3804">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3805">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3806">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3809">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3811">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3812">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3813">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3814">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3818">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3820">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3828">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3830">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3832">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3833">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3834">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3835">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3839">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3842">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3844">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3845">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3846">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3849">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3850">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3851">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3852">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3853">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3857">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3867">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3868">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3869">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3881">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3882">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3885">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3886">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3887">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3888">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3889">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3890">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3891">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3892">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3893">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3894">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3895">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3898">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3899">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3900">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3901">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3902">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3906">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3908">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3916">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3917">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="3933">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="3937">
+						<edges>
+							<edge vertexkey="3666"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2890">
+						<edges>
+							<edge vertexkey="3667"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4117">
+						<edges>
+							<edge vertexkey="3668"/>
+							<edge vertexkey="4579"/>
+							<edge vertexkey="4582"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4116">
+						<edges>
+							<edge vertexkey="3669"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3939">
+						<edges>
+							<edge vertexkey="3670"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3436">
+						<edges>
+							<edge vertexkey="3671"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3437">
+						<edges>
+							<edge vertexkey="3672"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3438">
+						<edges>
+							<edge vertexkey="3673"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3439">
+						<edges>
+							<edge vertexkey="3674" edgekey="3674"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3440">
+						<edges>
+							<edge vertexkey="3675"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3441">
+						<edges>
+							<edge vertexkey="3676"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3442">
+						<edges>
+							<edge vertexkey="3677"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3443">
+						<edges>
+							<edge vertexkey="3678"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3444">
+						<edges>
+							<edge vertexkey="3679"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3445">
+						<edges>
+							<edge vertexkey="3680" edgekey="3680"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3446">
+						<edges>
+							<edge vertexkey="3681" edgekey="3681"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3447">
+						<edges>
+							<edge vertexkey="3682" edgekey="3682"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3448">
+						<edges>
+							<edge vertexkey="3683" edgekey="3683"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3449">
+						<edges>
+							<edge vertexkey="3684" edgekey="3684"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3450">
+						<edges>
+							<edge vertexkey="3685"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3451">
+						<edges>
+							<edge vertexkey="3686" edgekey="3686"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3452">
+						<edges>
+							<edge vertexkey="3687"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3453">
+						<edges>
+							<edge vertexkey="3688" edgekey="3688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3454">
+						<edges>
+							<edge vertexkey="3689" edgekey="3689"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3455">
+						<edges>
+							<edge vertexkey="3690" edgekey="3690"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3457">
+						<edges>
+							<edge vertexkey="3691" edgekey="3691"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3458">
+						<edges>
+							<edge vertexkey="3692" edgekey="3692"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3459">
+						<edges>
+							<edge vertexkey="3693" edgekey="3693"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3460">
+						<edges>
+							<edge vertexkey="3694" edgekey="3694"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3461">
+						<edges>
+							<edge vertexkey="3695" edgekey="3695"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3462">
+						<edges>
+							<edge vertexkey="3696" edgekey="3696"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3463">
+						<edges>
+							<edge vertexkey="3697"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3464">
+						<edges>
+							<edge vertexkey="3698" edgekey="3698"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3465">
+						<edges>
+							<edge vertexkey="3699" edgekey="3699"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3466">
+						<edges>
+							<edge vertexkey="3700"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3467">
+						<edges>
+							<edge vertexkey="3701" edgekey="3701"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3468">
+						<edges>
+							<edge vertexkey="3702" edgekey="3702"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3469">
+						<edges>
+							<edge vertexkey="3703" edgekey="3703"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3470">
+						<edges>
+							<edge vertexkey="3704"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3471">
+						<edges>
+							<edge vertexkey="3705" edgekey="3705"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3472">
+						<edges>
+							<edge vertexkey="3706"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3473">
+						<edges>
+							<edge vertexkey="3707"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3474">
+						<edges>
+							<edge vertexkey="3708"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3947">
+						<edges>
+							<edge vertexkey="3709"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3948">
+						<edges>
+							<edge vertexkey="3710"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3949">
+						<edges>
+							<edge vertexkey="3711"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3950">
+						<edges>
+							<edge vertexkey="3712"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3951">
+						<edges>
+							<edge vertexkey="3713"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3952">
+						<edges>
+							<edge vertexkey="3714"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3953">
+						<edges>
+							<edge vertexkey="3715"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3954">
+						<edges>
+							<edge vertexkey="3716"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3955">
+						<edges>
+							<edge vertexkey="3717"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3956">
+						<edges>
+							<edge vertexkey="3718"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3957">
+						<edges>
+							<edge vertexkey="3719"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3958">
+						<edges>
+							<edge vertexkey="3720"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3960">
+						<edges>
+							<edge vertexkey="3721"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3961">
+						<edges>
+							<edge vertexkey="3722"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3959">
+						<edges>
+							<edge vertexkey="3723"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3962">
+						<edges>
+							<edge vertexkey="3724"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3495">
+						<edges>
+							<edge vertexkey="3725"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4002">
+						<edges>
+							<edge vertexkey="3726"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4003">
+						<edges>
+							<edge vertexkey="3727"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4004">
+						<edges>
+							<edge vertexkey="3728" edgekey="3728"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4005">
+						<edges>
+							<edge vertexkey="3729" edgekey="3729"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4006">
+						<edges>
+							<edge vertexkey="3730" edgekey="3730"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4007">
+						<edges>
+							<edge vertexkey="3731"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4008">
+						<edges>
+							<edge vertexkey="3732"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4036">
+						<edges>
+							<edge vertexkey="3733"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4037">
+						<edges>
+							<edge vertexkey="3734"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4009">
+						<edges>
+							<edge vertexkey="3735"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4010">
+						<edges>
+							<edge vertexkey="3736"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4011">
+						<edges>
+							<edge vertexkey="3737"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4012">
+						<edges>
+							<edge vertexkey="3738"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4013">
+						<edges>
+							<edge vertexkey="3739"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4014">
+						<edges>
+							<edge vertexkey="3740"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4015">
+						<edges>
+							<edge vertexkey="3741"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4016">
+						<edges>
+							<edge vertexkey="3742"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4017">
+						<edges>
+							<edge vertexkey="3743"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4018">
+						<edges>
+							<edge vertexkey="3744"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4019">
+						<edges>
+							<edge vertexkey="3745"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4020">
+						<edges>
+							<edge vertexkey="3746"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4021">
+						<edges>
+							<edge vertexkey="3747"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4022">
+						<edges>
+							<edge vertexkey="3748"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4023">
+						<edges>
+							<edge vertexkey="3749"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4024">
+						<edges>
+							<edge vertexkey="3750"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4025">
+						<edges>
+							<edge vertexkey="3751"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4026">
+						<edges>
+							<edge vertexkey="3752"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4027">
+						<edges>
+							<edge vertexkey="3753"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4028">
+						<edges>
+							<edge vertexkey="3754"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4038">
+						<edges>
+							<edge vertexkey="3755" edgekey="3755"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4029">
+						<edges>
+							<edge vertexkey="3756"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4030">
+						<edges>
+							<edge vertexkey="3757"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4031">
+						<edges>
+							<edge vertexkey="3758"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4033">
+						<edges>
+							<edge vertexkey="3759"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4034">
+						<edges>
+							<edge vertexkey="3760"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4032">
+						<edges>
+							<edge vertexkey="3761"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4035">
+						<edges>
+							<edge vertexkey="3762"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3475">
+						<edges>
+							<edge vertexkey="3763" edgekey="3763"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3502">
+						<edges>
+							<edge vertexkey="3764"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4101">
+						<edges>
+							<edge vertexkey="3765"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4102">
+						<edges>
+							<edge vertexkey="3766"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4103">
+						<edges>
+							<edge vertexkey="3767" edgekey="3767"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4104">
+						<edges>
+							<edge vertexkey="3768"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4105">
+						<edges>
+							<edge vertexkey="3769" edgekey="3769"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4106">
+						<edges>
+							<edge vertexkey="3770"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4114">
+						<edges>
+							<edge vertexkey="3771" edgekey="3771"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4107">
+						<edges>
+							<edge vertexkey="3772"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4108">
+						<edges>
+							<edge vertexkey="3773"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4109">
+						<edges>
+							<edge vertexkey="3774"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4111">
+						<edges>
+							<edge vertexkey="3775"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4112">
+						<edges>
+							<edge vertexkey="3776"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4110">
+						<edges>
+							<edge vertexkey="3777"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4113">
+						<edges>
+							<edge vertexkey="3778"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3477">
+						<edges>
+							<edge vertexkey="3779"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3478">
+						<edges>
+							<edge vertexkey="3780"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3479">
+						<edges>
+							<edge vertexkey="3781" edgekey="3781"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3480">
+						<edges>
+							<edge vertexkey="3782" edgekey="3782"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3481">
+						<edges>
+							<edge vertexkey="3783" edgekey="3783"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3482">
+						<edges>
+							<edge vertexkey="3784"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3483">
+						<edges>
+							<edge vertexkey="3785" edgekey="3785"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3484">
+						<edges>
+							<edge vertexkey="3786" edgekey="3786"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3485">
+						<edges>
+							<edge vertexkey="3787" edgekey="3787"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3486">
+						<edges>
+							<edge vertexkey="3788"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3487">
+						<edges>
+							<edge vertexkey="3789" edgekey="3789"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3488">
+						<edges>
+							<edge vertexkey="3790" edgekey="3790"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3489">
+						<edges>
+							<edge vertexkey="3791"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3492">
+						<edges>
+							<edge vertexkey="3792" edgekey="3792"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3491">
+						<edges>
+							<edge vertexkey="3793"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3969">
+						<edges>
+							<edge vertexkey="3794"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3970">
+						<edges>
+							<edge vertexkey="3795"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3972">
+						<edges>
+							<edge vertexkey="3796"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3973">
+						<edges>
+							<edge vertexkey="3797"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3971">
+						<edges>
+							<edge vertexkey="3798"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3974">
+						<edges>
+							<edge vertexkey="3799"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3493">
+						<edges>
+							<edge vertexkey="3800"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3975">
+						<edges>
+							<edge vertexkey="3801" edgekey="3801"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3976">
+						<edges>
+							<edge vertexkey="3802" edgekey="3802"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3977">
+						<edges>
+							<edge vertexkey="3803" edgekey="3803"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3978">
+						<edges>
+							<edge vertexkey="3804" edgekey="3804"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3979">
+						<edges>
+							<edge vertexkey="3805" edgekey="3805"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3980">
+						<edges>
+							<edge vertexkey="3806" edgekey="3806"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3981">
+						<edges>
+							<edge vertexkey="3807"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3982">
+						<edges>
+							<edge vertexkey="3808"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3983">
+						<edges>
+							<edge vertexkey="3809" edgekey="3809"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3494">
+						<edges>
+							<edge vertexkey="3810"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3984">
+						<edges>
+							<edge vertexkey="3811" edgekey="3811"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3985">
+						<edges>
+							<edge vertexkey="3812" edgekey="3812"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3986">
+						<edges>
+							<edge vertexkey="3813" edgekey="3813"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3987">
+						<edges>
+							<edge vertexkey="3814" edgekey="3814"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3989">
+						<edges>
+							<edge vertexkey="3815"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3990">
+						<edges>
+							<edge vertexkey="3816"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3991">
+						<edges>
+							<edge vertexkey="3817"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3992">
+						<edges>
+							<edge vertexkey="3818" edgekey="3818"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3993">
+						<edges>
+							<edge vertexkey="3819"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4001">
+						<edges>
+							<edge vertexkey="3820" edgekey="3820"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3994">
+						<edges>
+							<edge vertexkey="3821"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3995">
+						<edges>
+							<edge vertexkey="3822"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3996">
+						<edges>
+							<edge vertexkey="3823"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3998">
+						<edges>
+							<edge vertexkey="3824"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3999">
+						<edges>
+							<edge vertexkey="3825"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3997">
+						<edges>
+							<edge vertexkey="3826"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4000">
+						<edges>
+							<edge vertexkey="3827"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3988">
+						<edges>
+							<edge vertexkey="3828" edgekey="3828"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3496">
+						<edges>
+							<edge vertexkey="3829"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4039">
+						<edges>
+							<edge vertexkey="3830" edgekey="3830"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4040">
+						<edges>
+							<edge vertexkey="3831"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4041">
+						<edges>
+							<edge vertexkey="3832" edgekey="3832"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4042">
+						<edges>
+							<edge vertexkey="3833" edgekey="3833"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4043">
+						<edges>
+							<edge vertexkey="3834" edgekey="3834"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4044">
+						<edges>
+							<edge vertexkey="3835" edgekey="3835"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4045">
+						<edges>
+							<edge vertexkey="3836"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4046">
+						<edges>
+							<edge vertexkey="3837"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4047">
+						<edges>
+							<edge vertexkey="3838"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4048">
+						<edges>
+							<edge vertexkey="3839" edgekey="3839"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4049">
+						<edges>
+							<edge vertexkey="3840"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4050">
+						<edges>
+							<edge vertexkey="3841"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4051">
+						<edges>
+							<edge vertexkey="3842" edgekey="3842"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4052">
+						<edges>
+							<edge vertexkey="3843"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4053">
+						<edges>
+							<edge vertexkey="3844" edgekey="3844"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4054">
+						<edges>
+							<edge vertexkey="3845" edgekey="3845"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4055">
+						<edges>
+							<edge vertexkey="3846" edgekey="3846"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3497">
+						<edges>
+							<edge vertexkey="3847"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4056">
+						<edges>
+							<edge vertexkey="3848"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4057">
+						<edges>
+							<edge vertexkey="3849" edgekey="3849"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4058">
+						<edges>
+							<edge vertexkey="3850" edgekey="3850"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4059">
+						<edges>
+							<edge vertexkey="3851" edgekey="3851"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4060">
+						<edges>
+							<edge vertexkey="3852" edgekey="3852"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4061">
+						<edges>
+							<edge vertexkey="3853" edgekey="3853"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4062">
+						<edges>
+							<edge vertexkey="3854"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4063">
+						<edges>
+							<edge vertexkey="3855"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4064">
+						<edges>
+							<edge vertexkey="3856"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4072">
+						<edges>
+							<edge vertexkey="3857" edgekey="3857"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4065">
+						<edges>
+							<edge vertexkey="3858"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4066">
+						<edges>
+							<edge vertexkey="3859"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4067">
+						<edges>
+							<edge vertexkey="3860"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4069">
+						<edges>
+							<edge vertexkey="3861"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4070">
+						<edges>
+							<edge vertexkey="3862"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4068">
+						<edges>
+							<edge vertexkey="3863"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4071">
+						<edges>
+							<edge vertexkey="3864"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3498">
+						<edges>
+							<edge vertexkey="3865"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4073">
+						<edges>
+							<edge vertexkey="3866"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4074">
+						<edges>
+							<edge vertexkey="3867" edgekey="3867"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4075">
+						<edges>
+							<edge vertexkey="3868" edgekey="3868"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4083">
+						<edges>
+							<edge vertexkey="3869" edgekey="3869"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4076">
+						<edges>
+							<edge vertexkey="3870"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4077">
+						<edges>
+							<edge vertexkey="3871"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4078">
+						<edges>
+							<edge vertexkey="3872"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4080">
+						<edges>
+							<edge vertexkey="3873"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4081">
+						<edges>
+							<edge vertexkey="3874"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4079">
+						<edges>
+							<edge vertexkey="3875"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4082">
+						<edges>
+							<edge vertexkey="3876"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3499">
+						<edges>
+							<edge vertexkey="3877"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4084">
+						<edges>
+							<edge vertexkey="3878"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4085">
+						<edges>
+							<edge vertexkey="3879"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4086">
+						<edges>
+							<edge vertexkey="3880"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4087">
+						<edges>
+							<edge vertexkey="3881" edgekey="3881"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4088">
+						<edges>
+							<edge vertexkey="3882" edgekey="3882"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3500">
+						<edges>
+							<edge vertexkey="3883"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3645">
+						<edges>
+							<edge vertexkey="3884"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3662">
+						<edges>
+							<edge vertexkey="3885" edgekey="3885"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3663">
+						<edges>
+							<edge vertexkey="3886" edgekey="3886"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3646">
+						<edges>
+							<edge vertexkey="3887" edgekey="3887"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3647">
+						<edges>
+							<edge vertexkey="3888" edgekey="3888"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3648">
+						<edges>
+							<edge vertexkey="3889" edgekey="3889"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3649">
+						<edges>
+							<edge vertexkey="3890" edgekey="3890"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3650">
+						<edges>
+							<edge vertexkey="3891" edgekey="3891"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3651">
+						<edges>
+							<edge vertexkey="3892" edgekey="3892"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3652">
+						<edges>
+							<edge vertexkey="3893" edgekey="3893"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3653">
+						<edges>
+							<edge vertexkey="3894" edgekey="3894"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3654">
+						<edges>
+							<edge vertexkey="3895" edgekey="3895"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3655">
+						<edges>
+							<edge vertexkey="3896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3656">
+						<edges>
+							<edge vertexkey="3897"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3657">
+						<edges>
+							<edge vertexkey="3898" edgekey="3898"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3658">
+						<edges>
+							<edge vertexkey="3899" edgekey="3899"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3659">
+						<edges>
+							<edge vertexkey="3900" edgekey="3900"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3660">
+						<edges>
+							<edge vertexkey="3901" edgekey="3901"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3661">
+						<edges>
+							<edge vertexkey="3902" edgekey="3902"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3664">
+						<edges>
+							<edge vertexkey="3903"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4089">
+						<edges>
+							<edge vertexkey="3904"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4090">
+						<edges>
+							<edge vertexkey="3905"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4091">
+						<edges>
+							<edge vertexkey="3906" edgekey="3906"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4092">
+						<edges>
+							<edge vertexkey="3907"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4100">
+						<edges>
+							<edge vertexkey="3908" edgekey="3908"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4093">
+						<edges>
+							<edge vertexkey="3909"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4094">
+						<edges>
+							<edge vertexkey="3910"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4095">
+						<edges>
+							<edge vertexkey="3911"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4097">
+						<edges>
+							<edge vertexkey="3912"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4098">
+						<edges>
+							<edge vertexkey="3913"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4096">
+						<edges>
+							<edge vertexkey="3914"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4099">
+						<edges>
+							<edge vertexkey="3915"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3665">
+						<edges>
+							<edge vertexkey="3916" edgekey="3916"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3501">
+						<edges>
+							<edge vertexkey="3917" edgekey="3917"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3476">
+						<edges>
+							<edge vertexkey="3918"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3963">
+						<edges>
+							<edge vertexkey="3919"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3964">
+						<edges>
+							<edge vertexkey="3920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3966">
+						<edges>
+							<edge vertexkey="3921"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3967">
+						<edges>
+							<edge vertexkey="3922"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3965">
+						<edges>
+							<edge vertexkey="3923"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3968">
+						<edges>
+							<edge vertexkey="3924"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3940">
+						<edges>
+							<edge vertexkey="3925"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3435">
+						<edges>
+							<edge vertexkey="3926"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3941">
+						<edges>
+							<edge vertexkey="3927"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3942">
+						<edges>
+							<edge vertexkey="3928"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3944">
+						<edges>
+							<edge vertexkey="3929"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3945">
+						<edges>
+							<edge vertexkey="3930"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3943">
+						<edges>
+							<edge vertexkey="3931"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3946">
+						<edges>
+							<edge vertexkey="3932"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3434">
+						<edges>
+							<edge vertexkey="3933" edgekey="3933"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4586">
+						<edges>
+							<edge vertexkey="4578"/>
+							<edge vertexkey="4581"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4583">
+						<edges>
+							<edge vertexkey="4588"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4580">
+						<edges>
+							<edge vertexkey="4589"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="string_is_same" library="user" uid="123" inline="1" editable="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="string1" library="core" uid="10" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="68" lty="88" rbx="161" rby="126"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string1"/>
+					</data>
+				</component>
+				<component name="string2" library="core" uid="11" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="100" lty="191" rbx="193" rby="229"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string2"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="122" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="313" lty="134" rbx="369" rby="188"/>
+				</component>
+				<component name="result" library="core" uid="9" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="397" lty="150" rbx="454" rby="188"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

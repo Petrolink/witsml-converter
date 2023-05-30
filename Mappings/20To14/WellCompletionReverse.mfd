@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2018sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="substring-before" library="core" uid="5" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="269"/>
+						<datapoint pos="1" key="267"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="270"/>
+					</targets>
+					<view ltx="670" lty="79" rbx="784" rby="133"/>
+				</component>
+				<component name="substring-after" library="core" uid="4" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="266"/>
+						<datapoint pos="1" key="271"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="268"/>
+					</targets>
+					<view ltx="492" lty="79" rbx="596" rby="133"/>
+				</component>
+				<component name="lowercase" library="lang" uid="131" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="292"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="286"/>
+					</targets>
+					<view ltx="652" lty="409" rbx="734" rby="447"/>
+				</component>
+				<component name="string_is_same" library="user" uid="124" kind="19" visible="0" blackbox="0">
+					<view ltx="564" lty="269" rbx="673" rby="303"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="274" componentid="10"/>
+							<entry name="string2" inpkey="275" componentid="11"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="276" componentid="9"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="126" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="273"/>
+					</targets>
+					<view ltx="432" lty="495" rbx="596" rby="512"/>
+					<data>
+						<constant value="Temporarily Abandoned" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="127" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="278"/>
+						<datapoint pos="1" key="283"/>
+						<datapoint pos="2" key="284"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="285"/>
+					</targets>
+					<view ltx="755" lty="269" rbx="855" rby="342"/>
+				</component>
+				<component name="if-else" library="core" uid="133" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="290"/>
+						<datapoint pos="1" key="289"/>
+						<datapoint pos="2" key="288"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="291"/>
+					</targets>
+					<view ltx="771" lty="586" rbx="871" rby="659"/>
+				</component>
+				<component name="string_is_same" library="user" uid="132" kind="19" visible="0" blackbox="0">
+					<view ltx="591" lty="586" rbx="700" rby="620"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string1" inpkey="280" componentid="10"/>
+							<entry name="string2" inpkey="282" componentid="11"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="281" componentid="9"/>
+						</root>
+					</data>
+				</component>
+				<component name="lowercase" library="lang" uid="129" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="293"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="279"/>
+					</targets>
+					<view ltx="652" lty="446" rbx="734" rby="484"/>
+				</component>
+				<component name="constant" library="core" uid="125" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="272"/>
+					</targets>
+					<view ltx="440" lty="479" rbx="596" rby="496"/>
+					<data>
+						<constant value="Temporary Abandoned" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="WellCompletion" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="355" rby="562"/>
+					<data>
+						<root scrollposition="256">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.energistics.org/energyml/data/commonv2"/>
+									<namespace uid="http://www.energistics.org/energyml/data/witsmlv2"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="3" expanded="1">
+								<entry name="document" ns="3" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="WellCompletion" ns="2" outkey="208" expanded="1">
+										<entry name="Aliases" ns="1" expanded="1">
+											<entry name="authority" type="attribute" outkey="209"/>
+											<entry name="Identifier" ns="1" outkey="296"/>
+										</entry>
+										<entry name="Citation" ns="1">
+											<entry name="Title" ns="1" outkey="210"/>
+											<entry name="LastUpdate" ns="1" outkey="211"/>
+										</entry>
+										<entry name="CustomData" ns="1" outkey="212"/>
+										<entry name="ExtensionNameValue" ns="1" outkey="213" expanded="1">
+											<entry name="Name" ns="1" outkey="214"/>
+											<entry name="Value" ns="1" outkey="215"/>
+											<entry name="DTim" ns="1" outkey="216"/>
+											<entry name="Index" ns="1" outkey="217"/>
+											<entry name="Description" ns="1" outkey="218"/>
+										</entry>
+										<entry name="FieldID" ns="2" outkey="219"/>
+										<entry name="FieldCode" ns="2" outkey="220"/>
+										<entry name="FieldType" ns="2" outkey="221"/>
+										<entry name="EffectiveDate" ns="2" outkey="222"/>
+										<entry name="ExpiredDate" ns="2" outkey="223"/>
+										<entry name="E_P_RightsID" ns="2" outkey="224"/>
+										<entry name="CurrentStatus" ns="2" outkey="277"/>
+										<entry name="StatusDate" ns="2" outkey="225"/>
+										<entry name="StatusHistory" ns="2" outkey="226" expanded="1">
+											<entry name="uid" type="attribute" outkey="227"/>
+											<entry name="Status" ns="2" outkey="297"/>
+											<entry name="StartDate" ns="2" outkey="228"/>
+											<entry name="EndDate" ns="2" outkey="229"/>
+											<entry name="PerforationMdInterval" ns="2" expanded="1">
+												<entry name="datum" type="attribute" outkey="230"/>
+												<entry name="MdTop" ns="1" outkey="231" expanded="1">
+													<entry name="uom" type="attribute" outkey="232"/>
+												</entry>
+												<entry name="MdBase" ns="1" outkey="233" expanded="1">
+													<entry name="uom" type="attribute" outkey="317"/>
+												</entry>
+											</entry>
+											<entry name="Comment" ns="2" outkey="234"/>
+										</entry>
+										<entry name="Well" ns="2" expanded="1">
+											<entry name="Title" ns="1" outkey="235"/>
+											<entry name="UuidAuthority" ns="1" outkey="236"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\Energistics\energyml\data\witsml\v2.0\xsd_schemas\WellCompletion.xsd" inputinstance="..\..\input\reverse\wellCompletion\WellCompletion.xml" instanceroot="{http://www.energistics.org/energyml/data/witsmlv2}WellCompletion"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="obj_wellCompletion" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1269" rbx="1575" rby="562"/>
+					<data>
+						<root scrollposition="596">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.witsml.org/schemas/1series"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="wellCompletions" ns="1" expanded="1">
+										<entry name="version" type="attribute" inpkey="179"/>
+										<entry name="wellCompletion" ns="1" inpkey="180" expanded="1">
+											<entry name="uidWell" type="attribute" inpkey="181"/>
+											<entry name="uid" type="attribute" inpkey="294"/>
+											<entry name="nameWell" ns="1" inpkey="182"/>
+											<entry name="name" ns="1" inpkey="183"/>
+											<entry name="fieldID" ns="1" inpkey="184"/>
+											<entry name="fieldCode" ns="1" inpkey="185"/>
+											<entry name="fieldType" ns="1" inpkey="186"/>
+											<entry name="effectiveDate" ns="1" inpkey="187"/>
+											<entry name="expiredDate" ns="1" inpkey="188"/>
+											<entry name="E_P_RightsID" ns="1" inpkey="189"/>
+											<entry name="currentStatus" ns="1" inpkey="287"/>
+											<entry name="statusDate" ns="1" inpkey="190"/>
+											<entry name="statusHistory" ns="1" inpkey="191" expanded="1">
+												<entry name="uid" type="attribute" inpkey="192"/>
+												<entry name="status" ns="1" inpkey="295"/>
+												<entry name="startDate" ns="1" inpkey="193"/>
+												<entry name="endDate" ns="1" inpkey="194"/>
+												<entry name="mdBottom" ns="1" inpkey="195" expanded="1">
+													<entry name="uom" type="attribute" inpkey="196"/>
+													<entry name="datum" type="attribute" inpkey="197"/>
+												</entry>
+												<entry name="mdTop" ns="1" inpkey="198" expanded="1">
+													<entry name="uom" type="attribute" inpkey="318"/>
+													<entry name="datum" type="attribute" inpkey="319"/>
+												</entry>
+												<entry name="comment" ns="1" inpkey="199"/>
+											</entry>
+											<entry name="commonData" ns="1" expanded="1">
+												<entry name="dTimLastChange" ns="1" inpkey="200"/>
+												<entry name="extensionNameValue" ns="1" inpkey="201" expanded="1">
+													<entry name="name" ns="1" inpkey="202"/>
+													<entry name="value" ns="1" inpkey="203"/>
+													<entry name="dTim" ns="1" inpkey="204"/>
+													<entry name="index" ns="1" inpkey="205"/>
+													<entry name="description" ns="1" inpkey="206"/>
+												</entry>
+											</entry>
+											<entry name="customData" ns="1" inpkey="207"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\energyml\1.4\Completions_v1.0_Data_Schema\completions_v1.0\xsd_schemas\obj_wellCompletion.xsd" outputinstance="..\..\output\reverse\wellCompletion\WellCompletion.xml" instanceroot="{http://www.witsml.org/schemas/1series}wellCompletions"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="237">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="238">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="208">
+						<edges>
+							<edge vertexkey="180" edgekey="239"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="209">
+						<edges>
+							<edge vertexkey="179" edgekey="240"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="210">
+						<edges>
+							<edge vertexkey="183" edgekey="241"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="211">
+						<edges>
+							<edge vertexkey="200" edgekey="242"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="212">
+						<edges>
+							<edge vertexkey="207" edgekey="237"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="213">
+						<edges>
+							<edge vertexkey="201" edgekey="243"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="214">
+						<edges>
+							<edge vertexkey="202" edgekey="244"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="215">
+						<edges>
+							<edge vertexkey="203" edgekey="238"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="216">
+						<edges>
+							<edge vertexkey="204" edgekey="245"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="217">
+						<edges>
+							<edge vertexkey="205" edgekey="246"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="218">
+						<edges>
+							<edge vertexkey="206" edgekey="247"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="219">
+						<edges>
+							<edge vertexkey="184" edgekey="248"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="220">
+						<edges>
+							<edge vertexkey="185" edgekey="249"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="221">
+						<edges>
+							<edge vertexkey="186" edgekey="250"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="222">
+						<edges>
+							<edge vertexkey="187" edgekey="251"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="223">
+						<edges>
+							<edge vertexkey="188" edgekey="252"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="224">
+						<edges>
+							<edge vertexkey="189" edgekey="253"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="225">
+						<edges>
+							<edge vertexkey="190" edgekey="254"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="226">
+						<edges>
+							<edge vertexkey="191" edgekey="255"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="227">
+						<edges>
+							<edge vertexkey="192" edgekey="256"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="228">
+						<edges>
+							<edge vertexkey="193" edgekey="257"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="229">
+						<edges>
+							<edge vertexkey="194" edgekey="258"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230">
+						<edges>
+							<edge vertexkey="197" edgekey="259"/>
+							<edge vertexkey="319" edgekey="320"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="231">
+						<edges>
+							<edge vertexkey="198" edgekey="260"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="232">
+						<edges>
+							<edge vertexkey="318" edgekey="321"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="233">
+						<edges>
+							<edge vertexkey="195" edgekey="262"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="234">
+						<edges>
+							<edge vertexkey="199" edgekey="263"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="235">
+						<edges>
+							<edge vertexkey="182" edgekey="264"/>
+							<edge vertexkey="267" edgekey="298"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="236">
+						<edges>
+							<edge vertexkey="181" edgekey="265"/>
+							<edge vertexkey="271" edgekey="299"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="268">
+						<edges>
+							<edge vertexkey="269" edgekey="300"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="270">
+						<edges>
+							<edge vertexkey="294" edgekey="301"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="272">
+						<edges>
+							<edge vertexkey="292" edgekey="302"/>
+							<edge vertexkey="289" edgekey="303"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="273">
+						<edges>
+							<edge vertexkey="293" edgekey="304"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="276">
+						<edges>
+							<edge vertexkey="278" edgekey="305"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="277">
+						<edges>
+							<edge vertexkey="274" edgekey="306"/>
+							<edge vertexkey="284" edgekey="307"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="279">
+						<edges>
+							<edge vertexkey="275" edgekey="308"/>
+							<edge vertexkey="282" edgekey="309"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="281">
+						<edges>
+							<edge vertexkey="290" edgekey="310"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="285">
+						<edges>
+							<edge vertexkey="287" edgekey="311"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="286">
+						<edges>
+							<edge vertexkey="283" edgekey="312"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="291">
+						<edges>
+							<edge vertexkey="295" edgekey="313"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="296">
+						<edges>
+							<edge vertexkey="266" edgekey="314"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="297">
+						<edges>
+							<edge vertexkey="280" edgekey="315"/>
+							<edge vertexkey="288" edgekey="316"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="317">
+						<edges>
+							<edge vertexkey="196" edgekey="322"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
