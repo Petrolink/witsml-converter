@@ -2,18 +2,18 @@
 Petrolink.WitsmlConverter.WitsmlTransformer
 Petrolink.WitsmlConverter.WitsmlTransformOptions
 Petrolink.WitsmlConverter.WitsmlTransformOptions.AddCreationTimes.get -> bool?
-Petrolink.WitsmlConverter.WitsmlTransformOptions.AddCreationTimes.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.AddCreationTimes.set -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.get -> bool?
-Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ConvertUnits.set -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.get -> System.DateTime?
-Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.CreationTime.set -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.SchemaSet.get -> System.Xml.Schema.XmlSchemaSet?
-Petrolink.WitsmlConverter.WitsmlTransformOptions.SchemaSet.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.SchemaSet.set -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.ValidationMode.get -> Petrolink.WitsmlConverter.WitsmlValidationMode
-Petrolink.WitsmlConverter.WitsmlTransformOptions.ValidationMode.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.ValidationMode.set -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.WitsmlTransformOptions() -> void
 Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.get -> System.Xml.XmlWriterSettings?
-Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.init -> void
+Petrolink.WitsmlConverter.WitsmlTransformOptions.XmlWriterSettings.set -> void
 Petrolink.WitsmlConverter.WitsmlTransformType
 Petrolink.WitsmlConverter.WitsmlTransformType.Witsml14To20 = 0 -> Petrolink.WitsmlConverter.WitsmlTransformType
 Petrolink.WitsmlConverter.WitsmlTransformType.Witsml20To14 = 1 -> Petrolink.WitsmlConverter.WitsmlTransformType

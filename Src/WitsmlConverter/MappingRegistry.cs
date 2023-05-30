@@ -93,11 +93,29 @@ internal static class MappingRegistry
         ["Wellbore"] = new(typeof(Map21To20MapToWellbore)),
     };
 
-    internal record MappingTypes(
-        Type Map1,
-        Type? Map2 = null,
-        Type? Before1 = null,
-        Type? Before2 = null,
-        Type? After1 = null,
-        Type? After2 = null);
+    internal class MappingTypes
+    {
+        internal MappingTypes(
+            Type Map1,
+            Type? Map2 = null,
+            Type? Before1 = null,
+            Type? Before2 = null,
+            Type? After1 = null,
+            Type? After2 = null)
+        {
+            this.Map1 = Map1;
+            this.Map2 = Map2;
+            this.Before1 = Before1;
+            this.Before2 = Before2;
+            this.After1 = After1;
+            this.After2 = After2;
+        }
+
+        public Type Map1 { get; }
+        public Type? Map2 { get; }
+        public Type? Before1 { get; }
+        public Type? Before2 { get; }
+        public Type? After1 { get; }
+        public Type? After2 { get; }
+    }
 }
