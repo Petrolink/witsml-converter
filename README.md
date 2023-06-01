@@ -27,3 +27,17 @@ The repository provides a Visual Studio 2022 solution containing 4 projects:
 * Petrolink.WitsmlConverter.Tool - The command line wrapper around Petrolink.WitsmlConverter. Builds WitsmlConvert.exe.
 
 Simply open `WitsmlConverter.sln` in Visual Studio and build the project, or use the `dotnet build` command to build the project.
+
+## Conversion
+
+WITSML conversion is implemented using XML transformations combined with additional post-processing depending on the conversion type.
+
+The conversions steps are as follows:
+1. Parse and optionally validate the input WITSML document.
+2. Execute the XML transformation according to the specified destination type.
+3. If converting from WITSML 1.4 to 2.0, add `<eml:Creaiton>` elements to all `<eml:Citation>` elements with the creaiton time specified by the `WitsmlTransformOptions`.
+4. If converting from WITSML 1.4 to 2.0, or from 2.0 to 1.4, then check all `uom` attributes in the document and attempt to convert their values between the equivalent WITSML 1.4 and 2.0 unit symbols.
+5. Write the new WITSML document to a string.
+
+Currently, conversion will fail if the input document violates the `minOccurs` or `maxOccurs` constraints of the WITSML schema. This will be changed in the future to allow invalid inputs, as some WITSML servers accept them.
+
