@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.CommandLine;
+using System.CommandLine.Invocation;
+using System.CommandLine.IO;
 using System.Xml.Schema;
 using Microsoft.Extensions.FileSystemGlobbing;
 using Petrolink.WitsmlConverter;
@@ -34,29 +36,23 @@ var transformCommand = new Command("transform", "Transform one or more WITSML do
 
 rootCommand.AddCommand(transformCommand);
 
-transformCommand.SetHandler(ExecuteTransform,
-                            inputOption,
-                            outputOption,
-                            typeOption,
-                            modeOption,
-                            patternsOption,
-                            overwriteOption,
-                            validationModeOption,
-                            schemaDirOption);
+transformCommand.SetHandler(ExecuteTransform);
 
 return rootCommand.Invoke(args);
 
 // Execute the transform command
-void ExecuteTransform(
-    IList<string> input,
-    string output,
-    string type,
-    WitsmlTransformType conversion,
-    IList<string> patterns,
-    bool overwrite,
-    WitsmlValidationMode validationMode,
-    IList<string> schemaDirs)
+void ExecuteTransform(InvocationContext context)
 {
+    var console = context.Console;
+    var input = context.ParseResult.GetValueForOption(inputOption)!;
+    var output = context.ParseResult.GetValueForOption(outputOption)!;
+    var type = context.ParseResult.GetValueForOption(typeOption)!;
+    var conversion = context.ParseResult.GetValueForOption(modeOption)!;
+    var patterns = context.ParseResult.GetValueForOption(patternsOption)!;
+    var overwrite = context.ParseResult.GetValueForOption(overwriteOption);
+    var validationMode = context.ParseResult.GetValueForOption(validationModeOption);
+    var schemaDirs = context.ParseResult.GetValueForOption(schemaDirOption)!;
+
     // TODO Detect destination type based on the input
     var matcher = new Matcher();
 
@@ -66,14 +62,14 @@ void ExecuteTransform(
 
     if (inputFilePaths.Count == 0)
     {
-        WriteError("Error: No valid inputs found");
+        console.Error.WriteLine("Error: No valid inputs found");
         return;
     }
 
     switch (GetPathType(output))
     {
         case PathType.File:
-            WriteError("Error: Output path is a file");
+            console.Error.WriteLine("Error: Output path is a file");
             return;
         case PathType.None:
             Directory.CreateDirectory(output);
@@ -107,11 +103,11 @@ void ExecuteTransform(
     {
         var outputPath = Path.Combine(output, Path.GetFileName(inputPath));
 
-        Console.WriteLine($"Processing {inputPath}");
+        console.WriteLine($"Processing {inputPath}");
 
         if (!overwrite && File.Exists(outputPath))
         {
-            WriteError($"Error: Output file already exists: {outputPath}");
+            console.Error.WriteLine($"Error: Output file already exists: {outputPath}");
             continue;
         }
 
@@ -131,7 +127,7 @@ void ExecuteTransform(
         }
         catch (Exception ex)
         {
-            WriteError($"Failed to transform file due to exception: {ex.GetType().Name}: {ex.Message}");
+            console.Error.WriteLine($"Failed to transform file due to exception: {ex.GetType().Name}: {ex.Message}");
         }
     }
 }
