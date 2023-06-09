@@ -2,6 +2,7 @@
 using System.CommandLine;
 using System.CommandLine.Invocation;
 using System.CommandLine.IO;
+using System.Text;
 using System.Xml.Schema;
 using Microsoft.Extensions.FileSystemGlobbing;
 using Petrolink.WitsmlConverter;
@@ -99,6 +100,9 @@ void ExecuteTransform(InvocationContext context)
         }
     }
 
+    // Avoid UTF8 BOM for maximum compatibility
+    var encoding = new UTF8Encoding(false);
+
     foreach (var inputPath in inputFilePaths)
     {
         var outputPath = Path.Combine(output, Path.GetFileName(inputPath));
@@ -123,7 +127,7 @@ void ExecuteTransform(InvocationContext context)
 
             var outputData = WitsmlTransformer.Transform(inputData, conversion, type, options);
 
-            File.WriteAllText(outputPath, outputData);
+            File.WriteAllText(outputPath, outputData, encoding);
         }
         catch (Exception ex)
         {

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Log xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///D:/Repos/witsmlvalidation/witsml/energyml/2.1/data/witsml/v2.1/xsd_schemas/Log.xsd" uuid="00000000-0000-0000-0000-000000000000" schemaVersion="2.1" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
   <eml:Aliases authority="1.4.1.1">
     <eml:Identifier>W-12B-01f34a</eml:Identifier>

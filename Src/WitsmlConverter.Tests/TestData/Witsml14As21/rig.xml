@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Rig xmlns:eml="http://www.energistics.org/energyml/data/commonv2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.energistics.org/energyml/data/witsmlv2 file:///C:/Projects/Energistics/Standards/energyML_202205/energyml/data/witsml/v2.1/xsd_schemas/Rig.xsd" uuid="00000000-0000-0000-0000-000000000000" schemaVersion="2.1" xmlns="http://www.energistics.org/energyml/data/witsmlv2">
   <eml:Aliases authority="1.4.1.1">
     <eml:Identifier>xr31</eml:Identifier>

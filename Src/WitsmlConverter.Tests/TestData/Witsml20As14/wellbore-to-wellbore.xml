@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8"?>
 <wellbores xmlns:abs="http://www.energistics.org/schemas/abstract" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.witsml.org/schemas/1series http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_wellbore.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
   <wellbore uidWell="W-12" uid="B-01">
     <nameWell>6507/7-A-42</nameWell>

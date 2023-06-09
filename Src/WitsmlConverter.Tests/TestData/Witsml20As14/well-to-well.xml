@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8"?>
 <wells xmlns:abs="http://www.energistics.org/schemas/abstract" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.witsml.org/schemas/1series http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/xsd_schemas/obj_well.xsd" version="1.4.1.1" xmlns="http://www.witsml.org/schemas/1series">
   <well uid="w-12">
     <name>6507/7-A-42</name>

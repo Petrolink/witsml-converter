@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Globalization;
+using System.Reflection;
 using System.Text;
 using System.Xml;
 
@@ -14,6 +15,8 @@ public static class WitsmlTransformer
 
     // The maximum number of validation error messages to include in a single exception message.
     private const int MaxValidationMessages = 20;
+
+    private static readonly UTF8Encoding s_utf8NoBomEncoding = new(false);
 
     private delegate bool UomConverter(string uom, out string newUom);
 
@@ -155,9 +158,16 @@ public static class WitsmlTransformer
     {
         writerSettings ??= new XmlWriterSettings();
 
+        writerSettings.Encoding ??= s_utf8NoBomEncoding;
+
         var sb = new StringBuilder();
 
-        using var writer = XmlWriter.Create(sb, writerSettings);
+        // Normally when a TextWriter is used, the encoding declaration in the XML matches the Encoding property of
+        // the TextWriter. For StringWriter this is always UTF-16. To fix this, we provide a StringWriter subclass
+        // that allows the Encoding property to be set to the XmlWriterSettings.Encoding property.
+        using var stringWriter = new EncodingStringWriter(sb, CultureInfo.InvariantCulture, writerSettings.Encoding);
+
+        using var writer = XmlWriter.Create(stringWriter, writerSettings);
 
         doc.WriteTo(writer);
 
@@ -275,5 +285,21 @@ public static class WitsmlTransformer
     {
         return ex is InvalidOperationException &&
                ex.Message == "The source node does not exist, which is invalid.\nIn order to process invalid input, disable optimizations based on min/maxOccurs in component settings.";
+    }
+
+    /// <summary>
+    /// Overrides the default StringWriter to provide a custom encoding rather than always using UTF-16
+    /// </summary>
+    private class EncodingStringWriter : StringWriter
+    {
+        private readonly Encoding _encoding;
+
+        public EncodingStringWriter(StringBuilder sb, IFormatProvider formatProvider, Encoding encoding)
+            : base(sb, formatProvider)
+        {
+            _encoding = encoding;
+        }
+
+        public override Encoding Encoding => _encoding;
     }
 }
